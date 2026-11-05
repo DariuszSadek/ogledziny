@@ -31,7 +31,7 @@ main{max-width:1040px;margin:0 auto;padding:12px 14px 80px}
 .titleband p{margin:4px 0 0;font-size:13px;font-style:italic;color:#d5dEEA}
 section.sec{margin:0 0 26px;scroll-margin-top:var(--stick,130px)}
 section.sec>h2{margin:18px 0 10px;background:var(--bar);border-left:5px solid var(--navy);color:var(--navy);font-size:17px;padding:8px 10px;scroll-margin-top:var(--stick,130px)}
-.fields{display:flex;flex-wrap:wrap;gap:8px 8px;margin:6px 0}
+.fields{display:flex;flex-wrap:wrap;gap:8px 8px;margin:6px 0;align-items:flex-end}
 .fld{display:flex;flex-direction:column;min-width:150px}
 .fld>label,.lbl{font-size:13px;color:var(--gray);margin-bottom:2px}
 .ctl-row{display:flex;gap:6px;align-items:stretch}
@@ -40,10 +40,11 @@ textarea:focus{min-height:110px}
 textarea:focus,input[type=text]:focus{outline:3px solid #ffb703;outline-offset:1px;background:#fff}
 .group{display:flex;gap:6px 14px;margin:10px 0;padding:6px 0;border-top:1px solid #d3dae4}
 .group>.glabel{flex:0 0 150px;font-weight:700;font-size:15px;padding-top:10px}
-.group>.opts{flex:1 1 auto;display:flex;flex-wrap:wrap;gap:4px 16px;align-items:center}
-.chk{display:inline-flex;align-items:center;gap:8px;min-height:46px;cursor:pointer;font-size:16px;-webkit-user-select:none;user-select:none}
+.group>.opts{flex:1 1 0;min-width:0;display:flex;flex-wrap:wrap;gap:4px 18px;align-items:center}
+.chk{position:relative;display:flex;flex:0 0 auto;align-items:center;gap:8px;min-height:46px;max-width:100%;cursor:pointer;font-size:16px;-webkit-user-select:none;user-select:none}
+.chk>span:last-child{min-width:0}
 .chk input{position:absolute;opacity:0;width:1px;height:1px}
-.chk .box{flex:0 0 28px;height:28px;border:2px solid var(--navy);border-radius:5px;background:var(--field);display:inline-block;position:relative}
+.chk .box{flex:0 0 28px;width:28px;min-width:28px;height:28px;border:2px solid var(--navy);border-radius:5px;background:var(--field);display:inline-block;position:relative}
 .chk input:checked+.box{background:var(--navy)}
 .chk input:checked+.box::after{content:"";position:absolute;left:8px;top:2px;width:7px;height:15px;border:solid #fff;border-width:0 3.5px 3.5px 0;transform:rotate(45deg)}
 .chk input:focus-visible+.box{outline:3px solid #ffb703}
@@ -102,3 +103,8 @@ dialog pre{white-space:pre-wrap;word-break:break-word;font-size:13px;max-height:
   .fld{flex:1 1 100% !important}
 }
 @media print{#bar,#tabs,#secnav,#update-banner,.addrow,.sketchbar,button{display:none !important}}
+
+.pick{display:flex;flex-direction:column;gap:6px;margin:8px 0}
+.pick button{text-align:left;justify-content:flex-start}
+.pick button.sel{background:var(--navy);color:#fff}
+.pick button:disabled{opacity:.45;border-style:dashed}

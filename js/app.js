@@ -146,8 +146,14 @@ function newCaseConfirm() {
   ask('Nowa pusta sprawa', dirty ? 'W bieżącej sprawie są zmiany niezapisane do pliku. Zostaną utracone (zostanie tylko ten bufor do czasu nadpisania). Zapisz plik przed kontynuacją.' : 'Bieżąca sprawa zostanie zamknięta (jest zapisana w pliku).', 'Utwórz nową', startNew);
 }
 function addFormDialog() {
-  const list = h('div', { class: 'btns' }, FORM_IDS.map(id => h('button', { type: 'button', text: `${id} · ${FORM_NAMES[id]}`, onclick: () => { $('dlg').close(); const i = addInstance(id); touch(); go(i.iid); } })));
-  dialog('Dodaj formularz', list, [['Zamknij', null]]);
+  let chosen = null;
+  const btns = Object.keys(FORM_NAMES).map(id => {
+    const ok = FORM_IDS.includes(id);
+    return h('button', { type: 'button', disabled: !ok, text: `${id} · ${FORM_NAMES[id]}${ok ? '' : ' (wkrótce)'}`, onclick: e => { chosen = id; btns.forEach(b => b.classList.remove('sel')); e.currentTarget.classList.add('sel'); } });
+  });
+  dialog('Dodaj formularz do sprawy', h('div', { class: 'pick' }, btns), [
+    ['Dodaj wybrany', () => { if (!chosen) return toast('Nie wybrano formularza.'); const i = addInstance(chosen); touch(); go(i.iid); }, 'primary'],
+    ['Anuluj', null]]);
 }
 
 // ---------- plik sprawy ----------
