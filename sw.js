@@ -1,6 +1,6 @@
 // Service worker – generowany/aktualizowany przez tools/build.py (lista plików i wersja cache).
 /*BUILD:BEGIN*/
-const CACHE = 'ogledziny-0.2.0-0b5cc2ead0';
+const CACHE = 'ogledziny-0.2.0-904105c9fb';
 const ASSETS = ["./", "assets/fonts/LibreBaskerville-Italic.ttf", "assets/fonts/LibreBaskerville.ttf", "assets/fonts/OFL.txt", "assets/icon-180.png", "assets/icon-192.png", "assets/icon-512.png", "css/app.css", "forms/01.json", "index.html", "js/app.js", "js/defs.js", "js/engine.js", "js/migrate.js", "js/sketch.js", "js/store.js", "js/version.js", "manifest.webmanifest"];
 /*BUILD:END*/
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS))); });

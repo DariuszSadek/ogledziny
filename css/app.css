@@ -36,6 +36,7 @@ section.sec>h2{margin:18px 0 10px;background:var(--bar);border-left:5px solid va
 .fld>label,.lbl{font-size:13px;color:var(--gray);margin-bottom:2px}
 .ctl-row{display:flex;gap:6px;align-items:stretch}
 textarea,input[type=text]{width:100%;font:inherit;font-size:18px;color:var(--ink);background:var(--field);border:1.5px solid var(--line);border-radius:6px;padding:8px 10px;min-height:46px;resize:none;overflow:hidden;display:block;-webkit-appearance:none;appearance:none}
+textarea:focus{min-height:110px}
 textarea:focus,input[type=text]:focus{outline:3px solid #ffb703;outline-offset:1px;background:#fff}
 .group{display:flex;gap:6px 14px;margin:10px 0;padding:6px 0;border-top:1px solid #d3dae4}
 .group>.glabel{flex:0 0 150px;font-weight:700;font-size:15px;padding-top:10px}
