@@ -1,0 +1,16 @@
+{
+  "name": "Oględziny",
+  "short_name": "Oględziny",
+  "description": "Elektroniczne formularze oględzin – Motoanalityka Dariusz Sadek",
+  "lang": "pl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#ffffff",
+  "theme_color": "#1f3b5f",
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

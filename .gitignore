@@ -1,0 +1,16 @@
+# Dane spraw i osobowe – NIGDY do repozytorium
+sprawy/
+*.sprawa.json
+case_*.json
+*_20[0-9][0-9]-[0-9][0-9]-[0-9][0-9]_[0-9][0-9][0-9][0-9].json
+*.pdf
+*.heic
+*.jpg
+*.jpeg
+*.png.bak
+# narzędzia lokalne
+node_modules/
+.venv/
+venv/
+.DS_Store
+tests/tmp/

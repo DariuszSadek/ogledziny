@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="theme-color" content="#1f3b5f">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Oględziny">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="format-detection" content="telephone=no">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+<link rel="icon" href="assets/icon-192.png">
+<link rel="stylesheet" href="css/app.css">
+<title>Oględziny</title>
+</head>
+<body>
+<div id="update-banner" hidden>
+  <span>Dostępna nowa wersja aplikacji.</span>
+  <button id="update-btn" type="button">Zaktualizuj</button>
+</div>
+<header id="bar">
+  <button id="btn-home" type="button" class="bar-title">Oględziny</button>
+  <div id="bar-status" aria-live="polite">
+    <span id="st-file">Plik: nie zapisano</span>
+    <span id="st-buffer">Bufor: –</span>
+  </div>
+  <div id="bar-actions">
+    <button id="btn-save" type="button" class="primary">Zapisz plik</button>
+    <button id="btn-open" type="button">Otwórz sprawę</button>
+  </div>
+</header>
+<nav id="tabs" aria-label="Formularze sprawy"></nav>
+<nav id="secnav" aria-label="Sekcje formularza" hidden></nav>
+<main id="main"></main>
+<div id="toast" role="status" aria-live="polite" hidden></div>
+<dialog id="dlg"></dialog>
+<input id="file-input" type="file" accept=".json,application/json,text/plain" hidden>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

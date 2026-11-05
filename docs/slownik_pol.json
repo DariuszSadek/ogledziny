@@ -1,0 +1,5382 @@
+[
+ {
+  "id": "01.A.1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "A. CZĘŚĆ WSTĘPNA",
+  "etykieta": "Data oględzin",
+  "kontekst": "",
+  "typ": "text",
+  "pdf": "MZ_0001"
+ },
+ {
+  "id": "01.A.2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "A. CZĘŚĆ WSTĘPNA",
+  "etykieta": "Godz. rozpoczęcia",
+  "kontekst": "",
+  "typ": "time",
+  "pdf": "MZ_0002"
+ },
+ {
+  "id": "01.A.3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "A. CZĘŚĆ WSTĘPNA",
+  "etykieta": "Godz. zakończenia",
+  "kontekst": "",
+  "typ": "time",
+  "pdf": "MZ_0003"
+ },
+ {
+  "id": "01.A.4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "A. CZĘŚĆ WSTĘPNA",
+  "etykieta": "Ustalona godzina zdarzenia",
+  "kontekst": "",
+  "typ": "time",
+  "pdf": "MZ_0004"
+ },
+ {
+  "id": "01.A.5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "A. CZĘŚĆ WSTĘPNA",
+  "etykieta": "Źródło ustalenia godziny",
+  "kontekst": "",
+  "typ": "text",
+  "pdf": "MZ_0005"
+ },
+ {
+  "id": "01.A.6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "A. CZĘŚĆ WSTĘPNA",
+  "etykieta": "Miejscowość, gmina",
+  "kontekst": "",
+  "typ": "text",
+  "pdf": "MZ_0006"
+ },
+ {
+  "id": "01.A.7",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "A. CZĘŚĆ WSTĘPNA",
+  "etykieta": "Droga nr / ulica",
+  "kontekst": "",
+  "typ": "text",
+  "pdf": "MZ_0007"
+ },
+ {
+  "id": "01.A.8",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "A. CZĘŚĆ WSTĘPNA",
+  "etykieta": "km + hm / nr posesji",
+  "kontekst": "",
+  "typ": "text",
+  "pdf": "MZ_0008"
+ },
+ {
+  "id": "01.A.9",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "A. CZĘŚĆ WSTĘPNA",
+  "etykieta": "Współrzędne GPS",
+  "kontekst": "",
+  "typ": "gps",
+  "pdf": "MZ_0009"
+ },
+ {
+  "id": "01.A.10",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "A. CZĘŚĆ WSTĘPNA",
+  "etykieta": "Osoby obecne (imię, nazwisko, funkcja / w jakim charakterze)",
+  "kontekst": "",
+  "typ": "text",
+  "pdf": "MZ_0010"
+ },
+ {
+  "id": "01.A.11",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "A. CZĘŚĆ WSTĘPNA",
+  "etykieta": "łata 1 m",
+  "kontekst": "Sprzęt pomiarowy użyty",
+  "typ": "check",
+  "pdf": "MZ_0011"
+ },
+ {
+  "id": "01.A.12",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "A. CZĘŚĆ WSTĘPNA",
+  "etykieta": "łata 5 m",
+  "kontekst": "Sprzęt pomiarowy użyty",
+  "typ": "check",
+  "pdf": "MZ_0012"
+ },
+ {
+  "id": "01.A.13",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "A. CZĘŚĆ WSTĘPNA",
+  "etykieta": "łata 7 m",
+  "kontekst": "Sprzęt pomiarowy użyty",
+  "typ": "check",
+  "pdf": "MZ_0013"
+ },
+ {
+  "id": "01.A.14",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "A. CZĘŚĆ WSTĘPNA",
+  "etykieta": "kółko pomiarowe Nivel M100",
+  "kontekst": "Sprzęt pomiarowy użyty",
+  "typ": "check",
+  "pdf": "MZ_0014"
+ },
+ {
+  "id": "01.A.15",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "A. CZĘŚĆ WSTĘPNA",
+  "etykieta": "taśma 5 m",
+  "kontekst": "Sprzęt pomiarowy użyty",
+  "typ": "check",
+  "pdf": "MZ_0015"
+ },
+ {
+  "id": "01.A.16",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "A. CZĘŚĆ WSTĘPNA",
+  "etykieta": "taśma 20 m",
+  "kontekst": "Sprzęt pomiarowy użyty",
+  "typ": "check",
+  "pdf": "MZ_0016"
+ },
+ {
+  "id": "01.A.17",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "A. CZĘŚĆ WSTĘPNA",
+  "etykieta": "dalmierz laserowy",
+  "kontekst": "Sprzęt pomiarowy użyty",
+  "typ": "check",
+  "pdf": "MZ_0017"
+ },
+ {
+  "id": "01.A.18",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "A. CZĘŚĆ WSTĘPNA",
+  "etykieta": "poziomica elektroniczna Nivel",
+  "kontekst": "Sprzęt pomiarowy użyty",
+  "typ": "check",
+  "pdf": "MZ_0018"
+ },
+ {
+  "id": "01.A.19",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "A. CZĘŚĆ WSTĘPNA",
+  "etykieta": "statyw",
+  "kontekst": "Sprzęt pomiarowy użyty",
+  "typ": "check",
+  "pdf": "MZ_0019"
+ },
+ {
+  "id": "01.A.20",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "A. CZĘŚĆ WSTĘPNA",
+  "etykieta": "lampa błyskowa",
+  "kontekst": "Sprzęt pomiarowy użyty",
+  "typ": "check",
+  "pdf": "MZ_0020"
+ },
+ {
+  "id": "01.A.21",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "A. CZĘŚĆ WSTĘPNA",
+  "etykieta": "dron",
+  "kontekst": "Sprzęt pomiarowy użyty",
+  "typ": "check",
+  "pdf": "MZ_0021"
+ },
+ {
+  "id": "01.A.22",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "A. CZĘŚĆ WSTĘPNA",
+  "etykieta": "inne:",
+  "kontekst": "Sprzęt pomiarowy użyty",
+  "typ": "check",
+  "pdf": "MZ_0022"
+ },
+ {
+  "id": "01.A.23",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "A. CZĘŚĆ WSTĘPNA",
+  "etykieta": "",
+  "kontekst": "Sprzęt pomiarowy użyty",
+  "typ": "text",
+  "pdf": "MZ_0023"
+ },
+ {
+  "id": "01.A.24",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "A. CZĘŚĆ WSTĘPNA",
+  "etykieta": "Zdjęcia – nr od",
+  "kontekst": "",
+  "typ": "text",
+  "pdf": "MZ_0024"
+ },
+ {
+  "id": "01.A.25",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "A. CZĘŚĆ WSTĘPNA",
+  "etykieta": "Zdjęcia – nr do",
+  "kontekst": "",
+  "typ": "text",
+  "pdf": "MZ_0025"
+ },
+ {
+  "id": "01.A.26",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "A. CZĘŚĆ WSTĘPNA",
+  "etykieta": "Liczba zdjęć",
+  "kontekst": "",
+  "typ": "text",
+  "pdf": "MZ_0026"
+ },
+ {
+  "id": "01.A.27",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "A. CZĘŚĆ WSTĘPNA",
+  "etykieta": "Film nr",
+  "kontekst": "",
+  "typ": "text",
+  "pdf": "MZ_0027"
+ },
+ {
+  "id": "01.A.28",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "A. CZĘŚĆ WSTĘPNA",
+  "etykieta": "Aparat / karta",
+  "kontekst": "",
+  "typ": "text",
+  "pdf": "MZ_0028"
+ },
+ {
+  "id": "01.A.uwagi",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "A. CZĘŚĆ WSTĘPNA",
+  "etykieta": "Uwagi",
+  "kontekst": "pole aplikacji (brak w PDF)",
+  "typ": "text",
+  "pdf": ""
+ },
+ {
+  "id": "01.Z.t1.r1.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "ZADANIA SPECJALNE DO SPRAWDZENIA",
+  "etykieta": "Zadanie – co sprawdzić",
+  "kontekst": "tabela t1, wiersz 1",
+  "typ": "text",
+  "pdf": "MZ_0029"
+ },
+ {
+  "id": "01.Z.t1.r1.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "ZADANIA SPECJALNE DO SPRAWDZENIA",
+  "etykieta": "Wykonano",
+  "kontekst": "tabela t1, wiersz 1",
+  "typ": "check",
+  "pdf": "MZ_0030"
+ },
+ {
+  "id": "01.Z.t1.r1.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "ZADANIA SPECJALNE DO SPRAWDZENIA",
+  "etykieta": "Wynik / gdzie w protokole",
+  "kontekst": "tabela t1, wiersz 1",
+  "typ": "text",
+  "pdf": "MZ_0031"
+ },
+ {
+  "id": "01.Z.t1.r2.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "ZADANIA SPECJALNE DO SPRAWDZENIA",
+  "etykieta": "Zadanie – co sprawdzić",
+  "kontekst": "tabela t1, wiersz 2",
+  "typ": "text",
+  "pdf": "MZ_0032"
+ },
+ {
+  "id": "01.Z.t1.r2.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "ZADANIA SPECJALNE DO SPRAWDZENIA",
+  "etykieta": "Wykonano",
+  "kontekst": "tabela t1, wiersz 2",
+  "typ": "check",
+  "pdf": "MZ_0033"
+ },
+ {
+  "id": "01.Z.t1.r2.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "ZADANIA SPECJALNE DO SPRAWDZENIA",
+  "etykieta": "Wynik / gdzie w protokole",
+  "kontekst": "tabela t1, wiersz 2",
+  "typ": "text",
+  "pdf": "MZ_0034"
+ },
+ {
+  "id": "01.Z.t1.r3.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "ZADANIA SPECJALNE DO SPRAWDZENIA",
+  "etykieta": "Zadanie – co sprawdzić",
+  "kontekst": "tabela t1, wiersz 3",
+  "typ": "text",
+  "pdf": "MZ_0035"
+ },
+ {
+  "id": "01.Z.t1.r3.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "ZADANIA SPECJALNE DO SPRAWDZENIA",
+  "etykieta": "Wykonano",
+  "kontekst": "tabela t1, wiersz 3",
+  "typ": "check",
+  "pdf": "MZ_0036"
+ },
+ {
+  "id": "01.Z.t1.r3.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "ZADANIA SPECJALNE DO SPRAWDZENIA",
+  "etykieta": "Wynik / gdzie w protokole",
+  "kontekst": "tabela t1, wiersz 3",
+  "typ": "text",
+  "pdf": "MZ_0037"
+ },
+ {
+  "id": "01.Z.t1.r4.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "ZADANIA SPECJALNE DO SPRAWDZENIA",
+  "etykieta": "Zadanie – co sprawdzić",
+  "kontekst": "tabela t1, wiersz 4",
+  "typ": "text",
+  "pdf": "MZ_0038"
+ },
+ {
+  "id": "01.Z.t1.r4.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "ZADANIA SPECJALNE DO SPRAWDZENIA",
+  "etykieta": "Wykonano",
+  "kontekst": "tabela t1, wiersz 4",
+  "typ": "check",
+  "pdf": "MZ_0039"
+ },
+ {
+  "id": "01.Z.t1.r4.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "ZADANIA SPECJALNE DO SPRAWDZENIA",
+  "etykieta": "Wynik / gdzie w protokole",
+  "kontekst": "tabela t1, wiersz 4",
+  "typ": "text",
+  "pdf": "MZ_0040"
+ },
+ {
+  "id": "01.Z.t1.r5.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "ZADANIA SPECJALNE DO SPRAWDZENIA",
+  "etykieta": "Zadanie – co sprawdzić",
+  "kontekst": "tabela t1, wiersz 5",
+  "typ": "text",
+  "pdf": "MZ_0041"
+ },
+ {
+  "id": "01.Z.t1.r5.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "ZADANIA SPECJALNE DO SPRAWDZENIA",
+  "etykieta": "Wykonano",
+  "kontekst": "tabela t1, wiersz 5",
+  "typ": "check",
+  "pdf": "MZ_0042"
+ },
+ {
+  "id": "01.Z.t1.r5.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "ZADANIA SPECJALNE DO SPRAWDZENIA",
+  "etykieta": "Wynik / gdzie w protokole",
+  "kontekst": "tabela t1, wiersz 5",
+  "typ": "text",
+  "pdf": "MZ_0043"
+ },
+ {
+  "id": "01.Z.t1.r6.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "ZADANIA SPECJALNE DO SPRAWDZENIA",
+  "etykieta": "Zadanie – co sprawdzić",
+  "kontekst": "tabela t1, wiersz 6",
+  "typ": "text",
+  "pdf": "MZ_0044"
+ },
+ {
+  "id": "01.Z.t1.r6.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "ZADANIA SPECJALNE DO SPRAWDZENIA",
+  "etykieta": "Wykonano",
+  "kontekst": "tabela t1, wiersz 6",
+  "typ": "check",
+  "pdf": "MZ_0045"
+ },
+ {
+  "id": "01.Z.t1.r6.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "ZADANIA SPECJALNE DO SPRAWDZENIA",
+  "etykieta": "Wynik / gdzie w protokole",
+  "kontekst": "tabela t1, wiersz 6",
+  "typ": "text",
+  "pdf": "MZ_0046"
+ },
+ {
+  "id": "01.Z.uwagi",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "ZADANIA SPECJALNE DO SPRAWDZENIA",
+  "etykieta": "Uwagi",
+  "kontekst": "pole aplikacji (brak w PDF)",
+  "typ": "text",
+  "pdf": ""
+ },
+ {
+  "id": "01.B.1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "B. WARUNKI ATMOSFERYCZNE I OŚWIETLENIE (W CHWILI OGLĘDZIN)",
+  "etykieta": "dzień",
+  "kontekst": "Pora",
+  "typ": "check",
+  "pdf": "MZ_0047"
+ },
+ {
+  "id": "01.B.2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "B. WARUNKI ATMOSFERYCZNE I OŚWIETLENIE (W CHWILI OGLĘDZIN)",
+  "etykieta": "zmierzch",
+  "kontekst": "Pora",
+  "typ": "check",
+  "pdf": "MZ_0048"
+ },
+ {
+  "id": "01.B.3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "B. WARUNKI ATMOSFERYCZNE I OŚWIETLENIE (W CHWILI OGLĘDZIN)",
+  "etykieta": "noc",
+  "kontekst": "Pora",
+  "typ": "check",
+  "pdf": "MZ_0049"
+ },
+ {
+  "id": "01.B.4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "B. WARUNKI ATMOSFERYCZNE I OŚWIETLENIE (W CHWILI OGLĘDZIN)",
+  "etykieta": "świt",
+  "kontekst": "Pora",
+  "typ": "check",
+  "pdf": "MZ_0050"
+ },
+ {
+  "id": "01.B.5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "B. WARUNKI ATMOSFERYCZNE I OŚWIETLENIE (W CHWILI OGLĘDZIN)",
+  "etykieta": "bezchmurnie",
+  "kontekst": "Zachmurzenie / opady",
+  "typ": "check",
+  "pdf": "MZ_0051"
+ },
+ {
+  "id": "01.B.6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "B. WARUNKI ATMOSFERYCZNE I OŚWIETLENIE (W CHWILI OGLĘDZIN)",
+  "etykieta": "zachmurzenie",
+  "kontekst": "Zachmurzenie / opady",
+  "typ": "check",
+  "pdf": "MZ_0052"
+ },
+ {
+  "id": "01.B.7",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "B. WARUNKI ATMOSFERYCZNE I OŚWIETLENIE (W CHWILI OGLĘDZIN)",
+  "etykieta": "mgła",
+  "kontekst": "Zachmurzenie / opady",
+  "typ": "check",
+  "pdf": "MZ_0053"
+ },
+ {
+  "id": "01.B.8",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "B. WARUNKI ATMOSFERYCZNE I OŚWIETLENIE (W CHWILI OGLĘDZIN)",
+  "etykieta": "mżawka",
+  "kontekst": "Zachmurzenie / opady",
+  "typ": "check",
+  "pdf": "MZ_0054"
+ },
+ {
+  "id": "01.B.9",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "B. WARUNKI ATMOSFERYCZNE I OŚWIETLENIE (W CHWILI OGLĘDZIN)",
+  "etykieta": "deszcz",
+  "kontekst": "Zachmurzenie / opady",
+  "typ": "check",
+  "pdf": "MZ_0055"
+ },
+ {
+  "id": "01.B.10",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "B. WARUNKI ATMOSFERYCZNE I OŚWIETLENIE (W CHWILI OGLĘDZIN)",
+  "etykieta": "śnieg",
+  "kontekst": "Zachmurzenie / opady",
+  "typ": "check",
+  "pdf": "MZ_0056"
+ },
+ {
+  "id": "01.B.11",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "B. WARUNKI ATMOSFERYCZNE I OŚWIETLENIE (W CHWILI OGLĘDZIN)",
+  "etykieta": "grad",
+  "kontekst": "Zachmurzenie / opady",
+  "typ": "check",
+  "pdf": "MZ_0057"
+ },
+ {
+  "id": "01.B.12",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "B. WARUNKI ATMOSFERYCZNE I OŚWIETLENIE (W CHWILI OGLĘDZIN)",
+  "etykieta": "inne:",
+  "kontekst": "Zachmurzenie / opady",
+  "typ": "check",
+  "pdf": "MZ_0058"
+ },
+ {
+  "id": "01.B.13",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "B. WARUNKI ATMOSFERYCZNE I OŚWIETLENIE (W CHWILI OGLĘDZIN)",
+  "etykieta": "",
+  "kontekst": "Zachmurzenie / opady",
+  "typ": "text",
+  "pdf": "MZ_0059"
+ },
+ {
+  "id": "01.B.14",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "B. WARUNKI ATMOSFERYCZNE I OŚWIETLENIE (W CHWILI OGLĘDZIN)",
+  "etykieta": "światło dzienne",
+  "kontekst": "Oświetlenie",
+  "typ": "check",
+  "pdf": "MZ_0060"
+ },
+ {
+  "id": "01.B.15",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "B. WARUNKI ATMOSFERYCZNE I OŚWIETLENIE (W CHWILI OGLĘDZIN)",
+  "etykieta": "uliczne – działa",
+  "kontekst": "Oświetlenie",
+  "typ": "check",
+  "pdf": "MZ_0061"
+ },
+ {
+  "id": "01.B.16",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "B. WARUNKI ATMOSFERYCZNE I OŚWIETLENIE (W CHWILI OGLĘDZIN)",
+  "etykieta": "uliczne – nie działa",
+  "kontekst": "Oświetlenie",
+  "typ": "check",
+  "pdf": "MZ_0062"
+ },
+ {
+  "id": "01.B.17",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "B. WARUNKI ATMOSFERYCZNE I OŚWIETLENIE (W CHWILI OGLĘDZIN)",
+  "etykieta": "brak oświetlenia",
+  "kontekst": "Oświetlenie",
+  "typ": "check",
+  "pdf": "MZ_0063"
+ },
+ {
+  "id": "01.B.18",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "B. WARUNKI ATMOSFERYCZNE I OŚWIETLENIE (W CHWILI OGLĘDZIN)",
+  "etykieta": "oślepianie (słońce, reflektory)",
+  "kontekst": "Oświetlenie",
+  "typ": "check",
+  "pdf": "MZ_0064"
+ },
+ {
+  "id": "01.B.19",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "B. WARUNKI ATMOSFERYCZNE I OŚWIETLENIE (W CHWILI OGLĘDZIN)",
+  "etykieta": "Temp. powietrza [°C]",
+  "kontekst": "",
+  "typ": "num",
+  "pdf": "MZ_0065"
+ },
+ {
+  "id": "01.B.20",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "B. WARUNKI ATMOSFERYCZNE I OŚWIETLENIE (W CHWILI OGLĘDZIN)",
+  "etykieta": "Temp. nawierzchni [°C]",
+  "kontekst": "",
+  "typ": "num",
+  "pdf": "MZ_0066"
+ },
+ {
+  "id": "01.B.21",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "B. WARUNKI ATMOSFERYCZNE I OŚWIETLENIE (W CHWILI OGLĘDZIN)",
+  "etykieta": "Wiatr (kierunek, siła)",
+  "kontekst": "",
+  "typ": "text",
+  "pdf": "MZ_0067"
+ },
+ {
+  "id": "01.B.22",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "B. WARUNKI ATMOSFERYCZNE I OŚWIETLENIE (W CHWILI OGLĘDZIN)",
+  "etykieta": "Widoczność [m]",
+  "kontekst": "",
+  "typ": "num",
+  "pdf": "MZ_0068"
+ },
+ {
+  "id": "01.B.23",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "B. WARUNKI ATMOSFERYCZNE I OŚWIETLENIE (W CHWILI OGLĘDZIN)",
+  "etykieta": "Słońce (azymut, wysokość)",
+  "kontekst": "",
+  "typ": "text",
+  "pdf": "MZ_0069"
+ },
+ {
+  "id": "01.B.24",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "B. WARUNKI ATMOSFERYCZNE I OŚWIETLENIE (W CHWILI OGLĘDZIN)",
+  "etykieta": "Warunki w chwili zdarzenia, jeżeli inne – opis i źródło (akta, dane meteo, nagrania)",
+  "kontekst": "",
+  "typ": "text",
+  "pdf": "MZ_0070"
+ },
+ {
+  "id": "01.B.uwagi",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "B. WARUNKI ATMOSFERYCZNE I OŚWIETLENIE (W CHWILI OGLĘDZIN)",
+  "etykieta": "Uwagi",
+  "kontekst": "pole aplikacji (brak w PDF)",
+  "typ": "text",
+  "pdf": ""
+ },
+ {
+  "id": "01.C.1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "krajowa",
+  "kontekst": "Kategoria drogi",
+  "typ": "check",
+  "pdf": "MZ_0071"
+ },
+ {
+  "id": "01.C.2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "wojewódzka",
+  "kontekst": "Kategoria drogi",
+  "typ": "check",
+  "pdf": "MZ_0072"
+ },
+ {
+  "id": "01.C.3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "powiatowa",
+  "kontekst": "Kategoria drogi",
+  "typ": "check",
+  "pdf": "MZ_0073"
+ },
+ {
+  "id": "01.C.4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "gminna",
+  "kontekst": "Kategoria drogi",
+  "typ": "check",
+  "pdf": "MZ_0074"
+ },
+ {
+  "id": "01.C.5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "wewnętrzna",
+  "kontekst": "Kategoria drogi",
+  "typ": "check",
+  "pdf": "MZ_0075"
+ },
+ {
+  "id": "01.C.6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "parking",
+  "kontekst": "Kategoria drogi",
+  "typ": "check",
+  "pdf": "MZ_0076"
+ },
+ {
+  "id": "01.C.7",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "inne:",
+  "kontekst": "Kategoria drogi",
+  "typ": "check",
+  "pdf": "MZ_0077"
+ },
+ {
+  "id": "01.C.8",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "",
+  "kontekst": "Kategoria drogi",
+  "typ": "text",
+  "pdf": "MZ_0078"
+ },
+ {
+  "id": "01.C.9",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "zabudowany",
+  "kontekst": "Obszar",
+  "typ": "check",
+  "pdf": "MZ_0079"
+ },
+ {
+  "id": "01.C.10",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "niezabudowany",
+  "kontekst": "Obszar",
+  "typ": "check",
+  "pdf": "MZ_0080"
+ },
+ {
+  "id": "01.C.11",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "strefa zamieszkania",
+  "kontekst": "Obszar",
+  "typ": "check",
+  "pdf": "MZ_0081"
+ },
+ {
+  "id": "01.C.12",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "strefa ruchu",
+  "kontekst": "Obszar",
+  "typ": "check",
+  "pdf": "MZ_0082"
+ },
+ {
+  "id": "01.C.13",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Dopuszczalna prędkość [km/h]",
+  "kontekst": "",
+  "typ": "num",
+  "pdf": "MZ_0083"
+ },
+ {
+  "id": "01.C.14",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Liczba jezdni",
+  "kontekst": "",
+  "typ": "text",
+  "pdf": "MZ_0084"
+ },
+ {
+  "id": "01.C.15",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Liczba pasów (kier. A / B)",
+  "kontekst": "",
+  "typ": "text",
+  "pdf": "MZ_0085"
+ },
+ {
+  "id": "01.C.16",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Szerokość jezdni [m]",
+  "kontekst": "",
+  "typ": "num",
+  "pdf": "MZ_0086"
+ },
+ {
+  "id": "01.C.17",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Szerokość pasów [m]",
+  "kontekst": "",
+  "typ": "num",
+  "pdf": "MZ_0087"
+ },
+ {
+  "id": "01.C.18",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "pobocze utwardzone",
+  "kontekst": "Elementy przekroju",
+  "typ": "check",
+  "pdf": "MZ_0088"
+ },
+ {
+  "id": "01.C.19",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "pobocze gruntowe",
+  "kontekst": "Elementy przekroju",
+  "typ": "check",
+  "pdf": "MZ_0089"
+ },
+ {
+  "id": "01.C.20",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "chodnik",
+  "kontekst": "Elementy przekroju",
+  "typ": "check",
+  "pdf": "MZ_0090"
+ },
+ {
+  "id": "01.C.21",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "ścieżka rowerowa",
+  "kontekst": "Elementy przekroju",
+  "typ": "check",
+  "pdf": "MZ_0091"
+ },
+ {
+  "id": "01.C.22",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "rów",
+  "kontekst": "Elementy przekroju",
+  "typ": "check",
+  "pdf": "MZ_0092"
+ },
+ {
+  "id": "01.C.23",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "skarpa",
+  "kontekst": "Elementy przekroju",
+  "typ": "check",
+  "pdf": "MZ_0093"
+ },
+ {
+  "id": "01.C.24",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "bariera ochronna",
+  "kontekst": "Elementy przekroju",
+  "typ": "check",
+  "pdf": "MZ_0094"
+ },
+ {
+  "id": "01.C.25",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "krawężnik",
+  "kontekst": "Elementy przekroju",
+  "typ": "check",
+  "pdf": "MZ_0095"
+ },
+ {
+  "id": "01.C.26",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "pas zieleni",
+  "kontekst": "Elementy przekroju",
+  "typ": "check",
+  "pdf": "MZ_0096"
+ },
+ {
+  "id": "01.C.t1.r1.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Element przekroju (rodzaj)",
+  "kontekst": "tabela t1, wiersz 1",
+  "typ": "text",
+  "pdf": "MZ_0097"
+ },
+ {
+  "id": "01.C.t1.r1.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Szerokość [m]",
+  "kontekst": "tabela t1, wiersz 1",
+  "typ": "num",
+  "pdf": "MZ_0098"
+ },
+ {
+  "id": "01.C.t1.r1.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Głębokość / wysokość [m]",
+  "kontekst": "tabela t1, wiersz 1",
+  "typ": "num",
+  "pdf": "MZ_0099"
+ },
+ {
+  "id": "01.C.t1.r1.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Nawierzchnia, oddzielenie, uwagi",
+  "kontekst": "tabela t1, wiersz 1",
+  "typ": "text",
+  "pdf": "MZ_0100"
+ },
+ {
+  "id": "01.C.t1.r2.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Element przekroju (rodzaj)",
+  "kontekst": "tabela t1, wiersz 2",
+  "typ": "text",
+  "pdf": "MZ_0101"
+ },
+ {
+  "id": "01.C.t1.r2.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Szerokość [m]",
+  "kontekst": "tabela t1, wiersz 2",
+  "typ": "num",
+  "pdf": "MZ_0102"
+ },
+ {
+  "id": "01.C.t1.r2.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Głębokość / wysokość [m]",
+  "kontekst": "tabela t1, wiersz 2",
+  "typ": "num",
+  "pdf": "MZ_0103"
+ },
+ {
+  "id": "01.C.t1.r2.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Nawierzchnia, oddzielenie, uwagi",
+  "kontekst": "tabela t1, wiersz 2",
+  "typ": "text",
+  "pdf": "MZ_0104"
+ },
+ {
+  "id": "01.C.t1.r3.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Element przekroju (rodzaj)",
+  "kontekst": "tabela t1, wiersz 3",
+  "typ": "text",
+  "pdf": "MZ_0105"
+ },
+ {
+  "id": "01.C.t1.r3.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Szerokość [m]",
+  "kontekst": "tabela t1, wiersz 3",
+  "typ": "num",
+  "pdf": "MZ_0106"
+ },
+ {
+  "id": "01.C.t1.r3.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Głębokość / wysokość [m]",
+  "kontekst": "tabela t1, wiersz 3",
+  "typ": "num",
+  "pdf": "MZ_0107"
+ },
+ {
+  "id": "01.C.t1.r3.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Nawierzchnia, oddzielenie, uwagi",
+  "kontekst": "tabela t1, wiersz 3",
+  "typ": "text",
+  "pdf": "MZ_0108"
+ },
+ {
+  "id": "01.C.t1.r4.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Element przekroju (rodzaj)",
+  "kontekst": "tabela t1, wiersz 4",
+  "typ": "text",
+  "pdf": "MZ_0109"
+ },
+ {
+  "id": "01.C.t1.r4.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Szerokość [m]",
+  "kontekst": "tabela t1, wiersz 4",
+  "typ": "num",
+  "pdf": "MZ_0110"
+ },
+ {
+  "id": "01.C.t1.r4.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Głębokość / wysokość [m]",
+  "kontekst": "tabela t1, wiersz 4",
+  "typ": "num",
+  "pdf": "MZ_0111"
+ },
+ {
+  "id": "01.C.t1.r4.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Nawierzchnia, oddzielenie, uwagi",
+  "kontekst": "tabela t1, wiersz 4",
+  "typ": "text",
+  "pdf": "MZ_0112"
+ },
+ {
+  "id": "01.C.t1.r5.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Element przekroju (rodzaj)",
+  "kontekst": "tabela t1, wiersz 5",
+  "typ": "text",
+  "pdf": "MZ_0113"
+ },
+ {
+  "id": "01.C.t1.r5.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Szerokość [m]",
+  "kontekst": "tabela t1, wiersz 5",
+  "typ": "num",
+  "pdf": "MZ_0114"
+ },
+ {
+  "id": "01.C.t1.r5.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Głębokość / wysokość [m]",
+  "kontekst": "tabela t1, wiersz 5",
+  "typ": "num",
+  "pdf": "MZ_0115"
+ },
+ {
+  "id": "01.C.t1.r5.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Nawierzchnia, oddzielenie, uwagi",
+  "kontekst": "tabela t1, wiersz 5",
+  "typ": "text",
+  "pdf": "MZ_0116"
+ },
+ {
+  "id": "01.C.t1.r6.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Element przekroju (rodzaj)",
+  "kontekst": "tabela t1, wiersz 6",
+  "typ": "text",
+  "pdf": "MZ_0117"
+ },
+ {
+  "id": "01.C.t1.r6.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Szerokość [m]",
+  "kontekst": "tabela t1, wiersz 6",
+  "typ": "num",
+  "pdf": "MZ_0118"
+ },
+ {
+  "id": "01.C.t1.r6.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Głębokość / wysokość [m]",
+  "kontekst": "tabela t1, wiersz 6",
+  "typ": "num",
+  "pdf": "MZ_0119"
+ },
+ {
+  "id": "01.C.t1.r6.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Nawierzchnia, oddzielenie, uwagi",
+  "kontekst": "tabela t1, wiersz 6",
+  "typ": "text",
+  "pdf": "MZ_0120"
+ },
+ {
+  "id": "01.C.t1.r7.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Element przekroju (rodzaj)",
+  "kontekst": "tabela t1, wiersz 7",
+  "typ": "text",
+  "pdf": "MZ_0121"
+ },
+ {
+  "id": "01.C.t1.r7.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Szerokość [m]",
+  "kontekst": "tabela t1, wiersz 7",
+  "typ": "num",
+  "pdf": "MZ_0122"
+ },
+ {
+  "id": "01.C.t1.r7.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Głębokość / wysokość [m]",
+  "kontekst": "tabela t1, wiersz 7",
+  "typ": "num",
+  "pdf": "MZ_0123"
+ },
+ {
+  "id": "01.C.t1.r7.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Nawierzchnia, oddzielenie, uwagi",
+  "kontekst": "tabela t1, wiersz 7",
+  "typ": "text",
+  "pdf": "MZ_0124"
+ },
+ {
+  "id": "01.C.t1.r8.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Element przekroju (rodzaj)",
+  "kontekst": "tabela t1, wiersz 8",
+  "typ": "text",
+  "pdf": "MZ_0125"
+ },
+ {
+  "id": "01.C.t1.r8.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Szerokość [m]",
+  "kontekst": "tabela t1, wiersz 8",
+  "typ": "num",
+  "pdf": "MZ_0126"
+ },
+ {
+  "id": "01.C.t1.r8.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Głębokość / wysokość [m]",
+  "kontekst": "tabela t1, wiersz 8",
+  "typ": "num",
+  "pdf": "MZ_0127"
+ },
+ {
+  "id": "01.C.t1.r8.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Nawierzchnia, oddzielenie, uwagi",
+  "kontekst": "tabela t1, wiersz 8",
+  "typ": "text",
+  "pdf": "MZ_0128"
+ },
+ {
+  "id": "01.C.27",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Wys. krawężnika [cm]",
+  "kontekst": "",
+  "typ": "num",
+  "pdf": "MZ_0129"
+ },
+ {
+  "id": "01.C.28",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Wjazdy, zjazdy, posesje (nr, szerokość, odl. od SLO1)",
+  "kontekst": "",
+  "typ": "text",
+  "pdf": "MZ_0130"
+ },
+ {
+  "id": "01.C.29",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Przeszkody stałe – odległość od krawędzi [m]",
+  "kontekst": "",
+  "typ": "num",
+  "pdf": "MZ_0131"
+ },
+ {
+  "id": "01.C.30",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "prosta",
+  "kontekst": "Plan drogi",
+  "typ": "check",
+  "pdf": "MZ_0132"
+ },
+ {
+  "id": "01.C.31",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "łuk w lewo",
+  "kontekst": "Plan drogi",
+  "typ": "check",
+  "pdf": "MZ_0133"
+ },
+ {
+  "id": "01.C.32",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "łuk w prawo",
+  "kontekst": "Plan drogi",
+  "typ": "check",
+  "pdf": "MZ_0134"
+ },
+ {
+  "id": "01.C.33",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "skrzyżowanie",
+  "kontekst": "Plan drogi",
+  "typ": "check",
+  "pdf": "MZ_0135"
+ },
+ {
+  "id": "01.C.34",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "rondo",
+  "kontekst": "Plan drogi",
+  "typ": "check",
+  "pdf": "MZ_0136"
+ },
+ {
+  "id": "01.C.35",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "zjazd",
+  "kontekst": "Plan drogi",
+  "typ": "check",
+  "pdf": "MZ_0137"
+ },
+ {
+  "id": "01.C.36",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "przejście dla pieszych",
+  "kontekst": "Plan drogi",
+  "typ": "check",
+  "pdf": "MZ_0138"
+ },
+ {
+  "id": "01.C.37",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "przejazd kolejowy",
+  "kontekst": "Plan drogi",
+  "typ": "check",
+  "pdf": "MZ_0139"
+ },
+ {
+  "id": "01.C.38",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "przystanek",
+  "kontekst": "Plan drogi",
+  "typ": "check",
+  "pdf": "MZ_0140"
+ },
+ {
+  "id": "01.C.39",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Promień łuku (pomiar / szacunek) [m]",
+  "kontekst": "",
+  "typ": "num",
+  "pdf": "MZ_0141"
+ },
+ {
+  "id": "01.C.40",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Typ skrzyżowania",
+  "kontekst": "",
+  "typ": "text",
+  "pdf": "MZ_0142"
+ },
+ {
+  "id": "01.C.41",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Pierwszeństwo wynikające z oznakowania",
+  "kontekst": "",
+  "typ": "text",
+  "pdf": "MZ_0143"
+ },
+ {
+  "id": "01.C.42",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "poziomo",
+  "kontekst": "Profil podłużny",
+  "typ": "check",
+  "pdf": "MZ_0144"
+ },
+ {
+  "id": "01.C.43",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "wzniesienie",
+  "kontekst": "Profil podłużny",
+  "typ": "check",
+  "pdf": "MZ_0145"
+ },
+ {
+  "id": "01.C.44",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "spadek",
+  "kontekst": "Profil podłużny",
+  "typ": "check",
+  "pdf": "MZ_0146"
+ },
+ {
+  "id": "01.C.45",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "wypukłość",
+  "kontekst": "Profil podłużny",
+  "typ": "check",
+  "pdf": "MZ_0147"
+ },
+ {
+  "id": "01.C.46",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "wklęsłość",
+  "kontekst": "Profil podłużny",
+  "typ": "check",
+  "pdf": "MZ_0148"
+ },
+ {
+  "id": "01.C.47",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Pochylenie podłużne [% lub °]",
+  "kontekst": "",
+  "typ": "num",
+  "pdf": "MZ_0149"
+ },
+ {
+  "id": "01.C.48",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Początek pochylenia – odl. od SLO1 [m]",
+  "kontekst": "",
+  "typ": "num",
+  "pdf": "MZ_0150"
+ },
+ {
+  "id": "01.C.49",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Pochylenie poprzeczne [%]",
+  "kontekst": "",
+  "typ": "num",
+  "pdf": "MZ_0151"
+ },
+ {
+  "id": "01.C.50",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Punkt pomiaru pochyleń",
+  "kontekst": "",
+  "typ": "text",
+  "pdf": "MZ_0152"
+ },
+ {
+  "id": "01.C.uwagi",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "C. DROGA – CHARAKTERYSTYKA",
+  "etykieta": "Uwagi",
+  "kontekst": "pole aplikacji (brak w PDF)",
+  "typ": "text",
+  "pdf": ""
+ },
+ {
+  "id": "01.D.1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "D. NAWIERZCHNIA",
+  "etykieta": "asfalt",
+  "kontekst": "Rodzaj",
+  "typ": "check",
+  "pdf": "MZ_0153"
+ },
+ {
+  "id": "01.D.2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "D. NAWIERZCHNIA",
+  "etykieta": "beton",
+  "kontekst": "Rodzaj",
+  "typ": "check",
+  "pdf": "MZ_0154"
+ },
+ {
+  "id": "01.D.3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "D. NAWIERZCHNIA",
+  "etykieta": "kostka betonowa",
+  "kontekst": "Rodzaj",
+  "typ": "check",
+  "pdf": "MZ_0155"
+ },
+ {
+  "id": "01.D.4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "D. NAWIERZCHNIA",
+  "etykieta": "kostka kamienna",
+  "kontekst": "Rodzaj",
+  "typ": "check",
+  "pdf": "MZ_0156"
+ },
+ {
+  "id": "01.D.5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "D. NAWIERZCHNIA",
+  "etykieta": "płyty",
+  "kontekst": "Rodzaj",
+  "typ": "check",
+  "pdf": "MZ_0157"
+ },
+ {
+  "id": "01.D.6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "D. NAWIERZCHNIA",
+  "etykieta": "tłuczeń",
+  "kontekst": "Rodzaj",
+  "typ": "check",
+  "pdf": "MZ_0158"
+ },
+ {
+  "id": "01.D.7",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "D. NAWIERZCHNIA",
+  "etykieta": "gruntowa",
+  "kontekst": "Rodzaj",
+  "typ": "check",
+  "pdf": "MZ_0159"
+ },
+ {
+  "id": "01.D.8",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "D. NAWIERZCHNIA",
+  "etykieta": "inne:",
+  "kontekst": "Rodzaj",
+  "typ": "check",
+  "pdf": "MZ_0160"
+ },
+ {
+  "id": "01.D.9",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "D. NAWIERZCHNIA",
+  "etykieta": "",
+  "kontekst": "Rodzaj",
+  "typ": "text",
+  "pdf": "MZ_0161"
+ },
+ {
+  "id": "01.D.10",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "D. NAWIERZCHNIA",
+  "etykieta": "sucha",
+  "kontekst": "Stan",
+  "typ": "check",
+  "pdf": "MZ_0162"
+ },
+ {
+  "id": "01.D.11",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "D. NAWIERZCHNIA",
+  "etykieta": "wilgotna",
+  "kontekst": "Stan",
+  "typ": "check",
+  "pdf": "MZ_0163"
+ },
+ {
+  "id": "01.D.12",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "D. NAWIERZCHNIA",
+  "etykieta": "mokra",
+  "kontekst": "Stan",
+  "typ": "check",
+  "pdf": "MZ_0164"
+ },
+ {
+  "id": "01.D.13",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "D. NAWIERZCHNIA",
+  "etykieta": "kałuże",
+  "kontekst": "Stan",
+  "typ": "check",
+  "pdf": "MZ_0165"
+ },
+ {
+  "id": "01.D.14",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "D. NAWIERZCHNIA",
+  "etykieta": "błoto",
+  "kontekst": "Stan",
+  "typ": "check",
+  "pdf": "MZ_0166"
+ },
+ {
+  "id": "01.D.15",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "D. NAWIERZCHNIA",
+  "etykieta": "piasek / żwir",
+  "kontekst": "Stan",
+  "typ": "check",
+  "pdf": "MZ_0167"
+ },
+ {
+  "id": "01.D.16",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "D. NAWIERZCHNIA",
+  "etykieta": "liście",
+  "kontekst": "Stan",
+  "typ": "check",
+  "pdf": "MZ_0168"
+ },
+ {
+  "id": "01.D.17",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "D. NAWIERZCHNIA",
+  "etykieta": "śnieg",
+  "kontekst": "Stan",
+  "typ": "check",
+  "pdf": "MZ_0169"
+ },
+ {
+  "id": "01.D.18",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "D. NAWIERZCHNIA",
+  "etykieta": "lód",
+  "kontekst": "Stan",
+  "typ": "check",
+  "pdf": "MZ_0170"
+ },
+ {
+  "id": "01.D.19",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "D. NAWIERZCHNIA",
+  "etykieta": "szron",
+  "kontekst": "Stan",
+  "typ": "check",
+  "pdf": "MZ_0171"
+ },
+ {
+  "id": "01.D.20",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "D. NAWIERZCHNIA",
+  "etykieta": "olej / płyn",
+  "kontekst": "Stan",
+  "typ": "check",
+  "pdf": "MZ_0172"
+ },
+ {
+  "id": "01.D.21",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "D. NAWIERZCHNIA",
+  "etykieta": "koleiny",
+  "kontekst": "Wady nawierzchni",
+  "typ": "check",
+  "pdf": "MZ_0173"
+ },
+ {
+  "id": "01.D.22",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "D. NAWIERZCHNIA",
+  "etykieta": "ubytki / wyboje",
+  "kontekst": "Wady nawierzchni",
+  "typ": "check",
+  "pdf": "MZ_0174"
+ },
+ {
+  "id": "01.D.23",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "D. NAWIERZCHNIA",
+  "etykieta": "łaty",
+  "kontekst": "Wady nawierzchni",
+  "typ": "check",
+  "pdf": "MZ_0175"
+ },
+ {
+  "id": "01.D.24",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "D. NAWIERZCHNIA",
+  "etykieta": "spękania",
+  "kontekst": "Wady nawierzchni",
+  "typ": "check",
+  "pdf": "MZ_0176"
+ },
+ {
+  "id": "01.D.25",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "D. NAWIERZCHNIA",
+  "etykieta": "studzienki / wpusty",
+  "kontekst": "Wady nawierzchni",
+  "typ": "check",
+  "pdf": "MZ_0177"
+ },
+ {
+  "id": "01.D.26",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "D. NAWIERZCHNIA",
+  "etykieta": "nierówności poprzeczne",
+  "kontekst": "Wady nawierzchni",
+  "typ": "check",
+  "pdf": "MZ_0178"
+ },
+ {
+  "id": "01.D.27",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "D. NAWIERZCHNIA",
+  "etykieta": "brak wad",
+  "kontekst": "Wady nawierzchni",
+  "typ": "check",
+  "pdf": "MZ_0179"
+ },
+ {
+  "id": "01.D.28",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "D. NAWIERZCHNIA",
+  "etykieta": "Głębokość kolein / ubytków [cm]",
+  "kontekst": "",
+  "typ": "num",
+  "pdf": "MZ_0180"
+ },
+ {
+  "id": "01.D.29",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "D. NAWIERZCHNIA",
+  "etykieta": "Lokalizacja wad (SLO1 / SLO2 [m])",
+  "kontekst": "",
+  "typ": "num",
+  "pdf": "MZ_0181"
+ },
+ {
+  "id": "01.D.30",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "D. NAWIERZCHNIA",
+  "etykieta": "Przyczepność – ocena / pomiar (metoda, wynik)",
+  "kontekst": "",
+  "typ": "text",
+  "pdf": "MZ_0182"
+ },
+ {
+  "id": "01.D.uwagi",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "D. NAWIERZCHNIA",
+  "etykieta": "Uwagi",
+  "kontekst": "pole aplikacji (brak w PDF)",
+  "typ": "text",
+  "pdf": ""
+ },
+ {
+  "id": "01.E.t1.r1.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Znak / sygnał (rodzaj, symbol)",
+  "kontekst": "tabela t1, wiersz 1",
+  "typ": "text",
+  "pdf": "MZ_0183"
+ },
+ {
+  "id": "01.E.t1.r1.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Lokalizacja (strona, odl. od SLO1 [m])",
+  "kontekst": "tabela t1, wiersz 1",
+  "typ": "num",
+  "pdf": "MZ_0184"
+ },
+ {
+  "id": "01.E.t1.r1.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Dotyczy kierunku",
+  "kontekst": "tabela t1, wiersz 1",
+  "typ": "text",
+  "pdf": "MZ_0185"
+ },
+ {
+  "id": "01.E.t1.r1.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Widoczny / czytelny",
+  "kontekst": "tabela t1, wiersz 1",
+  "typ": "check",
+  "pdf": "MZ_0186"
+ },
+ {
+  "id": "01.E.t1.r1.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Uwagi (stan, zasłonięcie)",
+  "kontekst": "tabela t1, wiersz 1",
+  "typ": "text",
+  "pdf": "MZ_0187"
+ },
+ {
+  "id": "01.E.t1.r1.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t1, wiersz 1",
+  "typ": "text",
+  "pdf": "MZ_0188"
+ },
+ {
+  "id": "01.E.t1.r2.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Znak / sygnał (rodzaj, symbol)",
+  "kontekst": "tabela t1, wiersz 2",
+  "typ": "text",
+  "pdf": "MZ_0189"
+ },
+ {
+  "id": "01.E.t1.r2.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Lokalizacja (strona, odl. od SLO1 [m])",
+  "kontekst": "tabela t1, wiersz 2",
+  "typ": "num",
+  "pdf": "MZ_0190"
+ },
+ {
+  "id": "01.E.t1.r2.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Dotyczy kierunku",
+  "kontekst": "tabela t1, wiersz 2",
+  "typ": "text",
+  "pdf": "MZ_0191"
+ },
+ {
+  "id": "01.E.t1.r2.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Widoczny / czytelny",
+  "kontekst": "tabela t1, wiersz 2",
+  "typ": "check",
+  "pdf": "MZ_0192"
+ },
+ {
+  "id": "01.E.t1.r2.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Uwagi (stan, zasłonięcie)",
+  "kontekst": "tabela t1, wiersz 2",
+  "typ": "text",
+  "pdf": "MZ_0193"
+ },
+ {
+  "id": "01.E.t1.r2.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t1, wiersz 2",
+  "typ": "text",
+  "pdf": "MZ_0194"
+ },
+ {
+  "id": "01.E.t1.r3.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Znak / sygnał (rodzaj, symbol)",
+  "kontekst": "tabela t1, wiersz 3",
+  "typ": "text",
+  "pdf": "MZ_0195"
+ },
+ {
+  "id": "01.E.t1.r3.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Lokalizacja (strona, odl. od SLO1 [m])",
+  "kontekst": "tabela t1, wiersz 3",
+  "typ": "num",
+  "pdf": "MZ_0196"
+ },
+ {
+  "id": "01.E.t1.r3.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Dotyczy kierunku",
+  "kontekst": "tabela t1, wiersz 3",
+  "typ": "text",
+  "pdf": "MZ_0197"
+ },
+ {
+  "id": "01.E.t1.r3.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Widoczny / czytelny",
+  "kontekst": "tabela t1, wiersz 3",
+  "typ": "check",
+  "pdf": "MZ_0198"
+ },
+ {
+  "id": "01.E.t1.r3.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Uwagi (stan, zasłonięcie)",
+  "kontekst": "tabela t1, wiersz 3",
+  "typ": "text",
+  "pdf": "MZ_0199"
+ },
+ {
+  "id": "01.E.t1.r3.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t1, wiersz 3",
+  "typ": "text",
+  "pdf": "MZ_0200"
+ },
+ {
+  "id": "01.E.t1.r4.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Znak / sygnał (rodzaj, symbol)",
+  "kontekst": "tabela t1, wiersz 4",
+  "typ": "text",
+  "pdf": "MZ_0201"
+ },
+ {
+  "id": "01.E.t1.r4.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Lokalizacja (strona, odl. od SLO1 [m])",
+  "kontekst": "tabela t1, wiersz 4",
+  "typ": "num",
+  "pdf": "MZ_0202"
+ },
+ {
+  "id": "01.E.t1.r4.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Dotyczy kierunku",
+  "kontekst": "tabela t1, wiersz 4",
+  "typ": "text",
+  "pdf": "MZ_0203"
+ },
+ {
+  "id": "01.E.t1.r4.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Widoczny / czytelny",
+  "kontekst": "tabela t1, wiersz 4",
+  "typ": "check",
+  "pdf": "MZ_0204"
+ },
+ {
+  "id": "01.E.t1.r4.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Uwagi (stan, zasłonięcie)",
+  "kontekst": "tabela t1, wiersz 4",
+  "typ": "text",
+  "pdf": "MZ_0205"
+ },
+ {
+  "id": "01.E.t1.r4.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t1, wiersz 4",
+  "typ": "text",
+  "pdf": "MZ_0206"
+ },
+ {
+  "id": "01.E.t1.r5.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Znak / sygnał (rodzaj, symbol)",
+  "kontekst": "tabela t1, wiersz 5",
+  "typ": "text",
+  "pdf": "MZ_0207"
+ },
+ {
+  "id": "01.E.t1.r5.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Lokalizacja (strona, odl. od SLO1 [m])",
+  "kontekst": "tabela t1, wiersz 5",
+  "typ": "num",
+  "pdf": "MZ_0208"
+ },
+ {
+  "id": "01.E.t1.r5.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Dotyczy kierunku",
+  "kontekst": "tabela t1, wiersz 5",
+  "typ": "text",
+  "pdf": "MZ_0209"
+ },
+ {
+  "id": "01.E.t1.r5.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Widoczny / czytelny",
+  "kontekst": "tabela t1, wiersz 5",
+  "typ": "check",
+  "pdf": "MZ_0210"
+ },
+ {
+  "id": "01.E.t1.r5.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Uwagi (stan, zasłonięcie)",
+  "kontekst": "tabela t1, wiersz 5",
+  "typ": "text",
+  "pdf": "MZ_0211"
+ },
+ {
+  "id": "01.E.t1.r5.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t1, wiersz 5",
+  "typ": "text",
+  "pdf": "MZ_0212"
+ },
+ {
+  "id": "01.E.t1.r6.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Znak / sygnał (rodzaj, symbol)",
+  "kontekst": "tabela t1, wiersz 6",
+  "typ": "text",
+  "pdf": "MZ_0213"
+ },
+ {
+  "id": "01.E.t1.r6.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Lokalizacja (strona, odl. od SLO1 [m])",
+  "kontekst": "tabela t1, wiersz 6",
+  "typ": "num",
+  "pdf": "MZ_0214"
+ },
+ {
+  "id": "01.E.t1.r6.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Dotyczy kierunku",
+  "kontekst": "tabela t1, wiersz 6",
+  "typ": "text",
+  "pdf": "MZ_0215"
+ },
+ {
+  "id": "01.E.t1.r6.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Widoczny / czytelny",
+  "kontekst": "tabela t1, wiersz 6",
+  "typ": "check",
+  "pdf": "MZ_0216"
+ },
+ {
+  "id": "01.E.t1.r6.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Uwagi (stan, zasłonięcie)",
+  "kontekst": "tabela t1, wiersz 6",
+  "typ": "text",
+  "pdf": "MZ_0217"
+ },
+ {
+  "id": "01.E.t1.r6.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t1, wiersz 6",
+  "typ": "text",
+  "pdf": "MZ_0218"
+ },
+ {
+  "id": "01.E.1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "linia ciągła",
+  "kontekst": "Oznakowanie poziome",
+  "typ": "check",
+  "pdf": "MZ_0219"
+ },
+ {
+  "id": "01.E.2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "linia przerywana",
+  "kontekst": "Oznakowanie poziome",
+  "typ": "check",
+  "pdf": "MZ_0220"
+ },
+ {
+  "id": "01.E.3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "linia podwójna",
+  "kontekst": "Oznakowanie poziome",
+  "typ": "check",
+  "pdf": "MZ_0221"
+ },
+ {
+  "id": "01.E.4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "przejście dla pieszych",
+  "kontekst": "Oznakowanie poziome",
+  "typ": "check",
+  "pdf": "MZ_0222"
+ },
+ {
+  "id": "01.E.5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "linie zatrzymania",
+  "kontekst": "Oznakowanie poziome",
+  "typ": "check",
+  "pdf": "MZ_0223"
+ },
+ {
+  "id": "01.E.6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "strzałki kierunkowe",
+  "kontekst": "Oznakowanie poziome",
+  "typ": "check",
+  "pdf": "MZ_0224"
+ },
+ {
+  "id": "01.E.7",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "oznakowanie zatarte",
+  "kontekst": "Oznakowanie poziome",
+  "typ": "check",
+  "pdf": "MZ_0225"
+ },
+ {
+  "id": "01.E.8",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "brak",
+  "kontekst": "Oznakowanie poziome",
+  "typ": "check",
+  "pdf": "MZ_0226"
+ },
+ {
+  "id": "01.E.9",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "brak",
+  "kontekst": "Sygnalizacja świetlna",
+  "typ": "check",
+  "pdf": "MZ_0227"
+ },
+ {
+  "id": "01.E.10",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "działa – cykl normalny",
+  "kontekst": "Sygnalizacja świetlna",
+  "typ": "check",
+  "pdf": "MZ_0228"
+ },
+ {
+  "id": "01.E.11",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "żółte pulsujące",
+  "kontekst": "Sygnalizacja świetlna",
+  "typ": "check",
+  "pdf": "MZ_0229"
+ },
+ {
+  "id": "01.E.12",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "wyłączona",
+  "kontekst": "Sygnalizacja świetlna",
+  "typ": "check",
+  "pdf": "MZ_0230"
+ },
+ {
+  "id": "01.E.13",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "uszkodzona",
+  "kontekst": "Sygnalizacja świetlna",
+  "typ": "check",
+  "pdf": "MZ_0231"
+ },
+ {
+  "id": "01.E.14",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "sygnalizator dla pieszych",
+  "kontekst": "Sygnalizacja świetlna",
+  "typ": "check",
+  "pdf": "MZ_0232"
+ },
+ {
+  "id": "01.E.15",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Program sygnalizacji / długości faz [s] (źródło: zarządca drogi, nagranie)",
+  "kontekst": "",
+  "typ": "num",
+  "pdf": "MZ_0233"
+ },
+ {
+  "id": "01.E.16",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "zabudowa",
+  "kontekst": "Ograniczenia widoczności",
+  "typ": "check",
+  "pdf": "MZ_0234"
+ },
+ {
+  "id": "01.E.17",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "ogrodzenie",
+  "kontekst": "Ograniczenia widoczności",
+  "typ": "check",
+  "pdf": "MZ_0235"
+ },
+ {
+  "id": "01.E.18",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "roślinność",
+  "kontekst": "Ograniczenia widoczności",
+  "typ": "check",
+  "pdf": "MZ_0236"
+ },
+ {
+  "id": "01.E.19",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "zaparkowane pojazdy",
+  "kontekst": "Ograniczenia widoczności",
+  "typ": "check",
+  "pdf": "MZ_0237"
+ },
+ {
+  "id": "01.E.20",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "ukształtowanie terenu",
+  "kontekst": "Ograniczenia widoczności",
+  "typ": "check",
+  "pdf": "MZ_0238"
+ },
+ {
+  "id": "01.E.21",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "łuk drogi",
+  "kontekst": "Ograniczenia widoczności",
+  "typ": "check",
+  "pdf": "MZ_0239"
+ },
+ {
+  "id": "01.E.22",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "reklamy / wiaty",
+  "kontekst": "Ograniczenia widoczności",
+  "typ": "check",
+  "pdf": "MZ_0240"
+ },
+ {
+  "id": "01.E.23",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "brak",
+  "kontekst": "Ograniczenia widoczności",
+  "typ": "check",
+  "pdf": "MZ_0241"
+ },
+ {
+  "id": "01.E.t2.r1.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Obserwator (kierunek / pojazd)",
+  "kontekst": "tabela t2, wiersz 1",
+  "typ": "text",
+  "pdf": "MZ_0242"
+ },
+ {
+  "id": "01.E.t2.r1.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Wys. oczu [m]",
+  "kontekst": "tabela t2, wiersz 1",
+  "typ": "num",
+  "pdf": "MZ_0243"
+ },
+ {
+  "id": "01.E.t2.r1.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Obiekt obserwowany",
+  "kontekst": "tabela t2, wiersz 1",
+  "typ": "text",
+  "pdf": "MZ_0244"
+ },
+ {
+  "id": "01.E.t2.r1.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Odległość widoczności [m]",
+  "kontekst": "tabela t2, wiersz 1",
+  "typ": "num",
+  "pdf": "MZ_0245"
+ },
+ {
+  "id": "01.E.t2.r1.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Warunki pomiaru",
+  "kontekst": "tabela t2, wiersz 1",
+  "typ": "text",
+  "pdf": "MZ_0246"
+ },
+ {
+  "id": "01.E.t2.r1.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t2, wiersz 1",
+  "typ": "text",
+  "pdf": "MZ_0247"
+ },
+ {
+  "id": "01.E.t2.r2.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Obserwator (kierunek / pojazd)",
+  "kontekst": "tabela t2, wiersz 2",
+  "typ": "text",
+  "pdf": "MZ_0248"
+ },
+ {
+  "id": "01.E.t2.r2.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Wys. oczu [m]",
+  "kontekst": "tabela t2, wiersz 2",
+  "typ": "num",
+  "pdf": "MZ_0249"
+ },
+ {
+  "id": "01.E.t2.r2.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Obiekt obserwowany",
+  "kontekst": "tabela t2, wiersz 2",
+  "typ": "text",
+  "pdf": "MZ_0250"
+ },
+ {
+  "id": "01.E.t2.r2.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Odległość widoczności [m]",
+  "kontekst": "tabela t2, wiersz 2",
+  "typ": "num",
+  "pdf": "MZ_0251"
+ },
+ {
+  "id": "01.E.t2.r2.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Warunki pomiaru",
+  "kontekst": "tabela t2, wiersz 2",
+  "typ": "text",
+  "pdf": "MZ_0252"
+ },
+ {
+  "id": "01.E.t2.r2.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t2, wiersz 2",
+  "typ": "text",
+  "pdf": "MZ_0253"
+ },
+ {
+  "id": "01.E.t2.r3.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Obserwator (kierunek / pojazd)",
+  "kontekst": "tabela t2, wiersz 3",
+  "typ": "text",
+  "pdf": "MZ_0254"
+ },
+ {
+  "id": "01.E.t2.r3.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Wys. oczu [m]",
+  "kontekst": "tabela t2, wiersz 3",
+  "typ": "num",
+  "pdf": "MZ_0255"
+ },
+ {
+  "id": "01.E.t2.r3.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Obiekt obserwowany",
+  "kontekst": "tabela t2, wiersz 3",
+  "typ": "text",
+  "pdf": "MZ_0256"
+ },
+ {
+  "id": "01.E.t2.r3.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Odległość widoczności [m]",
+  "kontekst": "tabela t2, wiersz 3",
+  "typ": "num",
+  "pdf": "MZ_0257"
+ },
+ {
+  "id": "01.E.t2.r3.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Warunki pomiaru",
+  "kontekst": "tabela t2, wiersz 3",
+  "typ": "text",
+  "pdf": "MZ_0258"
+ },
+ {
+  "id": "01.E.t2.r3.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t2, wiersz 3",
+  "typ": "text",
+  "pdf": "MZ_0259"
+ },
+ {
+  "id": "01.E.t2.r4.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Obserwator (kierunek / pojazd)",
+  "kontekst": "tabela t2, wiersz 4",
+  "typ": "text",
+  "pdf": "MZ_0260"
+ },
+ {
+  "id": "01.E.t2.r4.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Wys. oczu [m]",
+  "kontekst": "tabela t2, wiersz 4",
+  "typ": "num",
+  "pdf": "MZ_0261"
+ },
+ {
+  "id": "01.E.t2.r4.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Obiekt obserwowany",
+  "kontekst": "tabela t2, wiersz 4",
+  "typ": "text",
+  "pdf": "MZ_0262"
+ },
+ {
+  "id": "01.E.t2.r4.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Odległość widoczności [m]",
+  "kontekst": "tabela t2, wiersz 4",
+  "typ": "num",
+  "pdf": "MZ_0263"
+ },
+ {
+  "id": "01.E.t2.r4.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Warunki pomiaru",
+  "kontekst": "tabela t2, wiersz 4",
+  "typ": "text",
+  "pdf": "MZ_0264"
+ },
+ {
+  "id": "01.E.t2.r4.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t2, wiersz 4",
+  "typ": "text",
+  "pdf": "MZ_0265"
+ },
+ {
+  "id": "01.E.uwagi",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "E. ORGANIZACJA RUCHU I WIDOCZNOŚĆ",
+  "etykieta": "Uwagi",
+  "kontekst": "pole aplikacji (brak w PDF)",
+  "typ": "text",
+  "pdf": ""
+ },
+ {
+  "id": "01.F.1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "F. UKŁAD POMIAROWY",
+  "etykieta": "SPO – stały punkt odniesienia (opis, lokalizacja, np. naroże budynku nr …)",
+  "kontekst": "",
+  "typ": "text",
+  "pdf": "MZ_0266"
+ },
+ {
+  "id": "01.F.2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "F. UKŁAD POMIAROWY",
+  "etykieta": "Fot. nr",
+  "kontekst": "",
+  "typ": "text",
+  "pdf": "MZ_0267"
+ },
+ {
+  "id": "01.F.3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "F. UKŁAD POMIAROWY",
+  "etykieta": "SLO1 – przebieg (np. prostopadła do osi jezdni przez SPO)",
+  "kontekst": "",
+  "typ": "text",
+  "pdf": "MZ_0268"
+ },
+ {
+  "id": "01.F.4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "F. UKŁAD POMIAROWY",
+  "etykieta": "Kierunek wzrostu odległości od SLO1 (np. w stronę …)",
+  "kontekst": "",
+  "typ": "text",
+  "pdf": "MZ_0269"
+ },
+ {
+  "id": "01.F.5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "F. UKŁAD POMIAROWY",
+  "etykieta": "SLO2 – przebieg (np. prawa krawędź jezdni)",
+  "kontekst": "",
+  "typ": "text",
+  "pdf": "MZ_0270"
+ },
+ {
+  "id": "01.F.6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "F. UKŁAD POMIAROWY",
+  "etykieta": "Strona dodatnia od SLO2 (np. w lewo, przez jezdnię)",
+  "kontekst": "",
+  "typ": "text",
+  "pdf": "MZ_0271"
+ },
+ {
+  "id": "01.F.7",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "F. UKŁAD POMIAROWY",
+  "etykieta": "łata",
+  "kontekst": "Metoda pomiaru",
+  "typ": "check",
+  "pdf": "MZ_0272"
+ },
+ {
+  "id": "01.F.8",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "F. UKŁAD POMIAROWY",
+  "etykieta": "kółko pomiarowe",
+  "kontekst": "Metoda pomiaru",
+  "typ": "check",
+  "pdf": "MZ_0273"
+ },
+ {
+  "id": "01.F.9",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "F. UKŁAD POMIAROWY",
+  "etykieta": "taśma",
+  "kontekst": "Metoda pomiaru",
+  "typ": "check",
+  "pdf": "MZ_0274"
+ },
+ {
+  "id": "01.F.10",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "F. UKŁAD POMIAROWY",
+  "etykieta": "dalmierz",
+  "kontekst": "Metoda pomiaru",
+  "typ": "check",
+  "pdf": "MZ_0275"
+ },
+ {
+  "id": "01.F.11",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "F. UKŁAD POMIAROWY",
+  "etykieta": "metoda prostokątna",
+  "kontekst": "Metoda pomiaru",
+  "typ": "check",
+  "pdf": "MZ_0276"
+ },
+ {
+  "id": "01.F.12",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "F. UKŁAD POMIAROWY",
+  "etykieta": "metoda biegunowa",
+  "kontekst": "Metoda pomiaru",
+  "typ": "check",
+  "pdf": "MZ_0277"
+ },
+ {
+  "id": "01.F.13",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "F. UKŁAD POMIAROWY",
+  "etykieta": "triangulacja",
+  "kontekst": "Metoda pomiaru",
+  "typ": "check",
+  "pdf": "MZ_0278"
+ },
+ {
+  "id": "01.F.14",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "F. UKŁAD POMIAROWY",
+  "etykieta": "fotogrametria",
+  "kontekst": "Metoda pomiaru",
+  "typ": "check",
+  "pdf": "MZ_0279"
+ },
+ {
+  "id": "01.F.15",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "F. UKŁAD POMIAROWY",
+  "etykieta": "GNSS",
+  "kontekst": "Metoda pomiaru",
+  "typ": "check",
+  "pdf": "MZ_0280"
+ },
+ {
+  "id": "01.F.uwagi",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "F. UKŁAD POMIAROWY",
+  "etykieta": "Uwagi",
+  "kontekst": "pole aplikacji (brak w PDF)",
+  "typ": "text",
+  "pdf": ""
+ },
+ {
+  "id": "01.G.t1.r1.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Kod i opis (obiekt, ślad, punkt pomiaru)",
+  "kontekst": "tabela t1, wiersz 1",
+  "typ": "text",
+  "pdf": "MZ_0281"
+ },
+ {
+  "id": "01.G.t1.r1.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 1",
+  "typ": "num",
+  "pdf": "MZ_0282"
+ },
+ {
+  "id": "01.G.t1.r1.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 1",
+  "typ": "num",
+  "pdf": "MZ_0283"
+ },
+ {
+  "id": "01.G.t1.r1.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 1",
+  "typ": "num",
+  "pdf": "MZ_0284"
+ },
+ {
+  "id": "01.G.t1.r1.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 1",
+  "typ": "num",
+  "pdf": "MZ_0285"
+ },
+ {
+  "id": "01.G.t1.r1.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Zasięg poprzeczny / wymiary",
+  "kontekst": "tabela t1, wiersz 1",
+  "typ": "text",
+  "pdf": "MZ_0286"
+ },
+ {
+  "id": "01.G.t1.r1.c7",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Uwagi (kierunek, położenie, strona)",
+  "kontekst": "tabela t1, wiersz 1",
+  "typ": "text",
+  "pdf": "MZ_0287"
+ },
+ {
+  "id": "01.G.t1.r1.c8",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t1, wiersz 1",
+  "typ": "text",
+  "pdf": "MZ_0288"
+ },
+ {
+  "id": "01.G.t1.r2.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Kod i opis (obiekt, ślad, punkt pomiaru)",
+  "kontekst": "tabela t1, wiersz 2",
+  "typ": "text",
+  "pdf": "MZ_0289"
+ },
+ {
+  "id": "01.G.t1.r2.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 2",
+  "typ": "num",
+  "pdf": "MZ_0290"
+ },
+ {
+  "id": "01.G.t1.r2.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 2",
+  "typ": "num",
+  "pdf": "MZ_0291"
+ },
+ {
+  "id": "01.G.t1.r2.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 2",
+  "typ": "num",
+  "pdf": "MZ_0292"
+ },
+ {
+  "id": "01.G.t1.r2.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 2",
+  "typ": "num",
+  "pdf": "MZ_0293"
+ },
+ {
+  "id": "01.G.t1.r2.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Zasięg poprzeczny / wymiary",
+  "kontekst": "tabela t1, wiersz 2",
+  "typ": "text",
+  "pdf": "MZ_0294"
+ },
+ {
+  "id": "01.G.t1.r2.c7",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Uwagi (kierunek, położenie, strona)",
+  "kontekst": "tabela t1, wiersz 2",
+  "typ": "text",
+  "pdf": "MZ_0295"
+ },
+ {
+  "id": "01.G.t1.r2.c8",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t1, wiersz 2",
+  "typ": "text",
+  "pdf": "MZ_0296"
+ },
+ {
+  "id": "01.G.t1.r3.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Kod i opis (obiekt, ślad, punkt pomiaru)",
+  "kontekst": "tabela t1, wiersz 3",
+  "typ": "text",
+  "pdf": "MZ_0297"
+ },
+ {
+  "id": "01.G.t1.r3.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 3",
+  "typ": "num",
+  "pdf": "MZ_0298"
+ },
+ {
+  "id": "01.G.t1.r3.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 3",
+  "typ": "num",
+  "pdf": "MZ_0299"
+ },
+ {
+  "id": "01.G.t1.r3.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 3",
+  "typ": "num",
+  "pdf": "MZ_0300"
+ },
+ {
+  "id": "01.G.t1.r3.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 3",
+  "typ": "num",
+  "pdf": "MZ_0301"
+ },
+ {
+  "id": "01.G.t1.r3.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Zasięg poprzeczny / wymiary",
+  "kontekst": "tabela t1, wiersz 3",
+  "typ": "text",
+  "pdf": "MZ_0302"
+ },
+ {
+  "id": "01.G.t1.r3.c7",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Uwagi (kierunek, położenie, strona)",
+  "kontekst": "tabela t1, wiersz 3",
+  "typ": "text",
+  "pdf": "MZ_0303"
+ },
+ {
+  "id": "01.G.t1.r3.c8",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t1, wiersz 3",
+  "typ": "text",
+  "pdf": "MZ_0304"
+ },
+ {
+  "id": "01.G.t1.r4.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Kod i opis (obiekt, ślad, punkt pomiaru)",
+  "kontekst": "tabela t1, wiersz 4",
+  "typ": "text",
+  "pdf": "MZ_0305"
+ },
+ {
+  "id": "01.G.t1.r4.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 4",
+  "typ": "num",
+  "pdf": "MZ_0306"
+ },
+ {
+  "id": "01.G.t1.r4.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 4",
+  "typ": "num",
+  "pdf": "MZ_0307"
+ },
+ {
+  "id": "01.G.t1.r4.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 4",
+  "typ": "num",
+  "pdf": "MZ_0308"
+ },
+ {
+  "id": "01.G.t1.r4.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 4",
+  "typ": "num",
+  "pdf": "MZ_0309"
+ },
+ {
+  "id": "01.G.t1.r4.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Zasięg poprzeczny / wymiary",
+  "kontekst": "tabela t1, wiersz 4",
+  "typ": "text",
+  "pdf": "MZ_0310"
+ },
+ {
+  "id": "01.G.t1.r4.c7",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Uwagi (kierunek, położenie, strona)",
+  "kontekst": "tabela t1, wiersz 4",
+  "typ": "text",
+  "pdf": "MZ_0311"
+ },
+ {
+  "id": "01.G.t1.r4.c8",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t1, wiersz 4",
+  "typ": "text",
+  "pdf": "MZ_0312"
+ },
+ {
+  "id": "01.G.t1.r5.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Kod i opis (obiekt, ślad, punkt pomiaru)",
+  "kontekst": "tabela t1, wiersz 5",
+  "typ": "text",
+  "pdf": "MZ_0313"
+ },
+ {
+  "id": "01.G.t1.r5.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 5",
+  "typ": "num",
+  "pdf": "MZ_0314"
+ },
+ {
+  "id": "01.G.t1.r5.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 5",
+  "typ": "num",
+  "pdf": "MZ_0315"
+ },
+ {
+  "id": "01.G.t1.r5.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 5",
+  "typ": "num",
+  "pdf": "MZ_0316"
+ },
+ {
+  "id": "01.G.t1.r5.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 5",
+  "typ": "num",
+  "pdf": "MZ_0317"
+ },
+ {
+  "id": "01.G.t1.r5.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Zasięg poprzeczny / wymiary",
+  "kontekst": "tabela t1, wiersz 5",
+  "typ": "text",
+  "pdf": "MZ_0318"
+ },
+ {
+  "id": "01.G.t1.r5.c7",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Uwagi (kierunek, położenie, strona)",
+  "kontekst": "tabela t1, wiersz 5",
+  "typ": "text",
+  "pdf": "MZ_0319"
+ },
+ {
+  "id": "01.G.t1.r5.c8",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t1, wiersz 5",
+  "typ": "text",
+  "pdf": "MZ_0320"
+ },
+ {
+  "id": "01.G.t1.r6.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Kod i opis (obiekt, ślad, punkt pomiaru)",
+  "kontekst": "tabela t1, wiersz 6",
+  "typ": "text",
+  "pdf": "MZ_0321"
+ },
+ {
+  "id": "01.G.t1.r6.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 6",
+  "typ": "num",
+  "pdf": "MZ_0322"
+ },
+ {
+  "id": "01.G.t1.r6.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 6",
+  "typ": "num",
+  "pdf": "MZ_0323"
+ },
+ {
+  "id": "01.G.t1.r6.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 6",
+  "typ": "num",
+  "pdf": "MZ_0324"
+ },
+ {
+  "id": "01.G.t1.r6.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 6",
+  "typ": "num",
+  "pdf": "MZ_0325"
+ },
+ {
+  "id": "01.G.t1.r6.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Zasięg poprzeczny / wymiary",
+  "kontekst": "tabela t1, wiersz 6",
+  "typ": "text",
+  "pdf": "MZ_0326"
+ },
+ {
+  "id": "01.G.t1.r6.c7",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Uwagi (kierunek, położenie, strona)",
+  "kontekst": "tabela t1, wiersz 6",
+  "typ": "text",
+  "pdf": "MZ_0327"
+ },
+ {
+  "id": "01.G.t1.r6.c8",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t1, wiersz 6",
+  "typ": "text",
+  "pdf": "MZ_0328"
+ },
+ {
+  "id": "01.G.t1.r7.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Kod i opis (obiekt, ślad, punkt pomiaru)",
+  "kontekst": "tabela t1, wiersz 7",
+  "typ": "text",
+  "pdf": "MZ_0329"
+ },
+ {
+  "id": "01.G.t1.r7.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 7",
+  "typ": "num",
+  "pdf": "MZ_0330"
+ },
+ {
+  "id": "01.G.t1.r7.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 7",
+  "typ": "num",
+  "pdf": "MZ_0331"
+ },
+ {
+  "id": "01.G.t1.r7.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 7",
+  "typ": "num",
+  "pdf": "MZ_0332"
+ },
+ {
+  "id": "01.G.t1.r7.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 7",
+  "typ": "num",
+  "pdf": "MZ_0333"
+ },
+ {
+  "id": "01.G.t1.r7.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Zasięg poprzeczny / wymiary",
+  "kontekst": "tabela t1, wiersz 7",
+  "typ": "text",
+  "pdf": "MZ_0334"
+ },
+ {
+  "id": "01.G.t1.r7.c7",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Uwagi (kierunek, położenie, strona)",
+  "kontekst": "tabela t1, wiersz 7",
+  "typ": "text",
+  "pdf": "MZ_0335"
+ },
+ {
+  "id": "01.G.t1.r7.c8",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t1, wiersz 7",
+  "typ": "text",
+  "pdf": "MZ_0336"
+ },
+ {
+  "id": "01.G.t1.r8.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Kod i opis (obiekt, ślad, punkt pomiaru)",
+  "kontekst": "tabela t1, wiersz 8",
+  "typ": "text",
+  "pdf": "MZ_0337"
+ },
+ {
+  "id": "01.G.t1.r8.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 8",
+  "typ": "num",
+  "pdf": "MZ_0338"
+ },
+ {
+  "id": "01.G.t1.r8.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 8",
+  "typ": "num",
+  "pdf": "MZ_0339"
+ },
+ {
+  "id": "01.G.t1.r8.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 8",
+  "typ": "num",
+  "pdf": "MZ_0340"
+ },
+ {
+  "id": "01.G.t1.r8.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 8",
+  "typ": "num",
+  "pdf": "MZ_0341"
+ },
+ {
+  "id": "01.G.t1.r8.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Zasięg poprzeczny / wymiary",
+  "kontekst": "tabela t1, wiersz 8",
+  "typ": "text",
+  "pdf": "MZ_0342"
+ },
+ {
+  "id": "01.G.t1.r8.c7",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Uwagi (kierunek, położenie, strona)",
+  "kontekst": "tabela t1, wiersz 8",
+  "typ": "text",
+  "pdf": "MZ_0343"
+ },
+ {
+  "id": "01.G.t1.r8.c8",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t1, wiersz 8",
+  "typ": "text",
+  "pdf": "MZ_0344"
+ },
+ {
+  "id": "01.G.t1.r9.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Kod i opis (obiekt, ślad, punkt pomiaru)",
+  "kontekst": "tabela t1, wiersz 9",
+  "typ": "text",
+  "pdf": "MZ_0345"
+ },
+ {
+  "id": "01.G.t1.r9.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 9",
+  "typ": "num",
+  "pdf": "MZ_0346"
+ },
+ {
+  "id": "01.G.t1.r9.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 9",
+  "typ": "num",
+  "pdf": "MZ_0347"
+ },
+ {
+  "id": "01.G.t1.r9.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 9",
+  "typ": "num",
+  "pdf": "MZ_0348"
+ },
+ {
+  "id": "01.G.t1.r9.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 9",
+  "typ": "num",
+  "pdf": "MZ_0349"
+ },
+ {
+  "id": "01.G.t1.r9.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Zasięg poprzeczny / wymiary",
+  "kontekst": "tabela t1, wiersz 9",
+  "typ": "text",
+  "pdf": "MZ_0350"
+ },
+ {
+  "id": "01.G.t1.r9.c7",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Uwagi (kierunek, położenie, strona)",
+  "kontekst": "tabela t1, wiersz 9",
+  "typ": "text",
+  "pdf": "MZ_0351"
+ },
+ {
+  "id": "01.G.t1.r9.c8",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t1, wiersz 9",
+  "typ": "text",
+  "pdf": "MZ_0352"
+ },
+ {
+  "id": "01.G.t1.r10.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Kod i opis (obiekt, ślad, punkt pomiaru)",
+  "kontekst": "tabela t1, wiersz 10",
+  "typ": "text",
+  "pdf": "MZ_0353"
+ },
+ {
+  "id": "01.G.t1.r10.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 10",
+  "typ": "num",
+  "pdf": "MZ_0354"
+ },
+ {
+  "id": "01.G.t1.r10.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 10",
+  "typ": "num",
+  "pdf": "MZ_0355"
+ },
+ {
+  "id": "01.G.t1.r10.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 10",
+  "typ": "num",
+  "pdf": "MZ_0356"
+ },
+ {
+  "id": "01.G.t1.r10.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 10",
+  "typ": "num",
+  "pdf": "MZ_0357"
+ },
+ {
+  "id": "01.G.t1.r10.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Zasięg poprzeczny / wymiary",
+  "kontekst": "tabela t1, wiersz 10",
+  "typ": "text",
+  "pdf": "MZ_0358"
+ },
+ {
+  "id": "01.G.t1.r10.c7",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Uwagi (kierunek, położenie, strona)",
+  "kontekst": "tabela t1, wiersz 10",
+  "typ": "text",
+  "pdf": "MZ_0359"
+ },
+ {
+  "id": "01.G.t1.r10.c8",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t1, wiersz 10",
+  "typ": "text",
+  "pdf": "MZ_0360"
+ },
+ {
+  "id": "01.G.t1.r11.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Kod i opis (obiekt, ślad, punkt pomiaru)",
+  "kontekst": "tabela t1, wiersz 11",
+  "typ": "text",
+  "pdf": "MZ_0361"
+ },
+ {
+  "id": "01.G.t1.r11.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 11",
+  "typ": "num",
+  "pdf": "MZ_0362"
+ },
+ {
+  "id": "01.G.t1.r11.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 11",
+  "typ": "num",
+  "pdf": "MZ_0363"
+ },
+ {
+  "id": "01.G.t1.r11.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 11",
+  "typ": "num",
+  "pdf": "MZ_0364"
+ },
+ {
+  "id": "01.G.t1.r11.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 11",
+  "typ": "num",
+  "pdf": "MZ_0365"
+ },
+ {
+  "id": "01.G.t1.r11.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Zasięg poprzeczny / wymiary",
+  "kontekst": "tabela t1, wiersz 11",
+  "typ": "text",
+  "pdf": "MZ_0366"
+ },
+ {
+  "id": "01.G.t1.r11.c7",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Uwagi (kierunek, położenie, strona)",
+  "kontekst": "tabela t1, wiersz 11",
+  "typ": "text",
+  "pdf": "MZ_0367"
+ },
+ {
+  "id": "01.G.t1.r11.c8",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t1, wiersz 11",
+  "typ": "text",
+  "pdf": "MZ_0368"
+ },
+ {
+  "id": "01.G.t1.r12.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Kod i opis (obiekt, ślad, punkt pomiaru)",
+  "kontekst": "tabela t1, wiersz 12",
+  "typ": "text",
+  "pdf": "MZ_0369"
+ },
+ {
+  "id": "01.G.t1.r12.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 12",
+  "typ": "num",
+  "pdf": "MZ_0370"
+ },
+ {
+  "id": "01.G.t1.r12.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 12",
+  "typ": "num",
+  "pdf": "MZ_0371"
+ },
+ {
+  "id": "01.G.t1.r12.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 12",
+  "typ": "num",
+  "pdf": "MZ_0372"
+ },
+ {
+  "id": "01.G.t1.r12.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 12",
+  "typ": "num",
+  "pdf": "MZ_0373"
+ },
+ {
+  "id": "01.G.t1.r12.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Zasięg poprzeczny / wymiary",
+  "kontekst": "tabela t1, wiersz 12",
+  "typ": "text",
+  "pdf": "MZ_0374"
+ },
+ {
+  "id": "01.G.t1.r12.c7",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Uwagi (kierunek, położenie, strona)",
+  "kontekst": "tabela t1, wiersz 12",
+  "typ": "text",
+  "pdf": "MZ_0375"
+ },
+ {
+  "id": "01.G.t1.r12.c8",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t1, wiersz 12",
+  "typ": "text",
+  "pdf": "MZ_0376"
+ },
+ {
+  "id": "01.G.t1.r13.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Kod i opis (obiekt, ślad, punkt pomiaru)",
+  "kontekst": "tabela t1, wiersz 13",
+  "typ": "text",
+  "pdf": "MZ_0377"
+ },
+ {
+  "id": "01.G.t1.r13.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 13",
+  "typ": "num",
+  "pdf": "MZ_0378"
+ },
+ {
+  "id": "01.G.t1.r13.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 13",
+  "typ": "num",
+  "pdf": "MZ_0379"
+ },
+ {
+  "id": "01.G.t1.r13.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 13",
+  "typ": "num",
+  "pdf": "MZ_0380"
+ },
+ {
+  "id": "01.G.t1.r13.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 13",
+  "typ": "num",
+  "pdf": "MZ_0381"
+ },
+ {
+  "id": "01.G.t1.r13.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Zasięg poprzeczny / wymiary",
+  "kontekst": "tabela t1, wiersz 13",
+  "typ": "text",
+  "pdf": "MZ_0382"
+ },
+ {
+  "id": "01.G.t1.r13.c7",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Uwagi (kierunek, położenie, strona)",
+  "kontekst": "tabela t1, wiersz 13",
+  "typ": "text",
+  "pdf": "MZ_0383"
+ },
+ {
+  "id": "01.G.t1.r13.c8",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t1, wiersz 13",
+  "typ": "text",
+  "pdf": "MZ_0384"
+ },
+ {
+  "id": "01.G.t1.r14.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Kod i opis (obiekt, ślad, punkt pomiaru)",
+  "kontekst": "tabela t1, wiersz 14",
+  "typ": "text",
+  "pdf": "MZ_0385"
+ },
+ {
+  "id": "01.G.t1.r14.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 14",
+  "typ": "num",
+  "pdf": "MZ_0386"
+ },
+ {
+  "id": "01.G.t1.r14.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 14",
+  "typ": "num",
+  "pdf": "MZ_0387"
+ },
+ {
+  "id": "01.G.t1.r14.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 14",
+  "typ": "num",
+  "pdf": "MZ_0388"
+ },
+ {
+  "id": "01.G.t1.r14.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 14",
+  "typ": "num",
+  "pdf": "MZ_0389"
+ },
+ {
+  "id": "01.G.t1.r14.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Zasięg poprzeczny / wymiary",
+  "kontekst": "tabela t1, wiersz 14",
+  "typ": "text",
+  "pdf": "MZ_0390"
+ },
+ {
+  "id": "01.G.t1.r14.c7",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Uwagi (kierunek, położenie, strona)",
+  "kontekst": "tabela t1, wiersz 14",
+  "typ": "text",
+  "pdf": "MZ_0391"
+ },
+ {
+  "id": "01.G.t1.r14.c8",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t1, wiersz 14",
+  "typ": "text",
+  "pdf": "MZ_0392"
+ },
+ {
+  "id": "01.G.t1.r15.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Kod i opis (obiekt, ślad, punkt pomiaru)",
+  "kontekst": "tabela t1, wiersz 15",
+  "typ": "text",
+  "pdf": "MZ_0393"
+ },
+ {
+  "id": "01.G.t1.r15.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 15",
+  "typ": "num",
+  "pdf": "MZ_0394"
+ },
+ {
+  "id": "01.G.t1.r15.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 15",
+  "typ": "num",
+  "pdf": "MZ_0395"
+ },
+ {
+  "id": "01.G.t1.r15.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 15",
+  "typ": "num",
+  "pdf": "MZ_0396"
+ },
+ {
+  "id": "01.G.t1.r15.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 15",
+  "typ": "num",
+  "pdf": "MZ_0397"
+ },
+ {
+  "id": "01.G.t1.r15.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Zasięg poprzeczny / wymiary",
+  "kontekst": "tabela t1, wiersz 15",
+  "typ": "text",
+  "pdf": "MZ_0398"
+ },
+ {
+  "id": "01.G.t1.r15.c7",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Uwagi (kierunek, położenie, strona)",
+  "kontekst": "tabela t1, wiersz 15",
+  "typ": "text",
+  "pdf": "MZ_0399"
+ },
+ {
+  "id": "01.G.t1.r15.c8",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t1, wiersz 15",
+  "typ": "text",
+  "pdf": "MZ_0400"
+ },
+ {
+  "id": "01.G.t1.r16.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Kod i opis (obiekt, ślad, punkt pomiaru)",
+  "kontekst": "tabela t1, wiersz 16",
+  "typ": "text",
+  "pdf": "MZ_0401"
+ },
+ {
+  "id": "01.G.t1.r16.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 16",
+  "typ": "num",
+  "pdf": "MZ_0402"
+ },
+ {
+  "id": "01.G.t1.r16.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 16",
+  "typ": "num",
+  "pdf": "MZ_0403"
+ },
+ {
+  "id": "01.G.t1.r16.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 16",
+  "typ": "num",
+  "pdf": "MZ_0404"
+ },
+ {
+  "id": "01.G.t1.r16.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 16",
+  "typ": "num",
+  "pdf": "MZ_0405"
+ },
+ {
+  "id": "01.G.t1.r16.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Zasięg poprzeczny / wymiary",
+  "kontekst": "tabela t1, wiersz 16",
+  "typ": "text",
+  "pdf": "MZ_0406"
+ },
+ {
+  "id": "01.G.t1.r16.c7",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Uwagi (kierunek, położenie, strona)",
+  "kontekst": "tabela t1, wiersz 16",
+  "typ": "text",
+  "pdf": "MZ_0407"
+ },
+ {
+  "id": "01.G.t1.r16.c8",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t1, wiersz 16",
+  "typ": "text",
+  "pdf": "MZ_0408"
+ },
+ {
+  "id": "01.G.t1.r17.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Kod i opis (obiekt, ślad, punkt pomiaru)",
+  "kontekst": "tabela t1, wiersz 17",
+  "typ": "text",
+  "pdf": "MZ_0409"
+ },
+ {
+  "id": "01.G.t1.r17.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 17",
+  "typ": "num",
+  "pdf": "MZ_0410"
+ },
+ {
+  "id": "01.G.t1.r17.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 17",
+  "typ": "num",
+  "pdf": "MZ_0411"
+ },
+ {
+  "id": "01.G.t1.r17.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 17",
+  "typ": "num",
+  "pdf": "MZ_0412"
+ },
+ {
+  "id": "01.G.t1.r17.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 17",
+  "typ": "num",
+  "pdf": "MZ_0413"
+ },
+ {
+  "id": "01.G.t1.r17.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Zasięg poprzeczny / wymiary",
+  "kontekst": "tabela t1, wiersz 17",
+  "typ": "text",
+  "pdf": "MZ_0414"
+ },
+ {
+  "id": "01.G.t1.r17.c7",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Uwagi (kierunek, położenie, strona)",
+  "kontekst": "tabela t1, wiersz 17",
+  "typ": "text",
+  "pdf": "MZ_0415"
+ },
+ {
+  "id": "01.G.t1.r17.c8",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t1, wiersz 17",
+  "typ": "text",
+  "pdf": "MZ_0416"
+ },
+ {
+  "id": "01.G.t1.r18.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Kod i opis (obiekt, ślad, punkt pomiaru)",
+  "kontekst": "tabela t1, wiersz 18",
+  "typ": "text",
+  "pdf": "MZ_0417"
+ },
+ {
+  "id": "01.G.t1.r18.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 18",
+  "typ": "num",
+  "pdf": "MZ_0418"
+ },
+ {
+  "id": "01.G.t1.r18.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 18",
+  "typ": "num",
+  "pdf": "MZ_0419"
+ },
+ {
+  "id": "01.G.t1.r18.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 18",
+  "typ": "num",
+  "pdf": "MZ_0420"
+ },
+ {
+  "id": "01.G.t1.r18.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 18",
+  "typ": "num",
+  "pdf": "MZ_0421"
+ },
+ {
+  "id": "01.G.t1.r18.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Zasięg poprzeczny / wymiary",
+  "kontekst": "tabela t1, wiersz 18",
+  "typ": "text",
+  "pdf": "MZ_0422"
+ },
+ {
+  "id": "01.G.t1.r18.c7",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Uwagi (kierunek, położenie, strona)",
+  "kontekst": "tabela t1, wiersz 18",
+  "typ": "text",
+  "pdf": "MZ_0423"
+ },
+ {
+  "id": "01.G.t1.r18.c8",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t1, wiersz 18",
+  "typ": "text",
+  "pdf": "MZ_0424"
+ },
+ {
+  "id": "01.G.t1.r19.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Kod i opis (obiekt, ślad, punkt pomiaru)",
+  "kontekst": "tabela t1, wiersz 19",
+  "typ": "text",
+  "pdf": "MZ_0425"
+ },
+ {
+  "id": "01.G.t1.r19.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 19",
+  "typ": "num",
+  "pdf": "MZ_0426"
+ },
+ {
+  "id": "01.G.t1.r19.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 19",
+  "typ": "num",
+  "pdf": "MZ_0427"
+ },
+ {
+  "id": "01.G.t1.r19.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 19",
+  "typ": "num",
+  "pdf": "MZ_0428"
+ },
+ {
+  "id": "01.G.t1.r19.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 19",
+  "typ": "num",
+  "pdf": "MZ_0429"
+ },
+ {
+  "id": "01.G.t1.r19.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Zasięg poprzeczny / wymiary",
+  "kontekst": "tabela t1, wiersz 19",
+  "typ": "text",
+  "pdf": "MZ_0430"
+ },
+ {
+  "id": "01.G.t1.r19.c7",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Uwagi (kierunek, położenie, strona)",
+  "kontekst": "tabela t1, wiersz 19",
+  "typ": "text",
+  "pdf": "MZ_0431"
+ },
+ {
+  "id": "01.G.t1.r19.c8",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t1, wiersz 19",
+  "typ": "text",
+  "pdf": "MZ_0432"
+ },
+ {
+  "id": "01.G.t1.r20.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Kod i opis (obiekt, ślad, punkt pomiaru)",
+  "kontekst": "tabela t1, wiersz 20",
+  "typ": "text",
+  "pdf": "MZ_0433"
+ },
+ {
+  "id": "01.G.t1.r20.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 20",
+  "typ": "num",
+  "pdf": "MZ_0434"
+ },
+ {
+  "id": "01.G.t1.r20.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 20",
+  "typ": "num",
+  "pdf": "MZ_0435"
+ },
+ {
+  "id": "01.G.t1.r20.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 20",
+  "typ": "num",
+  "pdf": "MZ_0436"
+ },
+ {
+  "id": "01.G.t1.r20.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 20",
+  "typ": "num",
+  "pdf": "MZ_0437"
+ },
+ {
+  "id": "01.G.t1.r20.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Zasięg poprzeczny / wymiary",
+  "kontekst": "tabela t1, wiersz 20",
+  "typ": "text",
+  "pdf": "MZ_0438"
+ },
+ {
+  "id": "01.G.t1.r20.c7",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Uwagi (kierunek, położenie, strona)",
+  "kontekst": "tabela t1, wiersz 20",
+  "typ": "text",
+  "pdf": "MZ_0439"
+ },
+ {
+  "id": "01.G.t1.r20.c8",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t1, wiersz 20",
+  "typ": "text",
+  "pdf": "MZ_0440"
+ },
+ {
+  "id": "01.G.t1.r21.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Kod i opis (obiekt, ślad, punkt pomiaru)",
+  "kontekst": "tabela t1, wiersz 21",
+  "typ": "text",
+  "pdf": "MZ_0441"
+ },
+ {
+  "id": "01.G.t1.r21.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 21",
+  "typ": "num",
+  "pdf": "MZ_0442"
+ },
+ {
+  "id": "01.G.t1.r21.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 21",
+  "typ": "num",
+  "pdf": "MZ_0443"
+ },
+ {
+  "id": "01.G.t1.r21.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 21",
+  "typ": "num",
+  "pdf": "MZ_0444"
+ },
+ {
+  "id": "01.G.t1.r21.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 21",
+  "typ": "num",
+  "pdf": "MZ_0445"
+ },
+ {
+  "id": "01.G.t1.r21.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Zasięg poprzeczny / wymiary",
+  "kontekst": "tabela t1, wiersz 21",
+  "typ": "text",
+  "pdf": "MZ_0446"
+ },
+ {
+  "id": "01.G.t1.r21.c7",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Uwagi (kierunek, położenie, strona)",
+  "kontekst": "tabela t1, wiersz 21",
+  "typ": "text",
+  "pdf": "MZ_0447"
+ },
+ {
+  "id": "01.G.t1.r21.c8",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t1, wiersz 21",
+  "typ": "text",
+  "pdf": "MZ_0448"
+ },
+ {
+  "id": "01.G.t1.r22.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Kod i opis (obiekt, ślad, punkt pomiaru)",
+  "kontekst": "tabela t1, wiersz 22",
+  "typ": "text",
+  "pdf": "MZ_0449"
+ },
+ {
+  "id": "01.G.t1.r22.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 22",
+  "typ": "num",
+  "pdf": "MZ_0450"
+ },
+ {
+  "id": "01.G.t1.r22.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 22",
+  "typ": "num",
+  "pdf": "MZ_0451"
+ },
+ {
+  "id": "01.G.t1.r22.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 22",
+  "typ": "num",
+  "pdf": "MZ_0452"
+ },
+ {
+  "id": "01.G.t1.r22.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 22",
+  "typ": "num",
+  "pdf": "MZ_0453"
+ },
+ {
+  "id": "01.G.t1.r22.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Zasięg poprzeczny / wymiary",
+  "kontekst": "tabela t1, wiersz 22",
+  "typ": "text",
+  "pdf": "MZ_0454"
+ },
+ {
+  "id": "01.G.t1.r22.c7",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Uwagi (kierunek, położenie, strona)",
+  "kontekst": "tabela t1, wiersz 22",
+  "typ": "text",
+  "pdf": "MZ_0455"
+ },
+ {
+  "id": "01.G.t1.r22.c8",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t1, wiersz 22",
+  "typ": "text",
+  "pdf": "MZ_0456"
+ },
+ {
+  "id": "01.G.t1.r23.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Kod i opis (obiekt, ślad, punkt pomiaru)",
+  "kontekst": "tabela t1, wiersz 23",
+  "typ": "text",
+  "pdf": "MZ_0457"
+ },
+ {
+  "id": "01.G.t1.r23.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 23",
+  "typ": "num",
+  "pdf": "MZ_0458"
+ },
+ {
+  "id": "01.G.t1.r23.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 23",
+  "typ": "num",
+  "pdf": "MZ_0459"
+ },
+ {
+  "id": "01.G.t1.r23.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 23",
+  "typ": "num",
+  "pdf": "MZ_0460"
+ },
+ {
+  "id": "01.G.t1.r23.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 23",
+  "typ": "num",
+  "pdf": "MZ_0461"
+ },
+ {
+  "id": "01.G.t1.r23.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Zasięg poprzeczny / wymiary",
+  "kontekst": "tabela t1, wiersz 23",
+  "typ": "text",
+  "pdf": "MZ_0462"
+ },
+ {
+  "id": "01.G.t1.r23.c7",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Uwagi (kierunek, położenie, strona)",
+  "kontekst": "tabela t1, wiersz 23",
+  "typ": "text",
+  "pdf": "MZ_0463"
+ },
+ {
+  "id": "01.G.t1.r23.c8",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t1, wiersz 23",
+  "typ": "text",
+  "pdf": "MZ_0464"
+ },
+ {
+  "id": "01.G.t1.r24.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Kod i opis (obiekt, ślad, punkt pomiaru)",
+  "kontekst": "tabela t1, wiersz 24",
+  "typ": "text",
+  "pdf": "MZ_0465"
+ },
+ {
+  "id": "01.G.t1.r24.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 24",
+  "typ": "num",
+  "pdf": "MZ_0466"
+ },
+ {
+  "id": "01.G.t1.r24.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 24",
+  "typ": "num",
+  "pdf": "MZ_0467"
+ },
+ {
+  "id": "01.G.t1.r24.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 24",
+  "typ": "num",
+  "pdf": "MZ_0468"
+ },
+ {
+  "id": "01.G.t1.r24.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 24",
+  "typ": "num",
+  "pdf": "MZ_0469"
+ },
+ {
+  "id": "01.G.t1.r24.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Zasięg poprzeczny / wymiary",
+  "kontekst": "tabela t1, wiersz 24",
+  "typ": "text",
+  "pdf": "MZ_0470"
+ },
+ {
+  "id": "01.G.t1.r24.c7",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Uwagi (kierunek, położenie, strona)",
+  "kontekst": "tabela t1, wiersz 24",
+  "typ": "text",
+  "pdf": "MZ_0471"
+ },
+ {
+  "id": "01.G.t1.r24.c8",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t1, wiersz 24",
+  "typ": "text",
+  "pdf": "MZ_0472"
+ },
+ {
+  "id": "01.G.t1.r25.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Kod i opis (obiekt, ślad, punkt pomiaru)",
+  "kontekst": "tabela t1, wiersz 25",
+  "typ": "text",
+  "pdf": "MZ_0473"
+ },
+ {
+  "id": "01.G.t1.r25.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 25",
+  "typ": "num",
+  "pdf": "MZ_0474"
+ },
+ {
+  "id": "01.G.t1.r25.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 25",
+  "typ": "num",
+  "pdf": "MZ_0475"
+ },
+ {
+  "id": "01.G.t1.r25.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 25",
+  "typ": "num",
+  "pdf": "MZ_0476"
+ },
+ {
+  "id": "01.G.t1.r25.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 25",
+  "typ": "num",
+  "pdf": "MZ_0477"
+ },
+ {
+  "id": "01.G.t1.r25.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Zasięg poprzeczny / wymiary",
+  "kontekst": "tabela t1, wiersz 25",
+  "typ": "text",
+  "pdf": "MZ_0478"
+ },
+ {
+  "id": "01.G.t1.r25.c7",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Uwagi (kierunek, położenie, strona)",
+  "kontekst": "tabela t1, wiersz 25",
+  "typ": "text",
+  "pdf": "MZ_0479"
+ },
+ {
+  "id": "01.G.t1.r25.c8",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t1, wiersz 25",
+  "typ": "text",
+  "pdf": "MZ_0480"
+ },
+ {
+  "id": "01.G.t1.r26.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Kod i opis (obiekt, ślad, punkt pomiaru)",
+  "kontekst": "tabela t1, wiersz 26",
+  "typ": "text",
+  "pdf": "MZ_0481"
+ },
+ {
+  "id": "01.G.t1.r26.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 26",
+  "typ": "num",
+  "pdf": "MZ_0482"
+ },
+ {
+  "id": "01.G.t1.r26.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 26",
+  "typ": "num",
+  "pdf": "MZ_0483"
+ },
+ {
+  "id": "01.G.t1.r26.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 26",
+  "typ": "num",
+  "pdf": "MZ_0484"
+ },
+ {
+  "id": "01.G.t1.r26.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 26",
+  "typ": "num",
+  "pdf": "MZ_0485"
+ },
+ {
+  "id": "01.G.t1.r26.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Zasięg poprzeczny / wymiary",
+  "kontekst": "tabela t1, wiersz 26",
+  "typ": "text",
+  "pdf": "MZ_0486"
+ },
+ {
+  "id": "01.G.t1.r26.c7",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Uwagi (kierunek, położenie, strona)",
+  "kontekst": "tabela t1, wiersz 26",
+  "typ": "text",
+  "pdf": "MZ_0487"
+ },
+ {
+  "id": "01.G.t1.r26.c8",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t1, wiersz 26",
+  "typ": "text",
+  "pdf": "MZ_0488"
+ },
+ {
+  "id": "01.G.t1.r27.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Kod i opis (obiekt, ślad, punkt pomiaru)",
+  "kontekst": "tabela t1, wiersz 27",
+  "typ": "text",
+  "pdf": "MZ_0489"
+ },
+ {
+  "id": "01.G.t1.r27.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 27",
+  "typ": "num",
+  "pdf": "MZ_0490"
+ },
+ {
+  "id": "01.G.t1.r27.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 27",
+  "typ": "num",
+  "pdf": "MZ_0491"
+ },
+ {
+  "id": "01.G.t1.r27.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 27",
+  "typ": "num",
+  "pdf": "MZ_0492"
+ },
+ {
+  "id": "01.G.t1.r27.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 27",
+  "typ": "num",
+  "pdf": "MZ_0493"
+ },
+ {
+  "id": "01.G.t1.r27.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Zasięg poprzeczny / wymiary",
+  "kontekst": "tabela t1, wiersz 27",
+  "typ": "text",
+  "pdf": "MZ_0494"
+ },
+ {
+  "id": "01.G.t1.r27.c7",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Uwagi (kierunek, położenie, strona)",
+  "kontekst": "tabela t1, wiersz 27",
+  "typ": "text",
+  "pdf": "MZ_0495"
+ },
+ {
+  "id": "01.G.t1.r27.c8",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t1, wiersz 27",
+  "typ": "text",
+  "pdf": "MZ_0496"
+ },
+ {
+  "id": "01.G.t1.r28.c1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Kod i opis (obiekt, ślad, punkt pomiaru)",
+  "kontekst": "tabela t1, wiersz 28",
+  "typ": "text",
+  "pdf": "MZ_0497"
+ },
+ {
+  "id": "01.G.t1.r28.c2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 28",
+  "typ": "num",
+  "pdf": "MZ_0498"
+ },
+ {
+  "id": "01.G.t1.r28.c3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Początek: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 28",
+  "typ": "num",
+  "pdf": "MZ_0499"
+ },
+ {
+  "id": "01.G.t1.r28.c4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO1 [m]",
+  "kontekst": "tabela t1, wiersz 28",
+  "typ": "num",
+  "pdf": "MZ_0500"
+ },
+ {
+  "id": "01.G.t1.r28.c5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Koniec: od SLO2 [m]",
+  "kontekst": "tabela t1, wiersz 28",
+  "typ": "num",
+  "pdf": "MZ_0501"
+ },
+ {
+  "id": "01.G.t1.r28.c6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Zasięg poprzeczny / wymiary",
+  "kontekst": "tabela t1, wiersz 28",
+  "typ": "text",
+  "pdf": "MZ_0502"
+ },
+ {
+  "id": "01.G.t1.r28.c7",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Uwagi (kierunek, położenie, strona)",
+  "kontekst": "tabela t1, wiersz 28",
+  "typ": "text",
+  "pdf": "MZ_0503"
+ },
+ {
+  "id": "01.G.t1.r28.c8",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Fot. nr",
+  "kontekst": "tabela t1, wiersz 28",
+  "typ": "text",
+  "pdf": "MZ_0504"
+ },
+ {
+  "id": "01.G.uwagi",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "G. ŚLADY, PRZEDMIOTY I POŁOŻENIA KOŃCOWE",
+  "etykieta": "Uwagi",
+  "kontekst": "pole aplikacji (brak w PDF)",
+  "typ": "text",
+  "pdf": ""
+ },
+ {
+  "id": "01.H.1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "H. OPIS SWOBODNY, INFORMACJE OD OBECNYCH, USTALENIA",
+  "etykieta": "Opis",
+  "kontekst": "",
+  "typ": "text",
+  "pdf": "MZ_0505"
+ },
+ {
+  "id": "01.H.uwagi",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "H. OPIS SWOBODNY, INFORMACJE OD OBECNYCH, USTALENIA",
+  "etykieta": "Uwagi",
+  "kontekst": "pole aplikacji (brak w PDF)",
+  "typ": "text",
+  "pdf": ""
+ },
+ {
+  "id": "01.I.1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "I. KONTROLA KOMPLETNOŚCI – PRZED ODJAZDEM",
+  "etykieta": "Zdjęcia ogólne z obu kierunków dojazdu każdego uczestnika",
+  "kontekst": "",
+  "typ": "check",
+  "pdf": "MZ_0506"
+ },
+ {
+  "id": "01.I.2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "I. KONTROLA KOMPLETNOŚCI – PRZED ODJAZDEM",
+  "etykieta": "Zdjęcia z pozycji oczu kierujących, z odległości odpowiadających reakcji",
+  "kontekst": "",
+  "typ": "check",
+  "pdf": "MZ_0507"
+ },
+ {
+  "id": "01.I.3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "I. KONTROLA KOMPLETNOŚCI – PRZED ODJAZDEM",
+  "etykieta": "Każdy ślad sfotografowany ze skalą / łatą i zmierzony od SLO1 i SLO2",
+  "kontekst": "",
+  "typ": "check",
+  "pdf": "MZ_0508"
+ },
+ {
+  "id": "01.I.4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "I. KONTROLA KOMPLETNOŚCI – PRZED ODJAZDEM",
+  "etykieta": "Pochylenie podłużne i poprzeczne zmierzone (wartość + początek)",
+  "kontekst": "",
+  "typ": "check",
+  "pdf": "MZ_0509"
+ },
+ {
+  "id": "01.I.5",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "I. KONTROLA KOMPLETNOŚCI – PRZED ODJAZDEM",
+  "etykieta": "Szerokości jezdni, pasów i poboczy zmierzone",
+  "kontekst": "",
+  "typ": "check",
+  "pdf": "MZ_0510"
+ },
+ {
+  "id": "01.I.6",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "I. KONTROLA KOMPLETNOŚCI – PRZED ODJAZDEM",
+  "etykieta": "Widoczność zmierzona w każdym istotnym kierunku",
+  "kontekst": "",
+  "typ": "check",
+  "pdf": "MZ_0511"
+ },
+ {
+  "id": "01.I.7",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "I. KONTROLA KOMPLETNOŚCI – PRZED ODJAZDEM",
+  "etykieta": "Oznakowanie pionowe i poziome udokumentowane",
+  "kontekst": "",
+  "typ": "check",
+  "pdf": "MZ_0512"
+ },
+ {
+  "id": "01.I.8",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "I. KONTROLA KOMPLETNOŚCI – PRZED ODJAZDEM",
+  "etykieta": "Sygnalizacja – cykl zarejestrowany lub program do pozyskania od zarządcy",
+  "kontekst": "",
+  "typ": "check",
+  "pdf": "MZ_0513"
+ },
+ {
+  "id": "01.I.9",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "I. KONTROLA KOMPLETNOŚCI – PRZED ODJAZDEM",
+  "etykieta": "Kamery w otoczeniu zinwentaryzowane (adres, kierunek)",
+  "kontekst": "",
+  "typ": "check",
+  "pdf": "MZ_0514"
+ },
+ {
+  "id": "01.I.10",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "I. KONTROLA KOMPLETNOŚCI – PRZED ODJAZDEM",
+  "etykieta": "Położenie końcowe – min. dwa punkty na pojazd",
+  "kontekst": "",
+  "typ": "check",
+  "pdf": "MZ_0515"
+ },
+ {
+  "id": "01.I.11",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "I. KONTROLA KOMPLETNOŚCI – PRZED ODJAZDEM",
+  "etykieta": "Elementy i ślady zabezpieczone (protokół rzeczy, rejestr)",
+  "kontekst": "",
+  "typ": "check",
+  "pdf": "MZ_0516"
+ },
+ {
+  "id": "01.I.12",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "I. KONTROLA KOMPLETNOŚCI – PRZED ODJAZDEM",
+  "etykieta": "Potrzeba wizji w porze zdarzenia (oświetlenie) – oceniona",
+  "kontekst": "",
+  "typ": "check",
+  "pdf": "MZ_0517"
+ },
+ {
+  "id": "01.I.uwagi",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "I. KONTROLA KOMPLETNOŚCI – PRZED ODJAZDEM",
+  "etykieta": "Uwagi",
+  "kontekst": "pole aplikacji (brak w PDF)",
+  "typ": "text",
+  "pdf": ""
+ },
+ {
+  "id": "01.J.1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "J. SZKIC SYTUACYJNY",
+  "etykieta": "Skala / „bez skali”",
+  "kontekst": "",
+  "typ": "text",
+  "pdf": "MZ_0518"
+ },
+ {
+  "id": "01.J.2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "J. SZKIC SYTUACYJNY",
+  "etykieta": "Kierunek północy",
+  "kontekst": "",
+  "typ": "text",
+  "pdf": "MZ_0519"
+ },
+ {
+  "id": "01.J.3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "J. SZKIC SYTUACYJNY",
+  "etykieta": "Szkic sporządził",
+  "kontekst": "",
+  "typ": "text",
+  "pdf": "MZ_0520"
+ },
+ {
+  "id": "01.J.4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "J. SZKIC SYTUACYJNY",
+  "etykieta": "Nr zdjęć do szkicu",
+  "kontekst": "",
+  "typ": "text",
+  "pdf": "MZ_0521"
+ },
+ {
+  "id": "01.J.sketch",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "J. SZKIC SYTUACYJNY",
+  "etykieta": "Pole szkicu (siatka 5 mm)",
+  "kontekst": "",
+  "typ": "sketch",
+  "pdf": ""
+ },
+ {
+  "id": "01.J.uwagi",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "J. SZKIC SYTUACYJNY",
+  "etykieta": "Uwagi",
+  "kontekst": "pole aplikacji (brak w PDF)",
+  "typ": "text",
+  "pdf": ""
+ },
+ {
+  "id": "01.K.1",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "K. ZAKOŃCZENIE",
+  "etykieta": "Godzina zakończenia",
+  "kontekst": "",
+  "typ": "time",
+  "pdf": "MZ_0522"
+ },
+ {
+  "id": "01.K.2",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "K. ZAKOŃCZENIE",
+  "etykieta": "Liczba stron protokołu",
+  "kontekst": "",
+  "typ": "text",
+  "pdf": "MZ_0523"
+ },
+ {
+  "id": "01.K.3",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "K. ZAKOŃCZENIE",
+  "etykieta": "Załączniki (szkic, zdjęcia, nośniki)",
+  "kontekst": "",
+  "typ": "text",
+  "pdf": "MZ_0524"
+ },
+ {
+  "id": "01.K.4",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "K. ZAKOŃCZENIE",
+  "etykieta": "Uwagi / zastrzeżenia osób obecnych",
+  "kontekst": "",
+  "typ": "text",
+  "pdf": "MZ_0525"
+ },
+ {
+  "id": "01.K.uwagi",
+  "formularz": "01",
+  "wersjaDefinicji": "1.0.0",
+  "sekcja": "K. ZAKOŃCZENIE",
+  "etykieta": "Uwagi",
+  "kontekst": "pole aplikacji (brak w PDF)",
+  "typ": "text",
+  "pdf": ""
+ }
+]

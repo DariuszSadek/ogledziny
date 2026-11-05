@@ -1,0 +1,22 @@
+# Oględziny
+
+Aplikacja webowa (HTML/CSS/JS) do elektronicznego wypełniania formularzy oględzin na iPadzie, bez internetu. Na MacBooku służy do przeglądania i eksportu (etapy 3–4).
+
+© 2026 Motoanalityka Dariusz Sadek. Wszelkie prawa zastrzeżone. Kopiowanie, rozpowszechnianie, modyfikowanie i wykorzystywanie wzorów formularzy, w całości lub w części, bez pisemnej zgody autora jest zabronione.
+
+To repozytorium nie udziela żadnej licencji.
+
+(Czcionka Libre Baskerville jest dołączona na jej własnej licencji SIL Open Font License 1.1 – plik `assets/fonts/OFL.txt`; licencja ta dotyczy wyłącznie czcionki.)
+
+## Stan
+Etap 2: silnik + formularz 01 (Miejsce zdarzenia), zapis/odczyt pliku sprawy, praca offline.
+
+## Prywatność
+Aplikacja nie wysyła danych nigdzie (CSP w `index.html`: tylko własne pliki). Pliki spraw i dane osobowe nie trafiają do repozytorium (`.gitignore` + `tools/privacy_check.py` jako hook pre-commit).
+
+## Struktura
+- `forms/NN.json` – definicje formularzy (wzór zmienia się edycją definicji, nie kodu)
+- `js/engine.js` – silnik renderujący; `js/migrate.js` – przenoszenie danych po identyfikatorach
+- `docs/slownik_pol.{json,md}` – słownik pól (generowany: `python3 tools/gen_dict.py`)
+- `tools/gen_form.py` – generator definicji z PDF wzoru; `tools/check_form.py`, `tools/check_text.py` – kontrola zgodności
+- `tools/build.py` – po każdej zmianie plików: nowa wersja cache `sw.js` i `js/version.js`
