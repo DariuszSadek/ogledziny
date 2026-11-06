@@ -178,7 +178,7 @@ function saveFile() {
   const iso = new Date().toISOString();
   const rev = C.rev;
   const out = Object.assign({}, C, { savedToFile: iso, appVersion: APP_VERSION });
-  delete out.rev; delete out.savedRev;
+  delete out.rev; delete out.savedRev; delete out.lastView;
   const name = fileName();
   const json = JSON.stringify(out, null, 1);
   const done = how => { C.savedToFile = iso; C.savedRev = rev; persist(); toast(`Zapisano plik: ${name} (${how})`); };
@@ -281,10 +281,11 @@ async function setupSW() {
     const show = () => { $('update-banner').hidden = false; layoutSticky(); };
     if (reg.waiting && navigator.serviceWorker.controller) show();
     reg.addEventListener('updatefound', () => { const w = reg.installing; w && w.addEventListener('statechange', () => { if (w.state === 'installed' && navigator.serviceWorker.controller) show(); }); });
-    $('update-btn').addEventListener('click', async () => { await persist(); (reg.waiting || reg.active).postMessage('SKIP_WAITING'); });
+    let updating = false;
+    $('update-btn').addEventListener('click', async () => { updating = true; await persist(); (reg.waiting || reg.active).postMessage('SKIP_WAITING'); });
     let reloading = false;
     const hadController = !!navigator.serviceWorker.controller;
-    navigator.serviceWorker.addEventListener('controllerchange', () => { if (reloading || !hadController) return; reloading = true; location.reload(); });
+    navigator.serviceWorker.addEventListener('controllerchange', () => { if (reloading || !(hadController || updating)) return; reloading = true; location.reload(); });
     const check = () => reg.update().catch(() => { });
     document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') check(); });
     check();
