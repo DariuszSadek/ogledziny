@@ -39,323 +39,323 @@ Generowany automatycznie (tools/gen_dict.py). Identyfikatory są stałe; tabele:
 | 00.A.33 | A. WEZWANIE I PODSTAWA UDZIAŁU | inne: | Rodzaj zdarzenia | check | KC_0033 |
 | 00.A.34 | A. WEZWANIE I PODSTAWA UDZIAŁU |  | Rodzaj zdarzenia | text | KC_0034 |
 | 00.A.35 | A. WEZWANIE I PODSTAWA UDZIAŁU | Zadania / pytania przekazane przez organ (dosłownie) |  | text | KC_0035 |
-| 00.A.t1.r1.c1 | A. WEZWANIE I PODSTAWA UDZIAŁU | Uczestnik – rodzaj | tabela t1, wiersz 1 | text | KC_0036 |
-| 00.A.t1.r1.c2 | A. WEZWANIE I PODSTAWA UDZIAŁU | Marka, model / osoba | tabela t1, wiersz 1 | text | KC_0037 |
-| 00.A.t1.r1.c3 | A. WEZWANIE I PODSTAWA UDZIAŁU | Nr rej. | tabela t1, wiersz 1 | text | KC_0038 |
-| 00.A.t1.r1.c4 | A. WEZWANIE I PODSTAWA UDZIAŁU | Kierunek ruchu: skąd – dokąd, pas | tabela t1, wiersz 1 | text | KC_0039 |
-| 00.A.t1.r1.c5 | A. WEZWANIE I PODSTAWA UDZIAŁU | Protokół | tabela t1, wiersz 1 | text | KC_0040 |
-| 00.A.t2.r1.c1 | A. WEZWANIE I PODSTAWA UDZIAŁU |  | tabela t2, wiersz 1 | text | KC_0041 |
-| 00.A.t2.r1.c2 | A. WEZWANIE I PODSTAWA UDZIAŁU |  | tabela t2, wiersz 1 | text | KC_0042 |
-| 00.A.t2.r1.c3 | A. WEZWANIE I PODSTAWA UDZIAŁU |  | tabela t2, wiersz 1 | text | KC_0043 |
-| 00.A.t2.r1.c4 | A. WEZWANIE I PODSTAWA UDZIAŁU |  | tabela t2, wiersz 1 | text | KC_0044 |
-| 00.A.t2.r1.c5 | A. WEZWANIE I PODSTAWA UDZIAŁU |  | tabela t2, wiersz 1 | text | KC_0045 |
-| 00.A.t3.r1.c1 | A. WEZWANIE I PODSTAWA UDZIAŁU |  | tabela t3, wiersz 1 | text | KC_0046 |
-| 00.A.t3.r1.c2 | A. WEZWANIE I PODSTAWA UDZIAŁU |  | tabela t3, wiersz 1 | text | KC_0047 |
-| 00.A.t3.r1.c3 | A. WEZWANIE I PODSTAWA UDZIAŁU |  | tabela t3, wiersz 1 | text | KC_0048 |
-| 00.A.t3.r1.c4 | A. WEZWANIE I PODSTAWA UDZIAŁU |  | tabela t3, wiersz 1 | text | KC_0049 |
-| 00.A.t3.r1.c5 | A. WEZWANIE I PODSTAWA UDZIAŁU |  | tabela t3, wiersz 1 | text | KC_0050 |
-| 00.A.t4.r1.c1 | A. WEZWANIE I PODSTAWA UDZIAŁU |  | tabela t4, wiersz 1 | text | KC_0051 |
-| 00.A.t4.r1.c2 | A. WEZWANIE I PODSTAWA UDZIAŁU |  | tabela t4, wiersz 1 | text | KC_0052 |
-| 00.A.t4.r1.c3 | A. WEZWANIE I PODSTAWA UDZIAŁU |  | tabela t4, wiersz 1 | text | KC_0053 |
-| 00.A.t4.r1.c4 | A. WEZWANIE I PODSTAWA UDZIAŁU |  | tabela t4, wiersz 1 | text | KC_0054 |
-| 00.A.t4.r1.c5 | A. WEZWANIE I PODSTAWA UDZIAŁU |  | tabela t4, wiersz 1 | text | KC_0055 |
+| 00.A.t1.r1.c1 | A. WEZWANIE I PODSTAWA UDZIAŁU | Uczestnik – rodzaj | tabela t1, wiersz 1: A | text | KC_0036 |
+| 00.A.t1.r1.c2 | A. WEZWANIE I PODSTAWA UDZIAŁU | Marka, model / osoba | tabela t1, wiersz 1: A | text | KC_0037 |
+| 00.A.t1.r1.c3 | A. WEZWANIE I PODSTAWA UDZIAŁU | Nr rej. | tabela t1, wiersz 1: A | text | KC_0038 |
+| 00.A.t1.r1.c4 | A. WEZWANIE I PODSTAWA UDZIAŁU | Kierunek ruchu: skąd – dokąd, pas | tabela t1, wiersz 1: A | text | KC_0039 |
+| 00.A.t1.r1.c5 | A. WEZWANIE I PODSTAWA UDZIAŁU | Protokół | tabela t1, wiersz 1: A | text | KC_0040 |
+| 00.A.t1.r2.c1 | A. WEZWANIE I PODSTAWA UDZIAŁU | Uczestnik – rodzaj | tabela t1, wiersz 2: B | text | KC_0041 |
+| 00.A.t1.r2.c2 | A. WEZWANIE I PODSTAWA UDZIAŁU | Marka, model / osoba | tabela t1, wiersz 2: B | text | KC_0042 |
+| 00.A.t1.r2.c3 | A. WEZWANIE I PODSTAWA UDZIAŁU | Nr rej. | tabela t1, wiersz 2: B | text | KC_0043 |
+| 00.A.t1.r2.c4 | A. WEZWANIE I PODSTAWA UDZIAŁU | Kierunek ruchu: skąd – dokąd, pas | tabela t1, wiersz 2: B | text | KC_0044 |
+| 00.A.t1.r2.c5 | A. WEZWANIE I PODSTAWA UDZIAŁU | Protokół | tabela t1, wiersz 2: B | text | KC_0045 |
+| 00.A.t1.r3.c1 | A. WEZWANIE I PODSTAWA UDZIAŁU | Uczestnik – rodzaj | tabela t1, wiersz 3: C | text | KC_0046 |
+| 00.A.t1.r3.c2 | A. WEZWANIE I PODSTAWA UDZIAŁU | Marka, model / osoba | tabela t1, wiersz 3: C | text | KC_0047 |
+| 00.A.t1.r3.c3 | A. WEZWANIE I PODSTAWA UDZIAŁU | Nr rej. | tabela t1, wiersz 3: C | text | KC_0048 |
+| 00.A.t1.r3.c4 | A. WEZWANIE I PODSTAWA UDZIAŁU | Kierunek ruchu: skąd – dokąd, pas | tabela t1, wiersz 3: C | text | KC_0049 |
+| 00.A.t1.r3.c5 | A. WEZWANIE I PODSTAWA UDZIAŁU | Protokół | tabela t1, wiersz 3: C | text | KC_0050 |
+| 00.A.t1.r4.c1 | A. WEZWANIE I PODSTAWA UDZIAŁU | Uczestnik – rodzaj | tabela t1, wiersz 4: D | text | KC_0051 |
+| 00.A.t1.r4.c2 | A. WEZWANIE I PODSTAWA UDZIAŁU | Marka, model / osoba | tabela t1, wiersz 4: D | text | KC_0052 |
+| 00.A.t1.r4.c3 | A. WEZWANIE I PODSTAWA UDZIAŁU | Nr rej. | tabela t1, wiersz 4: D | text | KC_0053 |
+| 00.A.t1.r4.c4 | A. WEZWANIE I PODSTAWA UDZIAŁU | Kierunek ruchu: skąd – dokąd, pas | tabela t1, wiersz 4: D | text | KC_0054 |
+| 00.A.t1.r4.c5 | A. WEZWANIE I PODSTAWA UDZIAŁU | Protokół | tabela t1, wiersz 4: D | text | KC_0055 |
 | 00.A.uwagi | A. WEZWANIE I PODSTAWA UDZIAŁU | Uwagi | pole aplikacji (brak w PDF) | text |  |
-| 00.B.t1.r1.c1 | B. PRZED WYJAZDEM | Wyk. | tabela t1, wiersz 1: B1 Ustalenia telefoniczne:dokładna lokalizacja, dojazd i bezpieczne miejsce postoju; czy pojazdy pozostaną na miejscu do przybycia; czy miejsce jest zabezpieczone. | check | KC_0056 |
-| 00.B.t1.r1.c2 | B. PRZED WYJAZDEM | n/d | tabela t1, wiersz 1: B1 Ustalenia telefoniczne:dokładna lokalizacja, dojazd i bezpieczne miejsce postoju; czy pojazdy pozostaną na miejscu do przybycia; czy miejsce jest zabezpieczone. | check | KC_0057 |
-| 00.B.t1.r1.c3 | B. PRZED WYJAZDEM | Godz. | tabela t1, wiersz 1: B1 Ustalenia telefoniczne:dokładna lokalizacja, dojazd i bezpieczne miejsce postoju; czy pojazdy pozostaną na miejscu do przybycia; czy miejsce jest zabezpieczone. | time | KC_0058 |
-| 00.B.t1.r1.c4 | B. PRZED WYJAZDEM | Wynik / gdzie zapisano | tabela t1, wiersz 1: B1 Ustalenia telefoniczne:dokładna lokalizacja, dojazd i bezpieczne miejsce postoju; czy pojazdy pozostaną na miejscu do przybycia; czy miejsce jest zabezpieczone. | text | KC_0059 |
-| 00.B.t1.r2.c1 | B. PRZED WYJAZDEM | Wyk. | tabela t1, wiersz 2: B2 Prośba do kierownika czynności:nie przestawiać pojazdów, nie sprzątać odłamków i płynów, nie zmieniać położenia przełączników i świateł w pojazdach, nie odłączać akumulatorów bez potrzeby ratowniczej – a jeśli to konieczne, odnotować kto i kiedy. | check | KC_0060 |
-| 00.B.t1.r2.c2 | B. PRZED WYJAZDEM | n/d | tabela t1, wiersz 2: B2 Prośba do kierownika czynności:nie przestawiać pojazdów, nie sprzątać odłamków i płynów, nie zmieniać położenia przełączników i świateł w pojazdach, nie odłączać akumulatorów bez potrzeby ratowniczej – a jeśli to konieczne, odnotować kto i kiedy. | check | KC_0061 |
-| 00.B.t1.r2.c3 | B. PRZED WYJAZDEM | Godz. | tabela t1, wiersz 2: B2 Prośba do kierownika czynności:nie przestawiać pojazdów, nie sprzątać odłamków i płynów, nie zmieniać położenia przełączników i świateł w pojazdach, nie odłączać akumulatorów bez potrzeby ratowniczej – a jeśli to konieczne, odnotować kto i kiedy. | time | KC_0062 |
-| 00.B.t1.r2.c4 | B. PRZED WYJAZDEM | Wynik / gdzie zapisano | tabela t1, wiersz 2: B2 Prośba do kierownika czynności:nie przestawiać pojazdów, nie sprzątać odłamków i płynów, nie zmieniać położenia przełączników i świateł w pojazdach, nie odłączać akumulatorów bez potrzeby ratowniczej – a jeśli to konieczne, odnotować kto i kiedy. | text | KC_0063 |
-| 00.B.t1.r3.c1 | B. PRZED WYJAZDEM | Wyk. | tabela t1, wiersz 3: B3 Pora i warunki zdarzenia a pora przybycia– czy pomiar widoczności trzeba wykonać od razu (noc, zmierzch, oślepianie przez słońce). | check | KC_0064 |
-| 00.B.t1.r3.c2 | B. PRZED WYJAZDEM | n/d | tabela t1, wiersz 3: B3 Pora i warunki zdarzenia a pora przybycia– czy pomiar widoczności trzeba wykonać od razu (noc, zmierzch, oślepianie przez słońce). | check | KC_0065 |
-| 00.B.t1.r3.c3 | B. PRZED WYJAZDEM | Godz. | tabela t1, wiersz 3: B3 Pora i warunki zdarzenia a pora przybycia– czy pomiar widoczności trzeba wykonać od razu (noc, zmierzch, oślepianie przez słońce). | time | KC_0066 |
-| 00.B.t1.r3.c4 | B. PRZED WYJAZDEM | Wynik / gdzie zapisano | tabela t1, wiersz 3: B3 Pora i warunki zdarzenia a pora przybycia– czy pomiar widoczności trzeba wykonać od razu (noc, zmierzch, oślepianie przez słońce). | text | KC_0067 |
-| 00.B.t1.r4.c1 | B. PRZED WYJAZDEM | Wyk. | tabela t1, wiersz 4: B4 Dokumentacja:aparat, 2 sformatowane karty, naładowane akumulatory, statyw, lampa błyskowa, wężyk; latarka / czołówka; powerbank. | check | KC_0068 |
-| 00.B.t1.r4.c2 | B. PRZED WYJAZDEM | n/d | tabela t1, wiersz 4: B4 Dokumentacja:aparat, 2 sformatowane karty, naładowane akumulatory, statyw, lampa błyskowa, wężyk; latarka / czołówka; powerbank. | check | KC_0069 |
-| 00.B.t1.r4.c3 | B. PRZED WYJAZDEM | Godz. | tabela t1, wiersz 4: B4 Dokumentacja:aparat, 2 sformatowane karty, naładowane akumulatory, statyw, lampa błyskowa, wężyk; latarka / czołówka; powerbank. | time | KC_0070 |
-| 00.B.t1.r4.c4 | B. PRZED WYJAZDEM | Wynik / gdzie zapisano | tabela t1, wiersz 4: B4 Dokumentacja:aparat, 2 sformatowane karty, naładowane akumulatory, statyw, lampa błyskowa, wężyk; latarka / czołówka; powerbank. | text | KC_0071 |
-| 00.B.t1.r5.c1 | B. PRZED WYJAZDEM | Wyk. | tabela t1, wiersz 5: B5 Pomiar:łaty 1 / 5 / 7 m, kółko Nivel M100, taśmy 5 i 20 m, dalmierz, poziomica Nivel, miernik bieżnika, miernik powłoki lakierniczej, manometr, termometr. | check | KC_0072 |
-| 00.B.t1.r5.c2 | B. PRZED WYJAZDEM | n/d | tabela t1, wiersz 5: B5 Pomiar:łaty 1 / 5 / 7 m, kółko Nivel M100, taśmy 5 i 20 m, dalmierz, poziomica Nivel, miernik bieżnika, miernik powłoki lakierniczej, manometr, termometr. | check | KC_0073 |
-| 00.B.t1.r5.c3 | B. PRZED WYJAZDEM | Godz. | tabela t1, wiersz 5: B5 Pomiar:łaty 1 / 5 / 7 m, kółko Nivel M100, taśmy 5 i 20 m, dalmierz, poziomica Nivel, miernik bieżnika, miernik powłoki lakierniczej, manometr, termometr. | time | KC_0074 |
-| 00.B.t1.r5.c4 | B. PRZED WYJAZDEM | Wynik / gdzie zapisano | tabela t1, wiersz 5: B5 Pomiar:łaty 1 / 5 / 7 m, kółko Nivel M100, taśmy 5 i 20 m, dalmierz, poziomica Nivel, miernik bieżnika, miernik powłoki lakierniczej, manometr, termometr. | text | KC_0075 |
-| 00.B.t1.r6.c1 | B. PRZED WYJAZDEM | Wyk. | tabela t1, wiersz 6: B6 BHP i zabezpieczenie:kamizelka odblaskowa, rękawice nitrylowe, ochraniacze obuwia; numerki dowodowe, kreda / spray; koperty, torby, etykiety, plomby; formularze 01–09. | check | KC_0076 |
-| 00.B.t1.r6.c2 | B. PRZED WYJAZDEM | n/d | tabela t1, wiersz 6: B6 BHP i zabezpieczenie:kamizelka odblaskowa, rękawice nitrylowe, ochraniacze obuwia; numerki dowodowe, kreda / spray; koperty, torby, etykiety, plomby; formularze 01–09. | check | KC_0077 |
-| 00.B.t1.r6.c3 | B. PRZED WYJAZDEM | Godz. | tabela t1, wiersz 6: B6 BHP i zabezpieczenie:kamizelka odblaskowa, rękawice nitrylowe, ochraniacze obuwia; numerki dowodowe, kreda / spray; koperty, torby, etykiety, plomby; formularze 01–09. | time | KC_0078 |
-| 00.B.t1.r6.c4 | B. PRZED WYJAZDEM | Wynik / gdzie zapisano | tabela t1, wiersz 6: B6 BHP i zabezpieczenie:kamizelka odblaskowa, rękawice nitrylowe, ochraniacze obuwia; numerki dowodowe, kreda / spray; koperty, torby, etykiety, plomby; formularze 01–09. | text | KC_0079 |
-| 00.B.t1.r7.c1 | B. PRZED WYJAZDEM | Wyk. | tabela t1, wiersz 7: B7 Synchronizacja czasu:zegar aparatu porównany z czasem urzędowym; odchyłka zapisana. | check | KC_0080 |
-| 00.B.t1.r7.c2 | B. PRZED WYJAZDEM | n/d | tabela t1, wiersz 7: B7 Synchronizacja czasu:zegar aparatu porównany z czasem urzędowym; odchyłka zapisana. | check | KC_0081 |
-| 00.B.t1.r7.c3 | B. PRZED WYJAZDEM | Godz. | tabela t1, wiersz 7: B7 Synchronizacja czasu:zegar aparatu porównany z czasem urzędowym; odchyłka zapisana. | time | KC_0082 |
-| 00.B.t1.r7.c4 | B. PRZED WYJAZDEM | Wynik / gdzie zapisano | tabela t1, wiersz 7: B7 Synchronizacja czasu:zegar aparatu porównany z czasem urzędowym; odchyłka zapisana. | text | KC_0083 |
+| 00.B.t1.r1.c1 | B. PRZED WYJAZDEM | Wyk. | tabela t1, wiersz 1: B1 Ustalenia telefoniczne: dokładna lokalizacja, dojazd i bezpieczne miejsce postoju; czy pojazdy pozostaną na miejscu do przybycia; czy miejsce jest zabezpieczone. | check | KC_0056 |
+| 00.B.t1.r1.c2 | B. PRZED WYJAZDEM | n/d | tabela t1, wiersz 1: B1 Ustalenia telefoniczne: dokładna lokalizacja, dojazd i bezpieczne miejsce postoju; czy pojazdy pozostaną na miejscu do przybycia; czy miejsce jest zabezpieczone. | check | KC_0057 |
+| 00.B.t1.r1.c3 | B. PRZED WYJAZDEM | Godz. | tabela t1, wiersz 1: B1 Ustalenia telefoniczne: dokładna lokalizacja, dojazd i bezpieczne miejsce postoju; czy pojazdy pozostaną na miejscu do przybycia; czy miejsce jest zabezpieczone. | time | KC_0058 |
+| 00.B.t1.r1.c4 | B. PRZED WYJAZDEM | Wynik / gdzie zapisano | tabela t1, wiersz 1: B1 Ustalenia telefoniczne: dokładna lokalizacja, dojazd i bezpieczne miejsce postoju; czy pojazdy pozostaną na miejscu do przybycia; czy miejsce jest zabezpieczone. | text | KC_0059 |
+| 00.B.t1.r2.c1 | B. PRZED WYJAZDEM | Wyk. | tabela t1, wiersz 2: B2 Prośba do kierownika czynności: nie przestawiać pojazdów, nie sprzątać odłamków i płynów, nie zmieniać położenia przełączników i świateł w pojazdach, nie odłączać akumulatorów bez potrzeby ratowniczej – a jeśli to konieczne, odnotować kto i kiedy. | check | KC_0060 |
+| 00.B.t1.r2.c2 | B. PRZED WYJAZDEM | n/d | tabela t1, wiersz 2: B2 Prośba do kierownika czynności: nie przestawiać pojazdów, nie sprzątać odłamków i płynów, nie zmieniać położenia przełączników i świateł w pojazdach, nie odłączać akumulatorów bez potrzeby ratowniczej – a jeśli to konieczne, odnotować kto i kiedy. | check | KC_0061 |
+| 00.B.t1.r2.c3 | B. PRZED WYJAZDEM | Godz. | tabela t1, wiersz 2: B2 Prośba do kierownika czynności: nie przestawiać pojazdów, nie sprzątać odłamków i płynów, nie zmieniać położenia przełączników i świateł w pojazdach, nie odłączać akumulatorów bez potrzeby ratowniczej – a jeśli to konieczne, odnotować kto i kiedy. | time | KC_0062 |
+| 00.B.t1.r2.c4 | B. PRZED WYJAZDEM | Wynik / gdzie zapisano | tabela t1, wiersz 2: B2 Prośba do kierownika czynności: nie przestawiać pojazdów, nie sprzątać odłamków i płynów, nie zmieniać położenia przełączników i świateł w pojazdach, nie odłączać akumulatorów bez potrzeby ratowniczej – a jeśli to konieczne, odnotować kto i kiedy. | text | KC_0063 |
+| 00.B.t1.r3.c1 | B. PRZED WYJAZDEM | Wyk. | tabela t1, wiersz 3: B3 Pora i warunki zdarzenia a pora przybycia – czy pomiar widoczności trzeba wykonać od razu (noc, zmierzch, oślepianie przez słońce). | check | KC_0064 |
+| 00.B.t1.r3.c2 | B. PRZED WYJAZDEM | n/d | tabela t1, wiersz 3: B3 Pora i warunki zdarzenia a pora przybycia – czy pomiar widoczności trzeba wykonać od razu (noc, zmierzch, oślepianie przez słońce). | check | KC_0065 |
+| 00.B.t1.r3.c3 | B. PRZED WYJAZDEM | Godz. | tabela t1, wiersz 3: B3 Pora i warunki zdarzenia a pora przybycia – czy pomiar widoczności trzeba wykonać od razu (noc, zmierzch, oślepianie przez słońce). | time | KC_0066 |
+| 00.B.t1.r3.c4 | B. PRZED WYJAZDEM | Wynik / gdzie zapisano | tabela t1, wiersz 3: B3 Pora i warunki zdarzenia a pora przybycia – czy pomiar widoczności trzeba wykonać od razu (noc, zmierzch, oślepianie przez słońce). | text | KC_0067 |
+| 00.B.t1.r4.c1 | B. PRZED WYJAZDEM | Wyk. | tabela t1, wiersz 4: B4 Dokumentacja: aparat, 2 sformatowane karty, naładowane akumulatory, statyw, lampa błyskowa, wężyk; latarka / czołówka; powerbank. | check | KC_0068 |
+| 00.B.t1.r4.c2 | B. PRZED WYJAZDEM | n/d | tabela t1, wiersz 4: B4 Dokumentacja: aparat, 2 sformatowane karty, naładowane akumulatory, statyw, lampa błyskowa, wężyk; latarka / czołówka; powerbank. | check | KC_0069 |
+| 00.B.t1.r4.c3 | B. PRZED WYJAZDEM | Godz. | tabela t1, wiersz 4: B4 Dokumentacja: aparat, 2 sformatowane karty, naładowane akumulatory, statyw, lampa błyskowa, wężyk; latarka / czołówka; powerbank. | time | KC_0070 |
+| 00.B.t1.r4.c4 | B. PRZED WYJAZDEM | Wynik / gdzie zapisano | tabela t1, wiersz 4: B4 Dokumentacja: aparat, 2 sformatowane karty, naładowane akumulatory, statyw, lampa błyskowa, wężyk; latarka / czołówka; powerbank. | text | KC_0071 |
+| 00.B.t1.r5.c1 | B. PRZED WYJAZDEM | Wyk. | tabela t1, wiersz 5: B5 Pomiar: łaty 1 / 5 / 7 m, kółko Nivel M100, taśmy 5 i 20 m, dalmierz, poziomica Nivel, miernik bieżnika, miernik powłoki lakierniczej, manometr, termometr. | check | KC_0072 |
+| 00.B.t1.r5.c2 | B. PRZED WYJAZDEM | n/d | tabela t1, wiersz 5: B5 Pomiar: łaty 1 / 5 / 7 m, kółko Nivel M100, taśmy 5 i 20 m, dalmierz, poziomica Nivel, miernik bieżnika, miernik powłoki lakierniczej, manometr, termometr. | check | KC_0073 |
+| 00.B.t1.r5.c3 | B. PRZED WYJAZDEM | Godz. | tabela t1, wiersz 5: B5 Pomiar: łaty 1 / 5 / 7 m, kółko Nivel M100, taśmy 5 i 20 m, dalmierz, poziomica Nivel, miernik bieżnika, miernik powłoki lakierniczej, manometr, termometr. | time | KC_0074 |
+| 00.B.t1.r5.c4 | B. PRZED WYJAZDEM | Wynik / gdzie zapisano | tabela t1, wiersz 5: B5 Pomiar: łaty 1 / 5 / 7 m, kółko Nivel M100, taśmy 5 i 20 m, dalmierz, poziomica Nivel, miernik bieżnika, miernik powłoki lakierniczej, manometr, termometr. | text | KC_0075 |
+| 00.B.t1.r6.c1 | B. PRZED WYJAZDEM | Wyk. | tabela t1, wiersz 6: B6 BHP i zabezpieczenie: kamizelka odblaskowa, rękawice nitrylowe, ochraniacze obuwia; numerki dowodowe, kreda / spray; koperty, torby, etykiety, plomby; formularze 01–09. | check | KC_0076 |
+| 00.B.t1.r6.c2 | B. PRZED WYJAZDEM | n/d | tabela t1, wiersz 6: B6 BHP i zabezpieczenie: kamizelka odblaskowa, rękawice nitrylowe, ochraniacze obuwia; numerki dowodowe, kreda / spray; koperty, torby, etykiety, plomby; formularze 01–09. | check | KC_0077 |
+| 00.B.t1.r6.c3 | B. PRZED WYJAZDEM | Godz. | tabela t1, wiersz 6: B6 BHP i zabezpieczenie: kamizelka odblaskowa, rękawice nitrylowe, ochraniacze obuwia; numerki dowodowe, kreda / spray; koperty, torby, etykiety, plomby; formularze 01–09. | time | KC_0078 |
+| 00.B.t1.r6.c4 | B. PRZED WYJAZDEM | Wynik / gdzie zapisano | tabela t1, wiersz 6: B6 BHP i zabezpieczenie: kamizelka odblaskowa, rękawice nitrylowe, ochraniacze obuwia; numerki dowodowe, kreda / spray; koperty, torby, etykiety, plomby; formularze 01–09. | text | KC_0079 |
+| 00.B.t1.r7.c1 | B. PRZED WYJAZDEM | Wyk. | tabela t1, wiersz 7: B7 Synchronizacja czasu: zegar aparatu porównany z czasem urzędowym; odchyłka zapisana. | check | KC_0080 |
+| 00.B.t1.r7.c2 | B. PRZED WYJAZDEM | n/d | tabela t1, wiersz 7: B7 Synchronizacja czasu: zegar aparatu porównany z czasem urzędowym; odchyłka zapisana. | check | KC_0081 |
+| 00.B.t1.r7.c3 | B. PRZED WYJAZDEM | Godz. | tabela t1, wiersz 7: B7 Synchronizacja czasu: zegar aparatu porównany z czasem urzędowym; odchyłka zapisana. | time | KC_0082 |
+| 00.B.t1.r7.c4 | B. PRZED WYJAZDEM | Wynik / gdzie zapisano | tabela t1, wiersz 7: B7 Synchronizacja czasu: zegar aparatu porównany z czasem urzędowym; odchyłka zapisana. | text | KC_0083 |
 | 00.B.uwagi | B. PRZED WYJAZDEM | Uwagi | pole aplikacji (brak w PDF) | text |  |
 | 00.C.t1.r1.c1 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Wyk. | tabela t1, wiersz 1: C1 Zgłoszenie się kierownikowi oględzin; potwierdzenie roli (biegły / specjalista) i zakresu zadań; ustalenie, kto prowadzi protokół, kto fotografuje, kto mierzy i szkicuje. | check | KC_0084 |
 | 00.C.t1.r1.c2 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | n/d | tabela t1, wiersz 1: C1 Zgłoszenie się kierownikowi oględzin; potwierdzenie roli (biegły / specjalista) i zakresu zadań; ustalenie, kto prowadzi protokół, kto fotografuje, kto mierzy i szkicuje. | check | KC_0085 |
 | 00.C.t1.r1.c3 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Godz. | tabela t1, wiersz 1: C1 Zgłoszenie się kierownikowi oględzin; potwierdzenie roli (biegły / specjalista) i zakresu zadań; ustalenie, kto prowadzi protokół, kto fotografuje, kto mierzy i szkicuje. | time | KC_0086 |
 | 00.C.t1.r1.c4 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Wynik / gdzie zapisano | tabela t1, wiersz 1: C1 Zgłoszenie się kierownikowi oględzin; potwierdzenie roli (biegły / specjalista) i zakresu zadań; ustalenie, kto prowadzi protokół, kto fotografuje, kto mierzy i szkicuje. | text | KC_0087 |
-| 00.C.t1.r2.c1 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Wyk. | tabela t1, wiersz 2: C2 Ocena zagrożeń:ruch na sąsiednich pasach, oznakowanie i radiowozy, wycieki paliwa; pojazd elektryczny lub hybrydowy (uszkodzone przewody wysokiego napięcia, deformacja baterii, dym, wzrost temperatury) – postępowanie uzgodnione z PSP; ADR – oznakowanie, karta. | check | KC_0088 |
-| 00.C.t1.r2.c2 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | n/d | tabela t1, wiersz 2: C2 Ocena zagrożeń:ruch na sąsiednich pasach, oznakowanie i radiowozy, wycieki paliwa; pojazd elektryczny lub hybrydowy (uszkodzone przewody wysokiego napięcia, deformacja baterii, dym, wzrost temperatury) – postępowanie uzgodnione z PSP; ADR – oznakowanie, karta. | check | KC_0089 |
-| 00.C.t1.r2.c3 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Godz. | tabela t1, wiersz 2: C2 Ocena zagrożeń:ruch na sąsiednich pasach, oznakowanie i radiowozy, wycieki paliwa; pojazd elektryczny lub hybrydowy (uszkodzone przewody wysokiego napięcia, deformacja baterii, dym, wzrost temperatury) – postępowanie uzgodnione z PSP; ADR – oznakowanie, karta. | time | KC_0090 |
-| 00.C.t1.r2.c4 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Wynik / gdzie zapisano | tabela t1, wiersz 2: C2 Ocena zagrożeń:ruch na sąsiednich pasach, oznakowanie i radiowozy, wycieki paliwa; pojazd elektryczny lub hybrydowy (uszkodzone przewody wysokiego napięcia, deformacja baterii, dym, wzrost temperatury) – postępowanie uzgodnione z PSP; ADR – oznakowanie, karta. | text | KC_0091 |
-| 00.C.t1.r3.c1 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Wyk. | tabela t1, wiersz 3: C3 Informacja wstępna:uczestnicy i ich oznaczenie (A, B …), ranni i dokąd przewiezieni, kto pierwszy przybył, wstępna godzina zdarzenia i jej źródło. | check | KC_0092 |
-| 00.C.t1.r3.c2 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | n/d | tabela t1, wiersz 3: C3 Informacja wstępna:uczestnicy i ich oznaczenie (A, B …), ranni i dokąd przewiezieni, kto pierwszy przybył, wstępna godzina zdarzenia i jej źródło. | check | KC_0093 |
-| 00.C.t1.r3.c3 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Godz. | tabela t1, wiersz 3: C3 Informacja wstępna:uczestnicy i ich oznaczenie (A, B …), ranni i dokąd przewiezieni, kto pierwszy przybył, wstępna godzina zdarzenia i jej źródło. | time | KC_0094 |
-| 00.C.t1.r3.c4 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Wynik / gdzie zapisano | tabela t1, wiersz 3: C3 Informacja wstępna:uczestnicy i ich oznaczenie (A, B …), ranni i dokąd przewiezieni, kto pierwszy przybył, wstępna godzina zdarzenia i jej źródło. | text | KC_0095 |
-| 00.C.t1.r4.c1 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Wyk. | tabela t1, wiersz 4: C4 Zmiany wtórne przed przybyciem:co i przez kogo przemieszczono (ZRM, PSP – cięcie, odsuwanie pojazdów, przenoszenie poszkodowanych, sorbent, przejazdy innych pojazdów); czy pierwotne położenia oznaczono (kreda, zdjęcia Policji, zdjęcia świadków). | check | KC_0096 |
-| 00.C.t1.r4.c2 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | n/d | tabela t1, wiersz 4: C4 Zmiany wtórne przed przybyciem:co i przez kogo przemieszczono (ZRM, PSP – cięcie, odsuwanie pojazdów, przenoszenie poszkodowanych, sorbent, przejazdy innych pojazdów); czy pierwotne położenia oznaczono (kreda, zdjęcia Policji, zdjęcia świadków). | check | KC_0097 |
-| 00.C.t1.r4.c3 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Godz. | tabela t1, wiersz 4: C4 Zmiany wtórne przed przybyciem:co i przez kogo przemieszczono (ZRM, PSP – cięcie, odsuwanie pojazdów, przenoszenie poszkodowanych, sorbent, przejazdy innych pojazdów); czy pierwotne położenia oznaczono (kreda, zdjęcia Policji, zdjęcia świadków). | time | KC_0098 |
-| 00.C.t1.r4.c4 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Wynik / gdzie zapisano | tabela t1, wiersz 4: C4 Zmiany wtórne przed przybyciem:co i przez kogo przemieszczono (ZRM, PSP – cięcie, odsuwanie pojazdów, przenoszenie poszkodowanych, sorbent, przejazdy innych pojazdów); czy pierwotne położenia oznaczono (kreda, zdjęcia Policji, zdjęcia świadków). | text | KC_0099 |
-| 00.C.t1.r5.c1 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Wyk. | tabela t1, wiersz 5: C5 Wspólny układ odniesienia z Policją– ten sam SPO, SLO1, SLO2 co w szkicu Policji, aby pomiary były porównywalne (definicje zob. 01-F). | check | KC_0100 |
-| 00.C.t1.r5.c2 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | n/d | tabela t1, wiersz 5: C5 Wspólny układ odniesienia z Policją– ten sam SPO, SLO1, SLO2 co w szkicu Policji, aby pomiary były porównywalne (definicje zob. 01-F). | check | KC_0101 |
-| 00.C.t1.r5.c3 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Godz. | tabela t1, wiersz 5: C5 Wspólny układ odniesienia z Policją– ten sam SPO, SLO1, SLO2 co w szkicu Policji, aby pomiary były porównywalne (definicje zob. 01-F). | time | KC_0102 |
-| 00.C.t1.r5.c4 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Wynik / gdzie zapisano | tabela t1, wiersz 5: C5 Wspólny układ odniesienia z Policją– ten sam SPO, SLO1, SLO2 co w szkicu Policji, aby pomiary były porównywalne (definicje zob. 01-F). | text | KC_0103 |
-| 00.C.t1.r6.c1 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Wyk. | tabela t1, wiersz 6: C6 Granice obszaru oględzin– z odcinkiem drogi przed miejscem zdarzenia (droga reakcji i hamowania każdego uczestnika), polem rozrzutu i położeniami końcowymi; ścieżka poruszania się po miejscu wyznaczona. | check | KC_0104 |
-| 00.C.t1.r6.c2 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | n/d | tabela t1, wiersz 6: C6 Granice obszaru oględzin– z odcinkiem drogi przed miejscem zdarzenia (droga reakcji i hamowania każdego uczestnika), polem rozrzutu i położeniami końcowymi; ścieżka poruszania się po miejscu wyznaczona. | check | KC_0105 |
-| 00.C.t1.r6.c3 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Godz. | tabela t1, wiersz 6: C6 Granice obszaru oględzin– z odcinkiem drogi przed miejscem zdarzenia (droga reakcji i hamowania każdego uczestnika), polem rozrzutu i położeniami końcowymi; ścieżka poruszania się po miejscu wyznaczona. | time | KC_0106 |
-| 00.C.t1.r6.c4 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Wynik / gdzie zapisano | tabela t1, wiersz 6: C6 Granice obszaru oględzin– z odcinkiem drogi przed miejscem zdarzenia (droga reakcji i hamowania każdego uczestnika), polem rozrzutu i położeniami końcowymi; ścieżka poruszania się po miejscu wyznaczona. | text | KC_0107 |
-| 00.C.t1.r7.c1 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Wyk. | tabela t1, wiersz 7: C7 Plan i kolejność czynnościuzgodnione z kierownikiem (ślady nietrwałe, pojazdy przed odholowaniem, przywrócenie ruchu). | check | KC_0108 |
-| 00.C.t1.r7.c2 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | n/d | tabela t1, wiersz 7: C7 Plan i kolejność czynnościuzgodnione z kierownikiem (ślady nietrwałe, pojazdy przed odholowaniem, przywrócenie ruchu). | check | KC_0109 |
-| 00.C.t1.r7.c3 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Godz. | tabela t1, wiersz 7: C7 Plan i kolejność czynnościuzgodnione z kierownikiem (ślady nietrwałe, pojazdy przed odholowaniem, przywrócenie ruchu). | time | KC_0110 |
-| 00.C.t1.r7.c4 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Wynik / gdzie zapisano | tabela t1, wiersz 7: C7 Plan i kolejność czynnościuzgodnione z kierownikiem (ślady nietrwałe, pojazdy przed odholowaniem, przywrócenie ruchu). | text | KC_0111 |
+| 00.C.t1.r2.c1 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Wyk. | tabela t1, wiersz 2: C2 Ocena zagrożeń: ruch na sąsiednich pasach, oznakowanie i radiowozy, wycieki paliwa; pojazd elektryczny lub hybrydowy (uszkodzone przewody wysokiego napięcia, deformacja baterii, dym, wzrost temperatury) – postępowanie uzgodnione z PSP; ADR – oznakowanie, karta. | check | KC_0088 |
+| 00.C.t1.r2.c2 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | n/d | tabela t1, wiersz 2: C2 Ocena zagrożeń: ruch na sąsiednich pasach, oznakowanie i radiowozy, wycieki paliwa; pojazd elektryczny lub hybrydowy (uszkodzone przewody wysokiego napięcia, deformacja baterii, dym, wzrost temperatury) – postępowanie uzgodnione z PSP; ADR – oznakowanie, karta. | check | KC_0089 |
+| 00.C.t1.r2.c3 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Godz. | tabela t1, wiersz 2: C2 Ocena zagrożeń: ruch na sąsiednich pasach, oznakowanie i radiowozy, wycieki paliwa; pojazd elektryczny lub hybrydowy (uszkodzone przewody wysokiego napięcia, deformacja baterii, dym, wzrost temperatury) – postępowanie uzgodnione z PSP; ADR – oznakowanie, karta. | time | KC_0090 |
+| 00.C.t1.r2.c4 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Wynik / gdzie zapisano | tabela t1, wiersz 2: C2 Ocena zagrożeń: ruch na sąsiednich pasach, oznakowanie i radiowozy, wycieki paliwa; pojazd elektryczny lub hybrydowy (uszkodzone przewody wysokiego napięcia, deformacja baterii, dym, wzrost temperatury) – postępowanie uzgodnione z PSP; ADR – oznakowanie, karta. | text | KC_0091 |
+| 00.C.t1.r3.c1 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Wyk. | tabela t1, wiersz 3: C3 Informacja wstępna: uczestnicy i ich oznaczenie (A, B …), ranni i dokąd przewiezieni, kto pierwszy przybył, wstępna godzina zdarzenia i jej źródło. | check | KC_0092 |
+| 00.C.t1.r3.c2 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | n/d | tabela t1, wiersz 3: C3 Informacja wstępna: uczestnicy i ich oznaczenie (A, B …), ranni i dokąd przewiezieni, kto pierwszy przybył, wstępna godzina zdarzenia i jej źródło. | check | KC_0093 |
+| 00.C.t1.r3.c3 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Godz. | tabela t1, wiersz 3: C3 Informacja wstępna: uczestnicy i ich oznaczenie (A, B …), ranni i dokąd przewiezieni, kto pierwszy przybył, wstępna godzina zdarzenia i jej źródło. | time | KC_0094 |
+| 00.C.t1.r3.c4 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Wynik / gdzie zapisano | tabela t1, wiersz 3: C3 Informacja wstępna: uczestnicy i ich oznaczenie (A, B …), ranni i dokąd przewiezieni, kto pierwszy przybył, wstępna godzina zdarzenia i jej źródło. | text | KC_0095 |
+| 00.C.t1.r4.c1 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Wyk. | tabela t1, wiersz 4: C4 Zmiany wtórne przed przybyciem: co i przez kogo przemieszczono (ZRM, PSP – cięcie, odsuwanie pojazdów, przenoszenie poszkodowanych, sorbent, przejazdy innych pojazdów); czy pierwotne położenia oznaczono (kreda, zdjęcia Policji, zdjęcia świadków). | check | KC_0096 |
+| 00.C.t1.r4.c2 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | n/d | tabela t1, wiersz 4: C4 Zmiany wtórne przed przybyciem: co i przez kogo przemieszczono (ZRM, PSP – cięcie, odsuwanie pojazdów, przenoszenie poszkodowanych, sorbent, przejazdy innych pojazdów); czy pierwotne położenia oznaczono (kreda, zdjęcia Policji, zdjęcia świadków). | check | KC_0097 |
+| 00.C.t1.r4.c3 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Godz. | tabela t1, wiersz 4: C4 Zmiany wtórne przed przybyciem: co i przez kogo przemieszczono (ZRM, PSP – cięcie, odsuwanie pojazdów, przenoszenie poszkodowanych, sorbent, przejazdy innych pojazdów); czy pierwotne położenia oznaczono (kreda, zdjęcia Policji, zdjęcia świadków). | time | KC_0098 |
+| 00.C.t1.r4.c4 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Wynik / gdzie zapisano | tabela t1, wiersz 4: C4 Zmiany wtórne przed przybyciem: co i przez kogo przemieszczono (ZRM, PSP – cięcie, odsuwanie pojazdów, przenoszenie poszkodowanych, sorbent, przejazdy innych pojazdów); czy pierwotne położenia oznaczono (kreda, zdjęcia Policji, zdjęcia świadków). | text | KC_0099 |
+| 00.C.t1.r5.c1 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Wyk. | tabela t1, wiersz 5: C5 Wspólny układ odniesienia z Policją – ten sam SPO, SLO1, SLO2 co w szkicu Policji, aby pomiary były porównywalne (definicje zob. 01-F). | check | KC_0100 |
+| 00.C.t1.r5.c2 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | n/d | tabela t1, wiersz 5: C5 Wspólny układ odniesienia z Policją – ten sam SPO, SLO1, SLO2 co w szkicu Policji, aby pomiary były porównywalne (definicje zob. 01-F). | check | KC_0101 |
+| 00.C.t1.r5.c3 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Godz. | tabela t1, wiersz 5: C5 Wspólny układ odniesienia z Policją – ten sam SPO, SLO1, SLO2 co w szkicu Policji, aby pomiary były porównywalne (definicje zob. 01-F). | time | KC_0102 |
+| 00.C.t1.r5.c4 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Wynik / gdzie zapisano | tabela t1, wiersz 5: C5 Wspólny układ odniesienia z Policją – ten sam SPO, SLO1, SLO2 co w szkicu Policji, aby pomiary były porównywalne (definicje zob. 01-F). | text | KC_0103 |
+| 00.C.t1.r6.c1 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Wyk. | tabela t1, wiersz 6: C6 Granice obszaru oględzin – z odcinkiem drogi przed miejscem zdarzenia (droga reakcji i hamowania każdego uczestnika), polem rozrzutu i położeniami końcowymi; ścieżka poruszania się po miejscu wyznaczona. | check | KC_0104 |
+| 00.C.t1.r6.c2 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | n/d | tabela t1, wiersz 6: C6 Granice obszaru oględzin – z odcinkiem drogi przed miejscem zdarzenia (droga reakcji i hamowania każdego uczestnika), polem rozrzutu i położeniami końcowymi; ścieżka poruszania się po miejscu wyznaczona. | check | KC_0105 |
+| 00.C.t1.r6.c3 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Godz. | tabela t1, wiersz 6: C6 Granice obszaru oględzin – z odcinkiem drogi przed miejscem zdarzenia (droga reakcji i hamowania każdego uczestnika), polem rozrzutu i położeniami końcowymi; ścieżka poruszania się po miejscu wyznaczona. | time | KC_0106 |
+| 00.C.t1.r6.c4 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Wynik / gdzie zapisano | tabela t1, wiersz 6: C6 Granice obszaru oględzin – z odcinkiem drogi przed miejscem zdarzenia (droga reakcji i hamowania każdego uczestnika), polem rozrzutu i położeniami końcowymi; ścieżka poruszania się po miejscu wyznaczona. | text | KC_0107 |
+| 00.C.t1.r7.c1 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Wyk. | tabela t1, wiersz 7: C7 Plan i kolejność czynności uzgodnione z kierownikiem (ślady nietrwałe, pojazdy przed odholowaniem, przywrócenie ruchu). | check | KC_0108 |
+| 00.C.t1.r7.c2 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | n/d | tabela t1, wiersz 7: C7 Plan i kolejność czynności uzgodnione z kierownikiem (ślady nietrwałe, pojazdy przed odholowaniem, przywrócenie ruchu). | check | KC_0109 |
+| 00.C.t1.r7.c3 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Godz. | tabela t1, wiersz 7: C7 Plan i kolejność czynności uzgodnione z kierownikiem (ślady nietrwałe, pojazdy przed odholowaniem, przywrócenie ruchu). | time | KC_0110 |
+| 00.C.t1.r7.c4 | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Wynik / gdzie zapisano | tabela t1, wiersz 7: C7 Plan i kolejność czynności uzgodnione z kierownikiem (ślady nietrwałe, pojazdy przed odholowaniem, przywrócenie ruchu). | text | KC_0111 |
 | 00.C.uwagi | C. PRZYBYCIE, BEZPIECZEŃSTWO,  | Uwagi | pole aplikacji (brak w PDF) | text |  |
-| 00.D.t1.r1.c1 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Wyk. | tabela t1, wiersz 1: D1 Ślady na mokrej nawierzchni, w śniegu, szronie, piasku, na trawie– zdjęcie i pomiar natychmiast, zanim wyschną lub zostaną zatarte. | check | KC_0112 |
-| 00.D.t1.r1.c2 | D. ŚLADY NIETRWAŁE – W PIERWSZ | n/d | tabela t1, wiersz 1: D1 Ślady na mokrej nawierzchni, w śniegu, szronie, piasku, na trawie– zdjęcie i pomiar natychmiast, zanim wyschną lub zostaną zatarte. | check | KC_0113 |
-| 00.D.t1.r1.c3 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Godz. | tabela t1, wiersz 1: D1 Ślady na mokrej nawierzchni, w śniegu, szronie, piasku, na trawie– zdjęcie i pomiar natychmiast, zanim wyschną lub zostaną zatarte. | time | KC_0114 |
-| 00.D.t1.r1.c4 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Wynik / gdzie zapisano | tabela t1, wiersz 1: D1 Ślady na mokrej nawierzchni, w śniegu, szronie, piasku, na trawie– zdjęcie i pomiar natychmiast, zanim wyschną lub zostaną zatarte. | text | KC_0115 |
-| 00.D.t1.r2.c1 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Wyk. | tabela t1, wiersz 2: D2 Plamy i ścieżki płynów(paliwo, chłodziwo, olej, płyn hamulcowy) – początek, przebieg, przypisanie do pojazdu – zanim zostaną posypane sorbentem. | check | KC_0116 |
-| 00.D.t1.r2.c2 | D. ŚLADY NIETRWAŁE – W PIERWSZ | n/d | tabela t1, wiersz 2: D2 Plamy i ścieżki płynów(paliwo, chłodziwo, olej, płyn hamulcowy) – początek, przebieg, przypisanie do pojazdu – zanim zostaną posypane sorbentem. | check | KC_0117 |
-| 00.D.t1.r2.c3 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Godz. | tabela t1, wiersz 2: D2 Plamy i ścieżki płynów(paliwo, chłodziwo, olej, płyn hamulcowy) – początek, przebieg, przypisanie do pojazdu – zanim zostaną posypane sorbentem. | time | KC_0118 |
-| 00.D.t1.r2.c4 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Wynik / gdzie zapisano | tabela t1, wiersz 2: D2 Plamy i ścieżki płynów(paliwo, chłodziwo, olej, płyn hamulcowy) – początek, przebieg, przypisanie do pojazdu – zanim zostaną posypane sorbentem. | text | KC_0119 |
-| 00.D.t1.r3.c1 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Wyk. | tabela t1, wiersz 3: D3 Oświetlenie pojazdów zastane– świecą / nie świecą: mijania, drogowe, pozycyjne, przeciwmgłowe, kierunkowskazy, awaryjne, stop; najlepiej film; przed odłączeniem lub rozładowaniem akumulatora. | check | KC_0120 |
-| 00.D.t1.r3.c2 | D. ŚLADY NIETRWAŁE – W PIERWSZ | n/d | tabela t1, wiersz 3: D3 Oświetlenie pojazdów zastane– świecą / nie świecą: mijania, drogowe, pozycyjne, przeciwmgłowe, kierunkowskazy, awaryjne, stop; najlepiej film; przed odłączeniem lub rozładowaniem akumulatora. | check | KC_0121 |
-| 00.D.t1.r3.c3 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Godz. | tabela t1, wiersz 3: D3 Oświetlenie pojazdów zastane– świecą / nie świecą: mijania, drogowe, pozycyjne, przeciwmgłowe, kierunkowskazy, awaryjne, stop; najlepiej film; przed odłączeniem lub rozładowaniem akumulatora. | time | KC_0122 |
-| 00.D.t1.r3.c4 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Wynik / gdzie zapisano | tabela t1, wiersz 3: D3 Oświetlenie pojazdów zastane– świecą / nie świecą: mijania, drogowe, pozycyjne, przeciwmgłowe, kierunkowskazy, awaryjne, stop; najlepiej film; przed odłączeniem lub rozładowaniem akumulatora. | text | KC_0123 |
+| 00.D.t1.r1.c1 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Wyk. | tabela t1, wiersz 1: D1 Ślady na mokrej nawierzchni, w śniegu, szronie, piasku, na trawie – zdjęcie i pomiar natychmiast, zanim wyschną lub zostaną zatarte. | check | KC_0112 |
+| 00.D.t1.r1.c2 | D. ŚLADY NIETRWAŁE – W PIERWSZ | n/d | tabela t1, wiersz 1: D1 Ślady na mokrej nawierzchni, w śniegu, szronie, piasku, na trawie – zdjęcie i pomiar natychmiast, zanim wyschną lub zostaną zatarte. | check | KC_0113 |
+| 00.D.t1.r1.c3 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Godz. | tabela t1, wiersz 1: D1 Ślady na mokrej nawierzchni, w śniegu, szronie, piasku, na trawie – zdjęcie i pomiar natychmiast, zanim wyschną lub zostaną zatarte. | time | KC_0114 |
+| 00.D.t1.r1.c4 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Wynik / gdzie zapisano | tabela t1, wiersz 1: D1 Ślady na mokrej nawierzchni, w śniegu, szronie, piasku, na trawie – zdjęcie i pomiar natychmiast, zanim wyschną lub zostaną zatarte. | text | KC_0115 |
+| 00.D.t1.r2.c1 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Wyk. | tabela t1, wiersz 2: D2 Plamy i ścieżki płynów (paliwo, chłodziwo, olej, płyn hamulcowy) – początek, przebieg, przypisanie do pojazdu – zanim zostaną posypane sorbentem. | check | KC_0116 |
+| 00.D.t1.r2.c2 | D. ŚLADY NIETRWAŁE – W PIERWSZ | n/d | tabela t1, wiersz 2: D2 Plamy i ścieżki płynów (paliwo, chłodziwo, olej, płyn hamulcowy) – początek, przebieg, przypisanie do pojazdu – zanim zostaną posypane sorbentem. | check | KC_0117 |
+| 00.D.t1.r2.c3 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Godz. | tabela t1, wiersz 2: D2 Plamy i ścieżki płynów (paliwo, chłodziwo, olej, płyn hamulcowy) – początek, przebieg, przypisanie do pojazdu – zanim zostaną posypane sorbentem. | time | KC_0118 |
+| 00.D.t1.r2.c4 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Wynik / gdzie zapisano | tabela t1, wiersz 2: D2 Plamy i ścieżki płynów (paliwo, chłodziwo, olej, płyn hamulcowy) – początek, przebieg, przypisanie do pojazdu – zanim zostaną posypane sorbentem. | text | KC_0119 |
+| 00.D.t1.r3.c1 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Wyk. | tabela t1, wiersz 3: D3 Oświetlenie pojazdów zastane – świecą / nie świecą: mijania, drogowe, pozycyjne, przeciwmgłowe, kierunkowskazy, awaryjne, stop; najlepiej film; przed odłączeniem lub rozładowaniem akumulatora. | check | KC_0120 |
+| 00.D.t1.r3.c2 | D. ŚLADY NIETRWAŁE – W PIERWSZ | n/d | tabela t1, wiersz 3: D3 Oświetlenie pojazdów zastane – świecą / nie świecą: mijania, drogowe, pozycyjne, przeciwmgłowe, kierunkowskazy, awaryjne, stop; najlepiej film; przed odłączeniem lub rozładowaniem akumulatora. | check | KC_0121 |
+| 00.D.t1.r3.c3 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Godz. | tabela t1, wiersz 3: D3 Oświetlenie pojazdów zastane – świecą / nie świecą: mijania, drogowe, pozycyjne, przeciwmgłowe, kierunkowskazy, awaryjne, stop; najlepiej film; przed odłączeniem lub rozładowaniem akumulatora. | time | KC_0122 |
+| 00.D.t1.r3.c4 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Wynik / gdzie zapisano | tabela t1, wiersz 3: D3 Oświetlenie pojazdów zastane – świecą / nie świecą: mijania, drogowe, pozycyjne, przeciwmgłowe, kierunkowskazy, awaryjne, stop; najlepiej film; przed odłączeniem lub rozładowaniem akumulatora. | text | KC_0123 |
 | 00.D.t1.r4.c1 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Wyk. | tabela t1, wiersz 4: D4 Wskazania przyrządów, kontrolki i komunikaty, ekran multimediów / nawigacji – zdjęcie przed wyłączeniem zapłonu (zob. 03-C). | check | KC_0124 |
 | 00.D.t1.r4.c2 | D. ŚLADY NIETRWAŁE – W PIERWSZ | n/d | tabela t1, wiersz 4: D4 Wskazania przyrządów, kontrolki i komunikaty, ekran multimediów / nawigacji – zdjęcie przed wyłączeniem zapłonu (zob. 03-C). | check | KC_0125 |
 | 00.D.t1.r4.c3 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Godz. | tabela t1, wiersz 4: D4 Wskazania przyrządów, kontrolki i komunikaty, ekran multimediów / nawigacji – zdjęcie przed wyłączeniem zapłonu (zob. 03-C). | time | KC_0126 |
 | 00.D.t1.r4.c4 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Wynik / gdzie zapisano | tabela t1, wiersz 4: D4 Wskazania przyrządów, kontrolki i komunikaty, ekran multimediów / nawigacji – zdjęcie przed wyłączeniem zapłonu (zob. 03-C). | text | KC_0127 |
-| 00.D.t1.r5.c1 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Wyk. | tabela t1, wiersz 5: D5 Położenie poszkodowanych i przedmiotów osobistych(kask, but, okulary, telefon) – z oznaczeń Policji lub relacji ZRM, jeśli zostali przeniesieni; źródło informacji zapisane. | check | KC_0128 |
-| 00.D.t1.r5.c2 | D. ŚLADY NIETRWAŁE – W PIERWSZ | n/d | tabela t1, wiersz 5: D5 Położenie poszkodowanych i przedmiotów osobistych(kask, but, okulary, telefon) – z oznaczeń Policji lub relacji ZRM, jeśli zostali przeniesieni; źródło informacji zapisane. | check | KC_0129 |
-| 00.D.t1.r5.c3 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Godz. | tabela t1, wiersz 5: D5 Położenie poszkodowanych i przedmiotów osobistych(kask, but, okulary, telefon) – z oznaczeń Policji lub relacji ZRM, jeśli zostali przeniesieni; źródło informacji zapisane. | time | KC_0130 |
-| 00.D.t1.r5.c4 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Wynik / gdzie zapisano | tabela t1, wiersz 5: D5 Położenie poszkodowanych i przedmiotów osobistych(kask, but, okulary, telefon) – z oznaczeń Policji lub relacji ZRM, jeśli zostali przeniesieni; źródło informacji zapisane. | text | KC_0131 |
-| 00.D.t1.r6.c1 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Wyk. | tabela t1, wiersz 6: D6 Warunki zastane z godziną:stan nawierzchni, opad, temperatura powietrza i nawierzchni, oświetlenie uliczne (działa / nie działa), położenie słońca (zob. 01-B). | check | KC_0132 |
-| 00.D.t1.r6.c2 | D. ŚLADY NIETRWAŁE – W PIERWSZ | n/d | tabela t1, wiersz 6: D6 Warunki zastane z godziną:stan nawierzchni, opad, temperatura powietrza i nawierzchni, oświetlenie uliczne (działa / nie działa), położenie słońca (zob. 01-B). | check | KC_0133 |
-| 00.D.t1.r6.c3 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Godz. | tabela t1, wiersz 6: D6 Warunki zastane z godziną:stan nawierzchni, opad, temperatura powietrza i nawierzchni, oświetlenie uliczne (działa / nie działa), położenie słońca (zob. 01-B). | time | KC_0134 |
-| 00.D.t1.r6.c4 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Wynik / gdzie zapisano | tabela t1, wiersz 6: D6 Warunki zastane z godziną:stan nawierzchni, opad, temperatura powietrza i nawierzchni, oświetlenie uliczne (działa / nie działa), położenie słońca (zob. 01-B). | text | KC_0135 |
-| 00.D.t1.r7.c1 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Wyk. | tabela t1, wiersz 7: D7 Ślady biologiczne i mikroślady na pojazdach(włosy, tkanki, włókna, odciski tkanin) – wskazane technikowi do zabezpieczenia przed przesunięciem pojazdu. | check | KC_0136 |
-| 00.D.t1.r7.c2 | D. ŚLADY NIETRWAŁE – W PIERWSZ | n/d | tabela t1, wiersz 7: D7 Ślady biologiczne i mikroślady na pojazdach(włosy, tkanki, włókna, odciski tkanin) – wskazane technikowi do zabezpieczenia przed przesunięciem pojazdu. | check | KC_0137 |
-| 00.D.t1.r7.c3 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Godz. | tabela t1, wiersz 7: D7 Ślady biologiczne i mikroślady na pojazdach(włosy, tkanki, włókna, odciski tkanin) – wskazane technikowi do zabezpieczenia przed przesunięciem pojazdu. | time | KC_0138 |
-| 00.D.t1.r7.c4 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Wynik / gdzie zapisano | tabela t1, wiersz 7: D7 Ślady biologiczne i mikroślady na pojazdach(włosy, tkanki, włókna, odciski tkanin) – wskazane technikowi do zabezpieczenia przed przesunięciem pojazdu. | text | KC_0139 |
+| 00.D.t1.r5.c1 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Wyk. | tabela t1, wiersz 5: D5 Położenie poszkodowanych i przedmiotów osobistych (kask, but, okulary, telefon) – z oznaczeń Policji lub relacji ZRM, jeśli zostali przeniesieni; źródło informacji zapisane. | check | KC_0128 |
+| 00.D.t1.r5.c2 | D. ŚLADY NIETRWAŁE – W PIERWSZ | n/d | tabela t1, wiersz 5: D5 Położenie poszkodowanych i przedmiotów osobistych (kask, but, okulary, telefon) – z oznaczeń Policji lub relacji ZRM, jeśli zostali przeniesieni; źródło informacji zapisane. | check | KC_0129 |
+| 00.D.t1.r5.c3 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Godz. | tabela t1, wiersz 5: D5 Położenie poszkodowanych i przedmiotów osobistych (kask, but, okulary, telefon) – z oznaczeń Policji lub relacji ZRM, jeśli zostali przeniesieni; źródło informacji zapisane. | time | KC_0130 |
+| 00.D.t1.r5.c4 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Wynik / gdzie zapisano | tabela t1, wiersz 5: D5 Położenie poszkodowanych i przedmiotów osobistych (kask, but, okulary, telefon) – z oznaczeń Policji lub relacji ZRM, jeśli zostali przeniesieni; źródło informacji zapisane. | text | KC_0131 |
+| 00.D.t1.r6.c1 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Wyk. | tabela t1, wiersz 6: D6 Warunki zastane z godziną: stan nawierzchni, opad, temperatura powietrza i nawierzchni, oświetlenie uliczne (działa / nie działa), położenie słońca (zob. 01-B). | check | KC_0132 |
+| 00.D.t1.r6.c2 | D. ŚLADY NIETRWAŁE – W PIERWSZ | n/d | tabela t1, wiersz 6: D6 Warunki zastane z godziną: stan nawierzchni, opad, temperatura powietrza i nawierzchni, oświetlenie uliczne (działa / nie działa), położenie słońca (zob. 01-B). | check | KC_0133 |
+| 00.D.t1.r6.c3 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Godz. | tabela t1, wiersz 6: D6 Warunki zastane z godziną: stan nawierzchni, opad, temperatura powietrza i nawierzchni, oświetlenie uliczne (działa / nie działa), położenie słońca (zob. 01-B). | time | KC_0134 |
+| 00.D.t1.r6.c4 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Wynik / gdzie zapisano | tabela t1, wiersz 6: D6 Warunki zastane z godziną: stan nawierzchni, opad, temperatura powietrza i nawierzchni, oświetlenie uliczne (działa / nie działa), położenie słońca (zob. 01-B). | text | KC_0135 |
+| 00.D.t1.r7.c1 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Wyk. | tabela t1, wiersz 7: D7 Ślady biologiczne i mikroślady na pojazdach (włosy, tkanki, włókna, odciski tkanin) – wskazane technikowi do zabezpieczenia przed przesunięciem pojazdu. | check | KC_0136 |
+| 00.D.t1.r7.c2 | D. ŚLADY NIETRWAŁE – W PIERWSZ | n/d | tabela t1, wiersz 7: D7 Ślady biologiczne i mikroślady na pojazdach (włosy, tkanki, włókna, odciski tkanin) – wskazane technikowi do zabezpieczenia przed przesunięciem pojazdu. | check | KC_0137 |
+| 00.D.t1.r7.c3 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Godz. | tabela t1, wiersz 7: D7 Ślady biologiczne i mikroślady na pojazdach (włosy, tkanki, włókna, odciski tkanin) – wskazane technikowi do zabezpieczenia przed przesunięciem pojazdu. | time | KC_0138 |
+| 00.D.t1.r7.c4 | D. ŚLADY NIETRWAŁE – W PIERWSZ | Wynik / gdzie zapisano | tabela t1, wiersz 7: D7 Ślady biologiczne i mikroślady na pojazdach (włosy, tkanki, włókna, odciski tkanin) – wskazane technikowi do zabezpieczenia przed przesunięciem pojazdu. | text | KC_0139 |
 | 00.D.uwagi | D. ŚLADY NIETRWAŁE – W PIERWSZ | Uwagi | pole aplikacji (brak w PDF) | text |  |
 | 00.E.1 | E. DOKUMENTACJA FOTOGRAFICZNA  | Aparat / obiektyw |  | text | KC_0140 |
 | 00.E.2 | E. DOKUMENTACJA FOTOGRAFICZNA  | Karta |  | text | KC_0141 |
 | 00.E.3 | E. DOKUMENTACJA FOTOGRAFICZNA  | Odchyłka zegara aparatu [s] |  | num | KC_0142 |
 | 00.E.4 | E. DOKUMENTACJA FOTOGRAFICZNA  | Zdjęcia nr od |  | text | KC_0143 |
 | 00.E.5 | E. DOKUMENTACJA FOTOGRAFICZNA  | Zdjęcia nr do |  | text | KC_0144 |
-| 00.E.t1.r1.c1 | E. DOKUMENTACJA FOTOGRAFICZNA  | Wyk. | tabela t1, wiersz 1: E1 Wzorzec czasu na początku– zdjęcie ekranu z czasem z sekundami. | check | KC_0145 |
-| 00.E.t1.r1.c2 | E. DOKUMENTACJA FOTOGRAFICZNA  | n/d | tabela t1, wiersz 1: E1 Wzorzec czasu na początku– zdjęcie ekranu z czasem z sekundami. | check | KC_0146 |
-| 00.E.t1.r1.c3 | E. DOKUMENTACJA FOTOGRAFICZNA  | Godz. | tabela t1, wiersz 1: E1 Wzorzec czasu na początku– zdjęcie ekranu z czasem z sekundami. | time | KC_0147 |
-| 00.E.t1.r1.c4 | E. DOKUMENTACJA FOTOGRAFICZNA  | Wynik / gdzie zapisano | tabela t1, wiersz 1: E1 Wzorzec czasu na początku– zdjęcie ekranu z czasem z sekundami. | text | KC_0148 |
-| 00.E.t1.r2.c1 | E. DOKUMENTACJA FOTOGRAFICZNA  | Wyk. | tabela t1, wiersz 2: E2 Zdjęcia orientacyjnez każdego kierunku dojazdu każdego uczestnika, z dużej odległości przed miejscem zdarzenia. | check | KC_0149 |
-| 00.E.t1.r2.c2 | E. DOKUMENTACJA FOTOGRAFICZNA  | n/d | tabela t1, wiersz 2: E2 Zdjęcia orientacyjnez każdego kierunku dojazdu każdego uczestnika, z dużej odległości przed miejscem zdarzenia. | check | KC_0150 |
-| 00.E.t1.r2.c3 | E. DOKUMENTACJA FOTOGRAFICZNA  | Godz. | tabela t1, wiersz 2: E2 Zdjęcia orientacyjnez każdego kierunku dojazdu każdego uczestnika, z dużej odległości przed miejscem zdarzenia. | time | KC_0151 |
-| 00.E.t1.r2.c4 | E. DOKUMENTACJA FOTOGRAFICZNA  | Wynik / gdzie zapisano | tabela t1, wiersz 2: E2 Zdjęcia orientacyjnez każdego kierunku dojazdu każdego uczestnika, z dużej odległości przed miejscem zdarzenia. | text | KC_0152 |
-| 00.E.t1.r3.c1 | E. DOKUMENTACJA FOTOGRAFICZNA  | Wyk. | tabela t1, wiersz 3: E3 Zdjęcia z pozycji kierujących– wysokość oczu właściwa dla typu pojazdu, kolejne odległości od miejsca zderzenia, zawsze z punktem stałym w kadrze; wysokość i odległości zapisane. | check | KC_0153 |
-| 00.E.t1.r3.c2 | E. DOKUMENTACJA FOTOGRAFICZNA  | n/d | tabela t1, wiersz 3: E3 Zdjęcia z pozycji kierujących– wysokość oczu właściwa dla typu pojazdu, kolejne odległości od miejsca zderzenia, zawsze z punktem stałym w kadrze; wysokość i odległości zapisane. | check | KC_0154 |
-| 00.E.t1.r3.c3 | E. DOKUMENTACJA FOTOGRAFICZNA  | Godz. | tabela t1, wiersz 3: E3 Zdjęcia z pozycji kierujących– wysokość oczu właściwa dla typu pojazdu, kolejne odległości od miejsca zderzenia, zawsze z punktem stałym w kadrze; wysokość i odległości zapisane. | time | KC_0155 |
-| 00.E.t1.r3.c4 | E. DOKUMENTACJA FOTOGRAFICZNA  | Wynik / gdzie zapisano | tabela t1, wiersz 3: E3 Zdjęcia z pozycji kierujących– wysokość oczu właściwa dla typu pojazdu, kolejne odległości od miejsca zderzenia, zawsze z punktem stałym w kadrze; wysokość i odległości zapisane. | text | KC_0156 |
-| 00.E.t1.r4.c1 | E. DOKUMENTACJA FOTOGRAFICZNA  | Wyk. | tabela t1, wiersz 4: E4 Zdjęcia sytuacyjne każdego pojazduw położeniu końcowym – cztery strony, narożniki, ujęcie z góry (podwyższenie, dron – za zgodą kierownika). | check | KC_0157 |
-| 00.E.t1.r4.c2 | E. DOKUMENTACJA FOTOGRAFICZNA  | n/d | tabela t1, wiersz 4: E4 Zdjęcia sytuacyjne każdego pojazduw położeniu końcowym – cztery strony, narożniki, ujęcie z góry (podwyższenie, dron – za zgodą kierownika). | check | KC_0158 |
-| 00.E.t1.r4.c3 | E. DOKUMENTACJA FOTOGRAFICZNA  | Godz. | tabela t1, wiersz 4: E4 Zdjęcia sytuacyjne każdego pojazduw położeniu końcowym – cztery strony, narożniki, ujęcie z góry (podwyższenie, dron – za zgodą kierownika). | time | KC_0159 |
-| 00.E.t1.r4.c4 | E. DOKUMENTACJA FOTOGRAFICZNA  | Wynik / gdzie zapisano | tabela t1, wiersz 4: E4 Zdjęcia sytuacyjne każdego pojazduw położeniu końcowym – cztery strony, narożniki, ujęcie z góry (podwyższenie, dron – za zgodą kierownika). | text | KC_0160 |
-| 00.E.t1.r5.c1 | E. DOKUMENTACJA FOTOGRAFICZNA  | Wyk. | tabela t1, wiersz 5: E5 Zdjęcia szczegółowe śladów– każdy z numerkiem i skalą (łata, taśma), w miarę możności prostopadle. | check | KC_0161 |
-| 00.E.t1.r5.c2 | E. DOKUMENTACJA FOTOGRAFICZNA  | n/d | tabela t1, wiersz 5: E5 Zdjęcia szczegółowe śladów– każdy z numerkiem i skalą (łata, taśma), w miarę możności prostopadle. | check | KC_0162 |
-| 00.E.t1.r5.c3 | E. DOKUMENTACJA FOTOGRAFICZNA  | Godz. | tabela t1, wiersz 5: E5 Zdjęcia szczegółowe śladów– każdy z numerkiem i skalą (łata, taśma), w miarę możności prostopadle. | time | KC_0163 |
-| 00.E.t1.r5.c4 | E. DOKUMENTACJA FOTOGRAFICZNA  | Wynik / gdzie zapisano | tabela t1, wiersz 5: E5 Zdjęcia szczegółowe śladów– każdy z numerkiem i skalą (łata, taśma), w miarę możności prostopadle. | text | KC_0164 |
-| 00.E.t1.r6.c1 | E. DOKUMENTACJA FOTOGRAFICZNA  | Wyk. | tabela t1, wiersz 6: E6 Seria do fotogrametrii– kadry z dużym wzajemnym pokryciem, punkty kontrolne o zmierzonych odległościach. | check | KC_0165 |
-| 00.E.t1.r6.c2 | E. DOKUMENTACJA FOTOGRAFICZNA  | n/d | tabela t1, wiersz 6: E6 Seria do fotogrametrii– kadry z dużym wzajemnym pokryciem, punkty kontrolne o zmierzonych odległościach. | check | KC_0166 |
-| 00.E.t1.r6.c3 | E. DOKUMENTACJA FOTOGRAFICZNA  | Godz. | tabela t1, wiersz 6: E6 Seria do fotogrametrii– kadry z dużym wzajemnym pokryciem, punkty kontrolne o zmierzonych odległościach. | time | KC_0167 |
-| 00.E.t1.r6.c4 | E. DOKUMENTACJA FOTOGRAFICZNA  | Wynik / gdzie zapisano | tabela t1, wiersz 6: E6 Seria do fotogrametrii– kadry z dużym wzajemnym pokryciem, punkty kontrolne o zmierzonych odległościach. | text | KC_0168 |
-| 00.E.t1.r7.c1 | E. DOKUMENTACJA FOTOGRAFICZNA  | Wyk. | tabela t1, wiersz 7: E7 Film obchodu miejscaz komentarzem głosowym (godzina, kierunki). | check | KC_0169 |
-| 00.E.t1.r7.c2 | E. DOKUMENTACJA FOTOGRAFICZNA  | n/d | tabela t1, wiersz 7: E7 Film obchodu miejscaz komentarzem głosowym (godzina, kierunki). | check | KC_0170 |
-| 00.E.t1.r7.c3 | E. DOKUMENTACJA FOTOGRAFICZNA  | Godz. | tabela t1, wiersz 7: E7 Film obchodu miejscaz komentarzem głosowym (godzina, kierunki). | time | KC_0171 |
-| 00.E.t1.r7.c4 | E. DOKUMENTACJA FOTOGRAFICZNA  | Wynik / gdzie zapisano | tabela t1, wiersz 7: E7 Film obchodu miejscaz komentarzem głosowym (godzina, kierunki). | text | KC_0172 |
-| 00.E.t1.r8.c1 | E. DOKUMENTACJA FOTOGRAFICZNA  | Wyk. | tabela t1, wiersz 8: E8 Zdjęcia w warunkach oświetlenia zbliżonych do zdarzenia(bez lampy), parametry ekspozycji zapisane – dokumentacja stanu, nie odwzorowanie percepcji kierującego. | check | KC_0173 |
-| 00.E.t1.r8.c2 | E. DOKUMENTACJA FOTOGRAFICZNA  | n/d | tabela t1, wiersz 8: E8 Zdjęcia w warunkach oświetlenia zbliżonych do zdarzenia(bez lampy), parametry ekspozycji zapisane – dokumentacja stanu, nie odwzorowanie percepcji kierującego. | check | KC_0174 |
-| 00.E.t1.r8.c3 | E. DOKUMENTACJA FOTOGRAFICZNA  | Godz. | tabela t1, wiersz 8: E8 Zdjęcia w warunkach oświetlenia zbliżonych do zdarzenia(bez lampy), parametry ekspozycji zapisane – dokumentacja stanu, nie odwzorowanie percepcji kierującego. | time | KC_0175 |
-| 00.E.t1.r8.c4 | E. DOKUMENTACJA FOTOGRAFICZNA  | Wynik / gdzie zapisano | tabela t1, wiersz 8: E8 Zdjęcia w warunkach oświetlenia zbliżonych do zdarzenia(bez lampy), parametry ekspozycji zapisane – dokumentacja stanu, nie odwzorowanie percepcji kierującego. | text | KC_0176 |
+| 00.E.t1.r1.c1 | E. DOKUMENTACJA FOTOGRAFICZNA  | Wyk. | tabela t1, wiersz 1: E1 Wzorzec czasu na początku – zdjęcie ekranu z czasem z sekundami. | check | KC_0145 |
+| 00.E.t1.r1.c2 | E. DOKUMENTACJA FOTOGRAFICZNA  | n/d | tabela t1, wiersz 1: E1 Wzorzec czasu na początku – zdjęcie ekranu z czasem z sekundami. | check | KC_0146 |
+| 00.E.t1.r1.c3 | E. DOKUMENTACJA FOTOGRAFICZNA  | Godz. | tabela t1, wiersz 1: E1 Wzorzec czasu na początku – zdjęcie ekranu z czasem z sekundami. | time | KC_0147 |
+| 00.E.t1.r1.c4 | E. DOKUMENTACJA FOTOGRAFICZNA  | Wynik / gdzie zapisano | tabela t1, wiersz 1: E1 Wzorzec czasu na początku – zdjęcie ekranu z czasem z sekundami. | text | KC_0148 |
+| 00.E.t1.r2.c1 | E. DOKUMENTACJA FOTOGRAFICZNA  | Wyk. | tabela t1, wiersz 2: E2 Zdjęcia orientacyjne z każdego kierunku dojazdu każdego uczestnika, z dużej odległości przed miejscem zdarzenia. | check | KC_0149 |
+| 00.E.t1.r2.c2 | E. DOKUMENTACJA FOTOGRAFICZNA  | n/d | tabela t1, wiersz 2: E2 Zdjęcia orientacyjne z każdego kierunku dojazdu każdego uczestnika, z dużej odległości przed miejscem zdarzenia. | check | KC_0150 |
+| 00.E.t1.r2.c3 | E. DOKUMENTACJA FOTOGRAFICZNA  | Godz. | tabela t1, wiersz 2: E2 Zdjęcia orientacyjne z każdego kierunku dojazdu każdego uczestnika, z dużej odległości przed miejscem zdarzenia. | time | KC_0151 |
+| 00.E.t1.r2.c4 | E. DOKUMENTACJA FOTOGRAFICZNA  | Wynik / gdzie zapisano | tabela t1, wiersz 2: E2 Zdjęcia orientacyjne z każdego kierunku dojazdu każdego uczestnika, z dużej odległości przed miejscem zdarzenia. | text | KC_0152 |
+| 00.E.t1.r3.c1 | E. DOKUMENTACJA FOTOGRAFICZNA  | Wyk. | tabela t1, wiersz 3: E3 Zdjęcia z pozycji kierujących – wysokość oczu właściwa dla typu pojazdu, kolejne odległości od miejsca zderzenia, zawsze z punktem stałym w kadrze; wysokość i odległości zapisane. | check | KC_0153 |
+| 00.E.t1.r3.c2 | E. DOKUMENTACJA FOTOGRAFICZNA  | n/d | tabela t1, wiersz 3: E3 Zdjęcia z pozycji kierujących – wysokość oczu właściwa dla typu pojazdu, kolejne odległości od miejsca zderzenia, zawsze z punktem stałym w kadrze; wysokość i odległości zapisane. | check | KC_0154 |
+| 00.E.t1.r3.c3 | E. DOKUMENTACJA FOTOGRAFICZNA  | Godz. | tabela t1, wiersz 3: E3 Zdjęcia z pozycji kierujących – wysokość oczu właściwa dla typu pojazdu, kolejne odległości od miejsca zderzenia, zawsze z punktem stałym w kadrze; wysokość i odległości zapisane. | time | KC_0155 |
+| 00.E.t1.r3.c4 | E. DOKUMENTACJA FOTOGRAFICZNA  | Wynik / gdzie zapisano | tabela t1, wiersz 3: E3 Zdjęcia z pozycji kierujących – wysokość oczu właściwa dla typu pojazdu, kolejne odległości od miejsca zderzenia, zawsze z punktem stałym w kadrze; wysokość i odległości zapisane. | text | KC_0156 |
+| 00.E.t1.r4.c1 | E. DOKUMENTACJA FOTOGRAFICZNA  | Wyk. | tabela t1, wiersz 4: E4 Zdjęcia sytuacyjne każdego pojazdu w położeniu końcowym – cztery strony, narożniki, ujęcie z góry (podwyższenie, dron – za zgodą kierownika). | check | KC_0157 |
+| 00.E.t1.r4.c2 | E. DOKUMENTACJA FOTOGRAFICZNA  | n/d | tabela t1, wiersz 4: E4 Zdjęcia sytuacyjne każdego pojazdu w położeniu końcowym – cztery strony, narożniki, ujęcie z góry (podwyższenie, dron – za zgodą kierownika). | check | KC_0158 |
+| 00.E.t1.r4.c3 | E. DOKUMENTACJA FOTOGRAFICZNA  | Godz. | tabela t1, wiersz 4: E4 Zdjęcia sytuacyjne każdego pojazdu w położeniu końcowym – cztery strony, narożniki, ujęcie z góry (podwyższenie, dron – za zgodą kierownika). | time | KC_0159 |
+| 00.E.t1.r4.c4 | E. DOKUMENTACJA FOTOGRAFICZNA  | Wynik / gdzie zapisano | tabela t1, wiersz 4: E4 Zdjęcia sytuacyjne każdego pojazdu w położeniu końcowym – cztery strony, narożniki, ujęcie z góry (podwyższenie, dron – za zgodą kierownika). | text | KC_0160 |
+| 00.E.t1.r5.c1 | E. DOKUMENTACJA FOTOGRAFICZNA  | Wyk. | tabela t1, wiersz 5: E5 Zdjęcia szczegółowe śladów – każdy z numerkiem i skalą (łata, taśma), w miarę możności prostopadle. | check | KC_0161 |
+| 00.E.t1.r5.c2 | E. DOKUMENTACJA FOTOGRAFICZNA  | n/d | tabela t1, wiersz 5: E5 Zdjęcia szczegółowe śladów – każdy z numerkiem i skalą (łata, taśma), w miarę możności prostopadle. | check | KC_0162 |
+| 00.E.t1.r5.c3 | E. DOKUMENTACJA FOTOGRAFICZNA  | Godz. | tabela t1, wiersz 5: E5 Zdjęcia szczegółowe śladów – każdy z numerkiem i skalą (łata, taśma), w miarę możności prostopadle. | time | KC_0163 |
+| 00.E.t1.r5.c4 | E. DOKUMENTACJA FOTOGRAFICZNA  | Wynik / gdzie zapisano | tabela t1, wiersz 5: E5 Zdjęcia szczegółowe śladów – każdy z numerkiem i skalą (łata, taśma), w miarę możności prostopadle. | text | KC_0164 |
+| 00.E.t1.r6.c1 | E. DOKUMENTACJA FOTOGRAFICZNA  | Wyk. | tabela t1, wiersz 6: E6 Seria do fotogrametrii – kadry z dużym wzajemnym pokryciem, punkty kontrolne o zmierzonych odległościach. | check | KC_0165 |
+| 00.E.t1.r6.c2 | E. DOKUMENTACJA FOTOGRAFICZNA  | n/d | tabela t1, wiersz 6: E6 Seria do fotogrametrii – kadry z dużym wzajemnym pokryciem, punkty kontrolne o zmierzonych odległościach. | check | KC_0166 |
+| 00.E.t1.r6.c3 | E. DOKUMENTACJA FOTOGRAFICZNA  | Godz. | tabela t1, wiersz 6: E6 Seria do fotogrametrii – kadry z dużym wzajemnym pokryciem, punkty kontrolne o zmierzonych odległościach. | time | KC_0167 |
+| 00.E.t1.r6.c4 | E. DOKUMENTACJA FOTOGRAFICZNA  | Wynik / gdzie zapisano | tabela t1, wiersz 6: E6 Seria do fotogrametrii – kadry z dużym wzajemnym pokryciem, punkty kontrolne o zmierzonych odległościach. | text | KC_0168 |
+| 00.E.t1.r7.c1 | E. DOKUMENTACJA FOTOGRAFICZNA  | Wyk. | tabela t1, wiersz 7: E7 Film obchodu miejsca z komentarzem głosowym (godzina, kierunki). | check | KC_0169 |
+| 00.E.t1.r7.c2 | E. DOKUMENTACJA FOTOGRAFICZNA  | n/d | tabela t1, wiersz 7: E7 Film obchodu miejsca z komentarzem głosowym (godzina, kierunki). | check | KC_0170 |
+| 00.E.t1.r7.c3 | E. DOKUMENTACJA FOTOGRAFICZNA  | Godz. | tabela t1, wiersz 7: E7 Film obchodu miejsca z komentarzem głosowym (godzina, kierunki). | time | KC_0171 |
+| 00.E.t1.r7.c4 | E. DOKUMENTACJA FOTOGRAFICZNA  | Wynik / gdzie zapisano | tabela t1, wiersz 7: E7 Film obchodu miejsca z komentarzem głosowym (godzina, kierunki). | text | KC_0172 |
+| 00.E.t1.r8.c1 | E. DOKUMENTACJA FOTOGRAFICZNA  | Wyk. | tabela t1, wiersz 8: E8 Zdjęcia w warunkach oświetlenia zbliżonych do zdarzenia (bez lampy), parametry ekspozycji zapisane – dokumentacja stanu, nie odwzorowanie percepcji kierującego. | check | KC_0173 |
+| 00.E.t1.r8.c2 | E. DOKUMENTACJA FOTOGRAFICZNA  | n/d | tabela t1, wiersz 8: E8 Zdjęcia w warunkach oświetlenia zbliżonych do zdarzenia (bez lampy), parametry ekspozycji zapisane – dokumentacja stanu, nie odwzorowanie percepcji kierującego. | check | KC_0174 |
+| 00.E.t1.r8.c3 | E. DOKUMENTACJA FOTOGRAFICZNA  | Godz. | tabela t1, wiersz 8: E8 Zdjęcia w warunkach oświetlenia zbliżonych do zdarzenia (bez lampy), parametry ekspozycji zapisane – dokumentacja stanu, nie odwzorowanie percepcji kierującego. | time | KC_0175 |
+| 00.E.t1.r8.c4 | E. DOKUMENTACJA FOTOGRAFICZNA  | Wynik / gdzie zapisano | tabela t1, wiersz 8: E8 Zdjęcia w warunkach oświetlenia zbliżonych do zdarzenia (bez lampy), parametry ekspozycji zapisane – dokumentacja stanu, nie odwzorowanie percepcji kierującego. | text | KC_0176 |
 | 00.E.t1.r9.c1 | E. DOKUMENTACJA FOTOGRAFICZNA  | Wyk. | tabela t1, wiersz 9: E9 Wzorzec czasu na końcu; zakres numerów zdjęć i filmów zob. 09-A. | check | KC_0177 |
 | 00.E.t1.r9.c2 | E. DOKUMENTACJA FOTOGRAFICZNA  | n/d | tabela t1, wiersz 9: E9 Wzorzec czasu na końcu; zakres numerów zdjęć i filmów zob. 09-A. | check | KC_0178 |
 | 00.E.t1.r9.c3 | E. DOKUMENTACJA FOTOGRAFICZNA  | Godz. | tabela t1, wiersz 9: E9 Wzorzec czasu na końcu; zakres numerów zdjęć i filmów zob. 09-A. | time | KC_0179 |
 | 00.E.t1.r9.c4 | E. DOKUMENTACJA FOTOGRAFICZNA  | Wynik / gdzie zapisano | tabela t1, wiersz 9: E9 Wzorzec czasu na końcu; zakres numerów zdjęć i filmów zob. 09-A. | text | KC_0180 |
 | 00.E.uwagi | E. DOKUMENTACJA FOTOGRAFICZNA  | Uwagi | pole aplikacji (brak w PDF) | text |  |
-| 00.F.t1.r1.c1 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wyk. | tabela t1, wiersz 1: F1 Układ odniesieniaSPO / SLO1 / SLO2 zdefiniowany, sfotografowany, zgodny z Policją (zob. 01-F). | check | KC_0181 |
-| 00.F.t1.r1.c2 | F. MIEJSCE ZDARZENIA – ŚLADY I | n/d | tabela t1, wiersz 1: F1 Układ odniesieniaSPO / SLO1 / SLO2 zdefiniowany, sfotografowany, zgodny z Policją (zob. 01-F). | check | KC_0182 |
-| 00.F.t1.r1.c3 | F. MIEJSCE ZDARZENIA – ŚLADY I | Godz. | tabela t1, wiersz 1: F1 Układ odniesieniaSPO / SLO1 / SLO2 zdefiniowany, sfotografowany, zgodny z Policją (zob. 01-F). | time | KC_0183 |
-| 00.F.t1.r1.c4 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wynik / gdzie zapisano | tabela t1, wiersz 1: F1 Układ odniesieniaSPO / SLO1 / SLO2 zdefiniowany, sfotografowany, zgodny z Policją (zob. 01-F). | text | KC_0184 |
-| 00.F.t1.r2.c1 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wyk. | tabela t1, wiersz 2: F2 Geometria drogi:szerokości jezdni, pasów, poboczy; promień łuku; pochylenie podłużne i poprzeczne – wartość i miejsce początku (zob. 01-C). | check | KC_0185 |
-| 00.F.t1.r2.c2 | F. MIEJSCE ZDARZENIA – ŚLADY I | n/d | tabela t1, wiersz 2: F2 Geometria drogi:szerokości jezdni, pasów, poboczy; promień łuku; pochylenie podłużne i poprzeczne – wartość i miejsce początku (zob. 01-C). | check | KC_0186 |
-| 00.F.t1.r2.c3 | F. MIEJSCE ZDARZENIA – ŚLADY I | Godz. | tabela t1, wiersz 2: F2 Geometria drogi:szerokości jezdni, pasów, poboczy; promień łuku; pochylenie podłużne i poprzeczne – wartość i miejsce początku (zob. 01-C). | time | KC_0187 |
-| 00.F.t1.r2.c4 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wynik / gdzie zapisano | tabela t1, wiersz 2: F2 Geometria drogi:szerokości jezdni, pasów, poboczy; promień łuku; pochylenie podłużne i poprzeczne – wartość i miejsce początku (zob. 01-C). | text | KC_0188 |
-| 00.F.t1.r3.c1 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wyk. | tabela t1, wiersz 3: F3 Ślady opon– hamowania (z blokadą / ABS: przerywane, słabo widoczne), znoszenia, toczenia, przyspieszania: początek, koniec, punkty pośrednie na łukach, szerokość, przypisanie do koła i pojazdu (zob. 01-G). | check | KC_0189 |
-| 00.F.t1.r3.c2 | F. MIEJSCE ZDARZENIA – ŚLADY I | n/d | tabela t1, wiersz 3: F3 Ślady opon– hamowania (z blokadą / ABS: przerywane, słabo widoczne), znoszenia, toczenia, przyspieszania: początek, koniec, punkty pośrednie na łukach, szerokość, przypisanie do koła i pojazdu (zob. 01-G). | check | KC_0190 |
-| 00.F.t1.r3.c3 | F. MIEJSCE ZDARZENIA – ŚLADY I | Godz. | tabela t1, wiersz 3: F3 Ślady opon– hamowania (z blokadą / ABS: przerywane, słabo widoczne), znoszenia, toczenia, przyspieszania: początek, koniec, punkty pośrednie na łukach, szerokość, przypisanie do koła i pojazdu (zob. 01-G). | time | KC_0191 |
-| 00.F.t1.r3.c4 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wynik / gdzie zapisano | tabela t1, wiersz 3: F3 Ślady opon– hamowania (z blokadą / ABS: przerywane, słabo widoczne), znoszenia, toczenia, przyspieszania: początek, koniec, punkty pośrednie na łukach, szerokość, przypisanie do koła i pojazdu (zob. 01-G). | text | KC_0192 |
-| 00.F.t1.r4.c1 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wyk. | tabela t1, wiersz 4: F4 Miejsce zderzenia / potrącenia– przesłanki: zmiana kierunku śladów opon, rysy i wyrwy, początek pola odłamków, odłamki elementów najniżej położonych, płyny, przedmioty pieszego; zapisane przesłanki za i przeciw. | check | KC_0193 |
-| 00.F.t1.r4.c2 | F. MIEJSCE ZDARZENIA – ŚLADY I | n/d | tabela t1, wiersz 4: F4 Miejsce zderzenia / potrącenia– przesłanki: zmiana kierunku śladów opon, rysy i wyrwy, początek pola odłamków, odłamki elementów najniżej położonych, płyny, przedmioty pieszego; zapisane przesłanki za i przeciw. | check | KC_0194 |
-| 00.F.t1.r4.c3 | F. MIEJSCE ZDARZENIA – ŚLADY I | Godz. | tabela t1, wiersz 4: F4 Miejsce zderzenia / potrącenia– przesłanki: zmiana kierunku śladów opon, rysy i wyrwy, początek pola odłamków, odłamki elementów najniżej położonych, płyny, przedmioty pieszego; zapisane przesłanki za i przeciw. | time | KC_0195 |
-| 00.F.t1.r4.c4 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wynik / gdzie zapisano | tabela t1, wiersz 4: F4 Miejsce zderzenia / potrącenia– przesłanki: zmiana kierunku śladów opon, rysy i wyrwy, początek pola odłamków, odłamki elementów najniżej położonych, płyny, przedmioty pieszego; zapisane przesłanki za i przeciw. | text | KC_0196 |
-| 00.F.t1.r5.c1 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wyk. | tabela t1, wiersz 5: F5 Rysy, żłobienia, wyrwyod elementów metalowych (felga, podłużnica, podnóżek motocykla) – położenie, kierunek, długość; przypisanie do elementu pojazdu. | check | KC_0197 |
-| 00.F.t1.r5.c2 | F. MIEJSCE ZDARZENIA – ŚLADY I | n/d | tabela t1, wiersz 5: F5 Rysy, żłobienia, wyrwyod elementów metalowych (felga, podłużnica, podnóżek motocykla) – położenie, kierunek, długość; przypisanie do elementu pojazdu. | check | KC_0198 |
-| 00.F.t1.r5.c3 | F. MIEJSCE ZDARZENIA – ŚLADY I | Godz. | tabela t1, wiersz 5: F5 Rysy, żłobienia, wyrwyod elementów metalowych (felga, podłużnica, podnóżek motocykla) – położenie, kierunek, długość; przypisanie do elementu pojazdu. | time | KC_0199 |
-| 00.F.t1.r5.c4 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wynik / gdzie zapisano | tabela t1, wiersz 5: F5 Rysy, żłobienia, wyrwyod elementów metalowych (felga, podłużnica, podnóżek motocykla) – położenie, kierunek, długość; przypisanie do elementu pojazdu. | text | KC_0200 |
-| 00.F.t1.r6.c1 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wyk. | tabela t1, wiersz 6: F6 Pole rozrzutu odłamków:granice, zagęszczenie, odłamki charakterystyczne (klosze, lusterka, tworzywa) i ich przypisanie do pojazdu. | check | KC_0201 |
-| 00.F.t1.r6.c2 | F. MIEJSCE ZDARZENIA – ŚLADY I | n/d | tabela t1, wiersz 6: F6 Pole rozrzutu odłamków:granice, zagęszczenie, odłamki charakterystyczne (klosze, lusterka, tworzywa) i ich przypisanie do pojazdu. | check | KC_0202 |
-| 00.F.t1.r6.c3 | F. MIEJSCE ZDARZENIA – ŚLADY I | Godz. | tabela t1, wiersz 6: F6 Pole rozrzutu odłamków:granice, zagęszczenie, odłamki charakterystyczne (klosze, lusterka, tworzywa) i ich przypisanie do pojazdu. | time | KC_0203 |
-| 00.F.t1.r6.c4 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wynik / gdzie zapisano | tabela t1, wiersz 6: F6 Pole rozrzutu odłamków:granice, zagęszczenie, odłamki charakterystyczne (klosze, lusterka, tworzywa) i ich przypisanie do pojazdu. | text | KC_0204 |
-| 00.F.t1.r7.c1 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wyk. | tabela t1, wiersz 7: F7 Położenia końcowe pojazdów– co najmniej 2 punkty na pojazd (np. środki kół jednej strony), przy zespołach także naczepa / przyczepa; kąt skrętu kół kierowanych. | check | KC_0205 |
-| 00.F.t1.r7.c2 | F. MIEJSCE ZDARZENIA – ŚLADY I | n/d | tabela t1, wiersz 7: F7 Położenia końcowe pojazdów– co najmniej 2 punkty na pojazd (np. środki kół jednej strony), przy zespołach także naczepa / przyczepa; kąt skrętu kół kierowanych. | check | KC_0206 |
-| 00.F.t1.r7.c3 | F. MIEJSCE ZDARZENIA – ŚLADY I | Godz. | tabela t1, wiersz 7: F7 Położenia końcowe pojazdów– co najmniej 2 punkty na pojazd (np. środki kół jednej strony), przy zespołach także naczepa / przyczepa; kąt skrętu kół kierowanych. | time | KC_0207 |
-| 00.F.t1.r7.c4 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wynik / gdzie zapisano | tabela t1, wiersz 7: F7 Położenia końcowe pojazdów– co najmniej 2 punkty na pojazd (np. środki kół jednej strony), przy zespołach także naczepa / przyczepa; kąt skrętu kół kierowanych. | text | KC_0208 |
-| 00.F.t1.r8.c1 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wyk. | tabela t1, wiersz 8: F8 Położenia końcowe osób i przedmiotów(głowa i środek ciała, kask, but, rower, elementy pojazdów). | check | KC_0209 |
-| 00.F.t1.r8.c2 | F. MIEJSCE ZDARZENIA – ŚLADY I | n/d | tabela t1, wiersz 8: F8 Położenia końcowe osób i przedmiotów(głowa i środek ciała, kask, but, rower, elementy pojazdów). | check | KC_0210 |
-| 00.F.t1.r8.c3 | F. MIEJSCE ZDARZENIA – ŚLADY I | Godz. | tabela t1, wiersz 8: F8 Położenia końcowe osób i przedmiotów(głowa i środek ciała, kask, but, rower, elementy pojazdów). | time | KC_0211 |
-| 00.F.t1.r8.c4 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wynik / gdzie zapisano | tabela t1, wiersz 8: F8 Położenia końcowe osób i przedmiotów(głowa i środek ciała, kask, but, rower, elementy pojazdów). | text | KC_0212 |
-| 00.F.t1.r9.c1 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wyk. | tabela t1, wiersz 9: F9 Uszkodzenia infrastruktury(bariery, słupki, znaki, latarnie, drzewa, krawężniki) – wysokość śladów od podłoża, przemieszczenia. | check | KC_0213 |
-| 00.F.t1.r9.c2 | F. MIEJSCE ZDARZENIA – ŚLADY I | n/d | tabela t1, wiersz 9: F9 Uszkodzenia infrastruktury(bariery, słupki, znaki, latarnie, drzewa, krawężniki) – wysokość śladów od podłoża, przemieszczenia. | check | KC_0214 |
-| 00.F.t1.r9.c3 | F. MIEJSCE ZDARZENIA – ŚLADY I | Godz. | tabela t1, wiersz 9: F9 Uszkodzenia infrastruktury(bariery, słupki, znaki, latarnie, drzewa, krawężniki) – wysokość śladów od podłoża, przemieszczenia. | time | KC_0215 |
-| 00.F.t1.r9.c4 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wynik / gdzie zapisano | tabela t1, wiersz 9: F9 Uszkodzenia infrastruktury(bariery, słupki, znaki, latarnie, drzewa, krawężniki) – wysokość śladów od podłoża, przemieszczenia. | text | KC_0216 |
-| 00.F.t1.r10.c1 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wyk. | tabela t1, wiersz 10: F10 Oznakowanie i sygnalizacja(zob. 01-E); cykl sygnalizacji nagrany filmem z czasem – kilka pełnych cykli; zarządca sygnalizacji ustalony. | check | KC_0217 |
-| 00.F.t1.r10.c2 | F. MIEJSCE ZDARZENIA – ŚLADY I | n/d | tabela t1, wiersz 10: F10 Oznakowanie i sygnalizacja(zob. 01-E); cykl sygnalizacji nagrany filmem z czasem – kilka pełnych cykli; zarządca sygnalizacji ustalony. | check | KC_0218 |
-| 00.F.t1.r10.c3 | F. MIEJSCE ZDARZENIA – ŚLADY I | Godz. | tabela t1, wiersz 10: F10 Oznakowanie i sygnalizacja(zob. 01-E); cykl sygnalizacji nagrany filmem z czasem – kilka pełnych cykli; zarządca sygnalizacji ustalony. | time | KC_0219 |
-| 00.F.t1.r10.c4 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wynik / gdzie zapisano | tabela t1, wiersz 10: F10 Oznakowanie i sygnalizacja(zob. 01-E); cykl sygnalizacji nagrany filmem z czasem – kilka pełnych cykli; zarządca sygnalizacji ustalony. | text | KC_0220 |
-| 00.F.t1.r11.c1 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wyk. | tabela t1, wiersz 11: F11 Widoczność– pomiar z pozycji obserwatora (wysokość oczu), w miarę możności w warunkach oświetlenia zbliżonych do zdarzenia; przeszkody w polu widzenia. | check | KC_0221 |
-| 00.F.t1.r11.c2 | F. MIEJSCE ZDARZENIA – ŚLADY I | n/d | tabela t1, wiersz 11: F11 Widoczność– pomiar z pozycji obserwatora (wysokość oczu), w miarę możności w warunkach oświetlenia zbliżonych do zdarzenia; przeszkody w polu widzenia. | check | KC_0222 |
-| 00.F.t1.r11.c3 | F. MIEJSCE ZDARZENIA – ŚLADY I | Godz. | tabela t1, wiersz 11: F11 Widoczność– pomiar z pozycji obserwatora (wysokość oczu), w miarę możności w warunkach oświetlenia zbliżonych do zdarzenia; przeszkody w polu widzenia. | time | KC_0223 |
-| 00.F.t1.r11.c4 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wynik / gdzie zapisano | tabela t1, wiersz 11: F11 Widoczność– pomiar z pozycji obserwatora (wysokość oczu), w miarę możności w warunkach oświetlenia zbliżonych do zdarzenia; przeszkody w polu widzenia. | text | KC_0224 |
-| 00.F.t1.r12.c1 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wyk. | tabela t1, wiersz 12: F12 Przyczepność nawierzchni– ocena / pomiar (metoda, wynik) albo potrzeba późniejszego pomiaru zgłoszona w sekcji H. | check | KC_0225 |
-| 00.F.t1.r12.c2 | F. MIEJSCE ZDARZENIA – ŚLADY I | n/d | tabela t1, wiersz 12: F12 Przyczepność nawierzchni– ocena / pomiar (metoda, wynik) albo potrzeba późniejszego pomiaru zgłoszona w sekcji H. | check | KC_0226 |
-| 00.F.t1.r12.c3 | F. MIEJSCE ZDARZENIA – ŚLADY I | Godz. | tabela t1, wiersz 12: F12 Przyczepność nawierzchni– ocena / pomiar (metoda, wynik) albo potrzeba późniejszego pomiaru zgłoszona w sekcji H. | time | KC_0227 |
-| 00.F.t1.r12.c4 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wynik / gdzie zapisano | tabela t1, wiersz 12: F12 Przyczepność nawierzchni– ocena / pomiar (metoda, wynik) albo potrzeba późniejszego pomiaru zgłoszona w sekcji H. | text | KC_0228 |
-| 00.F.t1.r13.c1 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wyk. | tabela t1, wiersz 13: F13 Okoliczności negatywnezapisane – brak śladów tam, gdzie można było ich oczekiwać. | check | KC_0229 |
-| 00.F.t1.r13.c2 | F. MIEJSCE ZDARZENIA – ŚLADY I | n/d | tabela t1, wiersz 13: F13 Okoliczności negatywnezapisane – brak śladów tam, gdzie można było ich oczekiwać. | check | KC_0230 |
-| 00.F.t1.r13.c3 | F. MIEJSCE ZDARZENIA – ŚLADY I | Godz. | tabela t1, wiersz 13: F13 Okoliczności negatywnezapisane – brak śladów tam, gdzie można było ich oczekiwać. | time | KC_0231 |
-| 00.F.t1.r13.c4 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wynik / gdzie zapisano | tabela t1, wiersz 13: F13 Okoliczności negatywnezapisane – brak śladów tam, gdzie można było ich oczekiwać. | text | KC_0232 |
+| 00.F.t1.r1.c1 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wyk. | tabela t1, wiersz 1: F1 Układ odniesienia SPO / SLO1 / SLO2 zdefiniowany, sfotografowany, zgodny z Policją (zob. 01-F). | check | KC_0181 |
+| 00.F.t1.r1.c2 | F. MIEJSCE ZDARZENIA – ŚLADY I | n/d | tabela t1, wiersz 1: F1 Układ odniesienia SPO / SLO1 / SLO2 zdefiniowany, sfotografowany, zgodny z Policją (zob. 01-F). | check | KC_0182 |
+| 00.F.t1.r1.c3 | F. MIEJSCE ZDARZENIA – ŚLADY I | Godz. | tabela t1, wiersz 1: F1 Układ odniesienia SPO / SLO1 / SLO2 zdefiniowany, sfotografowany, zgodny z Policją (zob. 01-F). | time | KC_0183 |
+| 00.F.t1.r1.c4 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wynik / gdzie zapisano | tabela t1, wiersz 1: F1 Układ odniesienia SPO / SLO1 / SLO2 zdefiniowany, sfotografowany, zgodny z Policją (zob. 01-F). | text | KC_0184 |
+| 00.F.t1.r2.c1 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wyk. | tabela t1, wiersz 2: F2 Geometria drogi: szerokości jezdni, pasów, poboczy; promień łuku; pochylenie podłużne i poprzeczne – wartość i miejsce początku (zob. 01-C). | check | KC_0185 |
+| 00.F.t1.r2.c2 | F. MIEJSCE ZDARZENIA – ŚLADY I | n/d | tabela t1, wiersz 2: F2 Geometria drogi: szerokości jezdni, pasów, poboczy; promień łuku; pochylenie podłużne i poprzeczne – wartość i miejsce początku (zob. 01-C). | check | KC_0186 |
+| 00.F.t1.r2.c3 | F. MIEJSCE ZDARZENIA – ŚLADY I | Godz. | tabela t1, wiersz 2: F2 Geometria drogi: szerokości jezdni, pasów, poboczy; promień łuku; pochylenie podłużne i poprzeczne – wartość i miejsce początku (zob. 01-C). | time | KC_0187 |
+| 00.F.t1.r2.c4 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wynik / gdzie zapisano | tabela t1, wiersz 2: F2 Geometria drogi: szerokości jezdni, pasów, poboczy; promień łuku; pochylenie podłużne i poprzeczne – wartość i miejsce początku (zob. 01-C). | text | KC_0188 |
+| 00.F.t1.r3.c1 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wyk. | tabela t1, wiersz 3: F3 Ślady opon – hamowania (z blokadą / ABS: przerywane, słabo widoczne), znoszenia, toczenia, przyspieszania: początek, koniec, punkty pośrednie na łukach, szerokość, przypisanie do koła i pojazdu (zob. 01-G). | check | KC_0189 |
+| 00.F.t1.r3.c2 | F. MIEJSCE ZDARZENIA – ŚLADY I | n/d | tabela t1, wiersz 3: F3 Ślady opon – hamowania (z blokadą / ABS: przerywane, słabo widoczne), znoszenia, toczenia, przyspieszania: początek, koniec, punkty pośrednie na łukach, szerokość, przypisanie do koła i pojazdu (zob. 01-G). | check | KC_0190 |
+| 00.F.t1.r3.c3 | F. MIEJSCE ZDARZENIA – ŚLADY I | Godz. | tabela t1, wiersz 3: F3 Ślady opon – hamowania (z blokadą / ABS: przerywane, słabo widoczne), znoszenia, toczenia, przyspieszania: początek, koniec, punkty pośrednie na łukach, szerokość, przypisanie do koła i pojazdu (zob. 01-G). | time | KC_0191 |
+| 00.F.t1.r3.c4 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wynik / gdzie zapisano | tabela t1, wiersz 3: F3 Ślady opon – hamowania (z blokadą / ABS: przerywane, słabo widoczne), znoszenia, toczenia, przyspieszania: początek, koniec, punkty pośrednie na łukach, szerokość, przypisanie do koła i pojazdu (zob. 01-G). | text | KC_0192 |
+| 00.F.t1.r4.c1 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wyk. | tabela t1, wiersz 4: F4 Miejsce zderzenia / potrącenia – przesłanki: zmiana kierunku śladów opon, rysy i wyrwy, początek pola odłamków, odłamki elementów najniżej położonych, płyny, przedmioty pieszego; zapisane przesłanki za i przeciw. | check | KC_0193 |
+| 00.F.t1.r4.c2 | F. MIEJSCE ZDARZENIA – ŚLADY I | n/d | tabela t1, wiersz 4: F4 Miejsce zderzenia / potrącenia – przesłanki: zmiana kierunku śladów opon, rysy i wyrwy, początek pola odłamków, odłamki elementów najniżej położonych, płyny, przedmioty pieszego; zapisane przesłanki za i przeciw. | check | KC_0194 |
+| 00.F.t1.r4.c3 | F. MIEJSCE ZDARZENIA – ŚLADY I | Godz. | tabela t1, wiersz 4: F4 Miejsce zderzenia / potrącenia – przesłanki: zmiana kierunku śladów opon, rysy i wyrwy, początek pola odłamków, odłamki elementów najniżej położonych, płyny, przedmioty pieszego; zapisane przesłanki za i przeciw. | time | KC_0195 |
+| 00.F.t1.r4.c4 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wynik / gdzie zapisano | tabela t1, wiersz 4: F4 Miejsce zderzenia / potrącenia – przesłanki: zmiana kierunku śladów opon, rysy i wyrwy, początek pola odłamków, odłamki elementów najniżej położonych, płyny, przedmioty pieszego; zapisane przesłanki za i przeciw. | text | KC_0196 |
+| 00.F.t1.r5.c1 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wyk. | tabela t1, wiersz 5: F5 Rysy, żłobienia, wyrwy od elementów metalowych (felga, podłużnica, podnóżek motocykla) – położenie, kierunek, długość; przypisanie do elementu pojazdu. | check | KC_0197 |
+| 00.F.t1.r5.c2 | F. MIEJSCE ZDARZENIA – ŚLADY I | n/d | tabela t1, wiersz 5: F5 Rysy, żłobienia, wyrwy od elementów metalowych (felga, podłużnica, podnóżek motocykla) – położenie, kierunek, długość; przypisanie do elementu pojazdu. | check | KC_0198 |
+| 00.F.t1.r5.c3 | F. MIEJSCE ZDARZENIA – ŚLADY I | Godz. | tabela t1, wiersz 5: F5 Rysy, żłobienia, wyrwy od elementów metalowych (felga, podłużnica, podnóżek motocykla) – położenie, kierunek, długość; przypisanie do elementu pojazdu. | time | KC_0199 |
+| 00.F.t1.r5.c4 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wynik / gdzie zapisano | tabela t1, wiersz 5: F5 Rysy, żłobienia, wyrwy od elementów metalowych (felga, podłużnica, podnóżek motocykla) – położenie, kierunek, długość; przypisanie do elementu pojazdu. | text | KC_0200 |
+| 00.F.t1.r6.c1 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wyk. | tabela t1, wiersz 6: F6 Pole rozrzutu odłamków: granice, zagęszczenie, odłamki charakterystyczne (klosze, lusterka, tworzywa) i ich przypisanie do pojazdu. | check | KC_0201 |
+| 00.F.t1.r6.c2 | F. MIEJSCE ZDARZENIA – ŚLADY I | n/d | tabela t1, wiersz 6: F6 Pole rozrzutu odłamków: granice, zagęszczenie, odłamki charakterystyczne (klosze, lusterka, tworzywa) i ich przypisanie do pojazdu. | check | KC_0202 |
+| 00.F.t1.r6.c3 | F. MIEJSCE ZDARZENIA – ŚLADY I | Godz. | tabela t1, wiersz 6: F6 Pole rozrzutu odłamków: granice, zagęszczenie, odłamki charakterystyczne (klosze, lusterka, tworzywa) i ich przypisanie do pojazdu. | time | KC_0203 |
+| 00.F.t1.r6.c4 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wynik / gdzie zapisano | tabela t1, wiersz 6: F6 Pole rozrzutu odłamków: granice, zagęszczenie, odłamki charakterystyczne (klosze, lusterka, tworzywa) i ich przypisanie do pojazdu. | text | KC_0204 |
+| 00.F.t1.r7.c1 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wyk. | tabela t1, wiersz 7: F7 Położenia końcowe pojazdów – co najmniej 2 punkty na pojazd (np. środki kół jednej strony), przy zespołach także naczepa / przyczepa; kąt skrętu kół kierowanych. | check | KC_0205 |
+| 00.F.t1.r7.c2 | F. MIEJSCE ZDARZENIA – ŚLADY I | n/d | tabela t1, wiersz 7: F7 Położenia końcowe pojazdów – co najmniej 2 punkty na pojazd (np. środki kół jednej strony), przy zespołach także naczepa / przyczepa; kąt skrętu kół kierowanych. | check | KC_0206 |
+| 00.F.t1.r7.c3 | F. MIEJSCE ZDARZENIA – ŚLADY I | Godz. | tabela t1, wiersz 7: F7 Położenia końcowe pojazdów – co najmniej 2 punkty na pojazd (np. środki kół jednej strony), przy zespołach także naczepa / przyczepa; kąt skrętu kół kierowanych. | time | KC_0207 |
+| 00.F.t1.r7.c4 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wynik / gdzie zapisano | tabela t1, wiersz 7: F7 Położenia końcowe pojazdów – co najmniej 2 punkty na pojazd (np. środki kół jednej strony), przy zespołach także naczepa / przyczepa; kąt skrętu kół kierowanych. | text | KC_0208 |
+| 00.F.t1.r8.c1 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wyk. | tabela t1, wiersz 8: F8 Położenia końcowe osób i przedmiotów (głowa i środek ciała, kask, but, rower, elementy pojazdów). | check | KC_0209 |
+| 00.F.t1.r8.c2 | F. MIEJSCE ZDARZENIA – ŚLADY I | n/d | tabela t1, wiersz 8: F8 Położenia końcowe osób i przedmiotów (głowa i środek ciała, kask, but, rower, elementy pojazdów). | check | KC_0210 |
+| 00.F.t1.r8.c3 | F. MIEJSCE ZDARZENIA – ŚLADY I | Godz. | tabela t1, wiersz 8: F8 Położenia końcowe osób i przedmiotów (głowa i środek ciała, kask, but, rower, elementy pojazdów). | time | KC_0211 |
+| 00.F.t1.r8.c4 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wynik / gdzie zapisano | tabela t1, wiersz 8: F8 Położenia końcowe osób i przedmiotów (głowa i środek ciała, kask, but, rower, elementy pojazdów). | text | KC_0212 |
+| 00.F.t1.r9.c1 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wyk. | tabela t1, wiersz 9: F9 Uszkodzenia infrastruktury (bariery, słupki, znaki, latarnie, drzewa, krawężniki) – wysokość śladów od podłoża, przemieszczenia. | check | KC_0213 |
+| 00.F.t1.r9.c2 | F. MIEJSCE ZDARZENIA – ŚLADY I | n/d | tabela t1, wiersz 9: F9 Uszkodzenia infrastruktury (bariery, słupki, znaki, latarnie, drzewa, krawężniki) – wysokość śladów od podłoża, przemieszczenia. | check | KC_0214 |
+| 00.F.t1.r9.c3 | F. MIEJSCE ZDARZENIA – ŚLADY I | Godz. | tabela t1, wiersz 9: F9 Uszkodzenia infrastruktury (bariery, słupki, znaki, latarnie, drzewa, krawężniki) – wysokość śladów od podłoża, przemieszczenia. | time | KC_0215 |
+| 00.F.t1.r9.c4 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wynik / gdzie zapisano | tabela t1, wiersz 9: F9 Uszkodzenia infrastruktury (bariery, słupki, znaki, latarnie, drzewa, krawężniki) – wysokość śladów od podłoża, przemieszczenia. | text | KC_0216 |
+| 00.F.t1.r10.c1 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wyk. | tabela t1, wiersz 10: F10 Oznakowanie i sygnalizacja (zob. 01-E); cykl sygnalizacji nagrany filmem z czasem – kilka pełnych cykli; zarządca sygnalizacji ustalony. | check | KC_0217 |
+| 00.F.t1.r10.c2 | F. MIEJSCE ZDARZENIA – ŚLADY I | n/d | tabela t1, wiersz 10: F10 Oznakowanie i sygnalizacja (zob. 01-E); cykl sygnalizacji nagrany filmem z czasem – kilka pełnych cykli; zarządca sygnalizacji ustalony. | check | KC_0218 |
+| 00.F.t1.r10.c3 | F. MIEJSCE ZDARZENIA – ŚLADY I | Godz. | tabela t1, wiersz 10: F10 Oznakowanie i sygnalizacja (zob. 01-E); cykl sygnalizacji nagrany filmem z czasem – kilka pełnych cykli; zarządca sygnalizacji ustalony. | time | KC_0219 |
+| 00.F.t1.r10.c4 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wynik / gdzie zapisano | tabela t1, wiersz 10: F10 Oznakowanie i sygnalizacja (zob. 01-E); cykl sygnalizacji nagrany filmem z czasem – kilka pełnych cykli; zarządca sygnalizacji ustalony. | text | KC_0220 |
+| 00.F.t1.r11.c1 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wyk. | tabela t1, wiersz 11: F11 Widoczność – pomiar z pozycji obserwatora (wysokość oczu), w miarę możności w warunkach oświetlenia zbliżonych do zdarzenia; przeszkody w polu widzenia. | check | KC_0221 |
+| 00.F.t1.r11.c2 | F. MIEJSCE ZDARZENIA – ŚLADY I | n/d | tabela t1, wiersz 11: F11 Widoczność – pomiar z pozycji obserwatora (wysokość oczu), w miarę możności w warunkach oświetlenia zbliżonych do zdarzenia; przeszkody w polu widzenia. | check | KC_0222 |
+| 00.F.t1.r11.c3 | F. MIEJSCE ZDARZENIA – ŚLADY I | Godz. | tabela t1, wiersz 11: F11 Widoczność – pomiar z pozycji obserwatora (wysokość oczu), w miarę możności w warunkach oświetlenia zbliżonych do zdarzenia; przeszkody w polu widzenia. | time | KC_0223 |
+| 00.F.t1.r11.c4 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wynik / gdzie zapisano | tabela t1, wiersz 11: F11 Widoczność – pomiar z pozycji obserwatora (wysokość oczu), w miarę możności w warunkach oświetlenia zbliżonych do zdarzenia; przeszkody w polu widzenia. | text | KC_0224 |
+| 00.F.t1.r12.c1 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wyk. | tabela t1, wiersz 12: F12 Przyczepność nawierzchni – ocena / pomiar (metoda, wynik) albo potrzeba późniejszego pomiaru zgłoszona w sekcji H. | check | KC_0225 |
+| 00.F.t1.r12.c2 | F. MIEJSCE ZDARZENIA – ŚLADY I | n/d | tabela t1, wiersz 12: F12 Przyczepność nawierzchni – ocena / pomiar (metoda, wynik) albo potrzeba późniejszego pomiaru zgłoszona w sekcji H. | check | KC_0226 |
+| 00.F.t1.r12.c3 | F. MIEJSCE ZDARZENIA – ŚLADY I | Godz. | tabela t1, wiersz 12: F12 Przyczepność nawierzchni – ocena / pomiar (metoda, wynik) albo potrzeba późniejszego pomiaru zgłoszona w sekcji H. | time | KC_0227 |
+| 00.F.t1.r12.c4 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wynik / gdzie zapisano | tabela t1, wiersz 12: F12 Przyczepność nawierzchni – ocena / pomiar (metoda, wynik) albo potrzeba późniejszego pomiaru zgłoszona w sekcji H. | text | KC_0228 |
+| 00.F.t1.r13.c1 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wyk. | tabela t1, wiersz 13: F13 Okoliczności negatywne zapisane – brak śladów tam, gdzie można było ich oczekiwać. | check | KC_0229 |
+| 00.F.t1.r13.c2 | F. MIEJSCE ZDARZENIA – ŚLADY I | n/d | tabela t1, wiersz 13: F13 Okoliczności negatywne zapisane – brak śladów tam, gdzie można było ich oczekiwać. | check | KC_0230 |
+| 00.F.t1.r13.c3 | F. MIEJSCE ZDARZENIA – ŚLADY I | Godz. | tabela t1, wiersz 13: F13 Okoliczności negatywne zapisane – brak śladów tam, gdzie można było ich oczekiwać. | time | KC_0231 |
+| 00.F.t1.r13.c4 | F. MIEJSCE ZDARZENIA – ŚLADY I | Wynik / gdzie zapisano | tabela t1, wiersz 13: F13 Okoliczności negatywne zapisane – brak śladów tam, gdzie można było ich oczekiwać. | text | KC_0232 |
 | 00.F.uwagi | F. MIEJSCE ZDARZENIA – ŚLADY I | Uwagi | pole aplikacji (brak w PDF) | text |  |
-| 00.G.t1.r1.c1 | G. POJAZDY NA MIEJSCU – PRZED  | A | tabela t1, wiersz 1: G1 Identyfikacja:marka, model, nr rej., VIN, kolor – zgodność z dokumentami (zob. 02 / 03 / 04 / 05, sekcja B). | check | KC_0233 |
-| 00.G.t1.r1.c2 | G. POJAZDY NA MIEJSCU – PRZED  | B | tabela t1, wiersz 1: G1 Identyfikacja:marka, model, nr rej., VIN, kolor – zgodność z dokumentami (zob. 02 / 03 / 04 / 05, sekcja B). | check | KC_0234 |
-| 00.G.t1.r1.c3 | G. POJAZDY NA MIEJSCU – PRZED  | C | tabela t1, wiersz 1: G1 Identyfikacja:marka, model, nr rej., VIN, kolor – zgodność z dokumentami (zob. 02 / 03 / 04 / 05, sekcja B). | check | KC_0235 |
-| 00.G.t1.r1.c4 | G. POJAZDY NA MIEJSCU – PRZED  | D | tabela t1, wiersz 1: G1 Identyfikacja:marka, model, nr rej., VIN, kolor – zgodność z dokumentami (zob. 02 / 03 / 04 / 05, sekcja B). | check | KC_0236 |
-| 00.G.t1.r1.c5 | G. POJAZDY NA MIEJSCU – PRZED  | Wynik / gdzie zapisano | tabela t1, wiersz 1: G1 Identyfikacja:marka, model, nr rej., VIN, kolor – zgodność z dokumentami (zob. 02 / 03 / 04 / 05, sekcja B). | text | KC_0237 |
-| 00.G.t1.r2.c1 | G. POJAZDY NA MIEJSCU – PRZED  | A | tabela t1, wiersz 2: G2 Położenie końcowesfotografowane przed jakimkolwiek przesunięciem; skręt kół kierowanych i położenie koła kierownicy. | check | KC_0238 |
-| 00.G.t1.r2.c2 | G. POJAZDY NA MIEJSCU – PRZED  | B | tabela t1, wiersz 2: G2 Położenie końcowesfotografowane przed jakimkolwiek przesunięciem; skręt kół kierowanych i położenie koła kierownicy. | check | KC_0239 |
-| 00.G.t1.r2.c3 | G. POJAZDY NA MIEJSCU – PRZED  | C | tabela t1, wiersz 2: G2 Położenie końcowesfotografowane przed jakimkolwiek przesunięciem; skręt kół kierowanych i położenie koła kierownicy. | check | KC_0240 |
-| 00.G.t1.r2.c4 | G. POJAZDY NA MIEJSCU – PRZED  | D | tabela t1, wiersz 2: G2 Położenie końcowesfotografowane przed jakimkolwiek przesunięciem; skręt kół kierowanych i położenie koła kierownicy. | check | KC_0241 |
-| 00.G.t1.r2.c5 | G. POJAZDY NA MIEJSCU – PRZED  | Wynik / gdzie zapisano | tabela t1, wiersz 2: G2 Położenie końcowesfotografowane przed jakimkolwiek przesunięciem; skręt kół kierowanych i położenie koła kierownicy. | text | KC_0242 |
-| 00.G.t1.r3.c1 | G. POJAZDY NA MIEJSCU – PRZED  | A | tabela t1, wiersz 3: G3 Elementy sterujące przed dotknięciem:kierunkowskazy, światła, bieg / wybierak, hamulec postojowy, zapłon, wycieraczki, tempomat (zob. 03-C). | check | KC_0243 |
-| 00.G.t1.r3.c2 | G. POJAZDY NA MIEJSCU – PRZED  | B | tabela t1, wiersz 3: G3 Elementy sterujące przed dotknięciem:kierunkowskazy, światła, bieg / wybierak, hamulec postojowy, zapłon, wycieraczki, tempomat (zob. 03-C). | check | KC_0244 |
-| 00.G.t1.r3.c3 | G. POJAZDY NA MIEJSCU – PRZED  | C | tabela t1, wiersz 3: G3 Elementy sterujące przed dotknięciem:kierunkowskazy, światła, bieg / wybierak, hamulec postojowy, zapłon, wycieraczki, tempomat (zob. 03-C). | check | KC_0245 |
-| 00.G.t1.r3.c4 | G. POJAZDY NA MIEJSCU – PRZED  | D | tabela t1, wiersz 3: G3 Elementy sterujące przed dotknięciem:kierunkowskazy, światła, bieg / wybierak, hamulec postojowy, zapłon, wycieraczki, tempomat (zob. 03-C). | check | KC_0246 |
-| 00.G.t1.r3.c5 | G. POJAZDY NA MIEJSCU – PRZED  | Wynik / gdzie zapisano | tabela t1, wiersz 3: G3 Elementy sterujące przed dotknięciem:kierunkowskazy, światła, bieg / wybierak, hamulec postojowy, zapłon, wycieraczki, tempomat (zob. 03-C). | text | KC_0247 |
-| 00.G.t1.r4.c1 | G. POJAZDY NA MIEJSCU – PRZED  | A | tabela t1, wiersz 4: G4 Wskazania przyrządów:prędkościomierz i obrotomierz (wskazówki unieruchomione?), przebieg, poziom paliwa / stan naładowania. | check | KC_0248 |
-| 00.G.t1.r4.c2 | G. POJAZDY NA MIEJSCU – PRZED  | B | tabela t1, wiersz 4: G4 Wskazania przyrządów:prędkościomierz i obrotomierz (wskazówki unieruchomione?), przebieg, poziom paliwa / stan naładowania. | check | KC_0249 |
-| 00.G.t1.r4.c3 | G. POJAZDY NA MIEJSCU – PRZED  | C | tabela t1, wiersz 4: G4 Wskazania przyrządów:prędkościomierz i obrotomierz (wskazówki unieruchomione?), przebieg, poziom paliwa / stan naładowania. | check | KC_0250 |
-| 00.G.t1.r4.c4 | G. POJAZDY NA MIEJSCU – PRZED  | D | tabela t1, wiersz 4: G4 Wskazania przyrządów:prędkościomierz i obrotomierz (wskazówki unieruchomione?), przebieg, poziom paliwa / stan naładowania. | check | KC_0251 |
-| 00.G.t1.r4.c5 | G. POJAZDY NA MIEJSCU – PRZED  | Wynik / gdzie zapisano | tabela t1, wiersz 4: G4 Wskazania przyrządów:prędkościomierz i obrotomierz (wskazówki unieruchomione?), przebieg, poziom paliwa / stan naładowania. | text | KC_0252 |
-| 00.G.t1.r5.c1 | G. POJAZDY NA MIEJSCU – PRZED  | A | tabela t1, wiersz 5: G5 Źródła światła– rodzaj (żarowe / ksenonowe / LED); lampy z żarówkami żarowymi do zabezpieczenia bez wstrząsów (badanie włókien); przy LED – potrzeba odczytu sterownika zgłoszona. | check | KC_0253 |
-| 00.G.t1.r5.c2 | G. POJAZDY NA MIEJSCU – PRZED  | B | tabela t1, wiersz 5: G5 Źródła światła– rodzaj (żarowe / ksenonowe / LED); lampy z żarówkami żarowymi do zabezpieczenia bez wstrząsów (badanie włókien); przy LED – potrzeba odczytu sterownika zgłoszona. | check | KC_0254 |
-| 00.G.t1.r5.c3 | G. POJAZDY NA MIEJSCU – PRZED  | C | tabela t1, wiersz 5: G5 Źródła światła– rodzaj (żarowe / ksenonowe / LED); lampy z żarówkami żarowymi do zabezpieczenia bez wstrząsów (badanie włókien); przy LED – potrzeba odczytu sterownika zgłoszona. | check | KC_0255 |
-| 00.G.t1.r5.c4 | G. POJAZDY NA MIEJSCU – PRZED  | D | tabela t1, wiersz 5: G5 Źródła światła– rodzaj (żarowe / ksenonowe / LED); lampy z żarówkami żarowymi do zabezpieczenia bez wstrząsów (badanie włókien); przy LED – potrzeba odczytu sterownika zgłoszona. | check | KC_0256 |
-| 00.G.t1.r5.c5 | G. POJAZDY NA MIEJSCU – PRZED  | Wynik / gdzie zapisano | tabela t1, wiersz 5: G5 Źródła światła– rodzaj (żarowe / ksenonowe / LED); lampy z żarówkami żarowymi do zabezpieczenia bez wstrząsów (badanie włókien); przy LED – potrzeba odczytu sterownika zgłoszona. | text | KC_0257 |
-| 00.G.t1.r6.c1 | G. POJAZDY NA MIEJSCU – PRZED  | A | tabela t1, wiersz 6: G6 Bezpieczeństwo bierne:pasy (położenie, ślady obciążenia), napinacze, poduszki, fotele, zagłówki, foteliki (zob. 03-D). | check | KC_0258 |
-| 00.G.t1.r6.c2 | G. POJAZDY NA MIEJSCU – PRZED  | B | tabela t1, wiersz 6: G6 Bezpieczeństwo bierne:pasy (położenie, ślady obciążenia), napinacze, poduszki, fotele, zagłówki, foteliki (zob. 03-D). | check | KC_0259 |
-| 00.G.t1.r6.c3 | G. POJAZDY NA MIEJSCU – PRZED  | C | tabela t1, wiersz 6: G6 Bezpieczeństwo bierne:pasy (położenie, ślady obciążenia), napinacze, poduszki, fotele, zagłówki, foteliki (zob. 03-D). | check | KC_0260 |
-| 00.G.t1.r6.c4 | G. POJAZDY NA MIEJSCU – PRZED  | D | tabela t1, wiersz 6: G6 Bezpieczeństwo bierne:pasy (położenie, ślady obciążenia), napinacze, poduszki, fotele, zagłówki, foteliki (zob. 03-D). | check | KC_0261 |
-| 00.G.t1.r6.c5 | G. POJAZDY NA MIEJSCU – PRZED  | Wynik / gdzie zapisano | tabela t1, wiersz 6: G6 Bezpieczeństwo bierne:pasy (położenie, ślady obciążenia), napinacze, poduszki, fotele, zagłówki, foteliki (zob. 03-D). | text | KC_0262 |
-| 00.G.t1.r7.c1 | G. POJAZDY NA MIEJSCU – PRZED  | A | tabela t1, wiersz 7: G7 Ślady przemieszczenia osób w kabinie(odkształcenia od ciała, pęknięcia szyby od głowy, ślady biologiczne) – istotne dla ustalenia kierującego; zabezpiecza technik. | check | KC_0263 |
-| 00.G.t1.r7.c2 | G. POJAZDY NA MIEJSCU – PRZED  | B | tabela t1, wiersz 7: G7 Ślady przemieszczenia osób w kabinie(odkształcenia od ciała, pęknięcia szyby od głowy, ślady biologiczne) – istotne dla ustalenia kierującego; zabezpiecza technik. | check | KC_0264 |
-| 00.G.t1.r7.c3 | G. POJAZDY NA MIEJSCU – PRZED  | C | tabela t1, wiersz 7: G7 Ślady przemieszczenia osób w kabinie(odkształcenia od ciała, pęknięcia szyby od głowy, ślady biologiczne) – istotne dla ustalenia kierującego; zabezpiecza technik. | check | KC_0265 |
-| 00.G.t1.r7.c4 | G. POJAZDY NA MIEJSCU – PRZED  | D | tabela t1, wiersz 7: G7 Ślady przemieszczenia osób w kabinie(odkształcenia od ciała, pęknięcia szyby od głowy, ślady biologiczne) – istotne dla ustalenia kierującego; zabezpiecza technik. | check | KC_0266 |
-| 00.G.t1.r7.c5 | G. POJAZDY NA MIEJSCU – PRZED  | Wynik / gdzie zapisano | tabela t1, wiersz 7: G7 Ślady przemieszczenia osób w kabinie(odkształcenia od ciała, pęknięcia szyby od głowy, ślady biologiczne) – istotne dla ustalenia kierującego; zabezpiecza technik. | text | KC_0267 |
-| 00.G.t1.r8.c1 | G. POJAZDY NA MIEJSCU – PRZED  | A | tabela t1, wiersz 8: G8 Uszkodzenia zewnętrzne:strefy, kierunek sił, przeniesienia lakieru i tworzyw, odciski elementów drugiego pojazdu; wysokości od podłoża zmierzone na kołach, przed załadunkiem na lawetę. | check | KC_0268 |
-| 00.G.t1.r8.c2 | G. POJAZDY NA MIEJSCU – PRZED  | B | tabela t1, wiersz 8: G8 Uszkodzenia zewnętrzne:strefy, kierunek sił, przeniesienia lakieru i tworzyw, odciski elementów drugiego pojazdu; wysokości od podłoża zmierzone na kołach, przed załadunkiem na lawetę. | check | KC_0269 |
-| 00.G.t1.r8.c3 | G. POJAZDY NA MIEJSCU – PRZED  | C | tabela t1, wiersz 8: G8 Uszkodzenia zewnętrzne:strefy, kierunek sił, przeniesienia lakieru i tworzyw, odciski elementów drugiego pojazdu; wysokości od podłoża zmierzone na kołach, przed załadunkiem na lawetę. | check | KC_0270 |
-| 00.G.t1.r8.c4 | G. POJAZDY NA MIEJSCU – PRZED  | D | tabela t1, wiersz 8: G8 Uszkodzenia zewnętrzne:strefy, kierunek sił, przeniesienia lakieru i tworzyw, odciski elementów drugiego pojazdu; wysokości od podłoża zmierzone na kołach, przed załadunkiem na lawetę. | check | KC_0271 |
-| 00.G.t1.r8.c5 | G. POJAZDY NA MIEJSCU – PRZED  | Wynik / gdzie zapisano | tabela t1, wiersz 8: G8 Uszkodzenia zewnętrzne:strefy, kierunek sił, przeniesienia lakieru i tworzyw, odciski elementów drugiego pojazdu; wysokości od podłoża zmierzone na kołach, przed załadunkiem na lawetę. | text | KC_0272 |
-| 00.G.t1.r9.c1 | G. POJAZDY NA MIEJSCU – PRZED  | A | tabela t1, wiersz 9: G9 Pieszy / rowerzysta:miejsca uderzenia w zderzak, krawędź maski, szybę – wysokość od podłoża i odległość od osi pojazdu; odległość wzdłuż obrysu nadwozia do miejsca uderzenia głowy; ślady tkanin. | check | KC_0273 |
-| 00.G.t1.r9.c2 | G. POJAZDY NA MIEJSCU – PRZED  | B | tabela t1, wiersz 9: G9 Pieszy / rowerzysta:miejsca uderzenia w zderzak, krawędź maski, szybę – wysokość od podłoża i odległość od osi pojazdu; odległość wzdłuż obrysu nadwozia do miejsca uderzenia głowy; ślady tkanin. | check | KC_0274 |
-| 00.G.t1.r9.c3 | G. POJAZDY NA MIEJSCU – PRZED  | C | tabela t1, wiersz 9: G9 Pieszy / rowerzysta:miejsca uderzenia w zderzak, krawędź maski, szybę – wysokość od podłoża i odległość od osi pojazdu; odległość wzdłuż obrysu nadwozia do miejsca uderzenia głowy; ślady tkanin. | check | KC_0275 |
-| 00.G.t1.r9.c4 | G. POJAZDY NA MIEJSCU – PRZED  | D | tabela t1, wiersz 9: G9 Pieszy / rowerzysta:miejsca uderzenia w zderzak, krawędź maski, szybę – wysokość od podłoża i odległość od osi pojazdu; odległość wzdłuż obrysu nadwozia do miejsca uderzenia głowy; ślady tkanin. | check | KC_0276 |
-| 00.G.t1.r9.c5 | G. POJAZDY NA MIEJSCU – PRZED  | Wynik / gdzie zapisano | tabela t1, wiersz 9: G9 Pieszy / rowerzysta:miejsca uderzenia w zderzak, krawędź maski, szybę – wysokość od podłoża i odległość od osi pojazdu; odległość wzdłuż obrysu nadwozia do miejsca uderzenia głowy; ślady tkanin. | text | KC_0277 |
-| 00.G.t1.r10.c1 | G. POJAZDY NA MIEJSCU – PRZED  | A | tabela t1, wiersz 10: G10 Ogumienie i koła:ciśnienie (z temperaturą), bieżnik, uszkodzenia, rozszczelnienie, zgodność rozmiarów; uszkodzenia felg (zob. 07). | check | KC_0278 |
-| 00.G.t1.r10.c2 | G. POJAZDY NA MIEJSCU – PRZED  | B | tabela t1, wiersz 10: G10 Ogumienie i koła:ciśnienie (z temperaturą), bieżnik, uszkodzenia, rozszczelnienie, zgodność rozmiarów; uszkodzenia felg (zob. 07). | check | KC_0279 |
-| 00.G.t1.r10.c3 | G. POJAZDY NA MIEJSCU – PRZED  | C | tabela t1, wiersz 10: G10 Ogumienie i koła:ciśnienie (z temperaturą), bieżnik, uszkodzenia, rozszczelnienie, zgodność rozmiarów; uszkodzenia felg (zob. 07). | check | KC_0280 |
-| 00.G.t1.r10.c4 | G. POJAZDY NA MIEJSCU – PRZED  | D | tabela t1, wiersz 10: G10 Ogumienie i koła:ciśnienie (z temperaturą), bieżnik, uszkodzenia, rozszczelnienie, zgodność rozmiarów; uszkodzenia felg (zob. 07). | check | KC_0281 |
-| 00.G.t1.r10.c5 | G. POJAZDY NA MIEJSCU – PRZED  | Wynik / gdzie zapisano | tabela t1, wiersz 10: G10 Ogumienie i koła:ciśnienie (z temperaturą), bieżnik, uszkodzenia, rozszczelnienie, zgodność rozmiarów; uszkodzenia felg (zob. 07). | text | KC_0282 |
-| 00.G.t1.r11.c1 | G. POJAZDY NA MIEJSCU – PRZED  | A | tabela t1, wiersz 11: G11 Wycieki i ich źródła;widoczne nieszczelności i przerwane przewody hamulcowe – bez demontażu. | check | KC_0283 |
-| 00.G.t1.r11.c2 | G. POJAZDY NA MIEJSCU – PRZED  | B | tabela t1, wiersz 11: G11 Wycieki i ich źródła;widoczne nieszczelności i przerwane przewody hamulcowe – bez demontażu. | check | KC_0284 |
-| 00.G.t1.r11.c3 | G. POJAZDY NA MIEJSCU – PRZED  | C | tabela t1, wiersz 11: G11 Wycieki i ich źródła;widoczne nieszczelności i przerwane przewody hamulcowe – bez demontażu. | check | KC_0285 |
-| 00.G.t1.r11.c4 | G. POJAZDY NA MIEJSCU – PRZED  | D | tabela t1, wiersz 11: G11 Wycieki i ich źródła;widoczne nieszczelności i przerwane przewody hamulcowe – bez demontażu. | check | KC_0286 |
-| 00.G.t1.r11.c5 | G. POJAZDY NA MIEJSCU – PRZED  | Wynik / gdzie zapisano | tabela t1, wiersz 11: G11 Wycieki i ich źródła;widoczne nieszczelności i przerwane przewody hamulcowe – bez demontażu. | text | KC_0287 |
-| 00.G.t1.r12.c1 | G. POJAZDY NA MIEJSCU – PRZED  | A | tabela t1, wiersz 12: G12 Ładunek:rodzaj, masa wg dokumentów, rozmieszczenie, mocowanie, przemieszczenie; ADR. | check | KC_0288 |
-| 00.G.t1.r12.c2 | G. POJAZDY NA MIEJSCU – PRZED  | B | tabela t1, wiersz 12: G12 Ładunek:rodzaj, masa wg dokumentów, rozmieszczenie, mocowanie, przemieszczenie; ADR. | check | KC_0289 |
-| 00.G.t1.r12.c3 | G. POJAZDY NA MIEJSCU – PRZED  | C | tabela t1, wiersz 12: G12 Ładunek:rodzaj, masa wg dokumentów, rozmieszczenie, mocowanie, przemieszczenie; ADR. | check | KC_0290 |
-| 00.G.t1.r12.c4 | G. POJAZDY NA MIEJSCU – PRZED  | D | tabela t1, wiersz 12: G12 Ładunek:rodzaj, masa wg dokumentów, rozmieszczenie, mocowanie, przemieszczenie; ADR. | check | KC_0291 |
-| 00.G.t1.r12.c5 | G. POJAZDY NA MIEJSCU – PRZED  | Wynik / gdzie zapisano | tabela t1, wiersz 12: G12 Ładunek:rodzaj, masa wg dokumentów, rozmieszczenie, mocowanie, przemieszczenie; ADR. | text | KC_0292 |
-| 00.G.t1.r13.c1 | G. POJAZDY NA MIEJSCU – PRZED  | A | tabela t1, wiersz 13: G13 Tachograf(analogowy / cyfrowy / inteligentny): karta kierowcy w urządzeniu, wydruki i dane zabezpieczone przez Policję (zob. 04 / 05). | check | KC_0293 |
-| 00.G.t1.r13.c2 | G. POJAZDY NA MIEJSCU – PRZED  | B | tabela t1, wiersz 13: G13 Tachograf(analogowy / cyfrowy / inteligentny): karta kierowcy w urządzeniu, wydruki i dane zabezpieczone przez Policję (zob. 04 / 05). | check | KC_0294 |
-| 00.G.t1.r13.c3 | G. POJAZDY NA MIEJSCU – PRZED  | C | tabela t1, wiersz 13: G13 Tachograf(analogowy / cyfrowy / inteligentny): karta kierowcy w urządzeniu, wydruki i dane zabezpieczone przez Policję (zob. 04 / 05). | check | KC_0295 |
-| 00.G.t1.r13.c4 | G. POJAZDY NA MIEJSCU – PRZED  | D | tabela t1, wiersz 13: G13 Tachograf(analogowy / cyfrowy / inteligentny): karta kierowcy w urządzeniu, wydruki i dane zabezpieczone przez Policję (zob. 04 / 05). | check | KC_0296 |
-| 00.G.t1.r13.c5 | G. POJAZDY NA MIEJSCU – PRZED  | Wynik / gdzie zapisano | tabela t1, wiersz 13: G13 Tachograf(analogowy / cyfrowy / inteligentny): karta kierowcy w urządzeniu, wydruki i dane zabezpieczone przez Policję (zob. 04 / 05). | text | KC_0297 |
-| 00.G.t1.r14.c1 | G. POJAZDY NA MIEJSCU – PRZED  | A | tabela t1, wiersz 14: G14 Rejestratory danych:EDR, wideorejestrator, kamery pojazdu, telematyka floty, eCall – obecność odnotowana; diagnostyki nie podłączać bez decyzji organu. | check | KC_0298 |
-| 00.G.t1.r14.c2 | G. POJAZDY NA MIEJSCU – PRZED  | B | tabela t1, wiersz 14: G14 Rejestratory danych:EDR, wideorejestrator, kamery pojazdu, telematyka floty, eCall – obecność odnotowana; diagnostyki nie podłączać bez decyzji organu. | check | KC_0299 |
-| 00.G.t1.r14.c3 | G. POJAZDY NA MIEJSCU – PRZED  | C | tabela t1, wiersz 14: G14 Rejestratory danych:EDR, wideorejestrator, kamery pojazdu, telematyka floty, eCall – obecność odnotowana; diagnostyki nie podłączać bez decyzji organu. | check | KC_0300 |
-| 00.G.t1.r14.c4 | G. POJAZDY NA MIEJSCU – PRZED  | D | tabela t1, wiersz 14: G14 Rejestratory danych:EDR, wideorejestrator, kamery pojazdu, telematyka floty, eCall – obecność odnotowana; diagnostyki nie podłączać bez decyzji organu. | check | KC_0301 |
-| 00.G.t1.r14.c5 | G. POJAZDY NA MIEJSCU – PRZED  | Wynik / gdzie zapisano | tabela t1, wiersz 14: G14 Rejestratory danych:EDR, wideorejestrator, kamery pojazdu, telematyka floty, eCall – obecność odnotowana; diagnostyki nie podłączać bez decyzji organu. | text | KC_0302 |
-| 00.G.t1.r15.c1 | G. POJAZDY NA MIEJSCU – PRZED  | A | tabela t1, wiersz 15: G15 Kluczyk / karta– gdzie;akumulator– podłączony / odłączony, przez kogo i kiedy. | check | KC_0303 |
-| 00.G.t1.r15.c2 | G. POJAZDY NA MIEJSCU – PRZED  | B | tabela t1, wiersz 15: G15 Kluczyk / karta– gdzie;akumulator– podłączony / odłączony, przez kogo i kiedy. | check | KC_0304 |
-| 00.G.t1.r15.c3 | G. POJAZDY NA MIEJSCU – PRZED  | C | tabela t1, wiersz 15: G15 Kluczyk / karta– gdzie;akumulator– podłączony / odłączony, przez kogo i kiedy. | check | KC_0305 |
-| 00.G.t1.r15.c4 | G. POJAZDY NA MIEJSCU – PRZED  | D | tabela t1, wiersz 15: G15 Kluczyk / karta– gdzie;akumulator– podłączony / odłączony, przez kogo i kiedy. | check | KC_0306 |
-| 00.G.t1.r15.c5 | G. POJAZDY NA MIEJSCU – PRZED  | Wynik / gdzie zapisano | tabela t1, wiersz 15: G15 Kluczyk / karta– gdzie;akumulator– podłączony / odłączony, przez kogo i kiedy. | text | KC_0307 |
-| 00.G.t1.r16.c1 | G. POJAZDY NA MIEJSCU – PRZED  | A | tabela t1, wiersz 16: G16 Pojazd elektryczny / hybrydowy:stan baterii trakcyjnej (deformacja, dym, temperatura); zalecenia PSP co do transportu i miejsca postoju. | check | KC_0308 |
-| 00.G.t1.r16.c2 | G. POJAZDY NA MIEJSCU – PRZED  | B | tabela t1, wiersz 16: G16 Pojazd elektryczny / hybrydowy:stan baterii trakcyjnej (deformacja, dym, temperatura); zalecenia PSP co do transportu i miejsca postoju. | check | KC_0309 |
-| 00.G.t1.r16.c3 | G. POJAZDY NA MIEJSCU – PRZED  | C | tabela t1, wiersz 16: G16 Pojazd elektryczny / hybrydowy:stan baterii trakcyjnej (deformacja, dym, temperatura); zalecenia PSP co do transportu i miejsca postoju. | check | KC_0310 |
-| 00.G.t1.r16.c4 | G. POJAZDY NA MIEJSCU – PRZED  | D | tabela t1, wiersz 16: G16 Pojazd elektryczny / hybrydowy:stan baterii trakcyjnej (deformacja, dym, temperatura); zalecenia PSP co do transportu i miejsca postoju. | check | KC_0311 |
-| 00.G.t1.r16.c5 | G. POJAZDY NA MIEJSCU – PRZED  | Wynik / gdzie zapisano | tabela t1, wiersz 16: G16 Pojazd elektryczny / hybrydowy:stan baterii trakcyjnej (deformacja, dym, temperatura); zalecenia PSP co do transportu i miejsca postoju. | text | KC_0312 |
-| 00.G.t1.r17.c1 | G. POJAZDY NA MIEJSCU – PRZED  | A | tabela t1, wiersz 17: G17 Odholowanie:zdjęcia przed i po załadunku; uszkodzenia powstałe przy holowaniu odnotowane; części luzem zebrane i przypisane do pojazdu (zob. 09-B); miejsce zabezpieczenia pojazdu (adres). | check | KC_0313 |
-| 00.G.t1.r17.c2 | G. POJAZDY NA MIEJSCU – PRZED  | B | tabela t1, wiersz 17: G17 Odholowanie:zdjęcia przed i po załadunku; uszkodzenia powstałe przy holowaniu odnotowane; części luzem zebrane i przypisane do pojazdu (zob. 09-B); miejsce zabezpieczenia pojazdu (adres). | check | KC_0314 |
-| 00.G.t1.r17.c3 | G. POJAZDY NA MIEJSCU – PRZED  | C | tabela t1, wiersz 17: G17 Odholowanie:zdjęcia przed i po załadunku; uszkodzenia powstałe przy holowaniu odnotowane; części luzem zebrane i przypisane do pojazdu (zob. 09-B); miejsce zabezpieczenia pojazdu (adres). | check | KC_0315 |
-| 00.G.t1.r17.c4 | G. POJAZDY NA MIEJSCU – PRZED  | D | tabela t1, wiersz 17: G17 Odholowanie:zdjęcia przed i po załadunku; uszkodzenia powstałe przy holowaniu odnotowane; części luzem zebrane i przypisane do pojazdu (zob. 09-B); miejsce zabezpieczenia pojazdu (adres). | check | KC_0316 |
-| 00.G.t1.r17.c5 | G. POJAZDY NA MIEJSCU – PRZED  | Wynik / gdzie zapisano | tabela t1, wiersz 17: G17 Odholowanie:zdjęcia przed i po załadunku; uszkodzenia powstałe przy holowaniu odnotowane; części luzem zebrane i przypisane do pojazdu (zob. 09-B); miejsce zabezpieczenia pojazdu (adres). | text | KC_0317 |
+| 00.G.t1.r1.c1 | G. POJAZDY NA MIEJSCU – PRZED  | A | tabela t1, wiersz 1: G1 Identyfikacja: marka, model, nr rej., VIN, kolor – zgodność z dokumentami (zob. 02 / 03 / 04 / 05, sekcja B). | check | KC_0233 |
+| 00.G.t1.r1.c2 | G. POJAZDY NA MIEJSCU – PRZED  | B | tabela t1, wiersz 1: G1 Identyfikacja: marka, model, nr rej., VIN, kolor – zgodność z dokumentami (zob. 02 / 03 / 04 / 05, sekcja B). | check | KC_0234 |
+| 00.G.t1.r1.c3 | G. POJAZDY NA MIEJSCU – PRZED  | C | tabela t1, wiersz 1: G1 Identyfikacja: marka, model, nr rej., VIN, kolor – zgodność z dokumentami (zob. 02 / 03 / 04 / 05, sekcja B). | check | KC_0235 |
+| 00.G.t1.r1.c4 | G. POJAZDY NA MIEJSCU – PRZED  | D | tabela t1, wiersz 1: G1 Identyfikacja: marka, model, nr rej., VIN, kolor – zgodność z dokumentami (zob. 02 / 03 / 04 / 05, sekcja B). | check | KC_0236 |
+| 00.G.t1.r1.c5 | G. POJAZDY NA MIEJSCU – PRZED  | Wynik / gdzie zapisano | tabela t1, wiersz 1: G1 Identyfikacja: marka, model, nr rej., VIN, kolor – zgodność z dokumentami (zob. 02 / 03 / 04 / 05, sekcja B). | text | KC_0237 |
+| 00.G.t1.r2.c1 | G. POJAZDY NA MIEJSCU – PRZED  | A | tabela t1, wiersz 2: G2 Położenie końcowe sfotografowane przed jakimkolwiek przesunięciem; skręt kół kierowanych i położenie koła kierownicy. | check | KC_0238 |
+| 00.G.t1.r2.c2 | G. POJAZDY NA MIEJSCU – PRZED  | B | tabela t1, wiersz 2: G2 Położenie końcowe sfotografowane przed jakimkolwiek przesunięciem; skręt kół kierowanych i położenie koła kierownicy. | check | KC_0239 |
+| 00.G.t1.r2.c3 | G. POJAZDY NA MIEJSCU – PRZED  | C | tabela t1, wiersz 2: G2 Położenie końcowe sfotografowane przed jakimkolwiek przesunięciem; skręt kół kierowanych i położenie koła kierownicy. | check | KC_0240 |
+| 00.G.t1.r2.c4 | G. POJAZDY NA MIEJSCU – PRZED  | D | tabela t1, wiersz 2: G2 Położenie końcowe sfotografowane przed jakimkolwiek przesunięciem; skręt kół kierowanych i położenie koła kierownicy. | check | KC_0241 |
+| 00.G.t1.r2.c5 | G. POJAZDY NA MIEJSCU – PRZED  | Wynik / gdzie zapisano | tabela t1, wiersz 2: G2 Położenie końcowe sfotografowane przed jakimkolwiek przesunięciem; skręt kół kierowanych i położenie koła kierownicy. | text | KC_0242 |
+| 00.G.t1.r3.c1 | G. POJAZDY NA MIEJSCU – PRZED  | A | tabela t1, wiersz 3: G3 Elementy sterujące przed dotknięciem: kierunkowskazy, światła, bieg / wybierak, hamulec postojowy, zapłon, wycieraczki, tempomat (zob. 03-C). | check | KC_0243 |
+| 00.G.t1.r3.c2 | G. POJAZDY NA MIEJSCU – PRZED  | B | tabela t1, wiersz 3: G3 Elementy sterujące przed dotknięciem: kierunkowskazy, światła, bieg / wybierak, hamulec postojowy, zapłon, wycieraczki, tempomat (zob. 03-C). | check | KC_0244 |
+| 00.G.t1.r3.c3 | G. POJAZDY NA MIEJSCU – PRZED  | C | tabela t1, wiersz 3: G3 Elementy sterujące przed dotknięciem: kierunkowskazy, światła, bieg / wybierak, hamulec postojowy, zapłon, wycieraczki, tempomat (zob. 03-C). | check | KC_0245 |
+| 00.G.t1.r3.c4 | G. POJAZDY NA MIEJSCU – PRZED  | D | tabela t1, wiersz 3: G3 Elementy sterujące przed dotknięciem: kierunkowskazy, światła, bieg / wybierak, hamulec postojowy, zapłon, wycieraczki, tempomat (zob. 03-C). | check | KC_0246 |
+| 00.G.t1.r3.c5 | G. POJAZDY NA MIEJSCU – PRZED  | Wynik / gdzie zapisano | tabela t1, wiersz 3: G3 Elementy sterujące przed dotknięciem: kierunkowskazy, światła, bieg / wybierak, hamulec postojowy, zapłon, wycieraczki, tempomat (zob. 03-C). | text | KC_0247 |
+| 00.G.t1.r4.c1 | G. POJAZDY NA MIEJSCU – PRZED  | A | tabela t1, wiersz 4: G4 Wskazania przyrządów: prędkościomierz i obrotomierz (wskazówki unieruchomione?), przebieg, poziom paliwa / stan naładowania. | check | KC_0248 |
+| 00.G.t1.r4.c2 | G. POJAZDY NA MIEJSCU – PRZED  | B | tabela t1, wiersz 4: G4 Wskazania przyrządów: prędkościomierz i obrotomierz (wskazówki unieruchomione?), przebieg, poziom paliwa / stan naładowania. | check | KC_0249 |
+| 00.G.t1.r4.c3 | G. POJAZDY NA MIEJSCU – PRZED  | C | tabela t1, wiersz 4: G4 Wskazania przyrządów: prędkościomierz i obrotomierz (wskazówki unieruchomione?), przebieg, poziom paliwa / stan naładowania. | check | KC_0250 |
+| 00.G.t1.r4.c4 | G. POJAZDY NA MIEJSCU – PRZED  | D | tabela t1, wiersz 4: G4 Wskazania przyrządów: prędkościomierz i obrotomierz (wskazówki unieruchomione?), przebieg, poziom paliwa / stan naładowania. | check | KC_0251 |
+| 00.G.t1.r4.c5 | G. POJAZDY NA MIEJSCU – PRZED  | Wynik / gdzie zapisano | tabela t1, wiersz 4: G4 Wskazania przyrządów: prędkościomierz i obrotomierz (wskazówki unieruchomione?), przebieg, poziom paliwa / stan naładowania. | text | KC_0252 |
+| 00.G.t1.r5.c1 | G. POJAZDY NA MIEJSCU – PRZED  | A | tabela t1, wiersz 5: G5 Źródła światła – rodzaj (żarowe / ksenonowe / LED); lampy z żarówkami żarowymi do zabezpieczenia bez wstrząsów (badanie włókien); przy LED – potrzeba odczytu sterownika zgłoszona. | check | KC_0253 |
+| 00.G.t1.r5.c2 | G. POJAZDY NA MIEJSCU – PRZED  | B | tabela t1, wiersz 5: G5 Źródła światła – rodzaj (żarowe / ksenonowe / LED); lampy z żarówkami żarowymi do zabezpieczenia bez wstrząsów (badanie włókien); przy LED – potrzeba odczytu sterownika zgłoszona. | check | KC_0254 |
+| 00.G.t1.r5.c3 | G. POJAZDY NA MIEJSCU – PRZED  | C | tabela t1, wiersz 5: G5 Źródła światła – rodzaj (żarowe / ksenonowe / LED); lampy z żarówkami żarowymi do zabezpieczenia bez wstrząsów (badanie włókien); przy LED – potrzeba odczytu sterownika zgłoszona. | check | KC_0255 |
+| 00.G.t1.r5.c4 | G. POJAZDY NA MIEJSCU – PRZED  | D | tabela t1, wiersz 5: G5 Źródła światła – rodzaj (żarowe / ksenonowe / LED); lampy z żarówkami żarowymi do zabezpieczenia bez wstrząsów (badanie włókien); przy LED – potrzeba odczytu sterownika zgłoszona. | check | KC_0256 |
+| 00.G.t1.r5.c5 | G. POJAZDY NA MIEJSCU – PRZED  | Wynik / gdzie zapisano | tabela t1, wiersz 5: G5 Źródła światła – rodzaj (żarowe / ksenonowe / LED); lampy z żarówkami żarowymi do zabezpieczenia bez wstrząsów (badanie włókien); przy LED – potrzeba odczytu sterownika zgłoszona. | text | KC_0257 |
+| 00.G.t1.r6.c1 | G. POJAZDY NA MIEJSCU – PRZED  | A | tabela t1, wiersz 6: G6 Bezpieczeństwo bierne: pasy (położenie, ślady obciążenia), napinacze, poduszki, fotele, zagłówki, foteliki (zob. 03-D). | check | KC_0258 |
+| 00.G.t1.r6.c2 | G. POJAZDY NA MIEJSCU – PRZED  | B | tabela t1, wiersz 6: G6 Bezpieczeństwo bierne: pasy (położenie, ślady obciążenia), napinacze, poduszki, fotele, zagłówki, foteliki (zob. 03-D). | check | KC_0259 |
+| 00.G.t1.r6.c3 | G. POJAZDY NA MIEJSCU – PRZED  | C | tabela t1, wiersz 6: G6 Bezpieczeństwo bierne: pasy (położenie, ślady obciążenia), napinacze, poduszki, fotele, zagłówki, foteliki (zob. 03-D). | check | KC_0260 |
+| 00.G.t1.r6.c4 | G. POJAZDY NA MIEJSCU – PRZED  | D | tabela t1, wiersz 6: G6 Bezpieczeństwo bierne: pasy (położenie, ślady obciążenia), napinacze, poduszki, fotele, zagłówki, foteliki (zob. 03-D). | check | KC_0261 |
+| 00.G.t1.r6.c5 | G. POJAZDY NA MIEJSCU – PRZED  | Wynik / gdzie zapisano | tabela t1, wiersz 6: G6 Bezpieczeństwo bierne: pasy (położenie, ślady obciążenia), napinacze, poduszki, fotele, zagłówki, foteliki (zob. 03-D). | text | KC_0262 |
+| 00.G.t1.r7.c1 | G. POJAZDY NA MIEJSCU – PRZED  | A | tabela t1, wiersz 7: G7 Ślady przemieszczenia osób w kabinie (odkształcenia od ciała, pęknięcia szyby od głowy, ślady biologiczne) – istotne dla ustalenia kierującego; zabezpiecza technik. | check | KC_0263 |
+| 00.G.t1.r7.c2 | G. POJAZDY NA MIEJSCU – PRZED  | B | tabela t1, wiersz 7: G7 Ślady przemieszczenia osób w kabinie (odkształcenia od ciała, pęknięcia szyby od głowy, ślady biologiczne) – istotne dla ustalenia kierującego; zabezpiecza technik. | check | KC_0264 |
+| 00.G.t1.r7.c3 | G. POJAZDY NA MIEJSCU – PRZED  | C | tabela t1, wiersz 7: G7 Ślady przemieszczenia osób w kabinie (odkształcenia od ciała, pęknięcia szyby od głowy, ślady biologiczne) – istotne dla ustalenia kierującego; zabezpiecza technik. | check | KC_0265 |
+| 00.G.t1.r7.c4 | G. POJAZDY NA MIEJSCU – PRZED  | D | tabela t1, wiersz 7: G7 Ślady przemieszczenia osób w kabinie (odkształcenia od ciała, pęknięcia szyby od głowy, ślady biologiczne) – istotne dla ustalenia kierującego; zabezpiecza technik. | check | KC_0266 |
+| 00.G.t1.r7.c5 | G. POJAZDY NA MIEJSCU – PRZED  | Wynik / gdzie zapisano | tabela t1, wiersz 7: G7 Ślady przemieszczenia osób w kabinie (odkształcenia od ciała, pęknięcia szyby od głowy, ślady biologiczne) – istotne dla ustalenia kierującego; zabezpiecza technik. | text | KC_0267 |
+| 00.G.t1.r8.c1 | G. POJAZDY NA MIEJSCU – PRZED  | A | tabela t1, wiersz 8: G8 Uszkodzenia zewnętrzne: strefy, kierunek sił, przeniesienia lakieru i tworzyw, odciski elementów drugiego pojazdu; wysokości od podłoża zmierzone na kołach, przed załadunkiem na lawetę. | check | KC_0268 |
+| 00.G.t1.r8.c2 | G. POJAZDY NA MIEJSCU – PRZED  | B | tabela t1, wiersz 8: G8 Uszkodzenia zewnętrzne: strefy, kierunek sił, przeniesienia lakieru i tworzyw, odciski elementów drugiego pojazdu; wysokości od podłoża zmierzone na kołach, przed załadunkiem na lawetę. | check | KC_0269 |
+| 00.G.t1.r8.c3 | G. POJAZDY NA MIEJSCU – PRZED  | C | tabela t1, wiersz 8: G8 Uszkodzenia zewnętrzne: strefy, kierunek sił, przeniesienia lakieru i tworzyw, odciski elementów drugiego pojazdu; wysokości od podłoża zmierzone na kołach, przed załadunkiem na lawetę. | check | KC_0270 |
+| 00.G.t1.r8.c4 | G. POJAZDY NA MIEJSCU – PRZED  | D | tabela t1, wiersz 8: G8 Uszkodzenia zewnętrzne: strefy, kierunek sił, przeniesienia lakieru i tworzyw, odciski elementów drugiego pojazdu; wysokości od podłoża zmierzone na kołach, przed załadunkiem na lawetę. | check | KC_0271 |
+| 00.G.t1.r8.c5 | G. POJAZDY NA MIEJSCU – PRZED  | Wynik / gdzie zapisano | tabela t1, wiersz 8: G8 Uszkodzenia zewnętrzne: strefy, kierunek sił, przeniesienia lakieru i tworzyw, odciski elementów drugiego pojazdu; wysokości od podłoża zmierzone na kołach, przed załadunkiem na lawetę. | text | KC_0272 |
+| 00.G.t1.r9.c1 | G. POJAZDY NA MIEJSCU – PRZED  | A | tabela t1, wiersz 9: G9 Pieszy / rowerzysta: miejsca uderzenia w zderzak, krawędź maski, szybę – wysokość od podłoża i odległość od osi pojazdu; odległość wzdłuż obrysu nadwozia do miejsca uderzenia głowy; ślady tkanin. | check | KC_0273 |
+| 00.G.t1.r9.c2 | G. POJAZDY NA MIEJSCU – PRZED  | B | tabela t1, wiersz 9: G9 Pieszy / rowerzysta: miejsca uderzenia w zderzak, krawędź maski, szybę – wysokość od podłoża i odległość od osi pojazdu; odległość wzdłuż obrysu nadwozia do miejsca uderzenia głowy; ślady tkanin. | check | KC_0274 |
+| 00.G.t1.r9.c3 | G. POJAZDY NA MIEJSCU – PRZED  | C | tabela t1, wiersz 9: G9 Pieszy / rowerzysta: miejsca uderzenia w zderzak, krawędź maski, szybę – wysokość od podłoża i odległość od osi pojazdu; odległość wzdłuż obrysu nadwozia do miejsca uderzenia głowy; ślady tkanin. | check | KC_0275 |
+| 00.G.t1.r9.c4 | G. POJAZDY NA MIEJSCU – PRZED  | D | tabela t1, wiersz 9: G9 Pieszy / rowerzysta: miejsca uderzenia w zderzak, krawędź maski, szybę – wysokość od podłoża i odległość od osi pojazdu; odległość wzdłuż obrysu nadwozia do miejsca uderzenia głowy; ślady tkanin. | check | KC_0276 |
+| 00.G.t1.r9.c5 | G. POJAZDY NA MIEJSCU – PRZED  | Wynik / gdzie zapisano | tabela t1, wiersz 9: G9 Pieszy / rowerzysta: miejsca uderzenia w zderzak, krawędź maski, szybę – wysokość od podłoża i odległość od osi pojazdu; odległość wzdłuż obrysu nadwozia do miejsca uderzenia głowy; ślady tkanin. | text | KC_0277 |
+| 00.G.t1.r10.c1 | G. POJAZDY NA MIEJSCU – PRZED  | A | tabela t1, wiersz 10: G10 Ogumienie i koła: ciśnienie (z temperaturą), bieżnik, uszkodzenia, rozszczelnienie, zgodność rozmiarów; uszkodzenia felg (zob. 07). | check | KC_0278 |
+| 00.G.t1.r10.c2 | G. POJAZDY NA MIEJSCU – PRZED  | B | tabela t1, wiersz 10: G10 Ogumienie i koła: ciśnienie (z temperaturą), bieżnik, uszkodzenia, rozszczelnienie, zgodność rozmiarów; uszkodzenia felg (zob. 07). | check | KC_0279 |
+| 00.G.t1.r10.c3 | G. POJAZDY NA MIEJSCU – PRZED  | C | tabela t1, wiersz 10: G10 Ogumienie i koła: ciśnienie (z temperaturą), bieżnik, uszkodzenia, rozszczelnienie, zgodność rozmiarów; uszkodzenia felg (zob. 07). | check | KC_0280 |
+| 00.G.t1.r10.c4 | G. POJAZDY NA MIEJSCU – PRZED  | D | tabela t1, wiersz 10: G10 Ogumienie i koła: ciśnienie (z temperaturą), bieżnik, uszkodzenia, rozszczelnienie, zgodność rozmiarów; uszkodzenia felg (zob. 07). | check | KC_0281 |
+| 00.G.t1.r10.c5 | G. POJAZDY NA MIEJSCU – PRZED  | Wynik / gdzie zapisano | tabela t1, wiersz 10: G10 Ogumienie i koła: ciśnienie (z temperaturą), bieżnik, uszkodzenia, rozszczelnienie, zgodność rozmiarów; uszkodzenia felg (zob. 07). | text | KC_0282 |
+| 00.G.t1.r11.c1 | G. POJAZDY NA MIEJSCU – PRZED  | A | tabela t1, wiersz 11: G11 Wycieki i ich źródła; widoczne nieszczelności i przerwane przewody hamulcowe – bez demontażu. | check | KC_0283 |
+| 00.G.t1.r11.c2 | G. POJAZDY NA MIEJSCU – PRZED  | B | tabela t1, wiersz 11: G11 Wycieki i ich źródła; widoczne nieszczelności i przerwane przewody hamulcowe – bez demontażu. | check | KC_0284 |
+| 00.G.t1.r11.c3 | G. POJAZDY NA MIEJSCU – PRZED  | C | tabela t1, wiersz 11: G11 Wycieki i ich źródła; widoczne nieszczelności i przerwane przewody hamulcowe – bez demontażu. | check | KC_0285 |
+| 00.G.t1.r11.c4 | G. POJAZDY NA MIEJSCU – PRZED  | D | tabela t1, wiersz 11: G11 Wycieki i ich źródła; widoczne nieszczelności i przerwane przewody hamulcowe – bez demontażu. | check | KC_0286 |
+| 00.G.t1.r11.c5 | G. POJAZDY NA MIEJSCU – PRZED  | Wynik / gdzie zapisano | tabela t1, wiersz 11: G11 Wycieki i ich źródła; widoczne nieszczelności i przerwane przewody hamulcowe – bez demontażu. | text | KC_0287 |
+| 00.G.t1.r12.c1 | G. POJAZDY NA MIEJSCU – PRZED  | A | tabela t1, wiersz 12: G12 Ładunek: rodzaj, masa wg dokumentów, rozmieszczenie, mocowanie, przemieszczenie; ADR. | check | KC_0288 |
+| 00.G.t1.r12.c2 | G. POJAZDY NA MIEJSCU – PRZED  | B | tabela t1, wiersz 12: G12 Ładunek: rodzaj, masa wg dokumentów, rozmieszczenie, mocowanie, przemieszczenie; ADR. | check | KC_0289 |
+| 00.G.t1.r12.c3 | G. POJAZDY NA MIEJSCU – PRZED  | C | tabela t1, wiersz 12: G12 Ładunek: rodzaj, masa wg dokumentów, rozmieszczenie, mocowanie, przemieszczenie; ADR. | check | KC_0290 |
+| 00.G.t1.r12.c4 | G. POJAZDY NA MIEJSCU – PRZED  | D | tabela t1, wiersz 12: G12 Ładunek: rodzaj, masa wg dokumentów, rozmieszczenie, mocowanie, przemieszczenie; ADR. | check | KC_0291 |
+| 00.G.t1.r12.c5 | G. POJAZDY NA MIEJSCU – PRZED  | Wynik / gdzie zapisano | tabela t1, wiersz 12: G12 Ładunek: rodzaj, masa wg dokumentów, rozmieszczenie, mocowanie, przemieszczenie; ADR. | text | KC_0292 |
+| 00.G.t1.r13.c1 | G. POJAZDY NA MIEJSCU – PRZED  | A | tabela t1, wiersz 13: G13 Tachograf (analogowy / cyfrowy / inteligentny): karta kierowcy w urządzeniu, wydruki i dane zabezpieczone przez Policję (zob. 04 / 05). | check | KC_0293 |
+| 00.G.t1.r13.c2 | G. POJAZDY NA MIEJSCU – PRZED  | B | tabela t1, wiersz 13: G13 Tachograf (analogowy / cyfrowy / inteligentny): karta kierowcy w urządzeniu, wydruki i dane zabezpieczone przez Policję (zob. 04 / 05). | check | KC_0294 |
+| 00.G.t1.r13.c3 | G. POJAZDY NA MIEJSCU – PRZED  | C | tabela t1, wiersz 13: G13 Tachograf (analogowy / cyfrowy / inteligentny): karta kierowcy w urządzeniu, wydruki i dane zabezpieczone przez Policję (zob. 04 / 05). | check | KC_0295 |
+| 00.G.t1.r13.c4 | G. POJAZDY NA MIEJSCU – PRZED  | D | tabela t1, wiersz 13: G13 Tachograf (analogowy / cyfrowy / inteligentny): karta kierowcy w urządzeniu, wydruki i dane zabezpieczone przez Policję (zob. 04 / 05). | check | KC_0296 |
+| 00.G.t1.r13.c5 | G. POJAZDY NA MIEJSCU – PRZED  | Wynik / gdzie zapisano | tabela t1, wiersz 13: G13 Tachograf (analogowy / cyfrowy / inteligentny): karta kierowcy w urządzeniu, wydruki i dane zabezpieczone przez Policję (zob. 04 / 05). | text | KC_0297 |
+| 00.G.t1.r14.c1 | G. POJAZDY NA MIEJSCU – PRZED  | A | tabela t1, wiersz 14: G14 Rejestratory danych: EDR, wideorejestrator, kamery pojazdu, telematyka floty, eCall – obecność odnotowana; diagnostyki nie podłączać bez decyzji organu. | check | KC_0298 |
+| 00.G.t1.r14.c2 | G. POJAZDY NA MIEJSCU – PRZED  | B | tabela t1, wiersz 14: G14 Rejestratory danych: EDR, wideorejestrator, kamery pojazdu, telematyka floty, eCall – obecność odnotowana; diagnostyki nie podłączać bez decyzji organu. | check | KC_0299 |
+| 00.G.t1.r14.c3 | G. POJAZDY NA MIEJSCU – PRZED  | C | tabela t1, wiersz 14: G14 Rejestratory danych: EDR, wideorejestrator, kamery pojazdu, telematyka floty, eCall – obecność odnotowana; diagnostyki nie podłączać bez decyzji organu. | check | KC_0300 |
+| 00.G.t1.r14.c4 | G. POJAZDY NA MIEJSCU – PRZED  | D | tabela t1, wiersz 14: G14 Rejestratory danych: EDR, wideorejestrator, kamery pojazdu, telematyka floty, eCall – obecność odnotowana; diagnostyki nie podłączać bez decyzji organu. | check | KC_0301 |
+| 00.G.t1.r14.c5 | G. POJAZDY NA MIEJSCU – PRZED  | Wynik / gdzie zapisano | tabela t1, wiersz 14: G14 Rejestratory danych: EDR, wideorejestrator, kamery pojazdu, telematyka floty, eCall – obecność odnotowana; diagnostyki nie podłączać bez decyzji organu. | text | KC_0302 |
+| 00.G.t1.r15.c1 | G. POJAZDY NA MIEJSCU – PRZED  | A | tabela t1, wiersz 15: G15 Kluczyk / karta – gdzie; akumulator – podłączony / odłączony, przez kogo i kiedy. | check | KC_0303 |
+| 00.G.t1.r15.c2 | G. POJAZDY NA MIEJSCU – PRZED  | B | tabela t1, wiersz 15: G15 Kluczyk / karta – gdzie; akumulator – podłączony / odłączony, przez kogo i kiedy. | check | KC_0304 |
+| 00.G.t1.r15.c3 | G. POJAZDY NA MIEJSCU – PRZED  | C | tabela t1, wiersz 15: G15 Kluczyk / karta – gdzie; akumulator – podłączony / odłączony, przez kogo i kiedy. | check | KC_0305 |
+| 00.G.t1.r15.c4 | G. POJAZDY NA MIEJSCU – PRZED  | D | tabela t1, wiersz 15: G15 Kluczyk / karta – gdzie; akumulator – podłączony / odłączony, przez kogo i kiedy. | check | KC_0306 |
+| 00.G.t1.r15.c5 | G. POJAZDY NA MIEJSCU – PRZED  | Wynik / gdzie zapisano | tabela t1, wiersz 15: G15 Kluczyk / karta – gdzie; akumulator – podłączony / odłączony, przez kogo i kiedy. | text | KC_0307 |
+| 00.G.t1.r16.c1 | G. POJAZDY NA MIEJSCU – PRZED  | A | tabela t1, wiersz 16: G16 Pojazd elektryczny / hybrydowy: stan baterii trakcyjnej (deformacja, dym, temperatura); zalecenia PSP co do transportu i miejsca postoju. | check | KC_0308 |
+| 00.G.t1.r16.c2 | G. POJAZDY NA MIEJSCU – PRZED  | B | tabela t1, wiersz 16: G16 Pojazd elektryczny / hybrydowy: stan baterii trakcyjnej (deformacja, dym, temperatura); zalecenia PSP co do transportu i miejsca postoju. | check | KC_0309 |
+| 00.G.t1.r16.c3 | G. POJAZDY NA MIEJSCU – PRZED  | C | tabela t1, wiersz 16: G16 Pojazd elektryczny / hybrydowy: stan baterii trakcyjnej (deformacja, dym, temperatura); zalecenia PSP co do transportu i miejsca postoju. | check | KC_0310 |
+| 00.G.t1.r16.c4 | G. POJAZDY NA MIEJSCU – PRZED  | D | tabela t1, wiersz 16: G16 Pojazd elektryczny / hybrydowy: stan baterii trakcyjnej (deformacja, dym, temperatura); zalecenia PSP co do transportu i miejsca postoju. | check | KC_0311 |
+| 00.G.t1.r16.c5 | G. POJAZDY NA MIEJSCU – PRZED  | Wynik / gdzie zapisano | tabela t1, wiersz 16: G16 Pojazd elektryczny / hybrydowy: stan baterii trakcyjnej (deformacja, dym, temperatura); zalecenia PSP co do transportu i miejsca postoju. | text | KC_0312 |
+| 00.G.t1.r17.c1 | G. POJAZDY NA MIEJSCU – PRZED  | A | tabela t1, wiersz 17: G17 Odholowanie: zdjęcia przed i po załadunku; uszkodzenia powstałe przy holowaniu odnotowane; części luzem zebrane i przypisane do pojazdu (zob. 09-B); miejsce zabezpieczenia pojazdu (adres). | check | KC_0313 |
+| 00.G.t1.r17.c2 | G. POJAZDY NA MIEJSCU – PRZED  | B | tabela t1, wiersz 17: G17 Odholowanie: zdjęcia przed i po załadunku; uszkodzenia powstałe przy holowaniu odnotowane; części luzem zebrane i przypisane do pojazdu (zob. 09-B); miejsce zabezpieczenia pojazdu (adres). | check | KC_0314 |
+| 00.G.t1.r17.c3 | G. POJAZDY NA MIEJSCU – PRZED  | C | tabela t1, wiersz 17: G17 Odholowanie: zdjęcia przed i po załadunku; uszkodzenia powstałe przy holowaniu odnotowane; części luzem zebrane i przypisane do pojazdu (zob. 09-B); miejsce zabezpieczenia pojazdu (adres). | check | KC_0315 |
+| 00.G.t1.r17.c4 | G. POJAZDY NA MIEJSCU – PRZED  | D | tabela t1, wiersz 17: G17 Odholowanie: zdjęcia przed i po załadunku; uszkodzenia powstałe przy holowaniu odnotowane; części luzem zebrane i przypisane do pojazdu (zob. 09-B); miejsce zabezpieczenia pojazdu (adres). | check | KC_0316 |
+| 00.G.t1.r17.c5 | G. POJAZDY NA MIEJSCU – PRZED  | Wynik / gdzie zapisano | tabela t1, wiersz 17: G17 Odholowanie: zdjęcia przed i po załadunku; uszkodzenia powstałe przy holowaniu odnotowane; części luzem zebrane i przypisane do pojazdu (zob. 09-B); miejsce zabezpieczenia pojazdu (adres). | text | KC_0317 |
 | 00.G.uwagi | G. POJAZDY NA MIEJSCU – PRZED  | Uwagi | pole aplikacji (brak w PDF) | text |  |
-| 00.H.t1.r1.c1 | H. WNIOSKI DO ORGANU – PRZEKAZ | Zgłoszono | tabela t1, wiersz 1: H1 Monitoringw otoczeniu (adres, kierunek kamery, właściciel) – zabezpieczenie niezwłocznie, przed nadpisaniem. | check | KC_0318 |
-| 00.H.t1.r1.c2 | H. WNIOSKI DO ORGANU – PRZEKAZ | Komu / kiedy / uwagi | tabela t1, wiersz 1: H1 Monitoringw otoczeniu (adres, kierunek kamery, właściciel) – zabezpieczenie niezwłocznie, przed nadpisaniem. | text | KC_0319 |
-| 00.H.t1.r2.c1 | H. WNIOSKI DO ORGANU – PRZEKAZ | Zgłoszono | tabela t1, wiersz 2: H2 Nagrania z wideorejestratorówuczestników, świadków, komunikacji miejskiej, taksówek, pojazdów służbowych. | check | KC_0320 |
-| 00.H.t1.r2.c2 | H. WNIOSKI DO ORGANU – PRZEKAZ | Komu / kiedy / uwagi | tabela t1, wiersz 2: H2 Nagrania z wideorejestratorówuczestników, świadków, komunikacji miejskiej, taksówek, pojazdów służbowych. | text | KC_0321 |
-| 00.H.t1.r3.c1 | H. WNIOSKI DO ORGANU – PRZEKAZ | Zgłoszono | tabela t1, wiersz 3: H3 Czas zdarzenia:zgłoszenia na numer 112 (CPR), dane eCall (czas, pozycja, kierunek jazdy), czasy wyjazdów służb. | check | KC_0322 |
-| 00.H.t1.r3.c2 | H. WNIOSKI DO ORGANU – PRZEKAZ | Komu / kiedy / uwagi | tabela t1, wiersz 3: H3 Czas zdarzenia:zgłoszenia na numer 112 (CPR), dane eCall (czas, pozycja, kierunek jazdy), czasy wyjazdów służb. | text | KC_0323 |
-| 00.H.t1.r4.c1 | H. WNIOSKI DO ORGANU – PRZEKAZ | Zgłoszono | tabela t1, wiersz 4: H4 Sygnalizacja świetlna– program i stan w chwili zdarzenia od zarządcy (zapisy sterownika, jeśli są). | check | KC_0324 |
-| 00.H.t1.r4.c2 | H. WNIOSKI DO ORGANU – PRZEKAZ | Komu / kiedy / uwagi | tabela t1, wiersz 4: H4 Sygnalizacja świetlna– program i stan w chwili zdarzenia od zarządcy (zapisy sterownika, jeśli są). | text | KC_0325 |
-| 00.H.t1.r5.c1 | H. WNIOSKI DO ORGANU – PRZEKAZ | Zgłoszono | tabela t1, wiersz 5: H5 Oświetlenie uliczne– godziny załączenia i stan w chwili zdarzenia od zarządcy oświetlenia. | check | KC_0326 |
-| 00.H.t1.r5.c2 | H. WNIOSKI DO ORGANU – PRZEKAZ | Komu / kiedy / uwagi | tabela t1, wiersz 5: H5 Oświetlenie uliczne– godziny załączenia i stan w chwili zdarzenia od zarządcy oświetlenia. | text | KC_0327 |
-| 00.H.t1.r6.c1 | H. WNIOSKI DO ORGANU – PRZEKAZ | Zgłoszono | tabela t1, wiersz 6: H6 Organizacja ruchu– projekt / stała organizacja ruchu, zmiany oznakowania, dane zarządcy drogi. | check | KC_0328 |
-| 00.H.t1.r6.c2 | H. WNIOSKI DO ORGANU – PRZEKAZ | Komu / kiedy / uwagi | tabela t1, wiersz 6: H6 Organizacja ruchu– projekt / stała organizacja ruchu, zmiany oznakowania, dane zarządcy drogi. | text | KC_0329 |
-| 00.H.t1.r7.c1 | H. WNIOSKI DO ORGANU – PRZEKAZ | Zgłoszono | tabela t1, wiersz 7: H7 Dane meteorologicznena godzinę zdarzenia (IMGW, najbliższa drogowa stacja pogodowa). | check | KC_0330 |
-| 00.H.t1.r7.c2 | H. WNIOSKI DO ORGANU – PRZEKAZ | Komu / kiedy / uwagi | tabela t1, wiersz 7: H7 Dane meteorologicznena godzinę zdarzenia (IMGW, najbliższa drogowa stacja pogodowa). | text | KC_0331 |
-| 00.H.t1.r8.c1 | H. WNIOSKI DO ORGANU – PRZEKAZ | Zgłoszono | tabela t1, wiersz 8: H8 Zabezpieczenie pojazdówdo oględzin szczegółowych: bez napraw i demontażu, ochrona przed opadami, plomby; warunki dla odczytu EDR i sterowników. | check | KC_0332 |
-| 00.H.t1.r8.c2 | H. WNIOSKI DO ORGANU – PRZEKAZ | Komu / kiedy / uwagi | tabela t1, wiersz 8: H8 Zabezpieczenie pojazdówdo oględzin szczegółowych: bez napraw i demontażu, ochrona przed opadami, plomby; warunki dla odczytu EDR i sterowników. | text | KC_0333 |
-| 00.H.t1.r9.c1 | H. WNIOSKI DO ORGANU – PRZEKAZ | Zgłoszono | tabela t1, wiersz 9: H9 Odczyt danychtachografu, EDR, sterowników, wideorejestratorów – przez uprawniony podmiot. | check | KC_0334 |
-| 00.H.t1.r9.c2 | H. WNIOSKI DO ORGANU – PRZEKAZ | Komu / kiedy / uwagi | tabela t1, wiersz 9: H9 Odczyt danychtachografu, EDR, sterowników, wideorejestratorów – przez uprawniony podmiot. | text | KC_0335 |
-| 00.H.t1.r10.c1 | H. WNIOSKI DO ORGANU – PRZEKAZ | Zgłoszono | tabela t1, wiersz 10: H10 Odzież i obuwie uczestników(pieszy – obuwie, ślady ścierania podeszew), kask, rower, przedmioty osobiste. | check | KC_0336 |
-| 00.H.t1.r10.c2 | H. WNIOSKI DO ORGANU – PRZEKAZ | Komu / kiedy / uwagi | tabela t1, wiersz 10: H10 Odzież i obuwie uczestników(pieszy – obuwie, ślady ścierania podeszew), kask, rower, przedmioty osobiste. | text | KC_0337 |
-| 00.H.t1.r11.c1 | H. WNIOSKI DO ORGANU – PRZEKAZ | Zgłoszono | tabela t1, wiersz 11: H11 Dokumentacja medyczna obrażeń– lokalizacja i wysokość obrażeń (pieszy: kończyny dolne) do korelacji z uszkodzeniami pojazdu. | check | KC_0338 |
-| 00.H.t1.r11.c2 | H. WNIOSKI DO ORGANU – PRZEKAZ | Komu / kiedy / uwagi | tabela t1, wiersz 11: H11 Dokumentacja medyczna obrażeń– lokalizacja i wysokość obrażeń (pieszy: kończyny dolne) do korelacji z uszkodzeniami pojazdu. | text | KC_0339 |
-| 00.H.t1.r12.c1 | H. WNIOSKI DO ORGANU – PRZEKAZ | Zgłoszono | tabela t1, wiersz 12: H12 Okoliczności do ustalenia z udziałem uczestników i świadków(bez sugerowania): pas ruchu, prędkość, włączone światła, chwila dostrzeżenia zagrożenia, wykonany manewr. | check | KC_0340 |
-| 00.H.t1.r12.c2 | H. WNIOSKI DO ORGANU – PRZEKAZ | Komu / kiedy / uwagi | tabela t1, wiersz 12: H12 Okoliczności do ustalenia z udziałem uczestników i świadków(bez sugerowania): pas ruchu, prędkość, włączone światła, chwila dostrzeżenia zagrożenia, wykonany manewr. | text | KC_0341 |
-| 00.H.t1.r13.c1 | H. WNIOSKI DO ORGANU – PRZEKAZ | Zgłoszono | tabela t1, wiersz 13: H13 Eksperyment procesowy / pomiar widocznościlub przyczepności w warunkach zbliżonych do zdarzenia (pora, pogoda, pojazdy tego samego typu). | check | KC_0342 |
-| 00.H.t1.r13.c2 | H. WNIOSKI DO ORGANU – PRZEKAZ | Komu / kiedy / uwagi | tabela t1, wiersz 13: H13 Eksperyment procesowy / pomiar widocznościlub przyczepności w warunkach zbliżonych do zdarzenia (pora, pogoda, pojazdy tego samego typu). | text | KC_0343 |
-| 00.H.t1.r14.c1 | H. WNIOSKI DO ORGANU – PRZEKAZ | Zgłoszono | tabela t1, wiersz 14: H14 Kopiaprotokołu oględzin, szkicu i dokumentacji fotograficznej Policji. | check | KC_0344 |
-| 00.H.t1.r14.c2 | H. WNIOSKI DO ORGANU – PRZEKAZ | Komu / kiedy / uwagi | tabela t1, wiersz 14: H14 Kopiaprotokołu oględzin, szkicu i dokumentacji fotograficznej Policji. | text | KC_0345 |
+| 00.H.t1.r1.c1 | H. WNIOSKI DO ORGANU – PRZEKAZ | Zgłoszono | tabela t1, wiersz 1: H1 Monitoring w otoczeniu (adres, kierunek kamery, właściciel) – zabezpieczenie niezwłocznie, przed nadpisaniem. | check | KC_0318 |
+| 00.H.t1.r1.c2 | H. WNIOSKI DO ORGANU – PRZEKAZ | Komu / kiedy / uwagi | tabela t1, wiersz 1: H1 Monitoring w otoczeniu (adres, kierunek kamery, właściciel) – zabezpieczenie niezwłocznie, przed nadpisaniem. | text | KC_0319 |
+| 00.H.t1.r2.c1 | H. WNIOSKI DO ORGANU – PRZEKAZ | Zgłoszono | tabela t1, wiersz 2: H2 Nagrania z wideorejestratorów uczestników, świadków, komunikacji miejskiej, taksówek, pojazdów służbowych. | check | KC_0320 |
+| 00.H.t1.r2.c2 | H. WNIOSKI DO ORGANU – PRZEKAZ | Komu / kiedy / uwagi | tabela t1, wiersz 2: H2 Nagrania z wideorejestratorów uczestników, świadków, komunikacji miejskiej, taksówek, pojazdów służbowych. | text | KC_0321 |
+| 00.H.t1.r3.c1 | H. WNIOSKI DO ORGANU – PRZEKAZ | Zgłoszono | tabela t1, wiersz 3: H3 Czas zdarzenia: zgłoszenia na numer 112 (CPR), dane eCall (czas, pozycja, kierunek jazdy), czasy wyjazdów służb. | check | KC_0322 |
+| 00.H.t1.r3.c2 | H. WNIOSKI DO ORGANU – PRZEKAZ | Komu / kiedy / uwagi | tabela t1, wiersz 3: H3 Czas zdarzenia: zgłoszenia na numer 112 (CPR), dane eCall (czas, pozycja, kierunek jazdy), czasy wyjazdów służb. | text | KC_0323 |
+| 00.H.t1.r4.c1 | H. WNIOSKI DO ORGANU – PRZEKAZ | Zgłoszono | tabela t1, wiersz 4: H4 Sygnalizacja świetlna – program i stan w chwili zdarzenia od zarządcy (zapisy sterownika, jeśli są). | check | KC_0324 |
+| 00.H.t1.r4.c2 | H. WNIOSKI DO ORGANU – PRZEKAZ | Komu / kiedy / uwagi | tabela t1, wiersz 4: H4 Sygnalizacja świetlna – program i stan w chwili zdarzenia od zarządcy (zapisy sterownika, jeśli są). | text | KC_0325 |
+| 00.H.t1.r5.c1 | H. WNIOSKI DO ORGANU – PRZEKAZ | Zgłoszono | tabela t1, wiersz 5: H5 Oświetlenie uliczne – godziny załączenia i stan w chwili zdarzenia od zarządcy oświetlenia. | check | KC_0326 |
+| 00.H.t1.r5.c2 | H. WNIOSKI DO ORGANU – PRZEKAZ | Komu / kiedy / uwagi | tabela t1, wiersz 5: H5 Oświetlenie uliczne – godziny załączenia i stan w chwili zdarzenia od zarządcy oświetlenia. | text | KC_0327 |
+| 00.H.t1.r6.c1 | H. WNIOSKI DO ORGANU – PRZEKAZ | Zgłoszono | tabela t1, wiersz 6: H6 Organizacja ruchu – projekt / stała organizacja ruchu, zmiany oznakowania, dane zarządcy drogi. | check | KC_0328 |
+| 00.H.t1.r6.c2 | H. WNIOSKI DO ORGANU – PRZEKAZ | Komu / kiedy / uwagi | tabela t1, wiersz 6: H6 Organizacja ruchu – projekt / stała organizacja ruchu, zmiany oznakowania, dane zarządcy drogi. | text | KC_0329 |
+| 00.H.t1.r7.c1 | H. WNIOSKI DO ORGANU – PRZEKAZ | Zgłoszono | tabela t1, wiersz 7: H7 Dane meteorologiczne na godzinę zdarzenia (IMGW, najbliższa drogowa stacja pogodowa). | check | KC_0330 |
+| 00.H.t1.r7.c2 | H. WNIOSKI DO ORGANU – PRZEKAZ | Komu / kiedy / uwagi | tabela t1, wiersz 7: H7 Dane meteorologiczne na godzinę zdarzenia (IMGW, najbliższa drogowa stacja pogodowa). | text | KC_0331 |
+| 00.H.t1.r8.c1 | H. WNIOSKI DO ORGANU – PRZEKAZ | Zgłoszono | tabela t1, wiersz 8: H8 Zabezpieczenie pojazdów do oględzin szczegółowych: bez napraw i demontażu, ochrona przed opadami, plomby; warunki dla odczytu EDR i sterowników. | check | KC_0332 |
+| 00.H.t1.r8.c2 | H. WNIOSKI DO ORGANU – PRZEKAZ | Komu / kiedy / uwagi | tabela t1, wiersz 8: H8 Zabezpieczenie pojazdów do oględzin szczegółowych: bez napraw i demontażu, ochrona przed opadami, plomby; warunki dla odczytu EDR i sterowników. | text | KC_0333 |
+| 00.H.t1.r9.c1 | H. WNIOSKI DO ORGANU – PRZEKAZ | Zgłoszono | tabela t1, wiersz 9: H9 Odczyt danych tachografu, EDR, sterowników, wideorejestratorów – przez uprawniony podmiot. | check | KC_0334 |
+| 00.H.t1.r9.c2 | H. WNIOSKI DO ORGANU – PRZEKAZ | Komu / kiedy / uwagi | tabela t1, wiersz 9: H9 Odczyt danych tachografu, EDR, sterowników, wideorejestratorów – przez uprawniony podmiot. | text | KC_0335 |
+| 00.H.t1.r10.c1 | H. WNIOSKI DO ORGANU – PRZEKAZ | Zgłoszono | tabela t1, wiersz 10: H10 Odzież i obuwie uczestników (pieszy – obuwie, ślady ścierania podeszew), kask, rower, przedmioty osobiste. | check | KC_0336 |
+| 00.H.t1.r10.c2 | H. WNIOSKI DO ORGANU – PRZEKAZ | Komu / kiedy / uwagi | tabela t1, wiersz 10: H10 Odzież i obuwie uczestników (pieszy – obuwie, ślady ścierania podeszew), kask, rower, przedmioty osobiste. | text | KC_0337 |
+| 00.H.t1.r11.c1 | H. WNIOSKI DO ORGANU – PRZEKAZ | Zgłoszono | tabela t1, wiersz 11: H11 Dokumentacja medyczna obrażeń – lokalizacja i wysokość obrażeń (pieszy: kończyny dolne) do korelacji z uszkodzeniami pojazdu. | check | KC_0338 |
+| 00.H.t1.r11.c2 | H. WNIOSKI DO ORGANU – PRZEKAZ | Komu / kiedy / uwagi | tabela t1, wiersz 11: H11 Dokumentacja medyczna obrażeń – lokalizacja i wysokość obrażeń (pieszy: kończyny dolne) do korelacji z uszkodzeniami pojazdu. | text | KC_0339 |
+| 00.H.t1.r12.c1 | H. WNIOSKI DO ORGANU – PRZEKAZ | Zgłoszono | tabela t1, wiersz 12: H12 Okoliczności do ustalenia z udziałem uczestników i świadków (bez sugerowania): pas ruchu, prędkość, włączone światła, chwila dostrzeżenia zagrożenia, wykonany manewr. | check | KC_0340 |
+| 00.H.t1.r12.c2 | H. WNIOSKI DO ORGANU – PRZEKAZ | Komu / kiedy / uwagi | tabela t1, wiersz 12: H12 Okoliczności do ustalenia z udziałem uczestników i świadków (bez sugerowania): pas ruchu, prędkość, włączone światła, chwila dostrzeżenia zagrożenia, wykonany manewr. | text | KC_0341 |
+| 00.H.t1.r13.c1 | H. WNIOSKI DO ORGANU – PRZEKAZ | Zgłoszono | tabela t1, wiersz 13: H13 Eksperyment procesowy / pomiar widoczności lub przyczepności w warunkach zbliżonych do zdarzenia (pora, pogoda, pojazdy tego samego typu). | check | KC_0342 |
+| 00.H.t1.r13.c2 | H. WNIOSKI DO ORGANU – PRZEKAZ | Komu / kiedy / uwagi | tabela t1, wiersz 13: H13 Eksperyment procesowy / pomiar widoczności lub przyczepności w warunkach zbliżonych do zdarzenia (pora, pogoda, pojazdy tego samego typu). | text | KC_0343 |
+| 00.H.t1.r14.c1 | H. WNIOSKI DO ORGANU – PRZEKAZ | Zgłoszono | tabela t1, wiersz 14: H14 Kopia protokołu oględzin, szkicu i dokumentacji fotograficznej Policji. | check | KC_0344 |
+| 00.H.t1.r14.c2 | H. WNIOSKI DO ORGANU – PRZEKAZ | Komu / kiedy / uwagi | tabela t1, wiersz 14: H14 Kopia protokołu oględzin, szkicu i dokumentacji fotograficznej Policji. | text | KC_0345 |
 | 00.H.uwagi | H. WNIOSKI DO ORGANU – PRZEKAZ | Uwagi | pole aplikacji (brak w PDF) | text |  |
 | 00.I.1 | I. KONTROLA PRZED ZWOLNIENIEM  | Każdy pojazd: położenie końcowe zmierzone (min. 2 punkty) i sfotografowane |  | check | KC_0346 |
 | 00.I.2 | I. KONTROLA PRZED ZWOLNIENIEM  | Elementy sterujące, przyrządy i oświetlenie pojazdów udokumentowane przed dotknięciem |  | check | KC_0347 |
@@ -1154,8 +1154,8 @@ Generowany automatycznie (tools/gen_dict.py). Identyfikatory są stałe; tabele:
 | 02.D.54 | D. USZKODZENIA – ROZKŁADÓWKA M | 25 · gmol / osłona silnika | rysunek fig1 | check | MC_0217 |
 | 02.D.55 | D. USZKODZENIA – ROZKŁADÓWKA M | 11 · zbiornik paliwa | rysunek fig1 | check | MC_0270 |
 | 02.D.56 | D. USZKODZENIA – ROZKŁADÓWKA M | 2 · tarcza / zacisk przedni | rysunek fig1 | check | MC_0194 |
-| 02.D.57 | D. USZKODZENIA – ROZKŁADÓWKA M | (strefa na rysunku) | rysunek fig1 | check | MC_0269 |
-| 02.D.58 | D. USZKODZENIA – ROZKŁADÓWKA M | (strefa na rysunku) | rysunek fig1 | check | MC_0259 |
+| 02.D.57 | D. USZKODZENIA – ROZKŁADÓWKA M | 11 · zbiornik paliwa | rysunek fig1 | check | MC_0269 |
+| 02.D.58 | D. USZKODZENIA – ROZKŁADÓWKA M | 1 · koło przednie (opona, felga) | rysunek fig1 | check | MC_0259 |
 | 02.D.59 | D. USZKODZENIA – ROZKŁADÓWKA M | 19 · tarcza / zacisk tylny | rysunek fig1 | check | MC_0211 |
 | 02.D.60 | D. USZKODZENIA – ROZKŁADÓWKA M | 1 · koło przednie (opona, felga) | rysunek fig1 | check | MC_0193 |
 | 02.D.61 | D. USZKODZENIA – ROZKŁADÓWKA M | 18 · koło tylne (opona, felga) | rysunek fig1 | check | MC_0210 |
@@ -1166,13 +1166,13 @@ Generowany automatycznie (tools/gen_dict.py). Identyfikatory są stałe; tabele:
 | 02.D.66 | D. USZKODZENIA – ROZKŁADÓWKA M | 8 · szyba | rysunek fig1 | check | MC_0266 |
 | 02.D.67 | D. USZKODZENIA – ROZKŁADÓWKA M | 4 · widelec / lagi | rysunek fig1 | check | MC_0262 |
 | 02.D.68 | D. USZKODZENIA – ROZKŁADÓWKA M | 8 · szyba | rysunek fig1 | check | MC_0265 |
-| 02.D.69 | D. USZKODZENIA – ROZKŁADÓWKA M | (strefa na rysunku) | rysunek fig1 | check | MC_0264 |
+| 02.D.69 | D. USZKODZENIA – ROZKŁADÓWKA M | 6 · kierunkowskaz przedni | rysunek fig1 | check | MC_0264 |
 | 02.D.70 | D. USZKODZENIA – ROZKŁADÓWKA M | 4 · widelec / lagi | rysunek fig1 | check | MC_0263 |
-| 02.D.71 | D. USZKODZENIA – ROZKŁADÓWKA M | (strefa na rysunku) | rysunek fig1 | check | MC_0220 |
-| 02.D.72 | D. USZKODZENIA – ROZKŁADÓWKA M | (strefa na rysunku) | rysunek fig1 | check | MC_0221 |
+| 02.D.71 | D. USZKODZENIA – ROZKŁADÓWKA M | 10P · lusterko | rysunek fig1 | check | MC_0220 |
+| 02.D.72 | D. USZKODZENIA – ROZKŁADÓWKA M | 10L · lusterko | rysunek fig1 | check | MC_0221 |
 | 02.D.73 | D. USZKODZENIA – ROZKŁADÓWKA M | 8 · szyba | rysunek fig1 | check | MC_0225 |
-| 02.D.74 | D. USZKODZENIA – ROZKŁADÓWKA M | (strefa na rysunku) | rysunek fig1 | check | MC_0218 |
-| 02.D.75 | D. USZKODZENIA – ROZKŁADÓWKA M | (strefa na rysunku) | rysunek fig1 | check | MC_0219 |
+| 02.D.74 | D. USZKODZENIA – ROZKŁADÓWKA M | 9P · kierownica, manetka, dźwignia | rysunek fig1 | check | MC_0218 |
+| 02.D.75 | D. USZKODZENIA – ROZKŁADÓWKA M | 9L · kierownica, manetka, dźwignia | rysunek fig1 | check | MC_0219 |
 | 02.D.76 | D. USZKODZENIA – ROZKŁADÓWKA M | 21 · owiewka tylna / ogon | rysunek fig1 | check | MC_0248 |
 | 02.D.77 | D. USZKODZENIA – ROZKŁADÓWKA M | 9P · kierownica, manetka, dźwignia | rysunek fig1 | check | MC_0233 |
 | 02.D.78 | D. USZKODZENIA – ROZKŁADÓWKA M | 5 · reflektor | rysunek fig1 | check | MC_0224 |
@@ -1184,14 +1184,14 @@ Generowany automatycznie (tools/gen_dict.py). Identyfikatory są stałe; tabele:
 | 02.D.84 | D. USZKODZENIA – ROZKŁADÓWKA M | 23P · kierunkowskaz tylny | rysunek fig1 | check | MC_0245 |
 | 02.D.85 | D. USZKODZENIA – ROZKŁADÓWKA M | 4P · widelec / lagi | rysunek fig1 | check | MC_0228 |
 | 02.D.86 | D. USZKODZENIA – ROZKŁADÓWKA M | 4L · widelec / lagi | rysunek fig1 | check | MC_0229 |
-| 02.D.87 | D. USZKODZENIA – ROZKŁADÓWKA M | (strefa na rysunku) | rysunek fig1 | check | MC_0237 |
+| 02.D.87 | D. USZKODZENIA – ROZKŁADÓWKA M | 8 · szyba | rysunek fig1 | check | MC_0237 |
 | 02.D.88 | D. USZKODZENIA – ROZKŁADÓWKA M | 24 · tablica rejestracyjna | rysunek fig1 | check | MC_0243 |
 | 02.D.89 | D. USZKODZENIA – ROZKŁADÓWKA M | 3 · błotnik przedni | rysunek fig1 | check | MC_0226 |
 | 02.D.90 | D. USZKODZENIA – ROZKŁADÓWKA M | 1 · koło przednie (opona, felga) | rysunek fig1 | check | MC_0241 |
 | 02.D.91 | D. USZKODZENIA – ROZKŁADÓWKA M | 11 · zbiornik paliwa | rysunek fig1 | check | MC_0234 |
 | 02.D.92 | D. USZKODZENIA – ROZKŁADÓWKA M | 15 · siedzenie | rysunek fig1 | check | MC_0235 |
 | 02.D.93 | D. USZKODZENIA – ROZKŁADÓWKA M | 21 · owiewka tylna / ogon | rysunek fig1 | check | MC_0236 |
-| 02.D.94 | D. USZKODZENIA – ROZKŁADÓWKA M | (strefa na rysunku) | rysunek fig1 | check | MC_0240 |
+| 02.D.94 | D. USZKODZENIA – ROZKŁADÓWKA M | 7 · owiewka przednia | rysunek fig1 | check | MC_0240 |
 | 02.D.95 | D. USZKODZENIA – ROZKŁADÓWKA M | 20 · wydech / tłumik | rysunek fig1 | check | MC_0247 |
 | 02.D.96 | D. USZKODZENIA – ROZKŁADÓWKA M | 14P · podnóżek / dźwignia nożna | rysunek fig1 | check | MC_0230 |
 | 02.D.97 | D. USZKODZENIA – ROZKŁADÓWKA M | 14L · podnóżek / dźwignia nożna | rysunek fig1 | check | MC_0231 |
@@ -2575,8 +2575,8 @@ Generowany automatycznie (tools/gen_dict.py). Identyfikatory są stałe; tabele:
 | 03.E.1 | E. USZKODZENIA – ROZKŁADÓWKA P | Pojazd w sprawie (A / B / …) | rysunek fig1 | text | SO_0402 |
 | 03.E.2 | E. USZKODZENIA – ROZKŁADÓWKA P | szyba | rysunek fig1 | check | SO_0351 |
 | 03.E.3 | E. USZKODZENIA – ROZKŁADÓWKA P | Marka, model | rysunek fig1 | text | SO_0403 |
-| 03.E.4 | E. USZKODZENIA – ROZKŁADÓWKA P | (strefa na rysunku) | rysunek fig1 | check | SO_0355 |
-| 03.E.5 | E. USZKODZENIA – ROZKŁADÓWKA P | (strefa na rysunku) | rysunek fig1 | check | SO_0356 |
+| 03.E.4 | E. USZKODZENIA – ROZKŁADÓWKA P | lusterko P | rysunek fig1 | check | SO_0355 |
+| 03.E.5 | E. USZKODZENIA – ROZKŁADÓWKA P | lusterko L | rysunek fig1 | check | SO_0356 |
 | 03.E.6 | E. USZKODZENIA – ROZKŁADÓWKA P | maska | rysunek fig1 | check | SO_0350 |
 | 03.E.7 | E. USZKODZENIA – ROZKŁADÓWKA P | reflektor P | rysunek fig1 | check | SO_0347 |
 | 03.E.8 | E. USZKODZENIA – ROZKŁADÓWKA P | reflektor L | rysunek fig1 | check | SO_0348 |
@@ -2624,13 +2624,13 @@ Generowany automatycznie (tools/gen_dict.py). Identyfikatory są stałe; tabele:
 | 03.E.50 | E. USZKODZENIA – ROZKŁADÓWKA P | lampa | rysunek fig1 | check | SO_0392 |
 | 03.E.51 | E. USZKODZENIA – ROZKŁADÓWKA P | podwozie – przód | rysunek fig1 | check | SO_0417 |
 | 03.E.52 | E. USZKODZENIA – ROZKŁADÓWKA P | podwozie – środek | rysunek fig1 | check | SO_0418 |
-| 03.E.53 | E. USZKODZENIA – ROZKŁADÓWKA P | (strefa na rysunku) | rysunek fig1 | check | SO_0416 |
+| 03.E.53 | E. USZKODZENIA – ROZKŁADÓWKA P | 12 | rysunek fig1 | check | SO_0416 |
 | 03.E.54 | E. USZKODZENIA – ROZKŁADÓWKA P | szyba tylna | rysunek fig1 | check | SO_0397 |
 | 03.E.55 | E. USZKODZENIA – ROZKŁADÓWKA P | podwozie – tył | rysunek fig1 | check | SO_0419 |
-| 03.E.56 | E. USZKODZENIA – ROZKŁADÓWKA P | (strefa na rysunku) | rysunek fig1 | check | SO_0415 |
-| 03.E.57 | E. USZKODZENIA – ROZKŁADÓWKA P | (strefa na rysunku) | rysunek fig1 | check | SO_0405 |
-| 03.E.58 | E. USZKODZENIA – ROZKŁADÓWKA P | (strefa na rysunku) | rysunek fig1 | check | SO_0400 |
-| 03.E.59 | E. USZKODZENIA – ROZKŁADÓWKA P | (strefa na rysunku) | rysunek fig1 | check | SO_0401 |
+| 03.E.56 | E. USZKODZENIA – ROZKŁADÓWKA P | 11 | rysunek fig1 | check | SO_0415 |
+| 03.E.57 | E. USZKODZENIA – ROZKŁADÓWKA P | 1 | rysunek fig1 | check | SO_0405 |
+| 03.E.58 | E. USZKODZENIA – ROZKŁADÓWKA P | lusterko L | rysunek fig1 | check | SO_0400 |
+| 03.E.59 | E. USZKODZENIA – ROZKŁADÓWKA P | lusterko P | rysunek fig1 | check | SO_0401 |
 | 03.E.60 | E. USZKODZENIA – ROZKŁADÓWKA P | zbiornik paliwa | rysunek fig1 | check | SO_0420 |
 | 03.E.61 | E. USZKODZENIA – ROZKŁADÓWKA P | 10 | rysunek fig1 | check | SO_0414 |
 | 03.E.62 | E. USZKODZENIA – ROZKŁADÓWKA P | 2 | rysunek fig1 | check | SO_0406 |
@@ -2645,9 +2645,9 @@ Generowany automatycznie (tools/gen_dict.py). Identyfikatory są stałe; tabele:
 | 03.E.71 | E. USZKODZENIA – ROZKŁADÓWKA P | 8 | rysunek fig1 | check | SO_0412 |
 | 03.E.72 | E. USZKODZENIA – ROZKŁADÓWKA P | 4 | rysunek fig1 | check | SO_0408 |
 | 03.E.73 | E. USZKODZENIA – ROZKŁADÓWKA P | zderzak | rysunek fig1 | check | SO_0399 |
-| 03.E.74 | E. USZKODZENIA – ROZKŁADÓWKA P | (strefa na rysunku) | rysunek fig1 | check | SO_0411 |
-| 03.E.75 | E. USZKODZENIA – ROZKŁADÓWKA P | (strefa na rysunku) | rysunek fig1 | check | SO_0409 |
-| 03.E.76 | E. USZKODZENIA – ROZKŁADÓWKA P | (strefa na rysunku) | rysunek fig1 | check | SO_0410 |
+| 03.E.74 | E. USZKODZENIA – ROZKŁADÓWKA P | 7 | rysunek fig1 | check | SO_0411 |
+| 03.E.75 | E. USZKODZENIA – ROZKŁADÓWKA P | 5 | rysunek fig1 | check | SO_0409 |
+| 03.E.76 | E. USZKODZENIA – ROZKŁADÓWKA P | 6 | rysunek fig1 | check | SO_0410 |
 | 03.E.77 | E. USZKODZENIA – ROZKŁADÓWKA P | Opis zaznaczeń / uwagi do rozkładówki |  | text | SO_0423 |
 | 03.E.uwagi | E. USZKODZENIA – ROZKŁADÓWKA P | Uwagi | pole aplikacji (brak w PDF) | text |  |
 | 03.E2.1 | E2. GRUBOŚĆ POWŁOKI LAKIERNICZ | Miernik (typ, nr) |  | text | SO_0424 |
@@ -4699,11 +4699,11 @@ Generowany automatycznie (tools/gen_dict.py). Identyfikatory są stałe; tabele:
 | 04.F.4 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | góra | rysunek fig1 | check | SC_0352 |
 | 04.F.5 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | dach kabiny | rysunek fig1 | check | SC_0337 |
 | 04.F.6 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | zabudowa | rysunek fig1 | check | SC_0361 |
-| 04.F.7 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | (strefa na rysunku) | rysunek fig1 | check | SC_0331 |
+| 04.F.7 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | lusterko | rysunek fig1 | check | SC_0331 |
 | 04.F.8 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | szyba | rysunek fig1 | check | SC_0335 |
-| 04.F.9 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | (strefa na rysunku) | rysunek fig1 | check | SC_0359 |
+| 04.F.9 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | P | rysunek fig1 | check | SC_0359 |
 | 04.F.10 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | szyba | rysunek fig1 | check | SC_0354 |
-| 04.F.11 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | (strefa na rysunku) | rysunek fig1 | check | SC_0360 |
+| 04.F.11 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | L | rysunek fig1 | check | SC_0360 |
 | 04.F.12 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | narożnik kabiny | rysunek fig1 | check | SC_0336 |
 | 04.F.13 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | dół | rysunek fig1 | check | SC_0347 |
 | 04.F.14 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | dół | rysunek fig1 | check | SC_0349 |
@@ -4714,8 +4714,8 @@ Generowany automatycznie (tools/gen_dict.py). Identyfikatory są stałe; tabele:
 | 04.F.19 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | reflektor | rysunek fig1 | check | SC_0333 |
 | 04.F.20 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | rama | rysunek fig1 | check | SC_0343 |
 | 04.F.21 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | lampa | rysunek fig1 | check | SC_0344 |
-| 04.F.22 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | (strefa na rysunku) | rysunek fig1 | check | SC_0357 |
-| 04.F.23 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | (strefa na rysunku) | rysunek fig1 | check | SC_0358 |
+| 04.F.22 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | P | rysunek fig1 | check | SC_0357 |
+| 04.F.23 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | L | rysunek fig1 | check | SC_0358 |
 | 04.F.24 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | zderzak | rysunek fig1 | check | SC_0332 |
 | 04.F.25 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | zbiornik | rysunek fig1 | check | SC_0339 |
 | 04.F.26 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | osłona boczna | rysunek fig1 | check | SC_0340 |
@@ -4730,7 +4730,7 @@ Generowany automatycznie (tools/gen_dict.py). Identyfikatory są stałe; tabele:
 | 04.F.35 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | góra | rysunek fig1 | check | SC_0377 |
 | 04.F.36 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | dach kabiny | rysunek fig1 | check | SC_0368 |
 | 04.F.37 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | szyba | rysunek fig1 | check | SC_0366 |
-| 04.F.38 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | (strefa na rysunku) | rysunek fig1 | check | SC_0362 |
+| 04.F.38 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | lusterko | rysunek fig1 | check | SC_0362 |
 | 04.F.39 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | drzwi L | rysunek fig1 | check | SC_0385 |
 | 04.F.40 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | drzwi P | rysunek fig1 | check | SC_0386 |
 | 04.F.41 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | dół | rysunek fig1 | check | SC_0384 |
@@ -4742,8 +4742,8 @@ Generowany automatycznie (tools/gen_dict.py). Identyfikatory są stałe; tabele:
 | 04.F.47 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | lampa | rysunek fig1 | check | SC_0375 |
 | 04.F.48 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | reflektor | rysunek fig1 | check | SC_0364 |
 | 04.F.49 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | rama | rysunek fig1 | check | SC_0374 |
-| 04.F.50 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | (strefa na rysunku) | rysunek fig1 | check | SC_0388 |
-| 04.F.51 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | (strefa na rysunku) | rysunek fig1 | check | SC_0389 |
+| 04.F.50 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | lampa L | rysunek fig1 | check | SC_0388 |
+| 04.F.51 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | lampa P | rysunek fig1 | check | SC_0389 |
 | 04.F.52 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | osłona boczna | rysunek fig1 | check | SC_0371 |
 | 04.F.53 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | zbiornik | rysunek fig1 | check | SC_0370 |
 | 04.F.54 | F. ROZKŁADÓWKA: SAMOCHÓD CIĘŻA | zderzak | rysunek fig1 | check | SC_0363 |
@@ -6887,15 +6887,15 @@ Generowany automatycznie (tools/gen_dict.py). Identyfikatory są stałe; tabele:
 | 05.E.t1.r4.c9 | E. TACHOGRAF, OGRANICZNIK PRĘD | USTERKA SKP / UN | tabela t1, wiersz 4: 7.11 Drogomierz | check | FA_0322 |
 | 05.E.t1.r4.c10 | E. TACHOGRAF, OGRANICZNIK PRĘD | Opis / wartości / nr zdjęcia | tabela t1, wiersz 4: 7.11 Drogomierz | text | FA_0323 |
 | 05.E.uwagi | E. TACHOGRAF, OGRANICZNIK PRĘD | Uwagi | pole aplikacji (brak w PDF) | text |  |
-| 05.F.1 | F. ROZKŁADÓWKA: FURGON / AUTOB | (strefa na rysunku) | rysunek fig1 | check | FA_0324 |
+| 05.F.1 | F. ROZKŁADÓWKA: FURGON / AUTOB | lusterko | rysunek fig1 | check | FA_0324 |
 | 05.F.2 | F. ROZKŁADÓWKA: FURGON / AUTOB | okno | rysunek fig1 | check | FA_0330 |
 | 05.F.3 | F. ROZKŁADÓWKA: FURGON / AUTOB | góra | rysunek fig1 | check | FA_0335 |
 | 05.F.4 | F. ROZKŁADÓWKA: FURGON / AUTOB | góra | rysunek fig1 | check | FA_0337 |
 | 05.F.5 | F. ROZKŁADÓWKA: FURGON / AUTOB | góra | rysunek fig1 | check | FA_0339 |
 | 05.F.6 | F. ROZKŁADÓWKA: FURGON / AUTOB | góra | rysunek fig1 | check | FA_0341 |
 | 05.F.7 | F. ROZKŁADÓWKA: FURGON / AUTOB | szyba kab. | rysunek fig1 | check | FA_0328 |
-| 05.F.8 | F. ROZKŁADÓWKA: FURGON / AUTOB | (strefa na rysunku) | rysunek fig1 | check | FA_0348 |
-| 05.F.9 | F. ROZKŁADÓWKA: FURGON / AUTOB | (strefa na rysunku) | rysunek fig1 | check | FA_0349 |
+| 05.F.8 | F. ROZKŁADÓWKA: FURGON / AUTOB | P | rysunek fig1 | check | FA_0348 |
+| 05.F.9 | F. ROZKŁADÓWKA: FURGON / AUTOB | L | rysunek fig1 | check | FA_0349 |
 | 05.F.10 | F. ROZKŁADÓWKA: FURGON / AUTOB | szyba | rysunek fig1 | check | FA_0343 |
 | 05.F.11 | F. ROZKŁADÓWKA: FURGON / AUTOB | narożnik | rysunek fig1 | check | FA_0327 |
 | 05.F.12 | F. ROZKŁADÓWKA: FURGON / AUTOB | reflektor | rysunek fig1 | check | FA_0326 |
@@ -6905,7 +6905,7 @@ Generowany automatycznie (tools/gen_dict.py). Identyfikatory są stałe; tabele:
 | 05.F.16 | F. ROZKŁADÓWKA: FURGON / AUTOB | dół | rysunek fig1 | check | FA_0340 |
 | 05.F.17 | F. ROZKŁADÓWKA: FURGON / AUTOB | dół | rysunek fig1 | check | FA_0342 |
 | 05.F.18 | F. ROZKŁADÓWKA: FURGON / AUTOB | lampa | rysunek fig1 | check | FA_0333 |
-| 05.F.19 | F. ROZKŁADÓWKA: FURGON / AUTOB | (strefa na rysunku) | rysunek fig1 | check | FA_0346 |
+| 05.F.19 | F. ROZKŁADÓWKA: FURGON / AUTOB | P | rysunek fig1 | check | FA_0346 |
 | 05.F.20 | F. ROZKŁADÓWKA: FURGON / AUTOB | atrapa | rysunek fig1 | check | FA_0344 |
 | 05.F.21 | F. ROZKŁADÓWKA: FURGON / AUTOB | atrapa | rysunek fig1 | check | FA_0347 |
 | 05.F.22 | F. ROZKŁADÓWKA: FURGON / AUTOB | zderzak | rysunek fig1 | check | FA_0325 |
@@ -6918,7 +6918,7 @@ Generowany automatycznie (tools/gen_dict.py). Identyfikatory są stałe; tabele:
 | 05.F.29 | F. ROZKŁADÓWKA: FURGON / AUTOB | góra | rysunek fig1 | check | FA_0363 |
 | 05.F.30 | F. ROZKŁADÓWKA: FURGON / AUTOB | góra | rysunek fig1 | check | FA_0361 |
 | 05.F.31 | F. ROZKŁADÓWKA: FURGON / AUTOB | okno | rysunek fig1 | check | FA_0356 |
-| 05.F.32 | F. ROZKŁADÓWKA: FURGON / AUTOB | (strefa na rysunku) | rysunek fig1 | check | FA_0350 |
+| 05.F.32 | F. ROZKŁADÓWKA: FURGON / AUTOB | lusterko | rysunek fig1 | check | FA_0350 |
 | 05.F.33 | F. ROZKŁADÓWKA: FURGON / AUTOB | szyba kab. | rysunek fig1 | check | FA_0354 |
 | 05.F.34 | F. ROZKŁADÓWKA: FURGON / AUTOB | szyba | rysunek fig1 | check | FA_0369 |
 | 05.F.35 | F. ROZKŁADÓWKA: FURGON / AUTOB | narożnik | rysunek fig1 | check | FA_0353 |
@@ -6929,7 +6929,7 @@ Generowany automatycznie (tools/gen_dict.py). Identyfikatory są stałe; tabele:
 | 05.F.40 | F. ROZKŁADÓWKA: FURGON / AUTOB | dół | rysunek fig1 | check | FA_0362 |
 | 05.F.41 | F. ROZKŁADÓWKA: FURGON / AUTOB | drzwi przednie | rysunek fig1 | check | FA_0355 |
 | 05.F.42 | F. ROZKŁADÓWKA: FURGON / AUTOB | reflektor | rysunek fig1 | check | FA_0352 |
-| 05.F.43 | F. ROZKŁADÓWKA: FURGON / AUTOB | (strefa na rysunku) | rysunek fig1 | check | FA_0372 |
+| 05.F.43 | F. ROZKŁADÓWKA: FURGON / AUTOB | lampa | rysunek fig1 | check | FA_0372 |
 | 05.F.44 | F. ROZKŁADÓWKA: FURGON / AUTOB | L | rysunek fig1 | check | FA_0370 |
 | 05.F.45 | F. ROZKŁADÓWKA: FURGON / AUTOB | P | rysunek fig1 | check | FA_0371 |
 | 05.F.46 | F. ROZKŁADÓWKA: FURGON / AUTOB | P | rysunek fig1 | check | FA_0373 |
@@ -6937,7 +6937,7 @@ Generowany automatycznie (tools/gen_dict.py). Identyfikatory są stałe; tabele:
 | 05.F.48 | F. ROZKŁADÓWKA: FURGON / AUTOB | zderzak | rysunek fig1 | check | FA_0351 |
 | 05.F.49 | F. ROZKŁADÓWKA: FURGON / AUTOB | oś 2 | rysunek fig1 | check | FA_0358 |
 | 05.F.50 | F. ROZKŁADÓWKA: FURGON / AUTOB | oś 1 | rysunek fig1 | check | FA_0357 |
-| 05.F.51 | F. ROZKŁADÓWKA: FURGON / AUTOB | (strefa na rysunku) | rysunek fig1 | check | FA_0374 |
+| 05.F.51 | F. ROZKŁADÓWKA: FURGON / AUTOB | zderzak | rysunek fig1 | check | FA_0374 |
 | 05.F.52 | F. ROZKŁADÓWKA: FURGON / AUTOB | 11 | rysunek fig1 | check | FA_0391 |
 | 05.F.53 | F. ROZKŁADÓWKA: FURGON / AUTOB | 10 | rysunek fig1 | check | FA_0390 |
 | 05.F.54 | F. ROZKŁADÓWKA: FURGON / AUTOB | 2 | rysunek fig1 | check | FA_0380 |
@@ -9833,9 +9833,9 @@ Generowany automatycznie (tools/gen_dict.py). Identyfikatory są stałe; tabele:
 | 07.D.5 | D. BUDOWA, STREFY I LOKALIZACJ | E – stopka | Strefy z uszkodzeniami | check | OG_0088 |
 | 07.D.6 | D. BUDOWA, STREFY I LOKALIZACJ | F – wnętrze | Strefy z uszkodzeniami | check | OG_0089 |
 | 07.D.7 | D. BUDOWA, STREFY I LOKALIZACJ | G – wkładka RF | Strefy z uszkodzeniami | check | OG_0090 |
-| 07.D.8 | D. BUDOWA, STREFY I LOKALIZACJ | (strefa na rysunku) | rysunek fig2 | check | OG_0102 |
-| 07.D.9 | D. BUDOWA, STREFY I LOKALIZACJ | (strefa na rysunku) | rysunek fig2 | check | OG_0101 |
-| 07.D.10 | D. BUDOWA, STREFY I LOKALIZACJ | (strefa na rysunku) | rysunek fig2 | check | OG_0091 |
+| 07.D.8 | D. BUDOWA, STREFY I LOKALIZACJ | 12 | rysunek fig2 | check | OG_0102 |
+| 07.D.9 | D. BUDOWA, STREFY I LOKALIZACJ | 11 | rysunek fig2 | check | OG_0101 |
+| 07.D.10 | D. BUDOWA, STREFY I LOKALIZACJ | 1 | rysunek fig2 | check | OG_0091 |
 | 07.D.11 | D. BUDOWA, STREFY I LOKALIZACJ | Strona: zewnętrzna (DOT) / wewnętrzna | rysunek fig2 | text | OG_0103 |
 | 07.D.12 | D. BUDOWA, STREFY I LOKALIZACJ | 10 | rysunek fig2 | check | OG_0100 |
 | 07.D.13 | D. BUDOWA, STREFY I LOKALIZACJ | 2 | rysunek fig2 | check | OG_0092 |
@@ -9846,9 +9846,9 @@ Generowany automatycznie (tools/gen_dict.py). Identyfikatory są stałe; tabele:
 | 07.D.18 | D. BUDOWA, STREFY I LOKALIZACJ | 8 | rysunek fig2 | check | OG_0098 |
 | 07.D.19 | D. BUDOWA, STREFY I LOKALIZACJ | 4 | rysunek fig2 | check | OG_0094 |
 | 07.D.20 | D. BUDOWA, STREFY I LOKALIZACJ | Wymiary uszkodzenia (dł. × szer. × głęb.) [mm] | rysunek fig2 | text | OG_0106 |
-| 07.D.21 | D. BUDOWA, STREFY I LOKALIZACJ | (strefa na rysunku) | rysunek fig2 | check | OG_0097 |
-| 07.D.22 | D. BUDOWA, STREFY I LOKALIZACJ | (strefa na rysunku) | rysunek fig2 | check | OG_0095 |
-| 07.D.23 | D. BUDOWA, STREFY I LOKALIZACJ | (strefa na rysunku) | rysunek fig2 | check | OG_0096 |
+| 07.D.21 | D. BUDOWA, STREFY I LOKALIZACJ | 7 | rysunek fig2 | check | OG_0097 |
+| 07.D.22 | D. BUDOWA, STREFY I LOKALIZACJ | 5 | rysunek fig2 | check | OG_0095 |
+| 07.D.23 | D. BUDOWA, STREFY I LOKALIZACJ | 6 | rysunek fig2 | check | OG_0096 |
 | 07.D.uwagi | D. BUDOWA, STREFY I LOKALIZACJ | Uwagi | pole aplikacji (brak w PDF) | text |  |
 | 07.E.t1.r1.c1 | E. BIEŻNIK – POMIARY I OBRAZ Z | Bark zewn. [mm] | tabela t1, wiersz 1: 0° (DOT) | num | OG_0107 |
 | 07.E.t1.r1.c2 | E. BIEŻNIK – POMIARY I OBRAZ Z | Rowek 1 [mm] | tabela t1, wiersz 1: 0° (DOT) | num | OG_0108 |
@@ -9890,7 +9890,7 @@ Generowany automatycznie (tools/gen_dict.py). Identyfikatory są stałe; tabele:
 | 07.F.1 | F. KATALOG USZKODZEŃ – ZAZNACZ | Przebicie / naprawa w barku | rysunek fig1 | check | OG_0143 |
 | 07.F.2 | F. KATALOG USZKODZEŃ – ZAZNACZ | Przecięcie ściany bocznej | rysunek fig1 | check | OG_0144 |
 | 07.F.3 | F. KATALOG USZKODZEŃ – ZAZNACZ | Rozerwanie przeciążeniowe | rysunek fig1 | check | OG_0145 |
-| 07.F.4 | F. KATALOG USZKODZEŃ – ZAZNACZ | (strefa na rysunku) | rysunek fig1 | check | OG_0146 |
+| 07.F.4 | F. KATALOG USZKODZEŃ – ZAZNACZ | Rozerwanie przeciążeniowe | rysunek fig1 | check | OG_0146 |
 | 07.F.5 | F. KATALOG USZKODZEŃ – ZAZNACZ | Uszkodzenie udarowe | rysunek fig1 | check | OG_0147 |
 | 07.F.6 | F. KATALOG USZKODZEŃ – ZAZNACZ | Jazda z niskim ciśnieniem / bez | rysunek fig1 | check | OG_0148 |
 | 07.F.7 | F. KATALOG USZKODZEŃ – ZAZNACZ | Jazda z niskim ciśnieniem / bez | rysunek fig1 | check | OG_0149 |

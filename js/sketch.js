@@ -79,3 +79,27 @@ export function createSketch(value, onChange) {
   requestAnimationFrame(fit);
   return root;
 }
+
+// Statyczny obraz szkicu (do wydruku): siatka 5 mm + kreski.
+export function sketchImage(value) {
+  const ar = (value && value.ar) || AR, W = 1400, H = Math.round(W * ar);
+  const cv = document.createElement('canvas'); cv.width = W; cv.height = H;
+  const c = cv.getContext('2d');
+  c.fillStyle = '#fff'; c.fillRect(0, 0, W, H);
+  c.strokeStyle = '#d5deed'; c.lineWidth = 1; c.beginPath();
+  const step = W * (14.17 / 527.3);
+  for (let x = step; x < W; x += step) { c.moveTo(Math.round(x) + .5, 0); c.lineTo(Math.round(x) + .5, H); }
+  for (let y = step; y < H; y += step) { c.moveTo(0, Math.round(y) + .5); c.lineTo(W, Math.round(y) + .5); }
+  c.stroke();
+  c.lineCap = 'round'; c.lineJoin = 'round'; c.strokeStyle = '#10243f';
+  for (const s of (value && value.strokes) || []) {
+    if (!s.p.length) continue;
+    c.beginPath(); c.lineWidth = Math.max(1.5, s.s * W); c.moveTo(s.p[0][0] * W, s.p[0][1] * W);
+    if (s.p.length === 1) c.lineTo(s.p[0][0] * W + .1, s.p[0][1] * W);
+    for (let i = 1; i < s.p.length; i++) c.lineTo(s.p[i][0] * W, s.p[i][1] * W);
+    c.stroke();
+  }
+  const img = document.createElement('img'); img.className = 'sketch-print'; img.alt = 'Szkic sytuacyjny';
+  img.src = cv.toDataURL('image/png');
+  return img;
+}

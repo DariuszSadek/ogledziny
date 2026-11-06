@@ -52,8 +52,9 @@ def page_runs(pg):
             cur={'cls':k,'ty':ty,'t':c['text'],'x0':c['x0'],'x1':c['x1'],'top':c['top'],'bot':c['bottom'],'sz':c['size'],
                  'bold':'Bold' in c['fontname'],'ital':'Italic' in c['fontname'],'col':hexc(c['non_stroking_color']),'base':PH-c['matrix'][5]};runs.append(cur)
     for r in runs:
+        r['sp']=r['t'].endswith(' ');r['lsp']=r['t'].startswith(' ')
         r['t']=re.sub(r'\s+',' ',r['t']).strip()
-        if r['cls']=='th' and re.fullmatch(r'[A-Z]?\d{1,2}[a-z]?',r['t']): r['cls']='opt'
+        if r['cls']=='th' and (re.fullmatch(r'[A-Z]?\d{1,2}[a-z]?',r['t']) or (re.fullmatch(r'[A-Z]',r['t']) and r['x0']<50)): r['cls']='opt'
     return [r for r in runs if r['t']]
 
 def widgets(page):
@@ -168,6 +169,15 @@ def build_figure(p1,y0,y1):
             if c:
                 r=min(c,key=lambda r:min(abs(r['x0']-w['x1']),abs(w['x0']-r['x1'])))
                 t=r['t'];m=re.fullmatch(r'(\d+)([LP])?',t)
+                if m and m.group(1) in legend: t=f"{t} · {legend[m.group(1)]}"
+                return t
+            cx=(w['x0']+w['x1'])/2
+            def dist(r):
+                dx=max(r['x0']-cx,0,cx-r['x1']);dy=max(r['top']-cy,0,cy-r['bot'])
+                return (dx*dx+dy*dy)**.5
+            near=[r for r in runs if r['cls']!='sec' and len(r['t'])<=40 and dist(r)<=24]
+            if near:
+                r=min(near,key=dist);t=r['t'];m=re.fullmatch(r'(\d+)([LP])?',t)
                 if m and m.group(1) in legend: t=f"{t} · {legend[m.group(1)]}"
                 return t
             return ''
@@ -322,7 +332,7 @@ def build_section(sec):
             txt='';prev=None
             for rr in lab:
                 if prev is None: txt=rr['t']
-                else: txt+=(' ' if (round(rr['top']/3)!=round(prev['top']/3) or rr['x0']-prev['x1']>1.2) else '')+rr['t']
+                else: txt+=(' ' if (round(rr['top']/3)!=round(prev['top']/3) or rr['x0']-prev['x1']>1.2 or prev.get('sp') or rr.get('lsp')) else '')+rr['t']
                 prev=rr
             labels.append(txt)
         grid=[[next((w for w in r['ws'] if abs(w['x0']-cx0)<=2.5),None) for cx0 in colx] for r in good]
@@ -406,7 +416,7 @@ def build_section(sec):
             if r['t'].startswith('Pole szkicu'): kind='sketchlabel'
             else: kind='sig' if any(a-2<=r['x0']<=b and 1<=r['top']-y<=10 for a,b,y in pages_data[p]['rules']) else 'note'
         else: kind='text'
-        units.append({'y':Y(p,r),'x':r['x0'],'x1':r['x1'],'k':kind,'text':r['t'],'runs':[{'t':r['t'],'b':r['bold']}]})
+        units.append({'y':Y(p,r),'x':r['x0'],'x1':r['x1'],'sp':r['sp'],'lsp':r['lsp'],'k':kind,'text':r['t'],'runs':[{'t':r['t'],'b':r['bold']}]})
         taken_r.add(id(r))
     units.sort(key=lambda u:(u['y'],u['x']))
     return units
@@ -417,11 +427,11 @@ def final_blocks(units):
         p=out[-1] if out else None
         if p and u['k'] in('text','note') and p['k']==u['k']:
             if abs(u['y']-p['y_last'])<2.5 and u['x']>p['x']:
-                sep=' ' if u['x']-p['x_end']>1.2 else ''
-                p['runs']+=([{'t':sep}] if sep else [])+u['runs'];p['text']+=sep+u['text'];p['x_end']=u['x1'];continue
+                sep=' ' if (u['x']-p['x_end']>1.2 or p.get('sp_end') or u.get('lsp')) else ''
+                p['runs']+=([{'t':sep}] if sep else [])+u['runs'];p['text']+=sep+u['text'];p['x_end']=u['x1'];p['sp_end']=u.get('sp',False);continue
             if 0<u['y']-p['y_last']<=11.5 and abs(u['x']-p['x'])<=40 and not re.match(r'^\d+\.(\s|$)',u['text']) and (u['k']=='note' or u['x']>=p['x']-1):
                 p['runs']+=[{'t':' '},*u['runs']];p['text']+=' '+u['text'];p['y_last']=u['y'];p['x_end']=u['x1'];continue
-        v=dict(u);v['y_last']=u['y'];v['x_end']=u.get('x1',0);out.append(v)
+        v=dict(u);v['y_last']=u['y'];v['x_end']=u.get('x1',0);v['sp_end']=u.get('sp',False);out.append(v)
     seen=set();u2=[]
     for u in out:
         if u['k']=='subhead':

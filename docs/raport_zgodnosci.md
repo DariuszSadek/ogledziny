@@ -4,7 +4,7 @@ Wygenerowano automatycznie (tools/gen_report.py). Wynik ogólny: **BRAK BRAKUJĄ
 
 | Formularz | Pola PDF (tekst / wybór) | W definicji | W aplikacji (DOM) | Brakujące | Nadmiarowe | Niezgodny typ | Pola tylko w aplikacji („Uwagi”) | Rysunki / strefy | Tabele | Wynik |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 00 Karta czynności | 373 (167 / 206) | 373 | 373 | 0 | 0 | 0 | 12 | 0 / 0 | 11 | OK |
+| 00 Karta czynności | 373 (167 / 206) | 373 | 373 | 0 | 0 | 0 | 12 | 0 / 0 | 8 | OK |
 | 01 Miejsce zdarzenia | 525 (381 / 144) | 525 | 525 | 0 | 0 | 0 | 12 | 0 / 0 | 5 | OK |
 | 02 Motocykl | 1278 (380 / 898) | 1278 | 1278 | 0 | 0 | 0 | 16 | 2 / 119 | 16 | OK |
 | 03 Samochód osobowy | 2119 (607 / 1512) | 2119 | 2119 | 0 | 0 | 0 | 17 | 2 / 92 | 20 | OK |

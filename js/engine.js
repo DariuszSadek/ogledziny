@@ -1,5 +1,5 @@
 // Silnik renderujący: definicja formularza (JSON) + egzemplarz (dane) -> DOM.
-import { createSketch } from './sketch.js';
+import { createSketch, sketchImage } from './sketch.js';
 
 export const COPYRIGHT = '© 2026 Motoanalityka Dariusz Sadek. Wszelkie prawa zastrzeżone. Kopiowanie, rozpowszechnianie, modyfikowanie i wykorzystywanie wzorów formularzy, w całości lub w części, bez pisemnej zgody autora jest zabronione.';
 const FULL = 527.3;
@@ -28,6 +28,7 @@ export function renderForm(def, inst, ctx) {
   const root = h('div', { class: 'form', data: { form: def.id } });
   root.append(h('div', { class: 'titleband' }, h('h1', { text: def.title }), def.subtitle ? h('p', { text: def.subtitle }) : null));
   for (const s of def.sections) root.append(renderSection(def, s, ctx));
+  if (ctx.print) return root;
   const hd = ctx.header();
   root.append(h('div', { class: 'foot' },
     h('div', { class: 'sygn', text: `Sygn. / nr zlecenia: ${hd.sygnatura || '………………………'}   ·   ${def.id} ${ctx.instLabel || ''}` }),
@@ -42,7 +43,7 @@ function renderSection(def, s, ctx) {
     const el = renderBlock(def, s, b, ctx);
     if (el) sec.append(el);
   }
-  if (!intro) sec.append(h('div', { class: 'uwagi' }, fieldEl({ id: `${def.id}.${s.id}.uwagi`, label: 'Uwagi', type: 'text', rows: 2, w: FULL }, ctx, true)));
+  if (!intro && (!ctx.print || ctx.get(`${def.id}.${s.id}.uwagi`))) sec.append(h('div', { class: 'uwagi' }, fieldEl({ id: `${def.id}.${s.id}.uwagi`, label: 'Uwagi', type: 'text', rows: 2, w: FULL }, ctx, true)));
   return sec;
 }
 
@@ -58,11 +59,12 @@ function renderBlock(def, s, b, ctx) {
     case 'subhead': return h('div', { class: 'subhead', text: b.text });
     case 'text': return h('p', { class: 'para' }, b.runs ? b.runs.map(r => r.b ? h('strong', { text: r.t }) : r.t) : b.text);
     case 'sig': { const w = h('div', { class: 'sigs' }); w.append(h('div', { class: 'sig', text: b.text })); return w; }
-    case 'sketch': return h('div', {}, h('div', { class: 'lbl', text: b.label }), createSketch(ctx.get(b.id), v => ctx.set(b.id, v)));
+    case 'sketch': return h('div', { class: 'sketchbox' }, h('div', { class: 'lbl', text: b.label }), ctx.print ? sketchImage(ctx.get(b.id)) : createSketch(ctx.get(b.id), v => ctx.set(b.id, v)));
   }
 }
 
 function checkEl(c, ctx, cls = '') {
+  if (ctx.print) return h('span', { class: 'chk pchkw ' + cls }, h('span', { class: 'pchk' + (ctx.get(c.id) === true ? ' on' : '') }), c.label ? h('span', { text: c.label }) : null);
   const i = h('input', { type: 'checkbox', data: { id: c.id } });
   i.checked = ctx.get(c.id) === true;
   if (c.aria) i.setAttribute('aria-label', c.aria);
@@ -71,6 +73,7 @@ function checkEl(c, ctx, cls = '') {
 }
 
 export function textCtl(f, ctx, labelText) {
+  if (ctx.print) return h('div', { class: 'pval', text: String(ctx.get(f.id) ?? '') });
   const num = f.type === 'num' || f.type === 'time' || f.type === 'gps';
   const c = num ? h('input', { type: 'text' }) : h('textarea', { rows: f.rows || 1 });
   c.value = ctx.get(f.id) ?? '';
@@ -86,8 +89,8 @@ export function textCtl(f, ctx, labelText) {
 function fieldEl(f, ctx, bare) {
   const c = textCtl(f, ctx);
   const row = h('div', { class: 'ctl-row' }, c);
-  if (f.type === 'time') row.append(h('button', { type: 'button', class: 'small', text: 'Teraz', onclick: () => { c.value = nowHM(); ctx.set(f.id, c.value); } }));
-  if (f.type === 'gps') row.append(h('button', { type: 'button', class: 'small', text: 'GPS', onclick: () => gps(c, f, ctx) }));
+  if (!ctx.print && f.type === 'time') row.append(h('button', { type: 'button', class: 'small', text: 'Teraz', onclick: () => { c.value = nowHM(); ctx.set(f.id, c.value); } }));
+  if (!ctx.print && f.type === 'gps') row.append(h('button', { type: 'button', class: 'small', text: 'GPS', onclick: () => gps(c, f, ctx) }));
   c.style.flex = '1 1 auto';
   const wrap = h('div', { class: 'fld' }, f.label ? h('label', { text: f.label }) : null, row);
   const pct = Math.min(100, (f.w || FULL) / FULL * 100);
@@ -160,7 +163,7 @@ function tableEl(b, ctx) {
     mkRow(b.cols.map((_, ci) => ({ id: `${b.prefix}.r${rowNo}.c${ci + 1}` })), '', rowNo);
   };
   for (let n = 1; n <= ctx.getExtra(b.prefix); n++) addExtra(n);
-  wrap.append(h('div', { class: 'addrow' }, h('button', {
+  if (!ctx.print) wrap.append(h('div', { class: 'addrow' }, h('button', {
     type: 'button', class: 'small', text: 'Dodaj wiersz', onclick: () => {
       const n = ctx.addRow(b.prefix); addExtra(n);
       const last = body.lastElementChild.querySelector('textarea,input'); if (last) last.focus();
@@ -191,10 +194,8 @@ function figureEl(b, ctx) {
     if (sp.type === 'check') {
       el = checkEl({ id: sp.id, label: '', aria: sp.label || sp.id }, ctx, 'spot');
     } else {
-      const c = h('textarea', { rows: 1, class: 'spot-in' });
-      c.value = ctx.get(sp.id) ?? ''; c.dataset.id = sp.id; c.setAttribute('aria-label', sp.label || sp.id);
-      c.setAttribute('autocomplete', 'off');
-      c.addEventListener('input', () => ctx.set(sp.id, c.value));
+      const c = ctx.print ? h('div', { class: 'pval spot-in', text: String(ctx.get(sp.id) ?? '') }) : h('textarea', { rows: 1, class: 'spot-in' });
+      if (!ctx.print) { c.value = ctx.get(sp.id) ?? ''; c.dataset.id = sp.id; c.setAttribute('aria-label', sp.label || sp.id); c.setAttribute('autocomplete', 'off'); c.addEventListener('input', () => ctx.set(sp.id, c.value)); }
       el = h('div', { class: 'spot spot-text' }, c);
       el.style.width = Math.max(sp.w / vw * 100, 6) + '%';
       el.style.height = (sp.h / vh * 100) + '%';

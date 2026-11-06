@@ -3,6 +3,7 @@ import { h, renderForm, grow, COPYRIGHT } from './engine.js';
 import { migrate, reportText, needsAttention, SCHEMA } from './migrate.js';
 import { indexDef } from './defs.js';
 import { APP_VERSION } from './version.js';
+import { toMarkdown } from './export.js';
 
 const $ = id => document.getElementById(id);
 const FORM_IDS = ['00', '01', '02', '03', '04', '05', '06', '07', '08', '09'];
@@ -76,6 +77,7 @@ function setTabs() {
 function go(v) { view = v; if (C) { C.lastView = v; clearTimeout(saveTimer); saveTimer = setTimeout(persist, 300); } render(); scrollTo(0, 0); }
 
 function render() {
+  document.body.classList.remove('printing');
   const main = $('main'); main.replaceChildren();
   $('secnav').hidden = true;
   if (!C) { $('tabs').replaceChildren(); $('tabs').hidden = true; return renderStart(main); }
@@ -86,6 +88,9 @@ function render() {
   const def = DEFS[inst.formId];
   if (!def) { main.append(h('div', { class: 'orphans' }, h('h3', { text: 'Brak definicji formularza' }), h('p', { text: `Formularz ${inst.formId} nie jest dostępny w tej wersji aplikacji. Dane są zachowane w pliku sprawy.` }))); return; }
   if (Object.keys(inst.orphans || {}).length) main.append(orphanBox(inst));
+  main.append(h('div', { class: 'toolrow' },
+    h('button', { type: 'button', class: 'small', text: 'Drukuj / PDF tego formularza', onclick: () => doPrint([inst]) }),
+    h('button', { type: 'button', class: 'small', text: 'Eksport dla Claude (ten formularz)', onclick: () => exportMd(inst) })));
   main.append(renderForm(def, inst, ctxFor(inst, def)));
   main.querySelectorAll('textarea').forEach(grow);
   const nav = $('secnav'); nav.hidden = false; nav.replaceChildren();
@@ -134,6 +139,11 @@ function renderCase(main) {
           h('button', { type: 'button', class: 'small danger', text: 'Usuń', onclick: () => ask('Usunąć formularz?', `Egzemplarz „${f.label}” (${f.formId}) wraz z danymi zostanie usunięty ze sprawy.`, 'Usuń', () => { C.forms = C.forms.filter(x => x !== f); touch(); render(); }) }));
       }),
       h('div', { class: 'btns' }, h('button', { type: 'button', text: '+ Dodaj formularz', onclick: addFormDialog }))),
+    h('div', { class: 'card' }, h('h2', { text: 'Wydruk i eksport' }),
+      h('div', { class: 'btns' },
+        h('button', { type: 'button', class: 'primary', text: 'Drukuj / PDF – cała sprawa', onclick: () => doPrint(C.forms) }),
+        h('button', { type: 'button', text: 'Eksport dla Claude (.md)', onclick: () => exportMd(null) })),
+      h('p', { class: 'note', text: 'Drukuj / PDF otwiera okno drukowania systemu – wybierz „Zapisz jako PDF”. Eksport dla Claude zapisuje plik Markdown z wypełnionymi polami i ich identyfikatorami.' })),
     h('div', { class: 'card' }, h('h2', { text: 'Plik sprawy' }),
       h('div', { class: 'btns' },
         h('button', { type: 'button', class: 'primary', text: 'Zapisz plik', onclick: saveFile }),
@@ -209,6 +219,40 @@ $('file-input').addEventListener('change', async e => {
 $('btn-save').addEventListener('click', saveFile);
 $('btn-open').addEventListener('click', openFile);
 $('btn-home').addEventListener('click', () => go('home'));
+
+// ---------- wydruk (PDF) i eksport ----------
+function printScope(insts) {
+  let root = $('print-root');
+  if (!root) { root = h('div', { id: 'print-root' }); document.body.append(root); }
+  root.replaceChildren();
+  const hd = C.header;
+  for (const inst of insts) {
+    const def = DEFS[inst.formId]; if (!def) continue;
+    const form = renderForm(def, inst, Object.assign(ctxFor(inst, def), { print: true, set() { } }));
+    root.append(h('table', { class: 'ptab' },
+      h('thead', {}, h('tr', {}, h('td', {}, h('div', { class: 'phead' }, h('span', { text: 'Motoanalityka Dariusz Sadek · rzeczoznawca samochodowy' }), h('span', { text: def.title.charAt(0) + def.title.slice(1).toLowerCase() }))))),
+      h('tfoot', {}, h('tr', {}, h('td', {}, h('div', { class: 'pfoot' }, h('div', { class: 'psygn', text: `Sygn. / nr zlecenia: ${hd.sygnatura || '………………………'}${hd.organ ? ' · ' + hd.organ : ''} · ${inst.formId} ${inst.label}` }), h('div', { text: COPYRIGHT }))))),
+      h('tbody', {}, h('tr', {}, h('td', {}, form)))));
+  }
+  document.body.classList.add('printing');
+  addEventListener('afterprint', () => { document.body.classList.remove('printing'); root.replaceChildren(); }, { once: true });
+}
+function doPrint(insts) {
+  if (!insts.length) return toast('Brak formularzy do wydruku.');
+  printScope(insts);
+  requestAnimationFrame(() => setTimeout(() => window.print(), 100));
+}
+function exportMd(only) {
+  const text = toMarkdown(C, DEFS, only);
+  const name = fileName().replace(/\.json$/, '') + (only ? `_${only.formId}` : '') + '_dla-Claude.md';
+  const touch = navigator.maxTouchPoints > 1;
+  const share = type => { const f = new File([text], name, { type }); return touch && navigator.canShare && navigator.canShare({ files: [f] }) ? navigator.share({ files: [f], title: name }).then(() => true, e => { if (e && e.name === 'AbortError') throw e; return false; }) : null; };
+  const dl = () => { const a = h('a', { href: URL.createObjectURL(new Blob([text], { type: 'text/markdown' })), download: name }); document.body.append(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 4000); toast(`Wyeksportowano: ${name}`); };
+  let p = null;
+  try { p = share('text/markdown') || share('text/plain'); } catch (e) { return; }
+  if (p) p.then(ok => ok ? toast(`Wyeksportowano: ${name}`) : dl(), e => { if (e.name !== 'AbortError') dl(); }); else dl();
+}
+window.__ogl = { printAll: () => printScope(C.forms), md: () => toMarkdown(C, DEFS) };
 
 // ---------- test urządzenia ----------
 async function diagnostics() {
