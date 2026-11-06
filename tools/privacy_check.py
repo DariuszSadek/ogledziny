@@ -2,7 +2,7 @@
 """Kontrola przed commitem: do repozytorium nie mogą trafić pliki spraw, PDF-y ani dane osobowe.
 Sprawdza pliki w indeksie git (staged). Kod wyjścia 1 = zablokuj commit."""
 import subprocess,sys,json,re,os
-ALLOWED_JSON=re.compile(r'^(forms/\d\d\.json|manifest\.webmanifest|docs/slownik_pol\.json|docs/raport_zgodnosci\.json)$')
+ALLOWED_JSON=re.compile(r'^(forms/\d\d\.json|manifest\.webmanifest|docs/slownik_pol\.json|docs/raport_zgodnosci\.json|docs/claude_ai/(przyklad_wkladu|schemat_wkladu)\.json)$')
 out=subprocess.run(['git','diff','--cached','--name-only','--diff-filter=ACMR'],capture_output=True,text=True).stdout.split('\n')
 bad=[]
 import stat

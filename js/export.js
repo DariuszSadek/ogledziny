@@ -52,9 +52,32 @@ function formSection(def, inst) {
     if (L.length) out.push(`### ${sec.title || 'Wstęp'}\n\n${L.join('\n')}\n`); else if (sec.title) empty.push(sec.id);
   }
   const orph = Object.entries(inst.orphans || {});
-  const head = `## ${inst.formId} · ${inst.label} – ${def.title}\n\nWypełnionych pól: ${filled}. Sekcje bez wpisów: ${empty.length ? empty.join(', ') : 'brak'}.\n`;
+  const rem = (inst.reminders || []).length ? `\nPrzypomnienia do tego formularza:\n${inst.reminders.map(r => '- ' + r).join('\n')}\n` : '';
+  const head = `## ${inst.formId} · ${inst.label} – ${def.title}\n${rem}\nWypełnionych pól: ${filled}. Sekcje bez wpisów: ${empty.length ? empty.join(', ') : 'brak'}.\n`;
   const tail = orph.length ? `\n### Pola nieprzeniesione z dawnej wersji formularza (${orph.length})\n\n${orph.map(([k, v]) => `- ${id(k)}: ${typeof v === 'string' ? val(v).replace(/\n/g, ' / ') : JSON.stringify(v)}`).join('\n')}\n` : '';
   return { text: head + '\n' + out.join('\n') + tail, filled };
+}
+
+function tasksMd(C, only) {
+  const T = (C.tasks || []).filter(t => !only || t.iid === only.iid);
+  const L = [];
+  const stat = t => t.status === 'wykonane' ? '✔ wykonane' : t.status === 'niewykonane' ? '✘ NIEWYKONANE' : '○ otwarte';
+  if (T.length) {
+    L.push('## Zadania na oględziny – stan wykonania', '');
+    for (const t of T) {
+      const inst = C.forms.find(f => f.iid === t.iid);
+      const bits = [];
+      if (t.wynik) bits.push(`wynik: ${val(t.wynik).replace(/\n/g, ' / ')}${t.jednostka ? ' ' + t.jednostka : ''}`);
+      if (t.nr_zdjecia) bits.push(`zdjęcia: ${t.nr_zdjecia}`);
+      if (t.status === 'niewykonane') bits.push(`powód: ${t.powod || '(nie podano)'}`);
+      if (t.podstawa) bits.push(`podstawa: ${t.podstawa}`);
+      if (t.przyrzad) bits.push(`przyrząd: ${t.przyrzad}`);
+      L.push(`- \`[${t.id}]\` ${stat(t)}${t.priorytet && t.priorytet !== 'normalny' ? ' (' + t.priorytet + ' priorytet)' : ''} – **${t.czynnosc}**${inst ? ` [${inst.formId} ${inst.label}${t.sekcja ? ', sekcja ' + t.sekcja : ''}${t.pole ? ', pole ' + t.pole : ''}]` : ''}${t.opis ? '\n    - opis: ' + val(t.opis).replace(/\n/g, ' / ') : ''}${bits.length ? '\n    - ' + bits.join('; ') : ''}`);
+    }
+    L.push('');
+  }
+  if (!only && (C.notesGeneral || []).length) L.push('## Do pamiętania (ogólne)', '', ...C.notesGeneral.map(n => `- ${n}`), '');
+  return L.join('\n');
 }
 
 export function toMarkdown(C, DEFS, only = null) {
@@ -80,5 +103,5 @@ export function toMarkdown(C, DEFS, only = null) {
     'Układ: `[identyfikator pola]` stoi przy każdej wartości; puste pola i niezaznaczone opcje pominięto. Wartości liczbowe są zapisane tak, jak wpisano (przecinek lub kropka).', '',
   ];
   if ((C.tasks || []).length) meta.push('## Zadania z analizy akt', '', ...C.tasks.map(t => `- ${JSON.stringify(t)}`), '');
-  return meta.join('\n') + '\n' + parts.join('\n');
+  return meta.join('\n') + '\n' + tasksMd(C, only) + '\n' + parts.join('\n');
 }

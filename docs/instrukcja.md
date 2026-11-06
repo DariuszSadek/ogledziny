@@ -36,6 +36,15 @@ Nie czyść danych witryn w ustawieniach Safari – wyczyści to bufor (plik w i
 9. W każdej sekcji jest pole **Uwagi**.
 10. Na iPhonie używaj ekranu poziomo – wtedy tabele wyglądają jak na iPadzie; w pionie pola układają się w karty.
 
+## 3a. Wkład od Claude AI i lista zadań (przygotowanie przed oględzinami)
+
+1. W projekcie Claude AI (analiza akt) użyj paczki z folderu `~/A_Oględziny/Dla_Claude_AI/` (instrukcja w **CZYTAJ_MNIE.md**). Po analizie napisz: „Przygotuj wkład do formularzy”. Claude AI zwróci podsumowanie i blok `json`.
+2. W aplikacji (MacBook albo iPad): ekran startowy → **Nowa sprawa z wkładu (Claude AI)** → wklej odpowiedź (może być z blokiem ```json) albo wskaż plik → **Wczytaj**. Aplikacja tworzy potrzebne egzemplarze formularzy, wpisuje dane z akt (marka, model, VIN, nr rejestracyjny…) i zakłada listę zadań. Każde pominięcie (np. błędny identyfikator pola) jest w raporcie – nic nie ginie po cichu. Do istniejącej sprawy dołączysz wkład w zakładce Sprawa → „Dołącz wkład”.
+3. Zakładka **Zadania**: każde zadanie ma czynność, opis, podstawę w aktach (k. …), przyrząd, pola **Wynik / Jednostka / Nr zdjęcia** i przyciski **Wykonane / Niewykonane** (przy niewykonanym wpisz powód). Możesz poprawiać teksty, **dodawać własne zadania** i usuwać zbędne. „Do formularza →” przenosi do właściwej sekcji lub pola. Filtry: tylko otwarte, wysoki priorytet.
+4. Na górze każdego formularza jest żółty panel „Zadania i przypomnienia do tego formularza”.
+5. Zapisz plik sprawy i jedź na oględziny (iPad). Po powrocie otwórz plik na MacBooku, zrób **Eksport dla Claude** – w eksporcie jest stan wykonania zadań (wynik, jednostka, nr zdjęcia, niewykonane + powód) obok wypełnionych pól – i wklej go do projektu Claude AI.
+6. Wydruk całej sprawy do PDF zaczyna się od listy zadań.
+
 ## 4. Otwieranie spraw i starsze wersje
 
 „Otwórz sprawę” → wskaż plik z Plików / iCloud Drive. Jeśli plik pochodzi ze starszej wersji formularzy, aplikacja przenosi dane **po identyfikatorach pól** i pokazuje **raport**; pola, których nie dało się przenieść, są zachowane i wyświetlone na czerwono na początku formularza – przepisz je ręcznie, a potem usuń listę. Nic nie ginie po cichu.

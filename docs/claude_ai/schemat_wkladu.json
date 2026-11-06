@@ -1,0 +1,147 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "ogledziny-wklad-1",
+ "title": "Wkład do formularzy oględzin (wersja 1)",
+ "type": "object",
+ "required": [
+  "format",
+  "wersja"
+ ],
+ "additionalProperties": true,
+ "properties": {
+  "format": {
+   "const": "ogledziny-wklad"
+  },
+  "wersja": {
+   "const": 1
+  },
+  "rewizja": {
+   "type": "integer",
+   "minimum": 1
+  },
+  "sprawa": {
+   "type": "object",
+   "properties": {
+    "sygnatura": {
+     "type": "string"
+    },
+    "organ": {
+     "type": "string"
+    },
+    "data": {
+     "type": "string"
+    },
+    "opis": {
+     "type": "string"
+    }
+   }
+  },
+  "formularze": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "ref",
+     "formularz"
+    ],
+    "properties": {
+     "ref": {
+      "type": "string",
+      "minLength": 1
+     },
+     "formularz": {
+      "type": "string",
+      "pattern": "^0[0-9]$"
+     },
+     "etykieta": {
+      "type": "string"
+     },
+     "pola": {
+      "type": "object",
+      "additionalProperties": {
+       "type": [
+        "string",
+        "number",
+        "boolean"
+       ]
+      }
+     },
+     "przypomnienia": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     }
+    }
+   }
+  },
+  "zadania": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "czynnosc"
+    ],
+    "properties": {
+     "id": {
+      "type": "string"
+     },
+     "formularz": {
+      "type": "string"
+     },
+     "sekcja": {
+      "type": "string"
+     },
+     "pole": {
+      "type": "string"
+     },
+     "czynnosc": {
+      "type": "string",
+      "maxLength": 200
+     },
+     "opis": {
+      "type": "string"
+     },
+     "podstawa": {
+      "type": "string"
+     },
+     "przyrzad": {
+      "type": "string"
+     },
+     "jednostka": {
+      "type": "string"
+     },
+     "priorytet": {
+      "enum": [
+       "wysoki",
+       "normalny",
+       "niski"
+      ]
+     },
+     "wynik": {
+      "type": "string"
+     },
+     "nr_zdjecia": {
+      "type": "string"
+     },
+     "status": {
+      "enum": [
+       "",
+       "wykonane",
+       "niewykonane"
+      ]
+     },
+     "powod": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  "uwagi_ogolne": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  }
+ }
+}

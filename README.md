@@ -9,6 +9,7 @@ To repozytorium nie udziela żadnej licencji.
 (Czcionka Libre Baskerville jest dołączona na jej własnej licencji SIL Open Font License 1.1 – plik `assets/fonts/OFL.txt`; licencja ta dotyczy wyłącznie czcionki.)
 
 ## Stan
+Etap 2 (moduł „Nowa sprawa”): wczytywanie „wkładu” od Claude AI (formularze wstępnie wypełnione danymi z akt + lista zadań z wynikami w terenie); format i paczka dla Claude AI: `docs/claude_ai/`, generator `tools/gen_claude_pack.py`.
 Etap 4: wydruk do PDF (przycisk „Drukuj / PDF”, okno drukowania systemu → „Zapisz jako PDF”) i „Eksport dla Claude” (Markdown z polami i ich identyfikatorami).
 Etap 3: wszystkie formularze (00 i 01–09), rysunki wektorowe z klikalnymi strefami (02–05, 07), zapis/odczyt pliku sprawy, praca offline. Raport zgodności z wzorami: `docs/raport_zgodnosci.md`.
 

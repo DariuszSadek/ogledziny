@@ -1,0 +1,132 @@
+{
+ "format": "ogledziny-wklad",
+ "wersja": 1,
+ "rewizja": 1,
+ "sprawa": {
+  "sygnatura": "II K 123/26",
+  "organ": "Sąd Rejonowy w Kielcach",
+  "data": "2026-11-06",
+  "opis": "PRZYKŁAD (dane fikcyjne): zderzenie samochodu osobowego z motocyklem na skrzyżowaniu, spór o prędkość i widoczność."
+ },
+ "formularze": [
+  {
+   "ref": "K",
+   "formularz": "00",
+   "etykieta": "Karta czynności – wezwanie Policji",
+   "pola": {
+    "00.A.6": "KMP Kielce, Wydział Ruchu Drogowego",
+    "00.A.7": "RSD-1234/26",
+    "00.A.12": "Kielce, ul. Warszawska / ul. Krakowska"
+   },
+   "przypomnienia": [
+    "Fotografuj ślady nietrwałe przed jakąkolwiek ingerencją",
+    "Ustal, kto i kiedy przestawiał pojazdy (BRAK W AKTACH)"
+   ]
+  },
+  {
+   "ref": "M",
+   "formularz": "01",
+   "etykieta": "Skrzyżowanie Warszawska / Krakowska",
+   "pola": {
+    "01.A.6": "Kielce",
+    "01.A.7": "ul. Warszawska / ul. Krakowska"
+   },
+   "przypomnienia": [
+    "Zweryfikować położenie SPO – protokół Policji podaje inne odległości niż szkic"
+   ]
+  },
+  {
+   "ref": "A",
+   "formularz": "03",
+   "etykieta": "Pojazd A – Opel Astra",
+   "pola": {
+    "03.A.4": "A",
+    "03.A.5": "Sąd Rejonowy w Kielcach, II K 123/26",
+    "03.B.1": "Opel",
+    "03.B.2": "Astra IV 1.6",
+    "03.B.3": "TK 12345",
+    "03.B.4": "2012",
+    "03.B.5": "W0LPE6E37C0000000",
+    "03.B.10": true
+   },
+   "przypomnienia": [
+    "Sprawdź, czy pojazd po zdarzeniu był naprawiany (lakier, szyby)",
+    "Zdjęcie tablicy znamionowej i numeru VIN w nadwoziu"
+   ]
+  },
+  {
+   "ref": "B",
+   "formularz": "02",
+   "etykieta": "Pojazd B – motocykl",
+   "pola": {
+    "02.B.1": "Yamaha",
+    "02.B.2": "MT-07",
+    "02.B.3": "TKI 4321",
+    "02.B.4": "2018"
+   },
+   "przypomnienia": [
+    "Oceń wygięcie widelca i ślady na kierownicy"
+   ]
+  },
+  {
+   "ref": "OPONA-LP",
+   "formularz": "07",
+   "etykieta": "Opona A – lewa przednia",
+   "pola": {
+    "07.B.1": "Michelin",
+    "07.B.3": "205/55 R16"
+   },
+   "przypomnienia": [
+    "Odczytaj pełny kod DOT"
+   ]
+  }
+ ],
+ "zadania": [
+  {
+   "id": "Z01",
+   "formularz": "M",
+   "sekcja": "F",
+   "czynnosc": "Zdefiniuj układ pomiarowy SPO/SLO1/SLO2 i zmierz odległości do śladów",
+   "opis": "Przyjmij stały punkt odniesienia (np. naroże budynku), SLO1 wzdłuż drogi. Zapisz opis SPO i sfotografuj z dwóch kierunków.",
+   "podstawa": "protokół oględzin Policji (nr karty do uzupełnienia) – brak powiązania z punktem stałym",
+   "przyrzad": "kółko pomiarowe Nivel M100, taśma 20 m, aparat",
+   "jednostka": "m",
+   "priorytet": "wysoki"
+  },
+  {
+   "id": "Z02",
+   "formularz": "M",
+   "sekcja": "G",
+   "czynnosc": "Zmierz długość i położenie śladów hamowania oraz położenia końcowe pojazdów",
+   "opis": "Początek i koniec każdego śladu od SLO1/SLO2; ślady ABS sfotografuj ze skalą.",
+   "podstawa": "szkic Policji (nr karty do uzupełnienia)",
+   "przyrzad": "kółko pomiarowe Nivel M100, łata 5 m",
+   "jednostka": "m",
+   "priorytet": "wysoki"
+  },
+  {
+   "id": "Z03",
+   "formularz": "A",
+   "sekcja": "I",
+   "czynnosc": "Odczytaj DOT, bieżnik i ciśnienie w oponach pojazdu A",
+   "opis": "Wszystkie cztery koła, trzy punkty na szerokości, ciśnienie przed zmianą.",
+   "podstawa": "zarzut w opinii strony dot. stanu ogumienia (nr karty do uzupełnienia)",
+   "przyrzad": "miernik bieżnika, manometr, aparat",
+   "jednostka": "mm",
+   "priorytet": "normalny"
+  },
+  {
+   "id": "Z04",
+   "formularz": "ogolne",
+   "czynnosc": "Zabezpiecz nagrania z monitoringu skrzyżowania",
+   "opis": "Ustal właściciela kamer (adres, kierunek), poproś o kopię nagrania z godzin zdarzenia.",
+   "podstawa": "zeznanie świadka (nr karty do uzupełnienia) wskazujące kamerę",
+   "przyrzad": "aparat",
+   "priorytet": "wysoki"
+  }
+ ],
+ "uwagi_ogolne": [
+  "BRAK W AKTACH: godzina zdarzenia ustalona tylko wstępnie – sprawdzić w nagraniu",
+  "Zapytać, gdzie zabezpieczono motocykl po zdarzeniu"
+ ]
+}

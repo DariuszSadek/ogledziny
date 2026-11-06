@@ -191,3 +191,24 @@ img.sketch-print{width:100%;display:block;border:1.5px solid var(--navy)}
   img.sketch-print{break-inside:avoid;max-height:215mm;object-fit:contain}
   .toolrow,.addrow,.sketchbar,button{display:none !important}
 }
+
+/* zadania */
+.tsum{display:flex;gap:14px;flex-wrap:wrap;font-weight:700;margin:6px 0}.tsum .ok{color:var(--ok)}.tsum .no{color:var(--warn)}
+.tgroup>h2{margin:18px 0 8px;background:var(--bar);border-left:5px solid var(--navy);color:var(--navy);font-size:17px;padding:8px 10px}
+.task{border:2px solid var(--navy);border-radius:8px;padding:10px 12px;margin:10px 0;background:#fff}
+.task.st-wykonane{border-color:var(--ok);background:#f1faf3}.task.st-niewykonane{border-color:var(--warn);background:#fff4ec}
+.task.pr-wysoki{border-left-width:8px;border-left-color:#c00018}
+.task-h{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:6px;font-size:13px}.tid{font-weight:700;color:var(--navy)}
+.tpr{background:#c00018;color:#fff;padding:2px 8px;border-radius:4px;font-weight:700;font-size:12px}.tsec{color:var(--gray)}
+.tin{width:100%}.task-c{font-weight:700}.task-o{font-size:15px}
+.task-meta,.task-res{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0}.tf{flex:1 1 200px;display:flex;flex-direction:column}.tf label{font-size:12px;color:var(--gray);margin-bottom:2px}
+.tf.grow2{flex:3 1 240px}.tf.narrow{flex:0 1 90px;min-width:80px}.tf.mid{flex:1 1 130px}
+.task-st{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+button.st[aria-pressed=true].ok{background:var(--ok);border-color:var(--ok);color:#fff}button.st[aria-pressed=true].no{background:var(--warn);border-color:var(--warn);color:#fff}
+.tpanel{border:2px solid #c9a227;background:#fffbe9;border-radius:8px;padding:8px 12px;margin:8px 0}.tpanel>summary{font-weight:700;cursor:pointer;padding:6px 0}
+ul.rem{margin:6px 0;padding-left:20px}ul.rem li{margin:3px 0}
+.wklad-ta{min-height:220px;font-family:ui-monospace,Menlo,monospace;font-size:13px !important;overflow:auto !important}
+.warnp{color:var(--warn);font-weight:700}
+.flash{outline:4px solid #ffb703;outline-offset:3px;transition:outline .3s}
+dialog select{font:inherit;font-size:17px;min-height:46px;width:100%;margin:4px 0 8px}
+@media print{.tsm{font-size:7pt;color:#444}.ttab{width:100%;border-collapse:collapse;font-size:8pt}.ttab th,.ttab td{border:.2mm solid #8a99ad;padding:1mm 1.5mm;vertical-align:top;text-align:left}.ttab th{background:#e9eef5;color:#1f3b5f}.tpanel{display:none !important}}

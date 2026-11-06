@@ -108,7 +108,7 @@ await T('A6', 'Aktualizacja aplikacji: baner „dostępna nowa wersja”, nowa w
     fs.appendFileSync(path.join(dir, 'css/app.css'), '\n/* zmiana testowa */\n'); execSync('python3 tools/build.py 9.9.9', { cwd: dir });
     await p.evaluate(async () => { const r = await navigator.serviceWorker.getRegistration(); await r.update(); }); await p.waitForTimeout(2000);
     const banner = await p.locator('#update-banner').isVisible();
-    await p.click('#update-btn'); await p.waitForTimeout(2500);
+    await p.click('#update-btn'); await p.waitForTimeout(4000);
     await p.waitForSelector('.titleband', { timeout: 8000 });
     const val = await p.inputValue('[data-id="01.A.6"]'); const v2 = await p.evaluate(async () => (await caches.keys()).join(',')); const ver = await p.evaluate(async () => (await import('/js/version.js')).APP_VERSION);
     await b.close();
@@ -134,7 +134,7 @@ await T('A7', 'Prywatność: zero żądań poza własnym serwerem; polityka CSP 
 // ---------- T8: repozytorium bez danych spraw ----------
 await T('A8', 'Repozytorium: brak plików spraw, PDF i danych osobowych (kontrola przed commitem)')(async () => {
   const files = execSync('git ls-files', { cwd: process.cwd() }).toString().split('\n').filter(Boolean);
-  const bad = files.filter(f => (/\.(pdf|heic|jpe?g)$/i.test(f)) || (f.endsWith('.json') && !/^(forms\/\d\d\.json|docs\/slownik_pol\.json|docs\/raport_zgodnosci\.json)$/.test(f)));
+  const bad = files.filter(f => (/\.(pdf|heic|jpe?g)$/i.test(f)) || (f.endsWith('.json') && !/^(forms\/\d\d\.json|docs\/slownik_pol\.json|docs\/raport_zgodnosci\.json|docs\/claude_ai\/(przyklad_wkladu|schemat_wkladu)\.json)$/.test(f)));
   const hook = fs.existsSync(root + '.git/hooks/pre-commit');
   let leak = false; for (const f of files.filter(f => /\.(json|md|js|html)$/.test(f))) { const t = fs.readFileSync(root + f, 'utf8'); if (/"app"\s*:\s*"ogledziny"[\s\S]{0,400}"forms"\s*:\s*\[/.test(t) && !f.startsWith('tests/')) leak = true; }
   return { ok: !bad.length && hook && !leak, note: `${files.length} plików w repozytorium, niedozwolonych: ${bad.length}, hook pre-commit: ${hook}` };
@@ -159,6 +159,13 @@ await T('A10', 'Silnik Safari (WebKit): wszystkie formularze renderują się, li
   }
   await b.close();
   return { ok: !bad.length && !errs.length, note: bad.join(', ') || 'zgodne' };
+});
+
+// ---------- T11: wkład od Claude AI i lista zadań ----------
+await T('A11', 'Wkład od Claude AI: wczytanie, wstępne wypełnienie, lista zadań, statusy, eksport, plik, wydruk')(async () => {
+  const u = execSync('node tests/wklad.mjs', { cwd: process.cwd() }).toString();
+  const e = execSync(`node tests/e2e_wklad.mjs ${port}`, { cwd: process.cwd() }).toString();
+  return { ok: !/FAIL/.test(u + e) && (u.match(/PASS/g) || []).length === 9 && (e.match(/PASS/g) || []).length === 15, note: `jednostkowe ${(u.match(/PASS/g) || []).length} + przeglądarka ${(e.match(/PASS/g) || []).length} kontroli` };
 });
 
 // ---------- raport ----------

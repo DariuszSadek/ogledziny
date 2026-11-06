@@ -4,6 +4,8 @@ import { migrate, reportText, needsAttention, SCHEMA } from './migrate.js';
 import { indexDef } from './defs.js';
 import { APP_VERSION } from './version.js';
 import { toMarkdown } from './export.js';
+import { parseWklad, applyWklad, reportWklad } from './wklad.js';
+import { taskCard, taskPanel, renderTasksView, counts } from './tasks.js';
 
 const $ = id => document.getElementById(id);
 const FORM_IDS = ['00', '01', '02', '03', '04', '05', '06', '07', '08', '09'];
@@ -70,6 +72,8 @@ function ctxFor(inst, def) {
 function setTabs() {
   const t = $('tabs'); t.replaceChildren();
   t.append(h('button', { type: 'button', class: view === 'home' ? 'on' : '', text: 'Sprawa', onclick: () => go('home') }));
+  const k = counts(C);
+  t.append(h('button', { type: 'button', class: view === 'zadania' ? 'on' : '', data: { tab: 'zadania' }, text: `Zadania ${k.done}/${k.all}`, onclick: () => go('zadania') }));
   for (const f of C.forms) t.append(h('button', { type: 'button', class: view === f.iid ? 'on' : '', text: `${f.formId} · ${f.label}`, onclick: () => go(f.iid) }));
   t.append(h('button', { type: 'button', class: 'small', text: '+ Formularz', onclick: addFormDialog }));
   const on = t.querySelector('.on'); if (on) on.scrollIntoView({ inline: 'center', block: 'nearest' });
@@ -83,11 +87,13 @@ function render() {
   if (!C) { $('tabs').replaceChildren(); $('tabs').hidden = true; return renderStart(main); }
   $('tabs').hidden = false; setTabs();
   if (view === 'home') return renderCase(main);
+  if (view === 'zadania') return renderTasksView(main, C, taskEnv());
   const inst = C.forms.find(f => f.iid === view);
   if (!inst) { view = 'home'; return render(); }
   const def = DEFS[inst.formId];
   if (!def) { main.append(h('div', { class: 'orphans' }, h('h3', { text: 'Brak definicji formularza' }), h('p', { text: `Formularz ${inst.formId} nie jest dostępny w tej wersji aplikacji. Dane są zachowane w pliku sprawy.` }))); return; }
   if (Object.keys(inst.orphans || {}).length) main.append(orphanBox(inst));
+  const tp = taskPanel(inst, C, taskEnv()); if (tp) main.append(tp);
   main.append(h('div', { class: 'toolrow' },
     h('button', { type: 'button', class: 'small', text: 'Drukuj / PDF tego formularza', onclick: () => doPrint([inst]) }),
     h('button', { type: 'button', class: 'small', text: 'Eksport dla Claude (ten formularz)', onclick: () => exportMd(inst) })));
@@ -120,6 +126,7 @@ function renderStart(main) {
     h('p', { text: 'Elektroniczne formularze oględzin – Motoanalityka Dariusz Sadek. Aplikacja działa bez internetu i nie wysyła żadnych danych.' }),
     h('div', { class: 'btns' },
       h('button', { type: 'button', class: 'primary', text: 'Nowa sprawa', onclick: startNew }),
+      h('button', { type: 'button', text: 'Nowa sprawa z wkładu (Claude AI)', onclick: () => wkladDialog(true) }),
       h('button', { type: 'button', text: 'Otwórz sprawę', onclick: openFile })),
     h('div', { class: 'copy', text: COPYRIGHT }),
     h('div', { class: 'copy', text: `Wersja ${APP_VERSION}` })));
@@ -139,6 +146,9 @@ function renderCase(main) {
           h('button', { type: 'button', class: 'small danger', text: 'Usuń', onclick: () => ask('Usunąć formularz?', `Egzemplarz „${f.label}” (${f.formId}) wraz z danymi zostanie usunięty ze sprawy.`, 'Usuń', () => { C.forms = C.forms.filter(x => x !== f); touch(); render(); }) }));
       }),
       h('div', { class: 'btns' }, h('button', { type: 'button', text: '+ Dodaj formularz', onclick: addFormDialog }))),
+    h('div', { class: 'card' }, h('h2', { text: 'Wkład od Claude AI i zadania' }),
+      h('p', { text: `Zadania: ${counts(C).all} (wykonane ${counts(C).done}, niewykonane ${counts(C).no}, otwarte ${counts(C).open}).` }),
+      h('div', { class: 'btns' }, h('button', { type: 'button', class: 'primary', text: 'Dołącz wkład (wklej lub z pliku)', onclick: () => wkladDialog(false) }), h('button', { type: 'button', text: 'Zadania', onclick: () => go('zadania') }))),
     h('div', { class: 'card' }, h('h2', { text: 'Wydruk i eksport' }),
       h('div', { class: 'btns' },
         h('button', { type: 'button', class: 'primary', text: 'Drukuj / PDF – cała sprawa', onclick: () => doPrint(C.forms) }),
@@ -220,12 +230,64 @@ $('btn-save').addEventListener('click', saveFile);
 $('btn-open').addEventListener('click', openFile);
 $('btn-home').addEventListener('click', () => go('home'));
 
+// ---------- zadania i wkład ----------
+function updateTaskTab() { const b = document.querySelector('#tabs button[data-tab="zadania"]'); if (b) { const k = counts(C); b.textContent = `Zadania ${k.done}/${k.all}`; } }
+function taskEnv() {
+  return {
+    touch: () => { touch(); updateTaskTab(); }, rerender: () => render(),
+    goto: t => { go(t.iid); requestAnimationFrame(() => setTimeout(() => {
+      const el = (t.poleOk && document.querySelector(`[data-id="${CSS.escape(t.pole)}"]`)) || (t.sekcja && document.getElementById(`sec-${(C.forms.find(f => f.iid === t.iid) || {}).formId}-${t.sekcja}`));
+      if (el) { el.scrollIntoView({ block: 'center' }); el.classList.add('flash'); setTimeout(() => el.classList.remove('flash'), 2500); }
+    }, 120)); },
+    remove: t => ask('Usunąć zadanie?', `„${t.czynnosc.slice(0, 80)}” zostanie usunięte ze sprawy.`, 'Usuń', () => { C.tasks = C.tasks.filter(x => x !== t); touch(); render(); }),
+    addTask: () => {
+      const sel = h('select', { 'aria-label': 'Formularz' }, h('option', { value: '', text: 'Ogólne (bez formularza)' }), ...C.forms.map(f => h('option', { value: f.iid, text: `${f.formId} · ${f.label}` })));
+      const ta = h('textarea', { rows: 2, placeholder: 'Czynność – co sprawdzić / zmierzyć / sfotografować' }); ta.style.overflow = 'auto';
+      dialog('Dodaj zadanie', h('div', {}, h('div', { class: 'lbl', text: 'Formularz' }), sel, h('div', { class: 'lbl', text: 'Czynność' }), ta), [['Dodaj', () => {
+        if (!ta.value.trim()) return toast('Wpisz czynność.');
+        C.tasks.push({ id: 'W' + String(C.tasks.length + 1).padStart(2, '0'), iid: sel.value || null, sekcja: '', pole: '', poleOk: false, priorytet: 'normalny', czynnosc: ta.value.trim(), opis: '', podstawa: '', przyrzad: '', jednostka: '', wynik: '', nr_zdjecia: '', status: '', powod: '', zrodlo: 'wlasne' });
+        touch(); render();
+      }, 'primary'], ['Anuluj', null]]);
+    },
+    wklad: () => wkladDialog(false),
+  };
+}
+function wkladDialog(isNew, prefill = '', err = '') {
+  const ta = h('textarea', { rows: 10, class: 'wklad-ta', placeholder: 'Wklej tu odpowiedź Claude AI (JSON „ogledziny-wklad”)…', 'aria-label': 'Wkład (JSON)' });
+  ta.value = prefill;
+  const file = h('input', { type: 'file', accept: '.json,application/json,text/plain,.txt' });
+  file.addEventListener('change', async () => { const f = file.files[0]; if (f) ta.value = await f.text(); });
+  dialog(isNew ? 'Nowa sprawa z wkładu' : 'Dołącz wkład do sprawy', h('div', {},
+    err ? h('p', { class: 'warnp', text: err }) : null, ta, h('div', { class: 'lbl', text: 'albo plik .json:' }), file,
+    h('p', { class: 'note', text: isNew ? 'Powstanie nowa sprawa z formularzami i zadaniami z wkładu.' : 'Formularze i zadania z wkładu zostaną dodane do bieżącej sprawy (nic nie jest nadpisywane).' })),
+  [['Wczytaj', async () => {
+    await READY;
+    let obj; try { obj = parseWklad(ta.value); } catch (e) { return wkladDialog(isNew, ta.value, 'Nie udało się odczytać JSON: ' + e.message); }
+    const doIt = () => {
+      let R; const keep = C;
+      try { if (isNew) C = newCase(); R = applyWklad(obj, C, DEFS, uid); }
+      catch (e) { C = keep; return wkladDialog(isNew, ta.value, e.message); }
+      view = C.tasks.length ? 'zadania' : 'home'; C.lastView = view; touch(); persist(); render();
+      const txt = reportWklad(R);
+      if (R.rejected.length || R.warnings.length) dialog('Raport wczytania wkładu', h('pre', { text: txt }), [['OK', null, 'primary']]); else toast(txt);
+    };
+    if (isNew && C && C.rev !== C.savedRev) ask('Niezapisane zmiany', 'Bieżąca sprawa ma zmiany niezapisane do pliku – nowa sprawa zastąpi bufor. Zapisz plik przed kontynuacją.', 'Utwórz nową', doIt); else doIt();
+  }, 'primary'], ['Anuluj', null]]);
+}
+
 // ---------- wydruk (PDF) i eksport ----------
 function printScope(insts) {
   let root = $('print-root');
   if (!root) { root = h('div', { id: 'print-root' }); document.body.append(root); }
   root.replaceChildren();
   const hd = C.header;
+  if (insts.length === C.forms.length && (C.tasks || []).length) {
+    const rows = C.tasks.map(t => { const f = C.forms.find(x => x.iid === t.iid); return h('tr', {}, h('td', { text: t.id }), h('td', {}, h('strong', { text: t.czynnosc }), t.opis ? h('div', { class: 'tsm', text: t.opis }) : null, t.podstawa ? h('div', { class: 'tsm', text: 'Podstawa: ' + t.podstawa }) : null), h('td', { text: f ? `${f.formId} ${f.label}${t.sekcja ? ' / ' + t.sekcja : ''}` : 'ogólne' }), h('td', { text: t.przyrzad }), h('td', { text: [t.wynik, t.jednostka].filter(Boolean).join(' ') + (t.nr_zdjecia ? ` (zdj. ${t.nr_zdjecia})` : '') }), h('td', { text: t.status === 'wykonane' ? 'wykonane' : t.status === 'niewykonane' ? 'NIEWYKONANE: ' + t.powod : '' })); });
+    root.append(h('table', { class: 'ptab' },
+      h('thead', {}, h('tr', {}, h('td', {}, h('div', { class: 'phead' }, h('span', { text: 'Motoanalityka Dariusz Sadek · rzeczoznawca samochodowy' }), h('span', { text: 'Lista zadań na oględziny' }))))),
+      h('tfoot', {}, h('tr', {}, h('td', {}, h('div', { class: 'pfoot' }, h('div', { class: 'psygn', text: `Sygn. / nr zlecenia: ${hd.sygnatura || '………………………'}` }), h('div', { text: COPYRIGHT }))))),
+      h('tbody', {}, h('tr', {}, h('td', {}, h('table', { class: 'ttab' }, h('thead', {}, h('tr', {}, ['Nr', 'Czynność', 'Formularz', 'Przyrząd', 'Wynik', 'Status'].map(x => h('th', { text: x })))), h('tbody', {}, rows)))))));
+  }
   for (const inst of insts) {
     const def = DEFS[inst.formId]; if (!def) continue;
     const form = renderForm(def, inst, Object.assign(ctxFor(inst, def), { print: true, set() { } }));
@@ -298,7 +360,7 @@ async function loadDefs() {
 }
 const READY = (async () => {
   try { await loadDefs(); } catch (e) { $('main').append(h('p', { text: 'Błąd wczytania definicji formularzy: ' + e })); return; }
-  try { const saved = await kvGet('current'); if (saved) { const rep = migrate(saved, DEFS); C = saved; view = C.forms.some(f => f.iid === C.lastView) ? C.lastView : 'home'; if (needsAttention(rep) && (rep.orphaned.length || rep.unknownForms.length)) setTimeout(() => dialog('Raport (bufor)', h('pre', { text: reportText(rep) }), [['OK', null, 'primary']]), 200); } } catch (e) { console.warn(e); }
+  try { const saved = await kvGet('current'); if (saved) { const rep = migrate(saved, DEFS); C = saved; view = (C.lastView === 'zadania' || C.forms.some(f => f.iid === C.lastView)) ? C.lastView : 'home'; if (needsAttention(rep) && (rep.orphaned.length || rep.unknownForms.length)) setTimeout(() => dialog('Raport (bufor)', h('pre', { text: reportText(rep) }), [['OK', null, 'primary']]), 200); } } catch (e) { console.warn(e); }
   if (C) lastBufferOk = null;
   render(); renderStatus();
   if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(() => { });
