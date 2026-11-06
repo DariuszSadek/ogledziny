@@ -50,6 +50,8 @@ Biegły może potem coś dopisać lub zmienić (w aplikacji i u Ciebie – wtedy
 
 Zanim wyślesz wkład, sprawdź: każdy identyfikator w `pola` istnieje w odpowiednim `slownik_NN.md` i dotyczy właściwego formularza; pola `check` mają `true`; `ref` są unikalne; każde `zadanie.formularz` wskazuje istniejący `ref` albo `"ogolne"`; żadnych wymyślonych numerów kart.
 
+**G. Jedna odpowiedź.** Ta instrukcja ma pierwszeństwo przed trybem krokowym i pytaniami „Kontynuować?”: **zwróć cały wkład w jednej odpowiedzi** (podsumowanie + kompletny blok `json`), bez dzielenia na części i bez przerywania w połowie. Jeśli materiału jest dużo, skróć opisy, ale nie dziel JSON-a. Pytaj tylko o to, bez czego nie da się ustalić liczby egzemplarzy formularzy lub kluczowych danych – i wtedy zadaj pytania **przed** wkładem.
+
 ## Po oględzinach
 
 Biegły może wkleić **„Eksport tekstowy”** (Markdown z aplikacji): zawiera wypełnione pola z identyfikatorami `[01.A.2]` i stan wykonania zadań (wynik, jednostka, nr zdjęcia, niewykonane + powód). Wtedy zestaw wyniki z aktami i zadaniami: wskaż zadania niewykonane i ich skutki dla opinii, rozbieżności między aktami a oględzinami, braki do uzupełnienia. Identyfikatory w eksporcie mają to samo znaczenie co w słownikach.
