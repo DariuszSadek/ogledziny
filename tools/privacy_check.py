@@ -5,7 +5,9 @@ import subprocess,sys,json,re,os
 ALLOWED_JSON=re.compile(r'^(forms/\d\d\.json|manifest\.webmanifest|docs/slownik_pol\.json|docs/raport_zgodnosci\.json)$')
 out=subprocess.run(['git','diff','--cached','--name-only','--diff-filter=ACMR'],capture_output=True,text=True).stdout.split('\n')
 bad=[]
+import stat
 for f in filter(None,out):
+    if os.path.islink(f): bad.append((f,'dowiązanie symboliczne (Pages go odrzuca, może ujawniać ścieżki lokalne)'));continue
     if f.lower().endswith('.json') and not ALLOWED_JSON.match(f): bad.append((f,'plik JSON poza listą dozwolonych'))
     if re.search(r'\.(pdf|heic|jpe?g)$',f,re.I): bad.append((f,'PDF/zdjęcie'))
     if f.startswith('sprawy/'): bad.append((f,'katalog spraw'))

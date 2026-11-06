@@ -9,7 +9,7 @@ case_*.json
 *.jpeg
 *.png.bak
 # narzędzia lokalne
-node_modules/
+node_modules
 .venv/
 venv/
 .DS_Store
