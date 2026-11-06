@@ -3,6 +3,7 @@ import { createSketch } from './sketch.js';
 
 export const COPYRIGHT = '© 2026 Motoanalityka Dariusz Sadek. Wszelkie prawa zastrzeżone. Kopiowanie, rozpowszechnianie, modyfikowanie i wykorzystywanie wzorów formularzy, w całości lub w części, bez pisemnej zgody autora jest zabronione.';
 const FULL = 527.3;
+const NS = 'http://www.w3.org/2000/svg';
 
 export function h(tag, props = {}, ...kids) {
   const e = document.createElement(tag);
@@ -17,6 +18,7 @@ export function h(tag, props = {}, ...kids) {
   for (const c of kids.flat()) if (c != null) e.append(c.nodeType ? c : document.createTextNode(c));
   return e;
 }
+const sv = (tag, attrs) => { const e = document.createElementNS(NS, tag); for (const [k, v] of Object.entries(attrs)) if (v != null) e.setAttribute(k, v); return e; };
 export const grow = t => { t.style.height = 'auto'; t.style.height = (t.scrollHeight + 2) + 'px'; };
 const pad = n => String(n).padStart(2, '0');
 export const nowHM = () => { const d = new Date(); return pad(d.getHours()) + ':' + pad(d.getMinutes()); };
@@ -34,12 +36,13 @@ export function renderForm(def, inst, ctx) {
 }
 
 function renderSection(def, s, ctx) {
-  const sec = h('section', { class: 'sec', id: `sec-${def.id}-${s.id}` }, h('h2', { text: s.title }));
+  const intro = !s.title;
+  const sec = h('section', { class: 'sec' + (intro ? ' intro' : ''), id: `sec-${def.id}-${s.id}` }, intro ? null : h('h2', { text: s.title }));
   for (const b of s.blocks) {
     const el = renderBlock(def, s, b, ctx);
     if (el) sec.append(el);
   }
-  sec.append(h('div', { class: 'uwagi' }, fieldEl({ id: `${def.id}.${s.id}.uwagi`, label: 'Uwagi', type: 'text', rows: 2, w: FULL }, ctx, true)));
+  if (!intro) sec.append(h('div', { class: 'uwagi' }, fieldEl({ id: `${def.id}.${s.id}.uwagi`, label: 'Uwagi', type: 'text', rows: 2, w: FULL }, ctx, true)));
   return sec;
 }
 
@@ -49,26 +52,26 @@ function renderBlock(def, s, b, ctx) {
     case 'group': return groupEl(b, ctx);
     case 'checklist': return h('div', { class: 'checklist' }, b.items.map(c => checkEl(c, ctx)));
     case 'table': return tableEl(b, ctx);
+    case 'figure': return figureEl(b, ctx);
     case 'note': return h('div', { class: 'note', text: b.text });
     case 'subhead': return h('div', { class: 'subhead', text: b.text });
-    case 'text': return h('div', { text: b.text });
+    case 'text': return h('p', { class: 'para' }, b.runs ? b.runs.map(r => r.b ? h('strong', { text: r.t }) : r.t) : b.text);
     case 'sig': { const w = h('div', { class: 'sigs' }); w.append(h('div', { class: 'sig', text: b.text })); return w; }
     case 'sketch': return h('div', {}, h('div', { class: 'lbl', text: b.label }), createSketch(ctx.get(b.id), v => ctx.set(b.id, v)));
   }
 }
 
-function checkEl(c, ctx) {
+function checkEl(c, ctx, cls = '') {
   const i = h('input', { type: 'checkbox', data: { id: c.id } });
   i.checked = ctx.get(c.id) === true;
+  if (c.aria) i.setAttribute('aria-label', c.aria);
   i.addEventListener('change', () => ctx.set(c.id, i.checked ? true : ''));
-  return h('label', { class: 'chk' }, i, h('span', { class: 'box' }), h('span', { text: c.label }));
+  return h('label', { class: 'chk ' + cls }, i, h('span', { class: 'box' }), c.label ? h('span', { text: c.label }) : null);
 }
 
 export function textCtl(f, ctx, labelText) {
   const num = f.type === 'num' || f.type === 'time' || f.type === 'gps';
-  let c;
-  if (num) { c = h('input', { type: 'text' }); }
-  else { c = h('textarea', { rows: f.rows || 1 }); }
+  const c = num ? h('input', { type: 'text' }) : h('textarea', { rows: f.rows || 1 });
   c.value = ctx.get(f.id) ?? '';
   c.dataset.id = f.id;
   c.setAttribute('aria-label', labelText || f.label || f.id);
@@ -109,39 +112,48 @@ function groupEl(b, ctx) {
   const opts = h('div', { class: 'opts' });
   for (const o of b.items) {
     if (o.type === 'check') opts.append(checkEl(o, ctx));
-    else { const c = textCtl(o, ctx, `${b.label} – ${o.label || 'inne'}`); const w = h('div', { class: 'optin' }, c); opts.append(w); }
+    else opts.append(h('div', { class: 'optin' }, textCtl(o, ctx, `${b.label} – ${o.label || 'inne'}`)));
   }
   return h('div', { class: 'group' }, h('div', { class: 'glabel', text: b.label }), opts);
 }
 
 function tableEl(b, ctx) {
-  const cols = b.cols.map(c => Math.max(c.w, 30));
-  const tpl = (b.nr !== null && b.nr !== undefined ? '34px ' : '') + cols.map(w => `minmax(0,${Math.round(w)}fr)`).join(' ');
+  const lead = b.lead != null || (b.labels || []).some(Boolean);
+  const numeric = lead && (b.labels || []).every(l => /^\d+$/.test(l) || l === '');
+  const leadCol = !lead ? '' : (b.leadw < 40 ? '34px ' : `minmax(150px,${Math.round(b.leadw)}fr) `);
+  const cw = c => Math.max(44, Math.round(Math.max(...c.head.split(/\s+/).map(w => w.length), 1) * 7.6 + 8));
+  const cols = b.cols.map(c => c.type === 'check' ? cw(c) + 'px' : `minmax(0,${Math.max(Math.round(c.w), 30)}fr)`);
+  const tpl = leadCol + cols.join(' ');
   const wrap = h('div', { class: 'tbl' });
   const head = h('div', { class: 'thead' });
   head.style.gridTemplateColumns = tpl;
-  if (b.nr != null) head.append(h('div', { text: b.nr }));
-  for (const c of b.cols) head.append(h('div', { text: c.head }));
+  const off = lead ? 1 : 0, gs = b.groups || [];
+  const inGroup = i => gs.some(g => i >= g.c0 && i <= g.c1);
+  const hc = (txt, col, rows, span = 1) => { const d = h('div', { text: txt }); d.style.gridColumn = `${col} / span ${span}`; d.style.gridRow = rows; return d; };
+  if (lead) head.append(hc(b.lead || '', 1, gs.length ? '1 / span 2' : '1'));
+  for (const g of gs) head.append(hc(g.t, g.c0 + 1 + off, '1', g.c1 - g.c0 + 1));
+  b.cols.forEach((c, i) => head.append(hc(c.head, i + 1 + off, gs.length ? (inGroup(i) ? '2' : '1 / span 2') : '1')));
+  if (gs.length) head.classList.add('grouped');
   wrap.append(head);
   const body = h('div', { class: 'tbody' });
   wrap.append(body);
-  const numbered = b.nr != null;
-  const mkRow = (cells, rn, rowNo) => {
+  const mkRow = (cells, label, rowNo) => {
     const r = h('div', { class: 'trow' });
     r.style.gridTemplateColumns = tpl;
-    if (numbered) r.append(h('div', { class: 'rn', text: rn || String(rowNo) }));
+    if (lead) r.append(h('div', { class: 'rn' + (b.leadw < 40 ? '' : ' rlabel'), text: label || (numeric ? String(rowNo) : '') }));
     cells.forEach((cell, i) => {
       const col = b.cols[i];
-      const td = h('div', { class: 'cell' + (col.type === 'check' ? ' chkcell' : ''), data: { h: col.head } });
+      const hd = col.head.replace(/\n/g, ' ');
+      const td = h('div', { class: 'cell' + (col.type === 'check' ? ' chkcell' : ''), data: { h: hd } });
       if (cell) {
-        if (col.type === 'check') td.append(checkEl({ id: cell.id, label: '' }, ctx));
-        else td.append(textCtl({ id: cell.id, type: col.type, label: col.head, rows: 1 }, ctx, `${col.head} – wiersz ${rowNo}`));
+        if (col.type === 'check') td.append(checkEl({ id: cell.id, label: '', aria: `${hd} – ${label || 'wiersz ' + rowNo}` }, ctx));
+        else td.append(textCtl({ id: cell.id, type: col.type, label: hd, rows: 1 }, ctx, `${hd} – ${label || 'wiersz ' + rowNo}`));
       }
       r.append(td);
     });
     body.append(r);
   };
-  b.rows.forEach((cells, i) => mkRow(cells, b.rn[i], i + 1));
+  b.rows.forEach((cells, i) => mkRow(cells, (b.labels || [])[i], i + 1));
   const addExtra = n => {
     const rowNo = b.rows.length + n;
     mkRow(b.cols.map((_, ci) => ({ id: `${b.prefix}.r${rowNo}.c${ci + 1}` })), '', rowNo);
@@ -150,8 +162,44 @@ function tableEl(b, ctx) {
   wrap.append(h('div', { class: 'addrow' }, h('button', {
     type: 'button', class: 'small', text: 'Dodaj wiersz', onclick: () => {
       const n = ctx.addRow(b.prefix); addExtra(n);
-      const last = body.lastElementChild.querySelector('textarea,input'); if (last) last.focus({ preventScroll: false });
+      const last = body.lastElementChild.querySelector('textarea,input'); if (last) last.focus();
     }
   })));
   return wrap;
+}
+
+// Rysunek wektorowy z PDF (SVG) + klikalne strefy / pola w położeniach pól PDF.
+function figureEl(b, ctx) {
+  const [vx, vy, vw, vh] = b.vb;
+  const svg = sv('svg', { viewBox: `${vx} ${vy} ${vw} ${vh}`, class: 'figsvg', 'aria-hidden': 'true', preserveAspectRatio: 'xMidYMid meet' });
+  for (const s of b.shapes) {
+    const common = { fill: s.f || 'none', stroke: s.s || 'none', 'stroke-width': s.s ? s.w : null, 'stroke-linejoin': 'round', 'stroke-linecap': 'round' };
+    if (s.eo) common['fill-rule'] = 'evenodd';
+    if (s.da) common['stroke-dasharray'] = s.da.join(' ');
+    svg.append(s.t === 'r' ? sv('rect', { x: s.x, y: s.y, width: s.W, height: s.H, ...common }) : sv('path', { d: s.d, ...common }));
+  }
+  for (const t of b.texts) {
+    const e = sv('text', { x: t.x, y: t.y, 'font-size': t.sz, 'font-weight': t.b ? 700 : 400, 'font-style': t.i ? 'italic' : 'normal', fill: t.c, 'font-family': 'Libre Baskerville, Georgia, serif' });
+    e.textContent = t.t; svg.append(e);
+  }
+  const box = h('div', { class: 'fig' }, svg);
+  box.style.aspectRatio = `${vw} / ${vh}`;
+  for (const sp of b.spots) {
+    const left = ((sp.x - vx) / vw * 100) + '%', top = ((sp.y - vy) / vh * 100) + '%';
+    let el;
+    if (sp.type === 'check') {
+      el = checkEl({ id: sp.id, label: '', aria: sp.label || sp.id }, ctx, 'spot');
+    } else {
+      const c = h('textarea', { rows: 1, class: 'spot-in' });
+      c.value = ctx.get(sp.id) ?? ''; c.dataset.id = sp.id; c.setAttribute('aria-label', sp.label || sp.id);
+      c.setAttribute('autocomplete', 'off');
+      c.addEventListener('input', () => ctx.set(sp.id, c.value));
+      el = h('div', { class: 'spot spot-text' }, c);
+      el.style.width = Math.max(sp.w / vw * 100, 6) + '%';
+      el.style.height = (sp.h / vh * 100) + '%';
+    }
+    el.style.left = left; el.style.top = top;
+    box.append(el);
+  }
+  return h('div', { class: 'figwrap' }, box);
 }

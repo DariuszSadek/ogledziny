@@ -8,18 +8,19 @@ txt=[]
 def walk(o):
     if isinstance(o,dict):
         for k,v in o.items():
-            if k in('label','text','head','nr','title','subtitle'): txt.append(str(v))
-            elif k=='rn': txt.extend(v)
+            if k in('label','text','head','lead','title','subtitle','t') and isinstance(v,str): txt.append(v)
+            elif k=='labels': txt.extend(v)
+            elif k=='runs': pass
             else: walk(v)
     elif isinstance(o,list):
         for v in o: walk(v)
 walk(d)
-J=collections.Counter(re.findall(r'\S+',' '.join(txt)))
+J=collections.Counter(re.sub(r'\s+','',' '.join(txt)))
 P=collections.Counter()
 for i,pg in enumerate(pdfplumber.open(pdf).pages):
     if i+1 in skip: continue
     for w in pg.extract_words():
         if w['top']<36 or w['top']>800: continue
-        P[w['text']]+=1
+        P.update(w['text'])
 miss={w:c-J[w] for w,c in P.items() if J[w]<c}
-print('brakujące słowa (PDF więcej niż def):',sum(miss.values()),dict(list(miss.items())[:40]))
+print('brakujące znaki (PDF więcej niż def):',sum(miss.values()),dict(sorted(miss.items(),key=lambda x:-x[1])[:25]))

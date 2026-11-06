@@ -8,7 +8,8 @@ export function indexDef(def) {
       else if (b.k === 'table') {
         tables.set(b.prefix, { ncols: b.cols.length, nrows: b.rows.length });
         for (const r of b.rows) for (const c of r) if (c) ids.add(c.id);
-      } else if (b.k === 'sketch') { ids.add(b.id); sketches.add(b.id); }
+      } else if (b.k === 'figure') { for (const sp of b.spots) ids.add(sp.id); }
+      else if (b.k === 'sketch') { ids.add(b.id); sketches.add(b.id); }
     }
   }
   return { ids, tables, sketches };

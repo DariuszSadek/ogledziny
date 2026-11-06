@@ -5,7 +5,7 @@ import { indexDef } from './defs.js';
 import { APP_VERSION } from './version.js';
 
 const $ = id => document.getElementById(id);
-const FORM_IDS = ['01'];             // formularze dostępne w tej wersji (etap 3 doda 00, 02–09)
+const FORM_IDS = ['00', '01', '02', '03', '04', '05', '06', '07', '08', '09'];
 const FORM_NAMES = { '00': 'Karta czynności', '01': 'Miejsce zdarzenia', '02': 'Motocykl', '03': 'Samochód osobowy', '04': 'Samochód ciężarowy', '05': 'Furgon / autobus', '06': 'Silnik', '07': 'Ogumienie', '08': 'Rzecz', '09': 'Rejestr zdjęć i przedmiotów' };
 let DEFS = {}, C = null, view = 'home', saveTimer = null, lastBufferOk = null;
 
@@ -191,6 +191,7 @@ function download(json, name, done) {
 function openFile() { const i = $('file-input'); i.value = ''; i.click(); }
 $('file-input').addEventListener('change', async e => {
   const f = e.target.files[0]; if (!f) return;
+  await READY;
   let obj;
   try { obj = JSON.parse(await f.text()); } catch { return toast('To nie jest poprawny plik sprawy (błąd odczytu JSON).'); }
   if (obj.app !== 'ogledziny' || !Array.isArray(obj.forms)) return toast('To nie jest plik sprawy aplikacji Oględziny.');
@@ -198,7 +199,7 @@ $('file-input').addEventListener('change', async e => {
     const report = migrate(obj, DEFS);
     obj.rev = 0; obj.savedRev = 0; if (!obj.header) obj.header = { sygnatura: '', organ: '', data: '' }; if (!obj.tasks) obj.tasks = [];
     if (report.moved.length || report.orphaned.length || report.updated.length) { obj.rev = 1; }   // dane zmieniły postać – wymagają ponownego zapisu do pliku
-    C = obj; view = 'home'; persist(); render(); renderStatus();
+    delete obj.lastView; C = obj; view = 'home'; persist(); render(); renderStatus();
     if (needsAttention(report)) dialog('Raport otwarcia pliku', h('pre', { text: reportText(report) || 'Bez uwag.' }), [['OK', null, 'primary']]);
     else toast('Sprawa otwarta bez zmian.');
   };
@@ -237,7 +238,8 @@ async function setupSW() {
     reg.addEventListener('updatefound', () => { const w = reg.installing; w && w.addEventListener('statechange', () => { if (w.state === 'installed' && navigator.serviceWorker.controller) show(); }); });
     $('update-btn').addEventListener('click', async () => { await persist(); (reg.waiting || reg.active).postMessage('SKIP_WAITING'); });
     let reloading = false;
-    navigator.serviceWorker.addEventListener('controllerchange', () => { if (reloading) return; reloading = true; location.reload(); });
+    const hadController = !!navigator.serviceWorker.controller;
+    navigator.serviceWorker.addEventListener('controllerchange', () => { if (reloading || !hadController) return; reloading = true; location.reload(); });
     const check = () => reg.update().catch(() => { });
     document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') check(); });
     check();
@@ -248,7 +250,7 @@ async function setupSW() {
 async function loadDefs() {
   for (const id of FORM_IDS) { const r = await fetch(`forms/${id}.json`); DEFS[id] = await r.json(); indexDef(DEFS[id]); }
 }
-(async () => {
+const READY = (async () => {
   try { await loadDefs(); } catch (e) { $('main').append(h('p', { text: 'Błąd wczytania definicji formularzy: ' + e })); return; }
   try { const saved = await kvGet('current'); if (saved) { const rep = migrate(saved, DEFS); C = saved; view = C.forms.some(f => f.iid === C.lastView) ? C.lastView : 'home'; if (needsAttention(rep) && (rep.orphaned.length || rep.unknownForms.length)) setTimeout(() => dialog('Raport (bufor)', h('pre', { text: reportText(rep) }), [['OK', null, 'primary']]), 200); } } catch (e) { console.warn(e); }
   if (C) lastBufferOk = null;
