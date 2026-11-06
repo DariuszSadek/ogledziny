@@ -36,13 +36,13 @@ Nie czyść danych witryn w ustawieniach Safari – wyczyści to bufor (plik w i
 9. W każdej sekcji jest pole **Uwagi**.
 10. Na iPhonie używaj ekranu poziomo – wtedy tabele wyglądają jak na iPadzie; w pionie pola układają się w karty.
 
-## 3a. Wkład od Claude AI i lista zadań (przygotowanie przed oględzinami)
+## 3a. Wkład i lista zadań (przygotowanie przed oględzinami)
 
-1. W projekcie Claude AI (analiza akt) użyj paczki z folderu `~/A_Oględziny/Dla_Claude_AI/` (instrukcja w **CZYTAJ_MNIE.md**). Po analizie napisz: „Przygotuj wkład do formularzy”. Claude AI zwróci podsumowanie i blok `json`.
-2. W aplikacji (MacBook albo iPad): ekran startowy → **Nowa sprawa z wkładu (Claude AI)** → wklej odpowiedź (może być z blokiem ```json) albo wskaż plik → **Wczytaj**. Aplikacja tworzy potrzebne egzemplarze formularzy, wpisuje dane z akt (marka, model, VIN, nr rejestracyjny…) i zakłada listę zadań. Każde pominięcie (np. błędny identyfikator pola) jest w raporcie – nic nie ginie po cichu. Do istniejącej sprawy dołączysz wkład w zakładce Sprawa → „Dołącz wkład”.
+1. W projekcie, w którym analizujesz akta, użyj paczki z folderu `~/A_Oględziny/Paczka_wkladu/` (instrukcja w **CZYTAJ_MNIE.md**). Po analizie napisz: „Przygotuj wkład do formularzy”. Odpowiedź zawiera podsumowanie i blok `json`.
+2. W aplikacji (MacBook albo iPad): ekran startowy → **Nowa sprawa z wkładu** → wklej odpowiedź (może być z blokiem ```json) albo wskaż plik → **Wczytaj**. Aplikacja tworzy potrzebne egzemplarze formularzy, wpisuje dane z akt (marka, model, VIN, nr rejestracyjny…) i zakłada listę zadań. Każde pominięcie (np. błędny identyfikator pola) jest w raporcie – nic nie ginie po cichu. Do istniejącej sprawy dołączysz wkład w zakładce Sprawa → „Dołącz wkład”.
 3. Zakładka **Zadania**: każde zadanie ma czynność, opis, podstawę w aktach (k. …), przyrząd, pola **Wynik / Jednostka / Nr zdjęcia** i przyciski **Wykonane / Niewykonane** (przy niewykonanym wpisz powód). Możesz poprawiać teksty, **dodawać własne zadania** i usuwać zbędne. „Do formularza →” przenosi do właściwej sekcji lub pola. Filtry: tylko otwarte, wysoki priorytet.
 4. Na górze każdego formularza jest żółty panel „Zadania i przypomnienia do tego formularza”.
-5. Zapisz plik sprawy i jedź na oględziny (iPad). Po powrocie otwórz plik na MacBooku, zrób **Eksport dla Claude** – w eksporcie jest stan wykonania zadań (wynik, jednostka, nr zdjęcia, niewykonane + powód) obok wypełnionych pól – i wklej go do projektu Claude AI.
+5. Zapisz plik sprawy i jedź na oględziny (iPad). Po powrocie otwórz plik na MacBooku, zrób **Eksport tekstowy** – w eksporcie jest stan wykonania zadań (wynik, jednostka, nr zdjęcia, niewykonane + powód) obok wypełnionych pól – i wklej go do projektu analizy.
 6. Wydruk całej sprawy do PDF zaczyna się od listy zadań.
 
 ## 4. Otwieranie spraw i starsze wersje
@@ -52,7 +52,7 @@ Nie czyść danych witryn w ustawieniach Safari – wyczyści to bufor (plik w i
 ## 5. Wydruk do PDF i eksport (MacBook, także iPad)
 
 - **Drukuj / PDF** (karta w zakładce Sprawa – cała sprawa; przycisk u góry formularza – ten formularz): w oknie drukowania wybierz „Zapisz jako PDF”. Wydruk A4 w stylu wzorów, z sygnaturą i zastrzeżeniem praw w stopce.
-- **Eksport dla Claude**: plik Markdown z wypełnionymi polami w kolejności formularzy, z identyfikatorami pól (`[01.A.2]`), do wklejenia do rozmowy z Claude.
+- **Eksport tekstowy**: plik Markdown z wypełnionymi polami w kolejności formularzy, z identyfikatorami pól (`[01.A.2]`), do wklejenia do projektu analizy akt.
 *Nie sprawdziłem jeszcze wydruku w Safari na iPadzie i Macu – daj znać, jak wygląda.*
 
 ## 6. Aktualizacje
@@ -69,7 +69,7 @@ Zaznacz i napisz mi wynik. Wyniki testów automatycznych (Mac, Chrome i silnik S
 
 1. ☐ **Samolot, iPad:** tryb samolotowy → uruchom z ikony → Nowa sprawa → wypełnij kilka pól (Pencil, dyktowanie, Teraz, GPS, szkic, Dodaj wiersz, rozkładówka) → Zapisz plik → Zapisz w Plikach / iCloud Drive.
 2. ☐ **Zamknięcie i otwarcie:** zamknij aplikację z przełącznika, otwórz ponownie – dane na miejscu.
-3. ☐ **iPad → MacBook:** otwórz ten plik na Macu („Otwórz sprawę”) – bez strat; wydrukuj do PDF; zrób Eksport dla Claude.
+3. ☐ **iPad → MacBook:** otwórz ten plik na Macu („Otwórz sprawę”) – bez strat; wydrukuj do PDF; zrób Eksport tekstowy.
 4. ☐ **Mac → iPad:** zapisz plik na Macu, otwórz na iPadzie.
 5. ☐ **Aktualizacja:** po mojej następnej zmianie zobacz baner „Dostępna nowa wersja”, kliknij Zaktualizuj, sprawdź, że dane zostały.
 6. ☐ **Test urządzenia** (zakładka Sprawa) – zrzut ekranu, gdy cokolwiek nie działa.

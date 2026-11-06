@@ -1,4 +1,4 @@
-// Lista zadań na oględziny (z wkładu od Claude AI lub własne): czynność, opis, podstawa w aktach, przyrząd,
+// Lista zadań na oględziny (z wkładu lub własne): czynność, opis, podstawa w aktach, przyrząd,
 // wynik, jednostka, nr zdjęcia, status (wykonane / niewykonane + powód).
 import { h, grow } from './engine.js';
 
@@ -53,7 +53,7 @@ export function renderTasksView(main, C, env0) {
   box.append(sum);
   const fb = h('div', { class: 'btns' });
   for (const [v, t] of [['all', 'Wszystkie'], ['open', 'Tylko otwarte'], ['high', 'Wysoki priorytet']]) fb.append(h('button', { type: 'button', class: 'small' + (filter === v ? ' primary' : ''), text: t, onclick: () => { filter = v; env.rerender(); } }));
-  fb.append(h('button', { type: 'button', class: 'small', text: '+ Dodaj zadanie', onclick: env.addTask }), h('button', { type: 'button', class: 'small', text: 'Wkład od Claude AI…', onclick: env.wklad }));
+  fb.append(h('button', { type: 'button', class: 'small', text: '+ Dodaj zadanie', onclick: env.addTask }), h('button', { type: 'button', class: 'small', text: 'Wkład…', onclick: env.wklad }));
   box.append(fb);
   if ((C.notesGeneral || []).length) box.append(h('div', { class: 'card' }, h('h2', { text: 'Do pamiętania (ogólne)' }), h('ul', {}, C.notesGeneral.map(n => h('li', { text: n })))));
   const pass = t => filter === 'all' || (filter === 'open' && !t.status) || (filter === 'high' && t.priorytet === 'wysoki');
@@ -67,7 +67,7 @@ export function renderTasksView(main, C, env0) {
     list.forEach(t => { sec.append(taskCard(t, env)); shown++; });
     box.append(sec);
   }
-  if (!shown && !(C.tasks || []).length) box.append(h('p', { class: 'note', text: 'Brak zadań. Wczytaj wkład od Claude AI („Wkład od Claude AI…”) albo dodaj własne zadanie.' }));
+  if (!shown && !(C.tasks || []).length) box.append(h('p', { class: 'note', text: 'Brak zadań. Wczytaj wkład („Wkład…”) albo dodaj własne zadanie.' }));
   main.append(box);
 }
 

@@ -1,6 +1,6 @@
 # Format wkładu `ogledziny-wklad` (wersja 1)
 
-Plik JSON (UTF-8). Aplikacja „Oględziny” wczytuje go przez „Nowa sprawa z wkładu” (ekran startowy) lub „Dołącz wkład” (zakładka Sprawa) – można wkleić tekst odpowiedzi Claude AI (także z blokiem ```json) albo wskazać plik. Nic nie jest odrzucane po cichu: aplikacja pokazuje raport, co wczytała, a co pominęła i dlaczego.
+Plik JSON (UTF-8). Aplikacja „Oględziny” wczytuje go przez „Nowa sprawa z wkładu” (ekran startowy) lub „Dołącz wkład” (zakładka Sprawa) – można wkleić tekst odpowiedzi (także z blokiem ```json) albo wskazać plik. Nic nie jest odrzucane po cichu: aplikacja pokazuje raport, co wczytała, a co pominęła i dlaczego.
 
 ## Struktura
 
@@ -71,4 +71,4 @@ Plik JSON (UTF-8). Aplikacja „Oględziny” wczytuje go przez „Nowa sprawa z
 
 ## Jak wygląda to po wczytaniu
 
-Zakładka **Zadania** (lista z podstawą w aktach, przyrządem, polami na wynik / jednostkę / nr zdjęcia i przyciskami Wykonane / Niewykonane + powód) oraz panel „Zadania i przypomnienia” na górze każdego formularza. „Eksport dla Claude” zwraca stan wykonania zadań razem z wypełnionymi polami.
+Zakładka **Zadania** (lista z podstawą w aktach, przyrządem, polami na wynik / jednostkę / nr zdjęcia i przyciskami Wykonane / Niewykonane + powód) oraz panel „Zadania i przypomnienia” na górze każdego formularza. „Eksport tekstowy” zwraca stan wykonania zadań razem z wypełnionymi polami.

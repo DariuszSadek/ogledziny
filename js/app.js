@@ -96,7 +96,7 @@ function render() {
   const tp = taskPanel(inst, C, taskEnv()); if (tp) main.append(tp);
   main.append(h('div', { class: 'toolrow' },
     h('button', { type: 'button', class: 'small', text: 'Drukuj / PDF tego formularza', onclick: () => doPrint([inst]) }),
-    h('button', { type: 'button', class: 'small', text: 'Eksport dla Claude (ten formularz)', onclick: () => exportMd(inst) })));
+    h('button', { type: 'button', class: 'small', text: 'Eksport tekstowy (ten formularz)', onclick: () => exportMd(inst) })));
   main.append(renderForm(def, inst, ctxFor(inst, def)));
   main.querySelectorAll('textarea').forEach(grow);
   const nav = $('secnav'); nav.hidden = false; nav.replaceChildren();
@@ -126,7 +126,7 @@ function renderStart(main) {
     h('p', { text: 'Elektroniczne formularze oględzin – Motoanalityka Dariusz Sadek. Aplikacja działa bez internetu i nie wysyła żadnych danych.' }),
     h('div', { class: 'btns' },
       h('button', { type: 'button', class: 'primary', text: 'Nowa sprawa', onclick: startNew }),
-      h('button', { type: 'button', text: 'Nowa sprawa z wkładu (Claude AI)', onclick: () => wkladDialog(true) }),
+      h('button', { type: 'button', text: 'Nowa sprawa z wkładu', onclick: () => wkladDialog(true) }),
       h('button', { type: 'button', text: 'Otwórz sprawę', onclick: openFile })),
     h('div', { class: 'copy', text: COPYRIGHT }),
     h('div', { class: 'copy', text: `Wersja ${APP_VERSION}` })));
@@ -146,14 +146,14 @@ function renderCase(main) {
           h('button', { type: 'button', class: 'small danger', text: 'Usuń', onclick: () => ask('Usunąć formularz?', `Egzemplarz „${f.label}” (${f.formId}) wraz z danymi zostanie usunięty ze sprawy.`, 'Usuń', () => { C.forms = C.forms.filter(x => x !== f); touch(); render(); }) }));
       }),
       h('div', { class: 'btns' }, h('button', { type: 'button', text: '+ Dodaj formularz', onclick: addFormDialog }))),
-    h('div', { class: 'card' }, h('h2', { text: 'Wkład od Claude AI i zadania' }),
+    h('div', { class: 'card' }, h('h2', { text: 'Wkład i zadania' }),
       h('p', { text: `Zadania: ${counts(C).all} (wykonane ${counts(C).done}, niewykonane ${counts(C).no}, otwarte ${counts(C).open}).` }),
       h('div', { class: 'btns' }, h('button', { type: 'button', class: 'primary', text: 'Dołącz wkład (wklej lub z pliku)', onclick: () => wkladDialog(false) }), h('button', { type: 'button', text: 'Zadania', onclick: () => go('zadania') }))),
     h('div', { class: 'card' }, h('h2', { text: 'Wydruk i eksport' }),
       h('div', { class: 'btns' },
         h('button', { type: 'button', class: 'primary', text: 'Drukuj / PDF – cała sprawa', onclick: () => doPrint(C.forms) }),
-        h('button', { type: 'button', text: 'Eksport dla Claude (.md)', onclick: () => exportMd(null) })),
-      h('p', { class: 'note', text: 'Drukuj / PDF otwiera okno drukowania systemu – wybierz „Zapisz jako PDF”. Eksport dla Claude zapisuje plik Markdown z wypełnionymi polami i ich identyfikatorami.' })),
+        h('button', { type: 'button', text: 'Eksport tekstowy (.md)', onclick: () => exportMd(null) })),
+      h('p', { class: 'note', text: 'Drukuj / PDF otwiera okno drukowania systemu – wybierz „Zapisz jako PDF”. Eksport tekstowy zapisuje plik Markdown z wypełnionymi polami i ich identyfikatorami.' })),
     h('div', { class: 'card' }, h('h2', { text: 'Plik sprawy' }),
       h('div', { class: 'btns' },
         h('button', { type: 'button', class: 'primary', text: 'Zapisz plik', onclick: saveFile }),
@@ -253,7 +253,7 @@ function taskEnv() {
   };
 }
 function wkladDialog(isNew, prefill = '', err = '') {
-  const ta = h('textarea', { rows: 10, class: 'wklad-ta', placeholder: 'Wklej tu odpowiedź Claude AI (JSON „ogledziny-wklad”)…', 'aria-label': 'Wkład (JSON)' });
+  const ta = h('textarea', { rows: 10, class: 'wklad-ta', placeholder: 'Wklej tu wkład (JSON „ogledziny-wklad”)…', 'aria-label': 'Wkład (JSON)' });
   ta.value = prefill;
   const file = h('input', { type: 'file', accept: '.json,application/json,text/plain,.txt' });
   file.addEventListener('change', async () => { const f = file.files[0]; if (f) ta.value = await f.text(); });
@@ -306,7 +306,7 @@ function doPrint(insts) {
 }
 function exportMd(only) {
   const text = toMarkdown(C, DEFS, only);
-  const name = fileName().replace(/\.json$/, '') + (only ? `_${only.formId}` : '') + '_dla-Claude.md';
+  const name = fileName().replace(/\.json$/, '') + (only ? `_${only.formId}` : '') + '_eksport.md';
   const touch = navigator.maxTouchPoints > 1;
   const share = type => { const f = new File([text], name, { type }); return touch && navigator.canShare && navigator.canShare({ files: [f] }) ? navigator.share({ files: [f], title: name }).then(() => true, e => { if (e && e.name === 'AbortError') throw e; return false; }) : null; };
   const dl = () => { const a = h('a', { href: URL.createObjectURL(new Blob([text], { type: 'text/markdown' })), download: name }); document.body.append(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 4000); toast(`Wyeksportowano: ${name}`); };

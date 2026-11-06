@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Generuje paczkę dla Claude AI: słowniki pól per formularz (kompaktowe), katalog formularzy.
-Użycie: python3 tools/gen_claude_pack.py <katalog_wyjściowy>
-Pliki ręczne (instrukcja, format, schemat, przykład) leżą w docs/claude_ai/ i są kopiowane razem."""
+"""Generuje paczkę do projektu analizy akt: słowniki pól per formularz (kompaktowe), katalog formularzy.
+Użycie: python3 tools/gen_paczka_wkladu.py <katalog_wyjściowy>
+Pliki ręczne (instrukcja, format, schemat, przykład) leżą w docs/wklad/ i są kopiowane razem."""
 import json,os,sys,glob,shutil
 root=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 out=sys.argv[1]
@@ -57,6 +57,6 @@ for f in sorted(glob.glob(os.path.join(root,'forms','[0-9][0-9].json'))):
         L.append(f'Pole „Uwagi”: `{n}.{s["id"]}.uwagi` (text).');L.append('')
     open(os.path.join(out,f'slownik_{n}.md'),'w').write('\n'.join(L)+'\n')
 open(os.path.join(out,'02_KATALOG_FORMULARZY.md'),'w').write('\n'.join(cat)+'\n')
-src=os.path.join(root,'docs','claude_ai')
+src=os.path.join(root,'docs','wklad')
 for f in glob.glob(os.path.join(src,'*')): shutil.copy(f,out)
 print('paczka w',out,len(os.listdir(out)),'plików')

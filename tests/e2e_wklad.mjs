@@ -1,9 +1,9 @@
-// Wkład w przeglądarce: wklejenie JSON od Claude AI -> nowa sprawa, zakładka Zadania, statusy, panel w formularzu, trwałość, eksport, wydruk.
+// Wkład w przeglądarce: wklejenie JSON z analizy -> nowa sprawa, zakładka Zadania, statusy, panel w formularzu, trwałość, eksport, wydruk.
 import { chromium } from 'playwright-core';
 import fs from 'fs';
 const port = process.argv[2] || 8765, root = process.cwd() + '/';
 const ok = (v, m) => { console.log((v ? 'PASS ' : 'FAIL ') + m); if (!v) process.exitCode = 1; };
-const wklad = fs.readFileSync(root + 'docs/claude_ai/przyklad_wkladu.json', 'utf8');
+const wklad = fs.readFileSync(root + 'docs/wklad/przyklad_wkladu.json', 'utf8');
 const b = await chromium.launch({ executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', headless: true, args: ['--disable-gpu', '--no-sandbox'] });
 const ctx = await b.newContext({ viewport: { width: 1000, height: 1300 }, acceptDownloads: true });
 const p = await ctx.newPage(); const errs = []; p.on('pageerror', e => errs.push('' + e));

@@ -1,4 +1,4 @@
-# Instrukcja do projektu Claude AI – „wkład do formularzy oględzin”
+# Instrukcja do projektu analizy – „wkład do formularzy oględzin”
 
 *(Wklej całość do „Instrukcji projektu” albo na początku rozmowy. Pozostałe pliki z tej paczki wgraj do wiedzy projektu.)*
 
@@ -52,7 +52,7 @@ Zanim wyślesz wkład, sprawdź: każdy identyfikator w `pola` istnieje w odpowi
 
 ## Po oględzinach
 
-Biegły może wkleić **„Eksport dla Claude”** (Markdown z aplikacji): zawiera wypełnione pola z identyfikatorami `[01.A.2]` i stan wykonania zadań (wynik, jednostka, nr zdjęcia, niewykonane + powód). Wtedy zestaw wyniki z aktami i zadaniami: wskaż zadania niewykonane i ich skutki dla opinii, rozbieżności między aktami a oględzinami, braki do uzupełnienia. Identyfikatory w eksporcie mają to samo znaczenie co w słownikach.
+Biegły może wkleić **„Eksport tekstowy”** (Markdown z aplikacji): zawiera wypełnione pola z identyfikatorami `[01.A.2]` i stan wykonania zadań (wynik, jednostka, nr zdjęcia, niewykonane + powód). Wtedy zestaw wyniki z aktami i zadaniami: wskaż zadania niewykonane i ich skutki dla opinii, rozbieżności między aktami a oględzinami, braki do uzupełnienia. Identyfikatory w eksporcie mają to samo znaczenie co w słownikach.
 
 ## Styl
 

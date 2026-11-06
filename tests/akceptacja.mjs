@@ -134,14 +134,14 @@ await T('A7', 'Prywatność: zero żądań poza własnym serwerem; polityka CSP 
 // ---------- T8: repozytorium bez danych spraw ----------
 await T('A8', 'Repozytorium: brak plików spraw, PDF i danych osobowych (kontrola przed commitem)')(async () => {
   const files = execSync('git ls-files', { cwd: process.cwd() }).toString().split('\n').filter(Boolean);
-  const bad = files.filter(f => (/\.(pdf|heic|jpe?g)$/i.test(f)) || (f.endsWith('.json') && !/^(forms\/\d\d\.json|docs\/slownik_pol\.json|docs\/raport_zgodnosci\.json|docs\/claude_ai\/(przyklad_wkladu|schemat_wkladu)\.json)$/.test(f)));
+  const bad = files.filter(f => (/\.(pdf|heic|jpe?g)$/i.test(f)) || (f.endsWith('.json') && !/^(forms\/\d\d\.json|docs\/slownik_pol\.json|docs\/raport_zgodnosci\.json|docs\/wklad\/(przyklad_wkladu|schemat_wkladu)\.json)$/.test(f)));
   const hook = fs.existsSync(root + '.git/hooks/pre-commit');
   let leak = false; for (const f of files.filter(f => /\.(json|md|js|html)$/.test(f))) { const t = fs.readFileSync(root + f, 'utf8'); if (/"app"\s*:\s*"ogledziny"[\s\S]{0,400}"forms"\s*:\s*\[/.test(t) && !f.startsWith('tests/')) leak = true; }
   return { ok: !bad.length && hook && !leak, note: `${files.length} plików w repozytorium, niedozwolonych: ${bad.length}, hook pre-commit: ${hook}` };
 });
 
 // ---------- T9: wydruk i eksport ----------
-await T('A9', 'Wydruk do PDF i eksport dla Claude')(async () => {
+await T('A9', 'Wydruk do PDF i eksport tekstowy')(async () => {
   const out = execSync(`node tests/e2e_wydruk_eksport.mjs ${port} "${work}"`, { cwd: process.cwd() }).toString();
   return { ok: !/FAIL/.test(out), note: out.split('\n').filter(l => /PDF|liczba pól/.test(l)).map(l => l.replace('PASS ', '')).join('; ') };
 });
@@ -161,8 +161,8 @@ await T('A10', 'Silnik Safari (WebKit): wszystkie formularze renderują się, li
   return { ok: !bad.length && !errs.length, note: bad.join(', ') || 'zgodne' };
 });
 
-// ---------- T11: wkład od Claude AI i lista zadań ----------
-await T('A11', 'Wkład od Claude AI: wczytanie, wstępne wypełnienie, lista zadań, statusy, eksport, plik, wydruk')(async () => {
+// ---------- T11: wkład i lista zadań ----------
+await T('A11', 'Wkład: wczytanie, wstępne wypełnienie, lista zadań, statusy, eksport, plik, wydruk')(async () => {
   const u = execSync('node tests/wklad.mjs', { cwd: process.cwd() }).toString();
   const e = execSync(`node tests/e2e_wklad.mjs ${port}`, { cwd: process.cwd() }).toString();
   return { ok: !/FAIL/.test(u + e) && (u.match(/PASS/g) || []).length === 9 && (e.match(/PASS/g) || []).length === 15, note: `jednostkowe ${(u.match(/PASS/g) || []).length} + przeglądarka ${(e.match(/PASS/g) || []).length} kontroli` };

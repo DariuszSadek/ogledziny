@@ -1,4 +1,4 @@
-// „Eksport dla Claude”: Markdown z wypełnionymi polami w kolejności formularzy, z identyfikatorami pól.
+// „Eksport tekstowy”: Markdown z wypełnionymi polami w kolejności formularzy, z identyfikatorami pól.
 const val = v => String(v).replace(/\r/g, '').trim();
 const one = v => { const t = val(v); return t.includes('\n') ? '\n' + t.split('\n').map(l => '    > ' + l).join('\n') : ' ' + t; };
 const id = s => '`[' + s + ']`';
@@ -92,7 +92,7 @@ export function toMarkdown(C, DEFS, only = null) {
     const r = formSection(def, inst); total += r.filled; parts.push(r.text);
   }
   const meta = [
-    '# Oględziny – eksport dla Claude', '',
+    '# Oględziny – eksport tekstowy', '',
     `- Sygnatura / nr zlecenia: ${H.sygnatura || '(nie wpisano)'}`,
     `- Organ: ${H.organ || '(nie wpisano)'}`,
     `- Data: ${H.data || '(nie wpisano)'}`,

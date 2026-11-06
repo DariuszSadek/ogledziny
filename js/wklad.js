@@ -1,5 +1,5 @@
-// „Wkład do formularzy” od Claude AI: wstępne wypełnienie formularzy + lista zadań na oględziny.
-// Format: docs/format_wkladu.md (kopia dla Claude AI w ~/A_Oględziny/Dla_Claude_AI/). Nic nie jest odrzucane po cichu – raport.
+// „Wkład do formularzy” z analizy: wstępne wypełnienie formularzy + lista zadań na oględziny.
+// Format: docs/format_wkladu.md (kopia dla projektu analizy w ~/A_Oględziny/Paczka_wkladu/). Nic nie jest odrzucane po cichu – raport.
 import { indexDef, extraRowKey } from './defs.js';
 export const FORMAT = 'ogledziny-wklad';
 const idxCache = new Map();
@@ -9,7 +9,7 @@ const STAT = new Set(['', 'wykonane', 'niewykonane']);
 
 export function parseWklad(text) {
   let t = String(text || '').trim();
-  const m = /```(?:json)?\s*([\s\S]*?)```/i.exec(t); if (m) t = m[1].trim();         // odpowiedź Claude w bloku kodu
+  const m = /```(?:json)?\s*([\s\S]*?)```/i.exec(t); if (m) t = m[1].trim();         // odpowiedź w bloku kodu
   const a = t.indexOf('{'), b = t.lastIndexOf('}'); if (a > 0 && b > a) t = t.slice(a, b + 1);
   return JSON.parse(t);
 }
@@ -58,7 +58,7 @@ export function applyWklad(w, C, DEFS, uid) {
     if (pole) { const inst = C.forms.find(x => x.iid === iid), def = inst && DEFS[inst.formId]; poleOk = !!(def && (idxOf(def).ids.has(pole) || extraRowKey(idxOf(def), pole))); if (!poleOk) { R.warnings.push(`Zadanie ${id}: pole „${pole}” nie istnieje w formularzu – zachowano tylko jako tekst.`); } }
     const status = STAT.has(str(z.status)) ? str(z.status) : '';
     C.tasks.push({ id, iid, sekcja: str(z.sekcja), pole, poleOk, priorytet: /^(wysoki|niski)$/i.test(str(z.priorytet)) ? str(z.priorytet).toLowerCase() : 'normalny',
-      czynnosc, opis: str(z.opis), podstawa: str(z.podstawa), przyrzad: str(z.przyrzad), jednostka: str(z.jednostka), wynik: str(z.wynik), nr_zdjecia: str(z.nr_zdjecia), status, powod: str(z.powod), zrodlo: 'claude' });
+      czynnosc, opis: str(z.opis), podstawa: str(z.podstawa), przyrzad: str(z.przyrzad), jednostka: str(z.jednostka), wynik: str(z.wynik), nr_zdjecia: str(z.nr_zdjecia), status, powod: str(z.powod), zrodlo: 'wklad' });
     R.tasks++;
   });
   C.notesGeneral = [...(C.notesGeneral || []), ...(w.uwagi_ogolne || []).map(str).filter(Boolean)];

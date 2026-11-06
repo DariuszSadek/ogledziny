@@ -1,4 +1,4 @@
-// Test wkładu: przykład z docs/claude_ai/przyklad_wkladu.json musi się wczytać bez pominięć; sprawdza też odrzucanie błędów.
+// Test wkładu: przykład z docs/wklad/przyklad_wkladu.json musi się wczytać bez pominięć; sprawdza też odrzucanie błędów.
 import { applyWklad, parseWklad, reportWklad } from '../js/wklad.js';
 import fs from 'fs';
 const root = new URL('../', import.meta.url);
@@ -6,7 +6,7 @@ const DEFS = {}; for (const id of ['00','01','02','03','04','05','06','07','08',
 const ok = (v, m) => { console.log((v ? 'PASS ' : 'FAIL ') + m); if (!v) process.exitCode = 1; };
 let n = 0; const uid = () => 'u' + (++n);
 const mk = () => ({ header: { sygnatura: '', organ: '', data: '' }, forms: [], tasks: [], defVersions: {} });
-const text = fs.readFileSync(new URL('docs/claude_ai/przyklad_wkladu.json', root), 'utf8');
+const text = fs.readFileSync(new URL('docs/wklad/przyklad_wkladu.json', root), 'utf8');
 const C = mk(); const R = applyWklad(parseWklad('Oto wkład:\n```json\n' + text + '\n```\nKoniec'), C, DEFS, uid);
 ok(R.rejected.length === 0 && R.warnings.length === 0, 'przykład bez pominięć i ostrzeżeń: ' + reportWklad(R).split('\n')[0]);
 ok(C.forms.length === 5 && C.tasks.length === 4 && C.header.sygnatura === 'II K 123/26', 'formularze 5, zadania 4, nagłówek');
