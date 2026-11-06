@@ -15,8 +15,7 @@
    "etykieta": "Karta czynności – wezwanie Policji",
    "pola": {
     "00.A.6": "KMP Kielce, Wydział Ruchu Drogowego",
-    "00.A.7": "RSD-1234/26",
-    "00.A.12": "Kielce, ul. Warszawska / ul. Krakowska"
+    "00.A.7": "RSD-1234/26"
    },
    "przypomnienia": [
     "Fotografuj ślady nietrwałe przed jakąkolwiek ingerencją",
@@ -32,7 +31,8 @@
     "01.A.7": "ul. Warszawska / ul. Krakowska"
    },
    "przypomnienia": [
-    "Zweryfikować położenie SPO – protokół Policji podaje inne odległości niż szkic"
+    "Zweryfikować położenie SPO – protokół Policji podaje inne odległości niż szkic",
+    "Lokalizacja z akt: Kielce, ul. Warszawska / ul. Krakowska – współrzędne GPS zapisać na miejscu (przycisk GPS w polu 01.A.9)"
    ]
   },
   {

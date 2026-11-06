@@ -42,13 +42,13 @@ Plik JSON (UTF-8). Aplikacja „Oględziny” wczytuje go przez „Nowa sprawa z
 
 **Główne.** `format` (stała `ogledziny-wklad`) i `wersja` (liczba `1`) – wymagane. `rewizja` – numer poprawki (informacyjnie).
 
-**`sprawa`** – `sygnatura`, `organ`, `data`: wspólne dane nagłówka (w aplikacji wpisywane raz; przy dołączaniu do istniejącej sprawy nie nadpisują wpisanych). `opis` – tekst informacyjny.
+**`sprawa`** – `sygnatura`, `organ`, `data`: wspólne dane nagłówka sprawy (zakładka Sprawa; przy dołączaniu do istniejącej sprawy uzupełniają tylko puste pola). `data` to **data zdarzenia** (informacyjna) – pojawia się w nagłówku sprawy i eksportu, **nie** trafia do pól „Data” / „Data oględzin” w formularzach (tych nie wypełniaj we wkładzie). `sygnatura` i `organ` także nie są kopiowane do pól formularzy – wpisz je w `pola`, jeśli mają tam być. `opis` – tekst informacyjny (dopisywany do opisu sprawy).
 
 **`formularze[]`** (kolejność dowolna)
 - `ref` – unikalna krótka nazwa egzemplarza (A, B, M1…); do niej odwołują się zadania.
 - `formularz` – numer `"00"`…`"09"` jako tekst.
 - `etykieta` – nazwa pokazywana w aplikacji.
-- `pola` – obiekt `identyfikator → wartość` (identyfikatory ze słowników `slownik_NN.md`). Wartość: tekst lub liczba (zapisywana jak podano). Pole wyboru: `true`. Nie wpisuj: wyników oględzin, szkiców, tabel „Zadania specjalne” (sekcja Z). Dodatkowe wiersze tabel (`…rN.cM`, N większe niż liczba wierszy we wzorze) są dozwolone.
+- `pola` – obiekt `identyfikator → wartość` (identyfikatory ze słowników `slownik_NN.md`). Wartość: tekst lub liczba (zapisywana jak podano). Pole wyboru: `true`. Nie wpisuj: wyników oględzin, szkiców, dat oględzin, tabel „Zadania specjalne” (sekcja Z). **Pola `gps` i `time`:** przyciski „GPS” i „Teraz” w terenie zastępują cały wpis w polu (bez pytania) – pola `gps` zostaw puste albo wpisz tylko współrzędne dziesiętne („50.123456, 20.123456”); adres wpisuj w polach tekstowych lub w `przypomnienia`. Dodatkowe wiersze tabel (`…rN.cM`, N większe niż liczba wierszy we wzorze) są dozwolone.
 - `przypomnienia` – lista krótkich tekstów pokazywanych na górze formularza w terenie.
 
 **`zadania[]`**
@@ -61,6 +61,13 @@ Plik JSON (UTF-8). Aplikacja „Oględziny” wczytuje go przez „Nowa sprawa z
 - `wynik`, `nr_zdjecia`, `status` (`""` | `"wykonane"` | `"niewykonane"`), `powod` – wypełnia biegły w aplikacji; we wkładzie puste.
 
 **`uwagi_ogolne[]`** – ogólne rzeczy do pamiętania (nie przypisane do formularza).
+
+## Dołączanie wkładu i rewizje (faktyczne zachowanie aplikacji)
+
+- **„Nowa sprawa z wkładu”** tworzy nową sprawę (jeśli bieżąca ma zmiany niezapisane do pliku, aplikacja pyta o potwierdzenie).
+- **„Dołącz wkład”** do istniejącej sprawy zawsze **dokłada**, niczego nie aktualizuje ani nie scala: każdy element `formularze[]` staje się **nowym egzemplarzem** (gdy taki `ref` już jest w sprawie, dostaje dopisek `*`), każde zadanie – **nowym zadaniem** (powtórzone `id` dostaje `*`). Istniejące formularze, wpisane wyniki, statusy i powody zadań **nie są zmieniane ani usuwane**. Nagłówek sprawy: uzupełniane są tylko puste pola; `uwagi_ogolne` są dopisywane.
+- `rewizja` jest tylko informacją – aplikacja jej nie porównuje.
+- **Skutek:** wczytanie rewizji 2 przez „Dołącz wkład” do sprawy, w której już coś jest, **podwoi** formularze i zadania. Zalecenie: rewizję wczytuj jako **nową sprawę** przed oględzinami; gdy są już wyniki, wczytaj tylko **uzupełnienie** (nowe zadania z nowymi `id`; zadanie może wskazać istniejący formularz jego `ref`; nie powtarzaj formularzy ani zadań już wczytanych).
 
 ## Zasady walidacji w aplikacji
 
