@@ -1,0 +1,22 @@
+// Pomoc w aplikacji: przycisk, treść, kopiowanie polecenia i instrukcji projektu do schowka, działanie offline.
+import { chromium } from 'playwright-core';
+const port = process.argv[2] || 8765;
+const ok = (v, m) => { console.log((v ? 'PASS ' : 'FAIL ') + m); if (!v) process.exitCode = 1; };
+const b = await chromium.launch({ executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', headless: true, args: ['--disable-gpu', '--no-sandbox'] });
+const ctx = await b.newContext({ viewport: { width: 834, height: 1194 }, permissions: ['clipboard-read', 'clipboard-write'] });
+const p = await ctx.newPage(); const errs = []; p.on('pageerror', e => errs.push('' + e));
+await p.goto(`http://localhost:${port}/`); await p.waitForSelector('text=Nowa sprawa'); await p.evaluate(() => navigator.serviceWorker.ready); await p.waitForTimeout(800);
+await ctx.setOffline(true);
+await p.click('#btn-help'); await p.waitForSelector('dialog[open] .help');
+const txt = await p.textContent('dialog .help');
+ok(/Przygotuj wkład do formularzy oględzin dla tej sprawy/.test(txt) && /Nowa sprawa z wkładu/.test(txt) && /Dołącz wkład/.test(txt) && /Zapisz plik/.test(txt), 'Pomoc: kroki wkładu, zapis');
+ok(!/claude|\bAI\b/i.test(txt), 'Pomoc: bez wzmianek o AI');
+await p.click('dialog button:has-text("Kopiuj to polecenie")');
+ok(await p.evaluate(() => navigator.clipboard.readText()) === 'Przygotuj wkład do formularzy oględzin dla tej sprawy.', 'schowek: polecenie');
+await p.click('dialog button:has-text("Kopiuj instrukcję dla projektu analizy")'); await p.waitForTimeout(500);
+const clip = await p.evaluate(() => navigator.clipboard.readText());
+ok(clip.startsWith('PLIK 1: 00_INSTRUKCJA_PROJEKTU.md') && /Daty\./.test(clip) && /SPOZA WYPOSAŻENIA/.test(clip) && clip.length > 12000 && !/claude|\bAI\b/i.test(clip), 'schowek: instrukcja projektu (' + clip.length + ' znaków, offline)');
+await p.click('dialog button:has-text("Zamknij")');
+await p.click('text=Nowa sprawa'); await p.waitForSelector('.titleband'); await p.click('#btn-help'); await p.waitForSelector('dialog[open] .help'); ok(true, 'Pomoc dostępna także w otwartej sprawie');
+await p.screenshot({ path: process.argv[3] || 'pomoc.png' });
+console.log('errs', errs); await b.close();

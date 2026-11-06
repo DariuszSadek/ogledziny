@@ -212,3 +212,10 @@ ul.rem{margin:6px 0;padding-left:20px}ul.rem li{margin:3px 0}
 .flash{outline:4px solid #ffb703;outline-offset:3px;transition:outline .3s}
 dialog select{font:inherit;font-size:17px;min-height:46px;width:100%;margin:4px 0 8px}
 @media print{.tsm{font-size:7pt;color:#444}.ttab{width:100%;border-collapse:collapse;font-size:8pt}.ttab th,.ttab td{border:.2mm solid #8a99ad;padding:1mm 1.5mm;vertical-align:top;text-align:left}.ttab th{background:#e9eef5;color:#1f3b5f}.tpanel{display:none !important}}
+
+dialog:has(.help){max-width:min(820px,94vw);max-height:90vh;overflow:auto}
+.help-sec{margin:0 0 12px}.help-sec h3{margin:10px 0 4px;color:var(--navy);font-size:16px}
+.help ol,.help ul{margin:4px 0 8px;padding-left:22px;font-size:15px;line-height:1.4}.help li{margin:4px 0}
+.help button{margin:4px 6px 4px 0}
+@media (max-width:760px){#bar-actions{flex-wrap:wrap}}
+@media print{#btn-help{display:none}}

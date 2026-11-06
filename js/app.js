@@ -6,6 +6,7 @@ import { APP_VERSION } from './version.js';
 import { toMarkdown } from './export.js';
 import { parseWklad, applyWklad, reportWklad } from './wklad.js';
 import { taskCard, taskPanel, renderTasksView, counts } from './tasks.js';
+import { showHelp } from './pomoc.js';
 
 const $ = id => document.getElementById(id);
 const FORM_IDS = ['00', '01', '02', '03', '04', '05', '06', '07', '08', '09'];
@@ -228,6 +229,7 @@ $('file-input').addEventListener('change', async e => {
 });
 $('btn-save').addEventListener('click', saveFile);
 $('btn-open').addEventListener('click', openFile);
+$('btn-help').addEventListener('click', () => showHelp({ dialog, toast }));
 $('btn-home').addEventListener('click', () => go('home'));
 
 // ---------- zadania i wkład ----------

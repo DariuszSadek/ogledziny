@@ -168,6 +168,12 @@ await T('A11', 'Wkład: wczytanie, wstępne wypełnienie, lista zadań, statusy,
   return { ok: !/FAIL/.test(u + e) && (u.match(/PASS/g) || []).length === 9 && (e.match(/PASS/g) || []).length === 15, note: `jednostkowe ${(u.match(/PASS/g) || []).length} + przeglądarka ${(e.match(/PASS/g) || []).length} kontroli` };
 });
 
+// ---------- T12: pomoc w aplikacji ----------
+await T('A12', 'Pomoc w aplikacji (offline): instrukcja wkładu, kopiowanie polecenia i instrukcji projektu do schowka')(async () => {
+  const e = execSync(`node tests/e2e_pomoc.mjs ${port} "${work}/pomoc.png"`, { cwd: process.cwd() }).toString();
+  return { ok: !/FAIL/.test(e) && (e.match(/PASS/g) || []).length === 5, note: `${(e.match(/PASS/g) || []).length} kontroli` };
+});
+
 // ---------- raport ----------
 const pass = results.filter(r => r.ok).length;
 const md = ['# Raport testów akceptacyjnych (część automatyczna)', '', `Wygenerowano: ${new Date().toISOString()} (tests/akceptacja.mjs). Wynik: **${pass} / ${results.length}** zaliczonych.`, '',

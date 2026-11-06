@@ -59,4 +59,9 @@ for f in sorted(glob.glob(os.path.join(root,'forms','[0-9][0-9].json'))):
 open(os.path.join(out,'02_KATALOG_FORMULARZY.md'),'w').write('\n'.join(cat)+'\n')
 src=os.path.join(root,'docs','wklad')
 for f in glob.glob(os.path.join(src,'*')): shutil.copy(f,out)
+# kopia instrukcji do aplikacji (przycisk „Pomoc” → „Kopiuj instrukcję projektu”)
+with open(os.path.join(out,'WKLEJ_DO_ROZMOWY.md'),'w',encoding='utf-8') as w:
+    for title,f in (('PLIK 1: 00_INSTRUKCJA_PROJEKTU.md','00_INSTRUKCJA_PROJEKTU.md'),('PLIK 2: 01_FORMAT_WKLADU.md','01_FORMAT_WKLADU.md')):
+        w.write(title+'\n\n'+open(os.path.join(src,f),encoding='utf-8').read()+'\n\n'+('='*42)+'\n')
+shutil.copy(os.path.join(out,'WKLEJ_DO_ROZMOWY.md'),os.path.join(root,'assets','wklad_instrukcja.md'))
 print('paczka w',out,len(os.listdir(out)),'plików')
