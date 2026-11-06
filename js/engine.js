@@ -52,6 +52,7 @@ function renderBlock(def, s, b, ctx) {
     case 'group': return groupEl(b, ctx);
     case 'checklist': return h('div', { class: 'checklist' }, b.items.map(c => checkEl(c, ctx)));
     case 'table': return tableEl(b, ctx);
+    case 'stable': return stableEl(b);
     case 'figure': return figureEl(b, ctx);
     case 'note': return h('div', { class: 'note', text: b.text });
     case 'subhead': return h('div', { class: 'subhead', text: b.text });
@@ -202,4 +203,20 @@ function figureEl(b, ctx) {
     box.append(el);
   }
   return h('div', { class: 'figwrap' }, box);
+}
+
+// Tabela statyczna (tylko tekst), np. wymagane wskaźniki skuteczności hamowania.
+function stableEl(b) {
+  const n = b.heads.length;
+  const tpl = `minmax(0,1.5fr) ${Array(n - 1).fill('minmax(0,1fr)').join(' ')}`;
+  const wrap = h('div', { class: 'tbl stbl' });
+  const head = h('div', { class: 'thead' }); head.style.gridTemplateColumns = tpl;
+  for (const t of b.heads) head.append(h('div', { text: t }));
+  wrap.append(head);
+  for (const row of b.rows) {
+    const r = h('div', { class: 'trow' }); r.style.gridTemplateColumns = tpl;
+    row.forEach((c, i) => r.append(h('div', { class: 'cell', data: { h: b.heads[i] }, text: c })));
+    wrap.append(r);
+  }
+  return wrap;
 }

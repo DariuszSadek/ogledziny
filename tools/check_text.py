@@ -10,6 +10,9 @@ def walk(o):
         for k,v in o.items():
             if k in('label','text','head','lead','title','subtitle','t') and isinstance(v,str): txt.append(v)
             elif k=='labels': txt.extend(v)
+            elif k=='heads': txt.extend(v)
+            elif k=='rows' and v and isinstance(v[0],list) and v[0] and isinstance(v[0][0],str):
+                for rr in v: txt.extend(rr)
             elif k=='runs': pass
             else: walk(v)
     elif isinstance(o,list):

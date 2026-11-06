@@ -91,7 +91,8 @@ function render() {
   const nav = $('secnav'); nav.hidden = false; nav.replaceChildren();
   layoutSticky();
   for (const s of def.sections) nav.append(h('button', { type: 'button', text: s.id, title: s.title, onclick: () => document.getElementById(`sec-${def.id}-${s.id}`).scrollIntoView({ block: 'start' }) }));
-  requestAnimationFrame(() => main.querySelectorAll('textarea').forEach(grow));
+  layoutSticky();
+  requestAnimationFrame(() => { main.querySelectorAll('textarea').forEach(grow); layoutSticky(); });
 }
 function layoutSticky() {
   const bh = $('bar').offsetHeight + ($('update-banner').hidden ? 0 : $('update-banner').offsetHeight);

@@ -223,7 +223,57 @@ def build_section(sec):
                 if r['p']!=good[-1]['p']: break
                 if all(any(abs(x-sx)<=2 for sx in sig) for x in xs) and len(xs)>=max(2,len(sig)-2) and r['top']-good[-1]['top']<45: good.append(r)
                 else: break
-        if not good: continue
+        if not good:
+            hs=sorted(b['runs'],key=lambda r:r['x0'])
+            if len(hs)>=2:
+                body=sorted([(p,r) for p,r in runs if p==b['p'] and id(r) not in used_r and r['top']>b['bot']-0.5 and r['cls'] in('opt','lab')],key=lambda t:(t[1]['top'],t[1]['x0']))
+                lines=[];last=b['bot']-3
+                for p,r in body:
+                    if r['top']-last>15 and not (lines and abs(r['top']-lines[-1]['top'])<2.5): break
+                    if lines and abs(r['top']-lines[-1]['top'])<2.5: lines[-1]['rs'].append(r)
+                    else:
+                        if lines and r['top']-lines[-1]['top']>15: break
+                        lines.append({'top':r['top'],'rs':[r]})
+                    last=r['top']
+                if len(lines)>=2 and any(len(l['rs'])>=2 for l in lines):
+                    # komórki w linii: fragmenty rozdzielone odstępem >10 pt
+                    lcells=[]
+                    for l in lines:
+                        cs=[]
+                        for r in sorted(l['rs'],key=lambda r:r['x0']):
+                            if cs and r['x0']-cs[-1]['x1']<=10: cs[-1]['t']+=' '+r['t'];cs[-1]['x1']=r['x1']
+                            else: cs.append({'x0':r['x0'],'x1':r['x1'],'t':r['t']})
+                            used_r.add(id(r))
+                        lcells.append(cs)
+                    xs0=sorted(c['x0'] for cs in lcells for c in cs)
+                    cl=[]
+                    for x in xs0:
+                        if cl and x-cl[-1][-1]<=10: cl[-1].append(x)
+                        else: cl.append([x])
+                    lefts=[sum(c)/len(c) for c in cl]
+                    if len(lefts)!=len(hs): lefts=[(h['x0']+h['x1'])/2 for h in hs]
+                    rowsS=[]
+                    for cs in lcells:
+                        cells=['']*len(hs)
+                        for c in cs:
+                            ci=min(range(len(lefts)),key=lambda i:abs(lefts[i]-c['x0']))
+                            cells[ci]=(cells[ci]+' '+c['t']).strip()
+                        rowsS.append(cells)
+                    tops=[l['top'] for l in lines]
+                    # komórki zawinięte/wyśrodkowane w pionie: wiersz z jedną niepustą komórką scal z sąsiednim
+                    i=0
+                    while i<len(rowsS):
+                        ne=[k for k,v in enumerate(rowsS[i]) if v]
+                        if len(ne)==1 and len(rowsS)>1:
+                            c=ne[0]
+                            if i+1<len(rowsS) and tops[i+1]-tops[i]<=9.5 and not rowsS[i+1][c] and any(rowsS[i+1]):
+                                rowsS[i+1][c]=rowsS[i][c];del rowsS[i];del tops[i];continue
+                            if i>0 and tops[i]-tops[i-1]<=9.5 and any(rowsS[i-1]):
+                                rowsS[i-1][c]=(rowsS[i-1][c]+' '+rowsS[i][c]).strip();del rowsS[i];del tops[i];continue
+                        i+=1
+                    for r in b['runs']: used_r.add(id(r))
+                    units.append({'y':Y(b['p'],b),'x':0,'k':'stable','heads':[h['t'] for h in hs],'rows':rowsS})
+            continue
         for r in b['runs']: used_r.add(id(r))
         for r in good:
             for w in r['ws']: used_w.add(id(w))
@@ -422,6 +472,8 @@ for s in sections:
             rows=[[({'id':f'{FID}.{sid}.t{tn}.r{ri+1}.c{ci+1}','pdf':w['pdf']} if w else None) for ci,w in enumerate(row)] for ri,row in enumerate(t['grid'])]
             ob.append({'k':'table','tid':f't{tn}','prefix':f'{FID}.{sid}.t{tn}','lead':(t['lead'] if hasl else None),'groups':t['groups'],'leadw':round(t['colx'][0]-t['leadx'],1) if hasl else 0,'labels':t['labels'],
                        'cols':[{'head':c['head'],'w':c['w'],'type':ftype(c['sub'] or c['head'],c['kind'])} for c in t['cols']],'rows':rows,'rowh':round(t['rowh'],1)})
+        elif k=='stable':
+            ob.append({'k':'stable','heads':b['heads'],'rows':b['rows']})
         elif k=='figure':
             f=dict(b['fig'])
             for sp in f['spots']: sp['id']=nid()
@@ -443,6 +495,9 @@ def _collect(o,acc):
         for k,v in o.items():
             if k in('label','text','head','lead','title','subtitle','t') and isinstance(v,str): acc.append(v)
             elif k=='labels': acc.extend(v)
+            elif k=='heads': acc.extend(v)
+            elif k=='rows' and isinstance(v,list) and v and isinstance(v[0],list) and v[0] and isinstance(v[0][0],str):
+                for rr in v: acc.extend(rr)
             elif k=='runs': pass
             else: _collect(v,acc)
     elif isinstance(o,list):
