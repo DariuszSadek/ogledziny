@@ -1,6 +1,6 @@
 {
  "format": "ogledziny-wklad",
- "wersja": 1,
+ "wersja": 2,
  "rewizja": 1,
  "sprawa": {
   "sygnatura": "II K 123/26",
@@ -8,6 +8,22 @@
   "data": "2026-11-06",
   "opis": "PRZYKŁAD (dane fikcyjne): zderzenie samochodu osobowego z motocyklem na skrzyżowaniu, spór o prędkość i widoczność."
  },
+ "zalaczniki": [
+  {
+   "id": "S1",
+   "rodzaj": "szkic",
+   "podstawa": "k. 12 – szkic miejsca zdarzenia sporządzony przez Policję (PRZYKŁAD)",
+   "opis": "Szkic Policji ze skrzyżowaniem, położeniem końcowym pojazdów i śladem hamowania",
+   "cel": "Odtworzyć położenia punktów odniesienia i zmierzyć odległości przecinające się ze szkicem"
+  },
+  {
+   "id": "F1",
+   "rodzaj": "zdjęcie",
+   "podstawa": "k. 14, zdjęcie 3 (PRZYKŁAD)",
+   "opis": "Zdjęcie z miejsca zdarzenia w kierunku skrzyżowania",
+   "cel": "Odtworzyć stanowisko fotografującego i porównać widoczność"
+  }
+ ],
  "formularze": [
   {
    "ref": "K",
@@ -91,7 +107,8 @@
    "podstawa": "protokół oględzin Policji (nr karty do uzupełnienia) – brak powiązania z punktem stałym",
    "przyrzad": "kółko pomiarowe Nivel M100, taśma 20 m, aparat",
    "jednostka": "m",
-   "priorytet": "wysoki"
+   "priorytet": "wysoki",
+   "zalacznik": "S1"
   },
   {
    "id": "Z02",
@@ -102,7 +119,8 @@
    "podstawa": "szkic Policji (nr karty do uzupełnienia)",
    "przyrzad": "kółko pomiarowe Nivel M100, łata 5 m",
    "jednostka": "m",
-   "priorytet": "wysoki"
+   "priorytet": "wysoki",
+   "zalacznik": "F1"
   },
   {
    "id": "Z03",

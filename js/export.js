@@ -88,7 +88,7 @@ function materialMd(C) {
     L.push(`### ${a.id} · ${a.rodzaj}${a.opis ? ' – ' + a.opis : ''}`, '', `- podstawa w aktach: ${a.podstawa || '(nie wpisano)'}`);
     if (a.cel) L.push(`- cel: ${a.cel}`);
     const nAnn = a.ann ? a.ann.strokes.length + a.ann.lines.length + a.ann.texts.length : 0;
-    L.push(`- plik: ${a.name || ''}, ${a.w}×${a.h} px; adnotacje: ${nAnn ? nAnn + ' elementów (obraz z adnotacjami w pliku sprawy / wydruku)' : 'brak'}; punktów: ${(a.rows || []).length}`);
+    L.push(a.oczekuje ? '- plik: DO DOŁĄCZENIA (nie dołączono kopii z akt); punktów: ' + (a.rows || []).length : `- plik: ${a.name || ''}, ${a.w}×${a.h} px; adnotacje: ${nAnn ? nAnn + ' elementów (obraz z adnotacjami w pliku sprawy / wydruku)' : 'brak'}; punktów: ${(a.rows || []).length}`);
     const rows = (a.rows || []).filter(r => ['co', 'wynik', 'jednostka', 'przyrzad', 'nr_zdjecia', 'uwagi'].some(k => r[k]) || true);
     if (rows.length) {
       const cell = v => String(v || '').replace(/\|/g, '/').replace(/\n/g, ' ');

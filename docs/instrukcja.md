@@ -45,6 +45,8 @@ Nie czyść danych witryn w ustawieniach Safari – wyczyści to bufor (plik w i
 5. Zapisz plik sprawy i jedź na oględziny (iPad). Po powrocie otwórz plik na MacBooku, zrób **Eksport tekstowy** – w eksporcie jest stan wykonania zadań (wynik, jednostka, nr zdjęcia, niewykonane + powód) obok wypełnionych pól – i wklej go do projektu analizy.
 6. Wydruk całej sprawy do PDF zaczyna się od listy zadań.
 
+**Załączniki z wkładu (wersja 2).** Wkład może wskazać szkice Policji i zdjęcia z akt do zabrania w teren. W zakładce „Materiał z akt” pojawią się jako „DO DOŁĄCZENIA” z podstawą (k. …) i celem. Przed wyjazdem kliknij przy każdym „Dołącz plik” i wybierz kopię z akt; opis, podstawa i powiązane zadania zostają. Wkład w wersji 1 nadal działa.
+
 ## 3b. Materiał z akt: szkic Policji i zdjęcia w terenie
 
 1. Zakładka **Materiał z akt** → **Dodaj plik** (Mac albo iPad): JPG, PNG, HEIC, PDF. Każda strona PDF to osobny obraz (dla wielostronicowego PDF podajesz zakres stron, np. `1-3,5`). Wpisz rodzaj (szkic / zdjęcie / inne), **podstawę w aktach** (k. …, nr zdjęcia), opis i cel. Załączniki dostają numery S1, F1, I1…

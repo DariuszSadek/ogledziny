@@ -13,7 +13,8 @@ Gdy biegły poprosi o **wkład do formularzy** (albo „przygotuj oględziny”,
 1. **utworzy potrzebne egzemplarze formularzy** (np. dwa razy formularz 03 dla pojazdów A i B, cztery razy 07 dla opon, jeden raz 01 dla miejsca zdarzenia),
 2. **wstępnie wypełni pola identyfikacyjne i organizacyjne dane z akt** (marka, model, VIN, nr rejestracyjny, organ, sygnatura, data zdarzenia, dane opon itd.),
 3. **poda listę zadań** – co dokładnie obejrzeć, zmierzyć, sfotografować, zabezpieczyć i sprawdzić, z uzasadnieniem w aktach (k. …), przyrządem i priorytetem,
-4. **doda krótkie przypomnienia** do każdego formularza (rzeczy, o których biegły ma pamiętać na miejscu).
+4. **doda krótkie przypomnienia** do każdego formularza (rzeczy, o których biegły ma pamiętać na miejscu),
+5. **wskaże materiał z akt do zabrania w teren** (`zalaczniki`): które szkice Policji i które zdjęcia z akt biegły ma mieć w aplikacji, z podstawą (k. …) i celem. Aplikacja utworzy puste miejsca „do dołączenia”, a biegły sam dołączy kopie plików przed wyjazdem.
 
 Biegły może potem coś dopisać lub zmienić (w aplikacji i u Ciebie – wtedy zwróć **cały poprawiony JSON** jeszcze raz, ze zwiększonym numerem `rewizja`).
 
@@ -46,13 +47,15 @@ Biegły może potem coś dopisać lub zmienić (w aplikacji i u Ciebie – wtedy
 - Układ zadań: najpierw rzeczy **ulotne i nieodwracalne** (ślady nietrwałe, oświetlenie, wskazania przyrządów, stan przed przesunięciem pojazdów), potem trwałe. Zadania sprzężone (np. pomiar toru hamowania + odniesienie do SPO/SLO1/SLO2) opisuj tak, żeby wynik dało się powiązać z formularzem.
 - Myśl jak biegły: co rozstrzygnie sporne ustalenia, jakie hipotezy trzeba sprawdzić lub wykluczyć, jakie dane z akt są niepełne lub sprzeczne i jak je zweryfikować w terenie (np. rozbieżne położenia końcowe w dwóch protokołach, nieczytelna rejestracja, daty opon, stan hamulców, widoczność, nawierzchnia i jej przyczepność, oświetlenie, oznakowanie, rejestratory i kamery do zabezpieczenia).
 
+**D2. Materiał z akt (`zalaczniki`).** Wybierz **tylko** to, co przyda się na miejscu: szkic Policji (S1, S2…) i zdjęcia z akt (F1, F2…), z których da się odtworzyć stanowisko fotografującego, zmierzyć odległość między punktami, porównać widoczność, rozpoznać ślady lub położenia końcowe. Nie dołączaj całych akt ani dokumentów tekstowych. Przy każdym: `rodzaj` (`szkic` | `zdjęcie` | `inne`), `podstawa` (**prawdziwe** k. … i numer zdjęcia – zasada A), `opis` (co przedstawia) i `cel` (po co w terenie – konkretnie). Zadania powiąż z załącznikiem polem `zalacznik` (np. „zmierz odległość P1–P2 wskazaną na szkicu” → `"zalacznik": "S1"`). Pliku nie przekażesz – biegły dołączy kopię z akt sam; dlatego **podaj w podsumowaniu listę: id załącznika → karta w aktach**, żeby wiedział, co skopiować. Gdy numeru karty nie widzisz, napisz „nr karty do uzupełnienia”.
+
 **E. Przypomnienia** (`przypomnienia` przy formularzu i `uwagi_ogolne`): krótkie, praktyczne („Zabezpiecz zdjęcie tabliczki znamionowej przed demontażem”, „Zapytaj policjanta o miejsce zabezpieczenia rzeczy”, „BRAK W AKTACH: długość śladu hamowania z protokołu – zmierzyć niezależnie”).
 
 **F. Wynik pracy.** Odpowiedź ma mieć dwie części:
 1. **Krótkie podsumowanie dla biegłego** (po polsku, kilka zdań/wypunktowań): ile formularzy, najważniejsze zadania priorytetowe, czego brakuje w aktach i o co warto zapytać przed wyjazdem. Zadaj pytania, jeśli bez odpowiedzi nie da się rozstrzygnąć liczby egzemplarzy lub kluczowych danych.
 2. **Jeden blok kodu `json`** z kompletnym wkładem. Tylko poprawny JSON (UTF-8, bez komentarzy, bez końcowych przecinków). Sam JSON bez żadnego tekstu w środku. Biegły skopiuje go i wklei do aplikacji („Nowa sprawa z wkładu”).
 
-Zanim wyślesz wkład, sprawdź: każdy identyfikator w `pola` istnieje w odpowiednim `slownik_NN.md` i dotyczy właściwego formularza; pola `check` mają `true`; `ref` są unikalne; każde `zadanie.formularz` wskazuje istniejący `ref` albo `"ogolne"`; żadnych wymyślonych numerów kart.
+Zanim wyślesz wkład, sprawdź: każdy identyfikator w `pola` istnieje w odpowiednim `slownik_NN.md` i dotyczy właściwego formularza; pola `check` mają `true`; `ref` są unikalne; każde `zadanie.formularz` wskazuje istniejący `ref` albo `"ogolne"`; każde `zadanie.zalacznik` wskazuje `id` z `zalaczniki`; `wersja` = 2; żadnych wymyślonych numerów kart.
 
 **G. Jedna odpowiedź.** Ta instrukcja ma pierwszeństwo przed trybem krokowym i pytaniami „Kontynuować?”: **zwróć cały wkład w jednej odpowiedzi** (podsumowanie + kompletny blok `json`), bez dzielenia na części i bez przerywania w połowie. Jeśli materiału jest dużo, skróć opisy, ale nie dziel JSON-a. Pytaj tylko o to, bez czego nie da się ustalić liczby egzemplarzy formularzy lub kluczowych danych – i wtedy zadaj pytania **przed** wkładem. Ta instrukcja ma też pierwszeństwo przed zasadą korzystania z konektora wiedza-rzeczoznawstwo: do przygotowania wkładu nie inicjalizuj bazy, nie wykonuj semantic_search ani wyszukiwań w internecie – pracuj wyłącznie na materiale projektu i plikach paczki, chyba że biegły wyraźnie o to poprosi.
 
@@ -72,7 +75,7 @@ Po polsku, rzeczowo, bez ozdobników. Zwięźle w JSON-ie (bez powtórzeń), ale
 ==========================================
 PLIK 2: 01_FORMAT_WKLADU.md
 
-# Format wkładu `ogledziny-wklad` (wersja 1)
+# Format wkładu `ogledziny-wklad` (wersja 2)
 
 Plik JSON (UTF-8). Aplikacja „Oględziny” wczytuje go przez „Nowa sprawa z wkładu” (ekran startowy) lub „Dołącz wkład” (zakładka Sprawa) – można wkleić tekst odpowiedzi (także z blokiem ```json) albo wskazać plik. Nic nie jest odrzucane po cichu: aplikacja pokazuje raport, co wczytała, a co pominęła i dlaczego.
 
@@ -81,9 +84,12 @@ Plik JSON (UTF-8). Aplikacja „Oględziny” wczytuje go przez „Nowa sprawa z
 ```json
 {
   "format": "ogledziny-wklad",
-  "wersja": 1,
+  "wersja": 2,
   "rewizja": 1,
   "sprawa": { "sygnatura": "", "organ": "", "data": "RRRR-MM-DD", "opis": "1–2 zdania o sprawie (opcjonalnie)" },
+  "zalaczniki": [
+    { "id": "S1", "rodzaj": "szkic", "podstawa": "k. 12 – szkic Policji", "opis": "Szkic miejsca zdarzenia", "cel": "Odtworzyć punkty odniesienia i zmierzyć odległości" }
+  ],
   "formularze": [
     {
       "ref": "A",
@@ -105,6 +111,7 @@ Plik JSON (UTF-8). Aplikacja „Oględziny” wczytuje go przez „Nowa sprawa z
       "przyrzad": "kółko pomiarowe Nivel M100",
       "jednostka": "m",
       "priorytet": "wysoki",
+      "zalacznik": "S1",
       "wynik": "", "nr_zdjecia": "", "status": "", "powod": ""
     }
   ],
@@ -114,9 +121,16 @@ Plik JSON (UTF-8). Aplikacja „Oględziny” wczytuje go przez „Nowa sprawa z
 
 ## Pola
 
-**Główne.** `format` (stała `ogledziny-wklad`) i `wersja` (liczba `1`) – wymagane. `rewizja` – numer poprawki (informacyjnie).
+**Główne.** `format` (stała `ogledziny-wklad`) i `wersja` (liczba `2`; wersja `1`, czyli bez `zalaczniki` i `zalacznik`, nadal się wczytuje) – wymagane. `rewizja` – numer poprawki (informacyjnie).
 
 **`sprawa`** – `sygnatura`, `organ`, `data`: wspólne dane nagłówka sprawy (zakładka Sprawa; przy dołączaniu do istniejącej sprawy uzupełniają tylko puste pola). `data` to **data zdarzenia** (informacyjna) – pojawia się w nagłówku sprawy i eksportu, **nie** trafia do pól „Data” / „Data oględzin” w formularzach (tych nie wypełniaj we wkładzie). `sygnatura` i `organ` także nie są kopiowane do pól formularzy – wpisz je w `pola`, jeśli mają tam być. `opis` – tekst informacyjny (dopisywany do opisu sprawy).
+
+**`zalaczniki[]`** (nowość w wersji 2) – materiał z akt, który biegły ma mieć w terenie pod ręką: szkice Policji, wybrane zdjęcia z akt, inne dokumenty graficzne. Aplikacja tworzy z nich puste miejsca **„do dołączenia”**; plik (JPG, PNG, HEIC, PDF) biegły dołącza sam, przed wyjazdem (przycisk „Dołącz plik” w zakładce „Materiał z akt”). Pliku nie da się przekazać we wkładzie.
+- `rodzaj` – `szkic` | `zdjęcie` | `inne` (wymagane, o ile `id` nie zaczyna się od litery S/F/I).
+- `id` – `S1`, `S2`… (szkic), `F1`… (zdjęcie), `I1`… (inne); opcjonalnie. Gdy brak, pasuje do rodzaju albo już istnieje w sprawie – aplikacja nada kolejny numer (zadania z wkładu nadal trafią do właściwego załącznika).
+- `podstawa` – **tylko prawdziwe odwołanie do akt** (k. …, nr zdjęcia) – to po nim biegły znajdzie oryginał do skopiowania. Gdy go nie znasz: nazwa dokumentu i „(nr karty do uzupełnienia)”.
+- `opis` – co przedstawia (jedno zdanie). `cel` – po co to w terenie (np. „odtworzyć stanowisko fotografującego”, „zmierzyć odległość między punktami wskazanymi na szkicu”).
+- Wskazuj tylko to, co **przyda się w terenie**: szkic Policji i zdjęcia, z których da się coś ustalić lub zmierzyć na miejscu. Nie dołączaj całych akt.
 
 **`formularze[]`** (kolejność dowolna)
 - `ref` – unikalna krótka nazwa egzemplarza (A, B, M1…); do niej odwołują się zadania.
@@ -131,6 +145,7 @@ Plik JSON (UTF-8). Aplikacja „Oględziny” wczytuje go przez „Nowa sprawa z
 - `formularz` – `ref` z `formularze[]` albo `"ogolne"`.
 - `sekcja` – litera sekcji formularza; `pole` – identyfikator pola (tylko gdy pewny; nieistniejący zostanie zapamiętany jako tekst z ostrzeżeniem).
 - `opis`, `podstawa` (k. … – tylko prawdziwe odwołania), `przyrzad`, `jednostka`.
+- `zalacznik` – `id` z `zalaczniki[]` (lub już istniejącego w sprawie), na którym biegły ma wykonać zadanie (np. pomiar punktów ze szkicu). W aplikacji zadanie ma wtedy przycisk „Do załącznika →”.
 - `priorytet`: `wysoki` | `normalny` | `niski`.
 - `wynik`, `nr_zdjecia`, `status` (`""` | `"wykonane"` | `"niewykonane"`), `powod` – wypełnia biegły w aplikacji; we wkładzie puste.
 
@@ -148,6 +163,7 @@ Plik JSON (UTF-8). Aplikacja „Oględziny” wczytuje go przez „Nowa sprawa z
 - Nieznany numer formularza → formularz pominięty (raport).
 - Identyfikator spoza formularza → pole pominięte (raport). Wartość inna niż tekst/liczba/`true` → pominięta.
 - Pole wyboru z wartością inną niż `true` → pominięte (raport); `false`/pusty → ignorowane.
+- Załącznik bez poprawnego rodzaju → pominięty (raport); bez `podstawa` → ostrzeżenie. `zalacznik` w zadaniu wskazujący nieistniejący załącznik → powiązanie pominięte (ostrzeżenie).
 - Zadanie bez `czynnosc` → pominięte. Zadanie z nieistniejącym `ref` → dodane jako ogólne (ostrzeżenie).
 
 ## Jak wygląda to po wczytaniu

@@ -1,7 +1,7 @@
 {
  "$schema": "https://json-schema.org/draft/2020-12/schema",
- "$id": "ogledziny-wklad-1",
- "title": "Wkład do formularzy oględzin (wersja 1)",
+ "$id": "ogledziny-wklad-2",
+ "title": "Wkład do formularzy oględzin (wersja 2; wersja 1 nadal wczytywana)",
  "type": "object",
  "required": [
   "format",
@@ -13,7 +13,10 @@
    "const": "ogledziny-wklad"
   },
   "wersja": {
-   "const": 1
+   "enum": [
+    1,
+    2
+   ]
   },
   "rewizja": {
    "type": "integer",
@@ -133,6 +136,10 @@
      },
      "powod": {
       "type": "string"
+     },
+     "zalacznik": {
+      "type": "string",
+      "description": "id załącznika z tablicy zalaczniki"
      }
     }
    }
@@ -141,6 +148,37 @@
    "type": "array",
    "items": {
     "type": "string"
+   }
+  },
+  "zalaczniki": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "rodzaj"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^[SFI][0-9]+$"
+     },
+     "rodzaj": {
+      "enum": [
+       "szkic",
+       "zdjęcie",
+       "inne"
+      ]
+     },
+     "podstawa": {
+      "type": "string"
+     },
+     "opis": {
+      "type": "string"
+     },
+     "cel": {
+      "type": "string"
+     }
+    }
    }
   }
  }

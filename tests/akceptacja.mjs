@@ -165,7 +165,7 @@ await T('A10', 'Silnik Safari (WebKit): wszystkie formularze renderują się, li
 await T('A11', 'Wkład: wczytanie, wstępne wypełnienie, lista zadań, statusy, eksport, plik, wydruk')(async () => {
   const u = execSync('node tests/wklad.mjs', { cwd: process.cwd() }).toString();
   const e = execSync(`node tests/e2e_wklad.mjs ${port}`, { cwd: process.cwd() }).toString();
-  return { ok: !/FAIL/.test(u + e) && (u.match(/PASS/g) || []).length === 9 && (e.match(/PASS/g) || []).length === 15, note: `jednostkowe ${(u.match(/PASS/g) || []).length} + przeglądarka ${(e.match(/PASS/g) || []).length} kontroli` };
+  return { ok: !/FAIL/.test(u + e) && (u.match(/PASS/g) || []).length === 14 && (e.match(/PASS/g) || []).length === 15, note: `jednostkowe ${(u.match(/PASS/g) || []).length} + przeglądarka ${(e.match(/PASS/g) || []).length} kontroli` };
 });
 
 // ---------- T12: pomoc w aplikacji ----------
@@ -179,6 +179,10 @@ const assets = process.env.ASSETS || '', old05 = process.env.OLD05 || '';
 await T('A13', 'Materiał z akt: JPG/PNG/PDF, przeglądarka, adnotacje, punkty i tabela, trwałość, plik sprawy, eksport, wydruk, zadanie↔załącznik, brak miejsca')(async () => {
   const e = execSync(`node tests/e2e_material.mjs ${port} "${assets}"`, { cwd: process.cwd() }).toString();
   return { ok: !/FAIL/.test(e) && (e.match(/PASS/g) || []).length >= 20, note: `${(e.match(/PASS/g) || []).length} kontroli` };
+});
+await T('A17', 'Wkład v2: załączniki „do dołączenia”, dołączenie pliku, powiązanie z zadaniem, wkład v1 nadal działa')(async () => {
+  const e = execSync(`node tests/e2e_wklad_zalaczniki.mjs ${port} "${assets}"`, { cwd: process.cwd() }).toString();
+  return { ok: !/FAIL/.test(e) && (e.match(/PASS/g) || []).length >= 12, note: `${(e.match(/PASS/g) || []).length} kontroli` };
 });
 await T('A14', 'Materiał z akt w silniku Safari: HEIC, 10 załączników, zapis i otwarcie pliku')(async () => {
   const e = execSync(`node tests/e2e_material_webkit.mjs ${port} "${assets}" "${work}"`, { cwd: process.cwd() }).toString();

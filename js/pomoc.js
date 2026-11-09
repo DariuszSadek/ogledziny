@@ -34,6 +34,7 @@ export function showHelp({ dialog, toast }) {
       ul('Zakładka „Materiał z akt” → „Dodaj plik”: JPG, PNG, HEIC lub PDF (każda strona = osobny obraz). Wpisz podstawę (k. …) i cel. Do pliku sprawy trafia kopia robocza.',
         'Otwórz załącznik: palcem powiększasz i przesuwasz, Apple Pencil rysuje. Narzędzia: Pióro, Punkt (P1, P2…), Linia, Tekst, Gumka, Cofnij, Obróć, Kontrast.',
         'Każdy punkt ma wiersz w tabeli „Punkty i pomiary”: co to jest, wynik, jednostka, przyrząd, nr zdjęcia. Dotknięcie punktu lub wiersza podświetla drugi element.',
+        'Wkład z analizy może wskazać załączniki z akt: pojawią się w zakładce „Materiał z akt” jako „DO DOŁĄCZENIA” (z podstawą k. … i celem). Przed wyjazdem kliknij „Dołącz plik” i wybierz kopię z akt – dane z wkładu zostają.',
         'W zadaniu wybierz „Załącznik”, a „Do załącznika →” otwiera obraz. Mało miejsca w pamięci? Zobacz wskaźnik na górze zakładki.')),
     sec('3. W terenie',
       ul('Zakładka Zadania: wpisz Wynik, Jednostkę, Nr zdjęcia i kliknij Wykonane lub Niewykonane (+ powód).',

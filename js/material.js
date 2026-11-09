@@ -18,15 +18,15 @@ export function createMaterial(api) {
   async function warm() { for (const a of list()) if (!cache.has(a.uid)) { try { const b = await getBlob(a); cache.set(a.uid, b ? await blobToDataUrl(b) : null); } catch { cache.set(a.uid, null); } } }
   function forSave() {
     const atts = list();
-    const pending = atts.filter(a => !cache.has(a.uid));
-    return { ready: !pending.length, missing: atts.filter(a => cache.get(a.uid) === null).map(a => a.id), items: atts.map(a => { const o = { ...a }; const d = cache.get(a.uid); if (d) o.data = d; else o.brak_obrazu = true; return o; }) };
+    const pending = atts.filter(a => !a.oczekuje && !cache.has(a.uid));
+    return { ready: !pending.length, missing: atts.filter(a => !a.oczekuje && cache.get(a.uid) === null).map(a => a.id), items: atts.map(a => { const o = { ...a }; const d = cache.get(a.uid); if (d) o.data = d; else if (!a.oczekuje) o.brak_obrazu = true; return o; }) };
   }
   async function restoreFromFile(obj) {                 // plik -> bufor (obrazy do IndexedDB)
     const out = { n: 0, missing: [] };
     for (const a of obj.attachments || []) {
       a.uid = a.uid || uid(); a.ann = a.ann || emptyAnn(); a.rows = a.rows || [];
       if (a.data) { const b = dataUrlToBlob(a.data); await blobPut(`${obj.id}/${a.uid}`, b); cache.set(a.uid, a.data); a.bytes = b.size; delete a.data; out.n++; }
-      else { cache.set(a.uid, null); out.missing.push(a.id); }
+      else { cache.set(a.uid, null); if (!a.oczekuje) out.missing.push(a.id); }
       delete a.brak_obrazu;
     }
     return out;
@@ -64,13 +64,13 @@ export function createMaterial(api) {
     });
   }
 
-  async function addFiles(files) {
+  async function addFiles(files, target = null) {
     for (const f of [...files]) {
       const isPdf = f.type === 'application/pdf' || /\.pdf$/i.test(f.name);
       let pdf = null, n = 1;
       try { if (isPdf) { api.toast('Odczyt PDF…'); pdf = await openPdf(f); n = pdf.numPages; } }
       catch (e) { api.dialog('Nie można dołączyć pliku', h('p', { text: e.message }), [['OK', null, 'primary']]); continue; }
-      const meta = await metaDialog(f, n, isPdf);
+      const meta = await metaDialog(f, n, isPdf, target ? { rodzaj: target.rodzaj, podstawa: target.podstawa, opis: target.opis, cel: target.cel } : {});
       if (!meta) { if (pdf && pdf.destroy) pdf.destroy(); continue; }
       const pgs = isPdf ? meta.pages : [null];
       let i = 0;
@@ -79,10 +79,13 @@ export function createMaterial(api) {
         try {
           api.toast(isPdf ? `Przetwarzam stronę ${pg} (${i}/${pgs.length})…` : 'Przetwarzam obraz…');
           const r = isPdf ? await renderPdfPage(pdf, pg) : (await importImage(f))[0];
-          const att = { id: nextId(meta.rodzaj), uid: uid(), rodzaj: meta.rodzaj, podstawa: meta.podstawa ? (isPdf && pgs.length > 1 ? `${meta.podstawa} (str. ${pg})` : meta.podstawa) : '', opis: meta.opis, cel: meta.cel,
-            name: f.name + (isPdf ? ` (str. ${pg})` : ''), w: r.w, h: r.h, bytes: r.blob.size, rot: 0, ann: emptyAnn(), rows: [], thumb: await makeThumb(r.blob) };
+          const fresh = !(target && i === 1);          // pierwszy plik/strona wypełnia wskazany załącznik (miejsce „do dołączenia”)
+          const att = !fresh ? target : { id: nextId(meta.rodzaj), uid: uid(), rodzaj: meta.rodzaj, podstawa: meta.podstawa ? (isPdf && pgs.length > 1 ? `${meta.podstawa} (str. ${pg})` : meta.podstawa) : '', opis: meta.opis, cel: meta.cel,
+            name: '', w: 0, h: 0, bytes: 0, rot: 0, ann: emptyAnn(), rows: [], thumb: '' };
+          if (!fresh) { att.rodzaj = att.rodzaj || meta.rodzaj; if (meta.podstawa) att.podstawa = isPdf && pgs.length > 1 ? `${meta.podstawa} (str. ${pg})` : meta.podstawa; att.opis = meta.opis; att.cel = meta.cel; delete att.oczekuje; }
+          Object.assign(att, { name: f.name + (isPdf ? ` (str. ${pg})` : ''), w: r.w, h: r.h, bytes: r.blob.size, thumb: await makeThumb(r.blob) });
           await blobPut(key(att), r.blob); cache.set(att.uid, await blobToDataUrl(r.blob));
-          list().push(att); api.touch(); api.rerender();
+          if (fresh) list().push(att); api.touch(); api.rerender();
         } catch (e) {
           if (e && e.name === 'QuotaExceededError') api.dialog('Brak miejsca w pamięci aplikacji', h('p', { text: 'Pamięć przeglądarki jest pełna. Zapisz plik sprawy („Zapisz plik”), usuń zbędne załączniki albo zwolnij miejsce na urządzeniu i spróbuj ponownie. Już dołączone załączniki są bezpieczne.' }), [['OK', null, 'primary']]);
           else api.dialog('Nie można dołączyć', h('p', { text: (e && e.message) || String(e) }), [['OK', null, 'primary']]);
@@ -95,6 +98,7 @@ export function createMaterial(api) {
   }
 
   function openAtt(att, returnView) {
+    if (att.oczekuje || cache.get(att.uid) === null) return api.toast(att.oczekuje ? `${att.id}: plik jeszcze nie dołączony – użyj „Dołącz plik”.` : `${att.id}: brak obrazu w pamięci – dołącz plik ponownie.`);
     return openViewer(att, {
       getBlob, touch: api.touch, toast: api.toast, onClose: () => api.go(returnView || 'material'),
       tasksFor: id => (api.C().tasks || []).filter(t => t.zalacznik === id), gotoTask: () => api.go('zadania'),
@@ -109,13 +113,16 @@ export function createMaterial(api) {
       h('p', { class: 'note', text: 'Szkic Policji i zdjęcia z akt – kopie robocze do oglądania w terenie bez internetu (oryginały zostają w aktach). Dołączaj na Macu lub iPadzie: JPG, PNG, HEIC, PDF (każda strona = osobny obraz).' }));
     const fi = h('input', { type: 'file', multiple: true, accept: 'image/*,.heic,.heif,.jpg,.jpeg,.png,.pdf,application/pdf', hidden: true });
     fi.addEventListener('change', () => { const fs = [...fi.files]; fi.value = ''; addFiles(fs); });
+    let tgt = null; const fi2 = h('input', { type: 'file', accept: 'image/*,.heic,.heif,.jpg,.jpeg,.png,.pdf,application/pdf', hidden: true });
+    fi2.addEventListener('change', () => { const fs = [...fi2.files], t = tgt; fi2.value = ''; if (fs.length && t) addFiles(fs, t); });
+    const pick = a => { tgt = a; fi2.click(); };
     const info = h('div', { class: 'minfo' }), stor = h('div', { class: 'minfo' });
     const fill = () => {
-      const tot = atts.reduce((s, a) => s + (a.bytes || 0), 0), pts = atts.reduce((s, a) => s + (a.rows || []).length, 0);
-      info.textContent = `Załączniki: ${atts.length} · kopie robocze razem ${fmtMB(tot)} · szacunkowy rozmiar pliku sprawy z załącznikami ${fmtMB(estimateBytes())} · punktów w tabelach: ${pts}`;
+      const wt = atts.filter(a => a.oczekuje).length, tot = atts.reduce((s, a) => s + (a.bytes || 0), 0), pts = atts.reduce((s, a) => s + (a.rows || []).length, 0);
+      info.textContent = `Załączniki: ${atts.length} · kopie robocze razem ${fmtMB(tot)} · szacunkowy rozmiar pliku sprawy z załącznikami ${fmtMB(estimateBytes())} · punktów w tabelach: ${pts}${wt ? ` · DO DOŁĄCZENIA: ${wt}` : ''}`;
     };
     fill();
-    box.append(h('div', { class: 'btns' }, h('button', { type: 'button', class: 'primary', text: '+ Dodaj plik (JPG, PNG, HEIC, PDF)', onclick: () => fi.click() }), atts.length ? h('button', { type: 'button', text: 'Drukuj materiał z akt', onclick: () => api.printAtts(atts) }) : null), fi, info, stor);
+    box.append(h('div', { class: 'btns' }, h('button', { type: 'button', class: 'primary', text: '+ Dodaj plik (JPG, PNG, HEIC, PDF)', onclick: () => fi.click() }), atts.length ? h('button', { type: 'button', text: 'Drukuj materiał z akt', onclick: () => api.printAtts(atts) }) : null), fi, fi2, info, stor);
     storageInfo().then(si => {
       if (!si) { stor.textContent = 'Pamięć aplikacji: brak danych z przeglądarki.'; return; }
       const free = si.quota - si.usage, pct = si.quota ? si.usage / si.quota : 0;
@@ -125,16 +132,16 @@ export function createMaterial(api) {
     if (!atts.length) box.append(h('p', { class: 'note', text: 'Brak załączników. Dodaj szkic Policji i zdjęcia z akt, potrzebne do ustalenia odległości na miejscu zdarzenia.' }));
     const grid = h('div', { class: 'mgrid' });
     for (const a of atts) {
-      const hasImg = cache.get(a.uid) !== null;
+      const wait = !!a.oczekuje, hasImg = !wait && cache.get(a.uid) !== null;
       grid.append(h('div', { class: 'mcard' },
-        h('button', { type: 'button', class: 'mthumb', 'aria-label': `Otwórz ${a.id}`, onclick: () => openAtt(a) }, a.thumb ? h('img', { src: a.thumb, alt: a.id }) : h('span', { text: 'brak miniatury' })),
+        h('button', { type: 'button', class: 'mthumb', 'aria-label': `Otwórz ${a.id}`, onclick: () => (hasImg ? openAtt(a) : pick(a)) }, a.thumb ? h('img', { src: a.thumb, alt: a.id }) : h('span', { text: wait ? 'DO DOŁĄCZENIA' : 'brak miniatury' })),
         h('div', { class: 'mmeta' },
-          h('div', { class: 'mid' }, h('strong', { text: a.id }), h('span', { class: 'mkind', text: a.rodzaj }), hasImg ? null : h('span', { class: 'mmiss', text: 'brak obrazu – dołącz ponownie' })),
+          h('div', { class: 'mid' }, h('strong', { text: a.id }), h('span', { class: 'mkind', text: a.rodzaj }), hasImg ? null : h('span', { class: 'mmiss', text: wait ? 'do dołączenia z akt' : 'brak obrazu – dołącz ponownie' })),
           h('div', { text: a.opis || '(bez opisu)' }),
           h('div', { class: 'msm', text: `Podstawa: ${a.podstawa || '—'}` }),
           a.cel ? h('div', { class: 'msm', text: `Cel: ${a.cel}` }) : null,
-          h('div', { class: 'msm', text: `${a.w}×${a.h} px · ${fmtMB(a.bytes || 0)} · punktów: ${(a.rows || []).length}${(a.ann && (a.ann.strokes.length + a.ann.lines.length + a.ann.texts.length)) ? ' · są adnotacje' : ''}` }),
-          h('div', { class: 'btns' }, h('button', { type: 'button', class: 'small primary', text: 'Otwórz', onclick: () => openAtt(a) }),
+          wait ? h('div', { class: 'msm', text: 'Wskazane we wkładzie z analizy – wybierz plik (JPG, PNG, HEIC, PDF) kopii z akt.' }) : h('div', { class: 'msm', text: `${a.w}×${a.h} px · ${fmtMB(a.bytes || 0)} · punktów: ${(a.rows || []).length}${(a.ann && (a.ann.strokes.length + a.ann.lines.length + a.ann.texts.length)) ? ' · są adnotacje' : ''}` }),
+          h('div', { class: 'btns' }, hasImg ? h('button', { type: 'button', class: 'small primary', text: 'Otwórz', onclick: () => openAtt(a) }) : h('button', { type: 'button', class: 'small primary', text: 'Dołącz plik', onclick: () => pick(a) }),
             h('button', { type: 'button', class: 'small danger', text: 'Usuń', onclick: () => api.ask('Usunąć załącznik?', `${a.id} (${a.opis || a.name}) wraz z adnotacjami i tabelą punktów zostanie usunięty ze sprawy.`, 'Usuń', () => removeAtt(a)) })))));
     }
     box.append(grid); main.append(box);

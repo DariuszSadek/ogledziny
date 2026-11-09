@@ -11,7 +11,8 @@ Gdy biegły poprosi o **wkład do formularzy** (albo „przygotuj oględziny”,
 1. **utworzy potrzebne egzemplarze formularzy** (np. dwa razy formularz 03 dla pojazdów A i B, cztery razy 07 dla opon, jeden raz 01 dla miejsca zdarzenia),
 2. **wstępnie wypełni pola identyfikacyjne i organizacyjne dane z akt** (marka, model, VIN, nr rejestracyjny, organ, sygnatura, data zdarzenia, dane opon itd.),
 3. **poda listę zadań** – co dokładnie obejrzeć, zmierzyć, sfotografować, zabezpieczyć i sprawdzić, z uzasadnieniem w aktach (k. …), przyrządem i priorytetem,
-4. **doda krótkie przypomnienia** do każdego formularza (rzeczy, o których biegły ma pamiętać na miejscu).
+4. **doda krótkie przypomnienia** do każdego formularza (rzeczy, o których biegły ma pamiętać na miejscu),
+5. **wskaże materiał z akt do zabrania w teren** (`zalaczniki`): które szkice Policji i które zdjęcia z akt biegły ma mieć w aplikacji, z podstawą (k. …) i celem. Aplikacja utworzy puste miejsca „do dołączenia”, a biegły sam dołączy kopie plików przed wyjazdem.
 
 Biegły może potem coś dopisać lub zmienić (w aplikacji i u Ciebie – wtedy zwróć **cały poprawiony JSON** jeszcze raz, ze zwiększonym numerem `rewizja`).
 
@@ -44,13 +45,15 @@ Biegły może potem coś dopisać lub zmienić (w aplikacji i u Ciebie – wtedy
 - Układ zadań: najpierw rzeczy **ulotne i nieodwracalne** (ślady nietrwałe, oświetlenie, wskazania przyrządów, stan przed przesunięciem pojazdów), potem trwałe. Zadania sprzężone (np. pomiar toru hamowania + odniesienie do SPO/SLO1/SLO2) opisuj tak, żeby wynik dało się powiązać z formularzem.
 - Myśl jak biegły: co rozstrzygnie sporne ustalenia, jakie hipotezy trzeba sprawdzić lub wykluczyć, jakie dane z akt są niepełne lub sprzeczne i jak je zweryfikować w terenie (np. rozbieżne położenia końcowe w dwóch protokołach, nieczytelna rejestracja, daty opon, stan hamulców, widoczność, nawierzchnia i jej przyczepność, oświetlenie, oznakowanie, rejestratory i kamery do zabezpieczenia).
 
+**D2. Materiał z akt (`zalaczniki`).** Wybierz **tylko** to, co przyda się na miejscu: szkic Policji (S1, S2…) i zdjęcia z akt (F1, F2…), z których da się odtworzyć stanowisko fotografującego, zmierzyć odległość między punktami, porównać widoczność, rozpoznać ślady lub położenia końcowe. Nie dołączaj całych akt ani dokumentów tekstowych. Przy każdym: `rodzaj` (`szkic` | `zdjęcie` | `inne`), `podstawa` (**prawdziwe** k. … i numer zdjęcia – zasada A), `opis` (co przedstawia) i `cel` (po co w terenie – konkretnie). Zadania powiąż z załącznikiem polem `zalacznik` (np. „zmierz odległość P1–P2 wskazaną na szkicu” → `"zalacznik": "S1"`). Pliku nie przekażesz – biegły dołączy kopię z akt sam; dlatego **podaj w podsumowaniu listę: id załącznika → karta w aktach**, żeby wiedział, co skopiować. Gdy numeru karty nie widzisz, napisz „nr karty do uzupełnienia”.
+
 **E. Przypomnienia** (`przypomnienia` przy formularzu i `uwagi_ogolne`): krótkie, praktyczne („Zabezpiecz zdjęcie tabliczki znamionowej przed demontażem”, „Zapytaj policjanta o miejsce zabezpieczenia rzeczy”, „BRAK W AKTACH: długość śladu hamowania z protokołu – zmierzyć niezależnie”).
 
 **F. Wynik pracy.** Odpowiedź ma mieć dwie części:
 1. **Krótkie podsumowanie dla biegłego** (po polsku, kilka zdań/wypunktowań): ile formularzy, najważniejsze zadania priorytetowe, czego brakuje w aktach i o co warto zapytać przed wyjazdem. Zadaj pytania, jeśli bez odpowiedzi nie da się rozstrzygnąć liczby egzemplarzy lub kluczowych danych.
 2. **Jeden blok kodu `json`** z kompletnym wkładem. Tylko poprawny JSON (UTF-8, bez komentarzy, bez końcowych przecinków). Sam JSON bez żadnego tekstu w środku. Biegły skopiuje go i wklei do aplikacji („Nowa sprawa z wkładu”).
 
-Zanim wyślesz wkład, sprawdź: każdy identyfikator w `pola` istnieje w odpowiednim `slownik_NN.md` i dotyczy właściwego formularza; pola `check` mają `true`; `ref` są unikalne; każde `zadanie.formularz` wskazuje istniejący `ref` albo `"ogolne"`; żadnych wymyślonych numerów kart.
+Zanim wyślesz wkład, sprawdź: każdy identyfikator w `pola` istnieje w odpowiednim `slownik_NN.md` i dotyczy właściwego formularza; pola `check` mają `true`; `ref` są unikalne; każde `zadanie.formularz` wskazuje istniejący `ref` albo `"ogolne"`; każde `zadanie.zalacznik` wskazuje `id` z `zalaczniki`; `wersja` = 2; żadnych wymyślonych numerów kart.
 
 **G. Jedna odpowiedź.** Ta instrukcja ma pierwszeństwo przed trybem krokowym i pytaniami „Kontynuować?”: **zwróć cały wkład w jednej odpowiedzi** (podsumowanie + kompletny blok `json`), bez dzielenia na części i bez przerywania w połowie. Jeśli materiału jest dużo, skróć opisy, ale nie dziel JSON-a. Pytaj tylko o to, bez czego nie da się ustalić liczby egzemplarzy formularzy lub kluczowych danych – i wtedy zadaj pytania **przed** wkładem. Ta instrukcja ma też pierwszeństwo przed zasadą korzystania z konektora wiedza-rzeczoznawstwo: do przygotowania wkładu nie inicjalizuj bazy, nie wykonuj semantic_search ani wyszukiwań w internecie – pracuj wyłącznie na materiale projektu i plikach paczki, chyba że biegły wyraźnie o to poprosi.
 

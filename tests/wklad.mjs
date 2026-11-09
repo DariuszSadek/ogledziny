@@ -21,3 +21,15 @@ ok(R2.warnings.length === 2 && C2.tasks.length === 2, 'ostrzeżenia: pole nieist
 let threw = false; try { applyWklad({ format: 'inny' }, mk(), DEFS, uid); } catch { threw = true; } ok(threw, 'obcy plik odrzucony z komunikatem');
 // dołączanie do istniejącej sprawy nie nadpisuje nagłówka
 const C3 = mk(); C3.header.sygnatura = 'MOJA'; applyWklad(JSON.parse(text), C3, DEFS, uid); ok(C3.header.sygnatura === 'MOJA' && C3.header.organ === 'Sąd Rejonowy w Kielcach', 'dołączanie nie nadpisuje wpisanego nagłówka');
+// wersja 2: załączniki „do dołączenia”
+{
+  const C = mk(); const R = applyWklad(JSON.parse(text), C, DEFS, uid);
+  ok(C.attachments.length === 2 && C.attachments.every(a => a.oczekuje && a.uid && a.rows.length === 0) && R.attachments === 2, 'v2: dwa załączniki jako miejsca do dołączenia');
+  ok(C.tasks.find(t => t.id === 'Z01').zalacznik === 'S1', 'v2: zadanie powiązane z załącznikiem');
+  const R2 = applyWklad(JSON.parse(text), C, DEFS, uid);
+  ok(C.attachments.map(a => a.id).join() === 'S1,F1,S2,F2' && C.tasks.find(t => t.id === 'Z01*').zalacznik === 'S2', 'v2: ponowne dołączenie nadaje nowe numery i przemapowuje zadania (' + R2.warnings.length + ' ostrzeżeń)');
+  const w1 = { format: 'ogledziny-wklad', wersja: 1, zadania: [{ czynnosc: 'x' }] }; const C1 = mk(); const R1 = applyWklad(w1, C1, DEFS, uid);
+  ok(R1.warnings.length === 0 && !C1.attachments.length && C1.tasks[0].zalacznik === '', 'v1 nadal się wczytuje');
+  const bd = { format: 'ogledziny-wklad', wersja: 2, zalaczniki: [{ id: 'X9' }, { rodzaj: 'szkic' }], zadania: [{ czynnosc: 'y', zalacznik: 'S7' }] }; const Cb = mk(); const Rb = applyWklad(bd, Cb, DEFS, uid);
+  ok(Rb.rejected.length === 1 && Cb.attachments.length === 1 && Rb.warnings.length === 2, 'v2: błędy w raporcie (brak rodzaju, brak podstawy, zły zalacznik)');
+}
