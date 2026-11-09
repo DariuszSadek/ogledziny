@@ -45,6 +45,16 @@ Nie czyść danych witryn w ustawieniach Safari – wyczyści to bufor (plik w i
 5. Zapisz plik sprawy i jedź na oględziny (iPad). Po powrocie otwórz plik na MacBooku, zrób **Eksport tekstowy** – w eksporcie jest stan wykonania zadań (wynik, jednostka, nr zdjęcia, niewykonane + powód) obok wypełnionych pól – i wklej go do projektu analizy.
 6. Wydruk całej sprawy do PDF zaczyna się od listy zadań.
 
+## 3b. Materiał z akt: szkic Policji i zdjęcia w terenie
+
+1. Zakładka **Materiał z akt** → **Dodaj plik** (Mac albo iPad): JPG, PNG, HEIC, PDF. Każda strona PDF to osobny obraz (dla wielostronicowego PDF podajesz zakres stron, np. `1-3,5`). Wpisz rodzaj (szkic / zdjęcie / inne), **podstawę w aktach** (k. …, nr zdjęcia), opis i cel. Załączniki dostają numery S1, F1, I1…
+2. Do pliku sprawy trafia **kopia robocza** (dłuższy bok do 3000 px, JPEG); na ekranie jest podpis „kopia robocza – oryginał w aktach k. …”. Zakładka pokazuje rozmiar kopii, szacunkowy rozmiar pliku sprawy i zajętość pamięci aplikacji (ostrzeżenie, gdy mało miejsca). Jeśli pamięć się skończy, aplikacja pokaże komunikat i nie straci tego, co już dołączono – zapisz plik sprawy.
+3. **Otwórz** załącznik: pełny ekran, palcami powiększasz i przesuwasz, **Apple Pencil rysuje** (przycisk „Palec: przesuwa/rysuje” zmienia zachowanie palca). Narzędzia: **Pióro**, **Punkt** (numerowane P1, P2…), **Linia**, **Tekst**, **Gumka**, **Cofnij**, **Obróć**, **Kontrast**, **Adnotacje** (pokaż/ukryj). Obraz nie jest zmieniany – adnotacje są osobną warstwą.
+4. Każdy punkt ma wiersz w tabeli **Punkty i pomiary** (panel „Tabela”): co to jest, wynik, jednostka, przyrząd, nr mojego zdjęcia, uwagi. Dotknięcie punktu na obrazie podświetla wiersz, a przycisk z numerem w wierszu podświetla punkt. „Wskaż na obrazie” ustawia lub przesuwa punkt.
+5. W zadaniu wybierz **Załącznik**, a „Do załącznika →” otwiera obraz; w załączniku widać powiązane zadania. Z formularza przejdziesz do materiału przyciskiem „Materiał z akt”; „← Wróć” wraca tam, skąd przyszedłeś.
+6. **Eksport tekstowy** zawiera listę załączników z podstawą w aktach i tabele punktów; **Drukuj materiał z akt** (zakładka lub przycisk „Drukuj” w załączniku) drukuje obraz z adnotacjami i tabelę.
+7. **Test urządzenia** (Sprawa): pamięć aplikacji (użyto / limit) i **Test kamery**.
+
 ## 4. Otwieranie spraw i starsze wersje
 
 „Otwórz sprawę” → wskaż plik z Plików / iCloud Drive. Jeśli plik pochodzi ze starszej wersji formularzy, aplikacja przenosi dane **po identyfikatorach pól** i pokazuje **raport**; pola, których nie dało się przenieść, są zachowane i wyświetlone na czerwono na początku formularza – przepisz je ręcznie, a potem usuń listę. Nic nie ginie po cichu.

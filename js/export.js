@@ -80,6 +80,27 @@ function tasksMd(C, only) {
   return L.join('\n');
 }
 
+function materialMd(C) {
+  const A = C.attachments || [];
+  if (!A.length) return '';
+  const L = ['## Materiał z akt (kopie robocze – oryginały w aktach)', ''];
+  for (const a of A) {
+    L.push(`### ${a.id} · ${a.rodzaj}${a.opis ? ' – ' + a.opis : ''}`, '', `- podstawa w aktach: ${a.podstawa || '(nie wpisano)'}`);
+    if (a.cel) L.push(`- cel: ${a.cel}`);
+    const nAnn = a.ann ? a.ann.strokes.length + a.ann.lines.length + a.ann.texts.length : 0;
+    L.push(`- plik: ${a.name || ''}, ${a.w}×${a.h} px; adnotacje: ${nAnn ? nAnn + ' elementów (obraz z adnotacjami w pliku sprawy / wydruku)' : 'brak'}; punktów: ${(a.rows || []).length}`);
+    const rows = (a.rows || []).filter(r => ['co', 'wynik', 'jednostka', 'przyrzad', 'nr_zdjecia', 'uwagi'].some(k => r[k]) || true);
+    if (rows.length) {
+      const cell = v => String(v || '').replace(/\|/g, '/').replace(/\n/g, ' ');
+      L.push('', '| Punkt | Co to jest | Wynik | Jednostka | Przyrząd | Nr mojego zdjęcia | Uwagi |', '|---|---|---|---|---|---|---|', ...rows.map(r => `| ${r.pid} | ${cell(r.co)} | ${cell(r.wynik)} | ${cell(r.jednostka)} | ${cell(r.przyrzad)} | ${cell(r.nr_zdjecia)} | ${cell(r.uwagi)} |`));
+    }
+    const tl = (C.tasks || []).filter(t => t.zalacznik === a.id);
+    if (tl.length) L.push('', `Zadania powiązane: ${tl.map(t => `[${t.id}] ${t.czynnosc}`).join('; ')}`);
+    L.push('');
+  }
+  return L.join('\n');
+}
+
 export function toMarkdown(C, DEFS, only = null) {
   const now = new Date().toISOString();
   const H = C.header || {};
@@ -103,5 +124,5 @@ export function toMarkdown(C, DEFS, only = null) {
     'Układ: `[identyfikator pola]` stoi przy każdej wartości; puste pola i niezaznaczone opcje pominięto. Wartości liczbowe są zapisane tak, jak wpisano (przecinek lub kropka).', '',
   ];
   if ((C.tasks || []).length) meta.push('## Zadania z analizy akt', '', ...C.tasks.map(t => `- ${JSON.stringify(t)}`), '');
-  return meta.join('\n') + '\n' + tasksMd(C, only) + '\n' + parts.join('\n');
+  return meta.join('\n') + '\n' + tasksMd(C, only) + '\n' + (only ? '' : materialMd(C) + '\n') + parts.join('\n');
 }

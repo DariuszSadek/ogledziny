@@ -7,6 +7,7 @@ import { toMarkdown } from './export.js';
 import { parseWklad, applyWklad, reportWklad } from './wklad.js';
 import { taskCard, taskPanel, renderTasksView, counts } from './tasks.js';
 import { showHelp } from './pomoc.js';
+import { createMaterial } from './material.js';
 
 const $ = id => document.getElementById(id);
 const FORM_IDS = ['00', '01', '02', '03', '04', '05', '06', '07', '08', '09'];
@@ -18,7 +19,7 @@ const pad = n => String(n).padStart(2, '0');
 
 function newCase() {
   return { app: 'ogledziny', schema: SCHEMA, appVersion: APP_VERSION, id: uid(), created: new Date().toISOString(), defVersions: {},
-    header: { sygnatura: '', organ: '', data: '' }, forms: [], tasks: [], savedToFile: null, rev: 0, savedRev: 0 };
+    header: { sygnatura: '', organ: '', data: '' }, forms: [], tasks: [], attachments: [], savedToFile: null, rev: 0, savedRev: 0 };
 }
 function addInstance(formId, label) {
   const n = C.forms.filter(f => f.formId === formId).length + 1;
@@ -33,7 +34,7 @@ function touch() {
 }
 async function persist() {
   clearTimeout(saveTimer); saveTimer = null;
-  try { await kvPut('current', JSON.parse(JSON.stringify(C))); lastBufferOk = new Date(); } catch (e) { lastBufferOk = null; toast('UWAGA: bufor roboczy nie zapisał się (' + (e.name || e) + '). Zapisz plik!'); }
+  try { await kvPut('current', JSON.parse(JSON.stringify(C))); lastBufferOk = new Date(); } catch (e) { lastBufferOk = null; toast(e && e.name === 'QuotaExceededError' ? 'UWAGA: brak miejsca w pamięci aplikacji – bufor się nie zapisał. Zapisz plik sprawy i usuń zbędne załączniki lub zwolnij miejsce na urządzeniu.' : 'UWAGA: bufor roboczy nie zapisał się (' + (e.name || e) + '). Zapisz plik!'); }
   renderStatus();
 }
 addEventListener('pagehide', () => { if (saveTimer) persist(); });
@@ -57,6 +58,7 @@ function dialog(title, body, buttons) {
   d.showModal();
 }
 const ask = (title, text, okText, ok) => dialog(title, h('p', { text }), [[okText, ok, 'primary'], ['Anuluj', null]]);
+const MAT = createMaterial({ C: () => C, touch: () => touch(), toast, dialog, ask, go: v => go(v), rerender: () => render(), printAtts: a => MAT.printMaterial(a) });
 
 // ---------- ctx dla silnika ----------
 function ctxFor(inst, def) {
@@ -75,11 +77,13 @@ function setTabs() {
   t.append(h('button', { type: 'button', class: view === 'home' ? 'on' : '', text: 'Sprawa', onclick: () => go('home') }));
   const k = counts(C);
   t.append(h('button', { type: 'button', class: view === 'zadania' ? 'on' : '', data: { tab: 'zadania' }, text: `Zadania ${k.done}/${k.all}`, onclick: () => go('zadania') }));
+  t.append(h('button', { type: 'button', class: view === 'material' ? 'on' : '', data: { tab: 'material' }, text: `Materiał z akt (${MAT.list().length})`, onclick: () => go('material') }));
   for (const f of C.forms) t.append(h('button', { type: 'button', class: view === f.iid ? 'on' : '', text: `${f.formId} · ${f.label}`, onclick: () => go(f.iid) }));
   t.append(h('button', { type: 'button', class: 'small', text: '+ Formularz', onclick: addFormDialog }));
   const on = t.querySelector('.on'); if (on) on.scrollIntoView({ inline: 'center', block: 'nearest' });
 }
-function go(v) { view = v; if (C) { C.lastView = v; clearTimeout(saveTimer); saveTimer = setTimeout(persist, 300); } render(); scrollTo(0, 0); }
+let matBack = null;
+function go(v) { if (v === 'material' && view !== 'material') { const f = C && C.forms.find(x => x.iid === view); matBack = (view === 'home' || view === 'zadania' || f) ? { view, label: view === 'home' ? 'Sprawa' : view === 'zadania' ? 'Zadania' : `${f.formId} · ${f.label}` } : null; } view = v; if (C) { C.lastView = v; clearTimeout(saveTimer); saveTimer = setTimeout(persist, 300); } render(); scrollTo(0, 0); }
 
 function render() {
   document.body.classList.remove('printing');
@@ -89,6 +93,7 @@ function render() {
   $('tabs').hidden = false; setTabs();
   if (view === 'home') return renderCase(main);
   if (view === 'zadania') return renderTasksView(main, C, taskEnv());
+  if (view === 'material') return MAT.renderView(main, matBack);
   const inst = C.forms.find(f => f.iid === view);
   if (!inst) { view = 'home'; return render(); }
   const def = DEFS[inst.formId];
@@ -96,6 +101,7 @@ function render() {
   if (Object.keys(inst.orphans || {}).length) main.append(orphanBox(inst));
   const tp = taskPanel(inst, C, taskEnv()); if (tp) main.append(tp);
   main.append(h('div', { class: 'toolrow' },
+    h('button', { type: 'button', class: 'small', text: 'Materiał z akt', onclick: () => go('material') }),
     h('button', { type: 'button', class: 'small', text: 'Drukuj / PDF tego formularza', onclick: () => doPrint([inst]) }),
     h('button', { type: 'button', class: 'small', text: 'Eksport tekstowy (ten formularz)', onclick: () => exportMd(inst) })));
   main.append(renderForm(def, inst, ctxFor(inst, def)));
@@ -132,7 +138,7 @@ function renderStart(main) {
     h('div', { class: 'copy', text: COPYRIGHT }),
     h('div', { class: 'copy', text: `Wersja ${APP_VERSION}` })));
 }
-function startNew() { C = newCase(); addInstance('01'); view = C.lastView = C.forms[0].iid; touch(); persist(); render(); }
+function startNew() { C = newCase(); addInstance('01'); view = C.lastView = C.forms[0].iid; touch(); persist(); render(); MAT.gc(); }
 
 function renderCase(main) {
   const hf = (k, label, ph) => { const i = h('input', { type: 'text', value: C.header[k] || '', 'aria-label': label, placeholder: ph || '' }); i.addEventListener('input', () => { C.header[k] = i.value; touch(); }); return h('div', { class: 'fld' }, h('label', { text: label }), i); };
@@ -147,6 +153,9 @@ function renderCase(main) {
           h('button', { type: 'button', class: 'small danger', text: 'Usuń', onclick: () => ask('Usunąć formularz?', `Egzemplarz „${f.label}” (${f.formId}) wraz z danymi zostanie usunięty ze sprawy.`, 'Usuń', () => { C.forms = C.forms.filter(x => x !== f); touch(); render(); }) }));
       }),
       h('div', { class: 'btns' }, h('button', { type: 'button', text: '+ Dodaj formularz', onclick: addFormDialog }))),
+    h('div', { class: 'card' }, h('h2', { text: 'Materiał z akt' }),
+      h('p', { text: `Załączniki: ${MAT.list().length} (szacunkowy rozmiar pliku sprawy ${(MAT.estimateBytes() / 1048576).toFixed(1)} MB).` }),
+      h('div', { class: 'btns' }, h('button', { type: 'button', class: 'primary', text: 'Materiał z akt', onclick: () => go('material') }))),
     h('div', { class: 'card' }, h('h2', { text: 'Wkład i zadania' }),
       h('p', { text: `Zadania: ${counts(C).all} (wykonane ${counts(C).done}, niewykonane ${counts(C).no}, otwarte ${counts(C).open}).` }),
       h('div', { class: 'btns' }, h('button', { type: 'button', class: 'primary', text: 'Dołącz wkład (wklej lub z pliku)', onclick: () => wkladDialog(false) }), h('button', { type: 'button', text: 'Zadania', onclick: () => go('zadania') }))),
@@ -188,11 +197,13 @@ function saveFile() {
   if (!C) return;
   const iso = new Date().toISOString();
   const rev = C.rev;
-  const out = Object.assign({}, C, { savedToFile: iso, appVersion: APP_VERSION });
+  const fs = MAT.forSave();
+  if (!fs.ready) { MAT.warm(); return toast('Przygotowuję załączniki do zapisu – spróbuj za chwilę.'); }
+  const out = Object.assign({}, C, { savedToFile: iso, appVersion: APP_VERSION, attachments: fs.items });
   delete out.rev; delete out.savedRev; delete out.lastView;
   const name = fileName();
   const json = JSON.stringify(out, null, 1);
-  const done = how => { C.savedToFile = iso; C.savedRev = rev; persist(); toast(`Zapisano plik: ${name} (${how})`); };
+  const done = how => { C.savedToFile = iso; C.savedRev = rev; persist(); toast(`Zapisano plik: ${name} (${how}${fs.items.length ? ', ' + (json.length / 1048576).toFixed(1) + ' MB' : ''})` + (fs.missing.length ? ` – UWAGA: bez obrazów: ${fs.missing.join(', ')}` : '')); };
   const tryShare = type => {
     const file = new File([json], name, { type });
     if (navigator.canShare && navigator.canShare({ files: [file] })) return navigator.share({ files: [file], title: name }).then(() => 'udostępnianie', e => { if (e && e.name === 'AbortError') throw e; return null; });
@@ -217,11 +228,14 @@ $('file-input').addEventListener('change', async e => {
   let obj;
   try { obj = JSON.parse(await f.text()); } catch { return toast('To nie jest poprawny plik sprawy (błąd odczytu JSON).'); }
   if (obj.app !== 'ogledziny' || !Array.isArray(obj.forms)) return toast('To nie jest plik sprawy aplikacji Oględziny.');
-  const doOpen = () => {
+  const doOpen = async () => {
+    let restored = { n: 0, missing: [] };
+    try { restored = await MAT.restoreFromFile(obj); } catch (e) { return toast(e && e.name === 'QuotaExceededError' ? 'Brak miejsca w pamięci aplikacji na załączniki z tego pliku. Zwolnij miejsce na urządzeniu.' : 'Nie udało się wczytać załączników: ' + ((e && e.message) || e)); }
     const report = migrate(obj, DEFS);
     obj.rev = 0; obj.savedRev = 0; if (!obj.header) obj.header = { sygnatura: '', organ: '', data: '' }; if (!obj.tasks) obj.tasks = [];
     if (report.moved.length || report.orphaned.length || report.updated.length) { obj.rev = 1; }   // dane zmieniły postać – wymagają ponownego zapisu do pliku
-    delete obj.lastView; C = obj; view = 'home'; persist(); render(); renderStatus();
+    delete obj.lastView; if (!obj.attachments) obj.attachments = []; C = obj; view = 'home'; persist(); render(); renderStatus(); MAT.gc();
+    if (restored.missing.length) toast(`Plik nie zawiera obrazów załączników: ${restored.missing.join(', ')} (dołącz je ponownie).`);
     if (needsAttention(report)) dialog('Raport otwarcia pliku', h('pre', { text: reportText(report) || 'Bez uwag.' }), [['OK', null, 'primary']]);
     else toast('Sprawa otwarta bez zmian.');
   };
@@ -237,6 +251,7 @@ function updateTaskTab() { const b = document.querySelector('#tabs button[data-t
 function taskEnv() {
   return {
     touch: () => { touch(); updateTaskTab(); }, rerender: () => render(),
+    attachments: () => MAT.list(), openAtt: id => { const a = MAT.list().find(x => x.id === id); if (a) MAT.openAtt(a, 'zadania'); else toast('Nie ma takiego załącznika.'); },
     goto: t => { go(t.iid); requestAnimationFrame(() => setTimeout(() => {
       const el = (t.poleOk && document.querySelector(`[data-id="${CSS.escape(t.pole)}"]`)) || (t.sekcja && document.getElementById(`sec-${(C.forms.find(f => f.iid === t.iid) || {}).formId}-${t.sekcja}`));
       if (el) { el.scrollIntoView({ block: 'center' }); el.classList.add('flash'); setTimeout(() => el.classList.remove('flash'), 2500); }
@@ -316,7 +331,7 @@ function exportMd(only) {
   try { p = share('text/markdown') || share('text/plain'); } catch (e) { return; }
   if (p) p.then(ok => ok ? toast(`Wyeksportowano: ${name}`) : dl(), e => { if (e.name !== 'AbortError') dl(); }); else dl();
 }
-window.__ogl = { printAll: () => printScope(C.forms), md: () => toMarkdown(C, DEFS) };
+window.__ogl = { printAll: () => printScope(C.forms), md: () => toMarkdown(C, DEFS), mat: MAT };
 
 // ---------- test urządzenia ----------
 async function diagnostics() {
@@ -333,8 +348,23 @@ async function diagnostics() {
   add('canShare plik text/plain (.json)', t('text/plain', 'a.json'));
   add('Geolokalizacja', 'geolocation' in navigator ? 'jest' : 'brak');
   add('Pointer: pen/touch', `${'PointerEvent' in window} / maxTouchPoints=${navigator.maxTouchPoints}`);
+  try { const e = await navigator.storage.estimate(); add('Pamięć aplikacji (użyto / limit)', `${(e.usage / 1048576).toFixed(1)} MB / ${(e.quota / 1048576).toFixed(0)} MB (${(100 * e.usage / e.quota).toFixed(2)} %)`); } catch { add('Pamięć aplikacji', 'n/d'); }
+  add('Kamera (getUserMedia)', navigator.mediaDevices && navigator.mediaDevices.getUserMedia ? 'interfejs jest – sprawdź przyciskiem poniżej' : 'brak interfejsu');
+  add('Obsługa HEIC (dekodowanie)', 'sprawdza się przy dołączaniu pliku HEIC');
   add('User-Agent', navigator.userAgent);
-  dialog('Test urządzenia', h('pre', { text: lines.join('\n') }), [['OK', null, 'primary']]);
+  const camOut = h('pre', { text: 'Test kamery: nie wykonano.' }); let stream = null;
+  const stop = () => { if (stream) stream.getTracks().forEach(t => t.stop()); stream = null; };
+  const camBtn = h('button', { type: 'button', class: 'small', text: 'Test kamery', onclick: async () => {
+    stop(); camOut.textContent = 'Test kamery: czekam na zgodę…';
+    try {
+      stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' }, audio: false });
+      const v = h('video', { playsinline: true, autoplay: true }); v.muted = true; v.srcObject = stream; v.style.maxWidth = '100%'; v.style.maxHeight = '40vh'; camOut.after(v); await v.play().catch(() => { });
+      const t = stream.getVideoTracks()[0], st = t.getSettings();
+      camOut.textContent = `Test kamery: DZIAŁA – ${t.label || 'kamera'}, ${st.width || '?'}×${st.height || '?'} px. Zgoda utrzymana: sprawdź, czy przy ponownym otwarciu aplikacji pyta ponownie.`;
+    } catch (e) { camOut.textContent = `Test kamery: BŁĄD ${e.name}: ${e.message}`; }
+  } });
+  $('dlg').addEventListener('close', stop, { once: true });
+  dialog('Test urządzenia', h('div', {}, h('pre', { text: lines.join('\n') }), camBtn, camOut), [['OK', null, 'primary']]);
 }
 
 // ---------- aktualizacje (service worker) ----------
@@ -362,8 +392,8 @@ async function loadDefs() {
 }
 const READY = (async () => {
   try { await loadDefs(); } catch (e) { $('main').append(h('p', { text: 'Błąd wczytania definicji formularzy: ' + e })); return; }
-  try { const saved = await kvGet('current'); if (saved) { const rep = migrate(saved, DEFS); C = saved; view = (C.lastView === 'zadania' || C.forms.some(f => f.iid === C.lastView)) ? C.lastView : 'home'; if (needsAttention(rep) && (rep.orphaned.length || rep.unknownForms.length)) setTimeout(() => dialog('Raport (bufor)', h('pre', { text: reportText(rep) }), [['OK', null, 'primary']]), 200); } } catch (e) { console.warn(e); }
-  if (C) lastBufferOk = null;
+  try { const saved = await kvGet('current'); if (saved) { const rep = migrate(saved, DEFS); C = saved; view = (C.lastView === 'zadania' || C.lastView === 'material' || C.forms.some(f => f.iid === C.lastView)) ? C.lastView : 'home'; if (needsAttention(rep) && (rep.orphaned.length || rep.unknownForms.length)) setTimeout(() => dialog('Raport (bufor)', h('pre', { text: reportText(rep) }), [['OK', null, 'primary']]), 200); } } catch (e) { console.warn(e); }
+  if (C) { lastBufferOk = null; MAT.warm(); MAT.gc(); }
   render(); renderStatus();
   if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(() => { });
   setupSW();

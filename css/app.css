@@ -219,3 +219,45 @@ dialog:has(.help){max-width:min(820px,94vw);max-height:90vh;overflow:auto}
 .help button{margin:4px 6px 4px 0}
 @media (max-width:760px){#bar-actions{flex-wrap:wrap}}
 @media print{#btn-help{display:none}}
+
+/* materiał z akt */
+.minfo{font-size:14px;margin:6px 0;color:var(--gray)}.minfo.warn{color:var(--warn);font-weight:700}
+.mgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px;margin:12px 0}
+.mcard{display:flex;gap:10px;border:2px solid var(--navy);border-radius:8px;padding:8px;background:#fff}
+.mthumb{flex:0 0 130px;height:130px;padding:0;overflow:hidden;background:#e9eef5;display:flex;align-items:center;justify-content:center}
+.mthumb img{max-width:100%;max-height:100%;display:block}
+.mmeta{flex:1;min-width:0;font-size:14px}.mid{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:2px}
+.mkind{background:var(--bar);padding:1px 8px;border-radius:4px;font-size:12px}.mmiss{color:var(--warn);font-weight:700;font-size:12px}.msm{font-size:12px;color:var(--gray)}
+body.noscroll{overflow:hidden;position:fixed;width:100%}
+.viewer{position:fixed;inset:0;z-index:100;background:#0e141c;display:flex;flex-direction:column;color:#fff;padding-top:env(safe-area-inset-top)}
+.vbar{display:flex;gap:6px;align-items:center;flex-wrap:wrap;padding:6px 8px;background:var(--navy)}
+.vbar button{background:transparent;color:#fff;border-color:#fff;min-height:44px}
+.vbar button.primary{background:#fff;color:var(--navy)}
+.vbar button[aria-pressed=true]{background:#ffd600;color:#111;border-color:#ffd600}
+.vtitle{margin:0 6px;font-size:15px}
+.vbar .col{min-width:34px;width:34px;padding:0;border-radius:50%;border:3px solid #fff}.vbar .col[aria-pressed=true]{outline:3px solid #ffd600;outline-offset:2px}
+.vmain{flex:1;min-height:0;display:flex}
+.vstage{position:relative;flex:1;min-width:0;overflow:hidden;touch-action:none;background:#05080c;-webkit-user-select:none;user-select:none}
+.vstage[data-tool=pen],.vstage[data-tool=line],.vstage[data-tool=point],.vstage[data-tool=text]{cursor:crosshair}
+.vpan{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform}
+.vrot{position:relative;transform-origin:50% 50%}
+.vrot img{width:100%;height:100%;display:block;pointer-events:none;-webkit-user-drag:none}
+.vrot img.hc{filter:contrast(1.55) brightness(1.08) grayscale(.2)}
+.vann{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.vbanner{position:absolute;left:8px;bottom:8px;background:rgba(0,0,0,.72);color:#fff;font-size:13px;padding:4px 10px;border-radius:4px;pointer-events:none;max-width:70%}
+.vhint{position:absolute;left:50%;top:10px;transform:translateX(-50%);background:#ffd600;color:#111;font-weight:700;padding:8px 14px;border-radius:6px;pointer-events:none;max-width:90%;text-align:center}
+.vpanel{flex:0 0 400px;overflow:auto;background:#fff;color:var(--ink);padding:10px 12px;border-left:3px solid var(--navy)}
+.vpanel[hidden]{display:none}
+.vmeta{border:1.5px solid #9aa7b8;border-radius:6px;padding:6px 10px;margin-bottom:10px}.vmeta summary{font-weight:700;cursor:pointer}
+.vtasks{margin-top:8px;font-size:14px}.vtask{display:flex;gap:8px;align-items:center;justify-content:space-between;margin:4px 0}
+.vh3{margin:10px 0 6px;color:var(--navy);font-size:16px}
+.prow{border:2px solid var(--navy);border-radius:8px;padding:8px;margin:8px 0}.prow.flash{background:#fff8cc}
+.prow-h{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-bottom:6px}
+.pid{background:var(--red,#e0001b);border-color:#a00014;color:#fff;border-radius:50%;min-width:48px;font-size:15px}
+.tf.full{flex:1 1 100%}
+.vdlg{border:3px solid var(--navy);border-radius:10px;max-width:min(520px,92vw);font-family:inherit}.vdlg h2{margin:0 0 8px;font-size:17px;color:var(--navy)}
+@media (orientation:portrait){.vmain{flex-direction:column}.vpanel{flex:0 0 44%;border-left:0;border-top:3px solid var(--navy)}}
+@media (max-width:760px){.mcard{flex-direction:column}.mthumb{flex:0 0 auto;width:100%;height:160px}}
+@media print{.matpage h2{font-size:11pt;margin:0 0 1mm;color:#1f3b5f}.matimg{width:100%;max-height:185mm;object-fit:contain;display:block;margin:2mm 0;border:.3mm solid #8a99ad}.viewer{display:none !important}}
+/* pola w oknach dialogowych, panelu załącznika i zadaniach nie zmieniają wysokości przy fokusie (przesunięcie przycisków pod palcem) */
+dialog textarea:focus,.vpanel textarea:focus,.task textarea:focus,.mcard textarea:focus{min-height:46px}

@@ -174,6 +174,25 @@ await T('A12', 'Pomoc w aplikacji (offline): instrukcja wkładu, kopiowanie pole
   return { ok: !/FAIL/.test(e) && (e.match(/PASS/g) || []).length === 5, note: `${(e.match(/PASS/g) || []).length} kontroli` };
 });
 
+// ---------- T13–T16: materiał z akt ----------
+const assets = process.env.ASSETS || '', old05 = process.env.OLD05 || '';
+await T('A13', 'Materiał z akt: JPG/PNG/PDF, przeglądarka, adnotacje, punkty i tabela, trwałość, plik sprawy, eksport, wydruk, zadanie↔załącznik, brak miejsca')(async () => {
+  const e = execSync(`node tests/e2e_material.mjs ${port} "${assets}"`, { cwd: process.cwd() }).toString();
+  return { ok: !/FAIL/.test(e) && (e.match(/PASS/g) || []).length >= 20, note: `${(e.match(/PASS/g) || []).length} kontroli` };
+});
+await T('A14', 'Materiał z akt w silniku Safari: HEIC, 10 załączników, zapis i otwarcie pliku')(async () => {
+  const e = execSync(`node tests/e2e_material_webkit.mjs ${port} "${assets}" "${work}"`, { cwd: process.cwd() }).toString();
+  return { ok: !/FAIL/.test(e), note: e.split('\n').filter(l => /INFO|otwarcie|HEIC/.test(l)).map(l => l.replace('PASS ', '')).join('; ') };
+});
+await T('A15', 'Kamera w aplikacji: podgląd strumienia nie jest blokowany przez CSP (Chromium z atrapą kamery); „Test urządzenia” pokazuje pamięć')(async () => {
+  const e = execSync(`node tests/e2e_kamera.mjs ${port}`, { cwd: process.cwd() }).toString();
+  return { ok: !/FAIL/.test(e), note: 'na iPadzie: Sprawa → Test urządzenia → Test kamery (ręcznie)' };
+});
+await T('A16', 'Pliki spraw z wersji 0.5.x i bufor IndexedDB v1 otwierają się bez strat po aktualizacji')(async () => {
+  const e = execSync(`node tests/e2e_wstecz.mjs ${port} "${old05}" "${assets}"`, { cwd: process.cwd() }).toString();
+  return { ok: !/FAIL/.test(e) && (e.match(/PASS/g) || []).length === 5, note: `${(e.match(/PASS/g) || []).length} kontroli` };
+});
+
 // ---------- raport ----------
 const pass = results.filter(r => r.ok).length;
 const md = ['# Raport testów akceptacyjnych (część automatyczna)', '', `Wygenerowano: ${new Date().toISOString()} (tests/akceptacja.mjs). Wynik: **${pass} / ${results.length}** zaliczonych.`, '',

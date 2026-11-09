@@ -1,7 +1,7 @@
 // Service worker – generowany/aktualizowany przez tools/build.py (lista plików i wersja cache).
 /*BUILD:BEGIN*/
-const CACHE = 'ogledziny-0.5.2-eff7967a5a';
-const ASSETS = ["./", "assets/fonts/LibreBaskerville-Italic.ttf", "assets/fonts/LibreBaskerville.ttf", "assets/fonts/OFL.txt", "assets/icon-180.png", "assets/icon-192.png", "assets/icon-512.png", "assets/wklad_instrukcja.md", "css/app.css", "forms/00.json", "forms/01.json", "forms/02.json", "forms/03.json", "forms/04.json", "forms/05.json", "forms/06.json", "forms/07.json", "forms/08.json", "forms/09.json", "index.html", "js/app.js", "js/defs.js", "js/engine.js", "js/export.js", "js/migrate.js", "js/pomoc.js", "js/sketch.js", "js/store.js", "js/tasks.js", "js/version.js", "js/wklad.js", "manifest.webmanifest"];
+const CACHE = 'ogledziny-0.6.0-72dceee0b0';
+const ASSETS = ["./", "assets/fonts/LibreBaskerville-Italic.ttf", "assets/fonts/LibreBaskerville.ttf", "assets/fonts/OFL.txt", "assets/icon-180.png", "assets/icon-192.png", "assets/icon-512.png", "assets/wklad_instrukcja.md", "css/app.css", "forms/00.json", "forms/01.json", "forms/02.json", "forms/03.json", "forms/04.json", "forms/05.json", "forms/06.json", "forms/07.json", "forms/08.json", "forms/09.json", "index.html", "js/app.js", "js/attach.js", "js/defs.js", "js/engine.js", "js/export.js", "js/material.js", "js/migrate.js", "js/pomoc.js", "js/sketch.js", "js/store.js", "js/tasks.js", "js/version.js", "js/viewer.js", "js/wklad.js", "manifest.webmanifest", "vendor/pdfjs/LICENSE", "vendor/pdfjs/README.txt", "vendor/pdfjs/pdf.min.mjs", "vendor/pdfjs/pdf.worker.min.mjs"];
 /*BUILD:END*/
 // cache:'reload' – pobranie prosto z sieci, z pominięciem pamięci HTTP (inaczej nowa wersja mogłaby zapisać stare pliki)
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS.map(u => new Request(u, { cache: 'reload' }))))); });

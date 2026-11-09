@@ -28,11 +28,18 @@ export function taskCard(t, env) {
     lab('Wynik', bind(tf(t, 'wynik', 'wynik pomiaru / ustalenie'), 'wynik'), 'grow2'),
     lab('Jednostka', bind(tf(t, 'jednostka', 'jedn.'), 'jednostka'), 'narrow'),
     lab('Nr zdjęcia', bind(tf(t, 'nr_zdjecia', 'nr zdj.'), 'nr_zdjecia'), 'mid'));
+  const atts = env.attachments ? env.attachments() : [];
+  let attRow = null;
+  if (atts.length || t.zalacznik) {
+    const sel = h('select', { 'aria-label': 'Załącznik z materiału z akt' }, h('option', { value: '', text: '— brak —' }), ...atts.map(a => h('option', { value: a.id, text: `${a.id} · ${a.opis || a.rodzaj}` })));
+    sel.value = t.zalacznik || ''; sel.addEventListener('change', () => { t.zalacznik = sel.value; env.touch(); env.rerender && env.rerender(); });
+    attRow = h('div', { class: 'task-meta' }, lab('Załącznik (materiał z akt)', sel), t.zalacznik ? h('button', { type: 'button', class: 'small', text: 'Do załącznika →', onclick: () => env.openAtt(t.zalacznik) }) : null);
+  }
   const pow = lab('Powód niewykonania', bind(tf(t, 'powod', 'dlaczego nie wykonano'), 'powod'), 'powod');
   const showPow = () => { pow.hidden = t.status !== 'niewykonane'; };
   const mk = (txt, val, cls) => h('button', { type: 'button', class: 'st ' + cls, text: txt, 'aria-pressed': String(t.status === val), onclick: () => { t.status = t.status === val ? '' : val; paint(); btns.forEach(b => b.el.setAttribute('aria-pressed', String(t.status === b.val))); showPow(); env.touch(); } });
   const btns = [{ val: 'wykonane', el: mk('✔ Wykonane', 'wykonane', 'ok') }, { val: 'niewykonane', el: mk('✘ Niewykonane', 'niewykonane', 'no') }];
-  card.append(head, c, o, meta, res, h('div', { class: 'task-st' }, btns.map(b => b.el), h('button', { type: 'button', class: 'small danger', text: 'Usuń', onclick: () => env.remove(t) })), pow);
+  card.append(head, c, o, meta, ...(attRow ? [attRow] : []), res, h('div', { class: 'task-st' }, btns.map(b => b.el), h('button', { type: 'button', class: 'small danger', text: 'Usuń', onclick: () => env.remove(t) })), pow);
   paint(); showPow();
   requestAnimationFrame(() => card.querySelectorAll('textarea').forEach(grow));
   return card;

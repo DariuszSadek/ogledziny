@@ -9,6 +9,7 @@ To repozytorium nie udziela żadnej licencji.
 (Czcionka Libre Baskerville jest dołączona na jej własnej licencji SIL Open Font License 1.1 – plik `assets/fonts/OFL.txt`; licencja ta dotyczy wyłącznie czcionki.)
 
 ## Stan
+Materiał z akt (szkic Policji, zdjęcia): import JPG/PNG/HEIC/PDF (pdf.js w `vendor/pdfjs`, Apache-2.0), przeglądarka z adnotacjami i tabelą punktów.
 Etap 2 (moduł „Nowa sprawa”): wczytywanie „wkładu” z analizy (formularze wstępnie wypełnione danymi z akt + lista zadań z wynikami w terenie); format wkładu i paczka dla projektu analizy akt: `docs/wklad/`, generator `tools/gen_paczka_wkladu.py`.
 Etap 4: wydruk do PDF (przycisk „Drukuj / PDF”, okno drukowania systemu → „Zapisz jako PDF”) i „Eksport tekstowy” (Markdown z polami i ich identyfikatorami).
 Etap 3: wszystkie formularze (00 i 01–09), rysunki wektorowe z klikalnymi strefami (02–05, 07), zapis/odczyt pliku sprawy, praca offline. Raport zgodności z wzorami: `docs/raport_zgodnosci.md`.

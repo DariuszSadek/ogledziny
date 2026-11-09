@@ -1,0 +1,34 @@
+// Silnik Safari (WebKit): HEIC, 10 załączników (czasy zapisu/otwarcia), zrzuty ekranu w rozmiarze iPada.
+// Użycie: node tests/e2e_material_webkit.mjs <port> <katalog_plików> <katalog_zrzutów>
+import { webkit } from 'playwright-core';
+import fs from 'fs';
+const port = process.argv[2] || 8765, A = process.argv[3], OUT = process.argv[4] || '.';
+const ok = (v, m) => { console.log((v ? 'PASS ' : 'FAIL ') + m); if (!v) process.exitCode = 1; };
+const b = await webkit.launch();
+const ctx = await b.newContext({ viewport: { width: 1194, height: 834 }, hasTouch: true, acceptDownloads: true });
+const p = await ctx.newPage(); const errs = []; p.on('pageerror', e => errs.push('' + e));
+await p.goto(`http://localhost:${port}/`); await p.waitForSelector('text=Nowa sprawa'); await p.click('text=Nowa sprawa'); await p.waitForSelector('.titleband');
+await p.click('#tabs button:has-text("Materiał z akt")'); await p.waitForSelector('.material');
+const add = async (file, rodzaj, n) => { await p.setInputFiles('.material input[type=file]', file); await p.waitForSelector('dialog[open] textarea'); await p.selectOption('dialog select', rodzaj); await p.fill('dialog textarea[aria-label="Podstawa w aktach"]', 'k. ' + n); await p.fill('dialog textarea[aria-label="Opis"]', 'Załącznik ' + n);
+  await p.click('dialog button:has-text("Dołącz")'); await p.waitForFunction(k => document.querySelectorAll('.mcard').length >= k || document.querySelector('dialog[open]'), n, { timeout: 60000 }); await p.waitForTimeout(200); };
+await add(`${A}/foto.heic`, 'zdjęcie', 1);
+const heicOk = await p.locator('.mcard').count() === 1; ok(heicOk, 'HEIC dołączony w silniku WebKit (konwersja do JPEG): ' + ((await p.textContent('.mcard')).match(/\d+×\d+ px · [\d,.]+ MB/) || ['?'])[0]);
+const t0 = Date.now();
+for (let i = 2; i <= 10; i++) await add(`${A}/${i % 2 ? 'foto_duze.jpg' : 'szkic-02.jpg'}`, i % 2 ? 'zdjęcie' : 'szkic', i);
+ok(await p.locator('.mcard').count() === 10, `10 załączników dołączonych (${Math.round((Date.now() - t0) / 1000)} s dla 9 plików)`);
+await p.screenshot({ path: `${OUT}/mat_lista.png` });
+await p.locator('.mcard').nth(1).locator('button:has-text("Otwórz")').click(); await p.waitForFunction(() => { const i = document.querySelector('.viewer img'); return i && i.naturalWidth > 0; });
+const box = await p.locator('.vstage').boundingBox();
+await p.click('.vbar button:has-text("Punkt")'); await p.mouse.click(box.x + box.width * .35, box.y + box.height * .35); await p.mouse.click(box.x + box.width * .55, box.y + box.height * .45); await p.mouse.click(box.x + box.width * .45, box.y + box.height * .7);
+await p.fill('.prow[data-pid="P1"] textarea[aria-label="P1 – Co to jest"]', 'SPO – naroże budynku'); await p.fill('.prow[data-pid="P1"] textarea[aria-label="P1 – Wynik"]', '12,40');
+await p.click('.vbar button:has-text("Linia")'); await p.mouse.move(box.x + box.width * .35, box.y + box.height * .35); await p.mouse.down(); await p.mouse.move(box.x + box.width * .55, box.y + box.height * .45, { steps: 6 }); await p.mouse.up();
+await p.waitForTimeout(400); await p.screenshot({ path: `${OUT}/mat_przegladarka.png` });
+await p.click('.vbar button:has-text("← Wróć")'); await p.waitForSelector('.material');
+await p.evaluate(() => { navigator.canShare = () => false; }); const t1 = Date.now();
+const [dl] = await Promise.all([p.waitForEvent('download'), p.click('#btn-save')]); const ms = Date.now() - t1; await dl.saveAs('/tmp/__w10.json'); const size = fs.statSync('/tmp/__w10.json').size; fs.copyFileSync('/tmp/__w10.json', `${OUT}/sprawa_10.json`); fs.unlinkSync('/tmp/__w10.json');
+console.log(`INFO plik sprawy z 10 załącznikami: ${(size / 1048576).toFixed(1)} MB, zapis ${ms} ms`);
+const q = await (await b.newContext({ viewport: { width: 1194, height: 834 } })).newPage(); q.on('pageerror', e => errs.push('' + e)); await q.goto(`http://localhost:${port}/`); await q.waitForSelector('text=Otwórz sprawę');
+const t2 = Date.now(); await q.setInputFiles('#file-input', `${OUT}/sprawa_10.json`); await q.waitForSelector('#tabs button:has-text("Materiał z akt (10)")'); const openMs = Date.now() - t2;
+await q.click('#tabs button:has-text("Materiał z akt")'); await q.locator('.mcard').nth(1).locator('button:has-text("Otwórz")').click(); await q.waitForFunction(() => { const i = document.querySelector('.viewer img'); return i && i.naturalWidth > 0; });
+ok(await q.locator('.prow').count() === 3 && await q.inputValue('.prow[data-pid="P1"] textarea[aria-label="P1 – Wynik"]') === '12,40', `otwarcie pliku z 10 załącznikami: ${openMs} ms; punkty i wyniki na miejscu`);
+console.log('errs', errs); await b.close();
