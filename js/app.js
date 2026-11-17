@@ -232,8 +232,9 @@ function openFile() { const i = $('file-input'); i.value = ''; i.click(); }
 $('file-input').addEventListener('change', async e => {
   const f = e.target.files[0]; if (!f) return;
   await READY;
-  let obj;
-  try { obj = JSON.parse(await f.text()); } catch { return toast('To nie jest poprawny plik sprawy (błąd odczytu JSON).'); }
+  let obj, raw = '';
+  try { raw = await f.text(); obj = JSON.parse(raw); } catch { return toast('To nie jest poprawny plik sprawy (błąd odczytu JSON).'); }
+  if (obj && obj.format === 'ogledziny-wklad') return wkladDialog(true, raw);      // wybrano plik wkładu – otwórz „Nowa sprawa z wkładu”
   if (obj.app !== 'ogledziny' || !Array.isArray(obj.forms)) return toast('To nie jest plik sprawy aplikacji Oględziny.');
   const doOpen = async () => {
     let restored = { n: 0, missing: [] };
