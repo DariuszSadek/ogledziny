@@ -206,7 +206,7 @@ function saveFile() {
   const done = how => { C.savedToFile = iso; C.savedRev = rev; persist(); toast(`Zapisano plik: ${name} (${how}${fs.items.length ? ', ' + (json.length / 1048576).toFixed(1) + ' MB' : ''})` + (fs.missing.length ? ` – UWAGA: bez obrazów: ${fs.missing.join(', ')}` : '')); };
   const tryShare = type => {
     const file = new File([json], name, { type });
-    if (navigator.canShare && navigator.canShare({ files: [file] })) return navigator.share({ files: [file], title: name }).then(() => 'udostępnianie', e => { if (e && e.name === 'AbortError') throw e; return null; });
+    if (navigator.maxTouchPoints > 1 && navigator.canShare && navigator.canShare({ files: [file] })) return navigator.share({ files: [file], title: name }).then(() => 'udostępnianie', e => { if (e && e.name === 'AbortError') throw e; return null; });
     return null;
   };
   // Wywołania w tej samej akcji użytkownika (bez await przed share).
@@ -219,7 +219,7 @@ function saveFile() {
 function download(json, name, done) {
   const a = h('a', { href: URL.createObjectURL(new Blob([json], { type: 'application/json' })), download: name });
   document.body.append(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 4000);
-  done('pobieranie – sprawdź folder Pobrane / zapisz w Plikach');
+  done('pobieranie – plik jest w folderze Pobrane');
 }
 function openFile() { const i = $('file-input'); i.value = ''; i.click(); }
 $('file-input').addEventListener('change', async e => {
