@@ -86,8 +86,14 @@ Zaznacz i napisz mi wynik. Wyniki testów automatycznych (Mac, Chrome i silnik S
 5. ☐ **Aktualizacja:** po mojej następnej zmianie zobacz baner „Dostępna nowa wersja”, kliknij Zaktualizuj, sprawdź, że dane zostały.
 6. ☐ **Test urządzenia** (zakładka Sprawa) – zrzut ekranu, gdy cokolwiek nie działa.
 
+7. ☐ **Materiał z akt (samolot, iPad):** dołącz JPG, zdjęcie HEIC ze Zdjęć i PDF → otwórz załącznik → narysuj Pencilem, powiększ palcami, wstaw 3 punkty i wpisz wyniki → Zapisz plik → zamknij aplikację → otwórz plik na iPadzie i na Macu. W „Test urządzenia” sprawdź pamięć.
+8. ☐ **Wkład z załącznikami:** wczytaj wkład z `zalaczniki` → w „Materiał z akt” przy „DO DOŁĄCZENIA” użyj „Dołącz plik” → zadanie powiązane otwiera załącznik („Do załącznika →”).
+
 ## 9. Znane ograniczenia
 
-- Moduł „Nowa sprawa” (wstępne wypełnianie formularzy zadaniami z analizy akt) to etap 2 projektu – nie jest zbudowany; w pliku sprawy jest zarezerwowane miejsce na listę zadań.
 - Bufory na urządzeniach nie synchronizują się – sprawy przenosisz plikiem.
-- Wydruk i eksport .md na iPadzie nie były jeszcze sprawdzone na urządzeniu.
+- Wydruk i eksport .md na iPadzie nie były jeszcze sprawdzone na urządzeniu; to samo dotyczy Pencila i gestów w przeglądarce załączników, HEIC na iPadzie oraz rzeczywistego limitu pamięci.
+- Załączniki: JPG, PNG, HEIC, PDF. Zdjęć RAW/NEF aplikacja nie obsługuje (nietestowane) – zdjęcia robisz Nikonem, a w aplikacji służą tylko skany i zdjęcia z akt.
+- Skany PDF w kodowaniu JBIG2 lub JPEG2000 mogą się nie wyświetlić (pokaże się komunikat); wtedy zapisz stronę jako JPEG.
+- „Dołącz wkład” do istniejącej sprawy zawsze dokłada (patrz 01_FORMAT_WKLADU.md).
+- Nakładka zdjęcia z akt na podgląd kamery – świadomie niezrobiona.
