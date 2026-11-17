@@ -1,7 +1,7 @@
 // Krótka instrukcja w aplikacji (działa offline): przycisk „Pomoc” na pasku.
 import { h } from './engine.js';
 
-export const POLECENIE = 'Przygotuj wkład do formularzy oględzin dla tej sprawy.\nNajpierw przeczytaj 00_INSTRUKCJA_PROJEKTU.md i 01_FORMAT_WKLADU.md z folderu _wklad_oględziny i stosuj je ściśle.';
+export const POLECENIE = 'Przygotuj wkład do formularzy oględzin dla tej sprawy.\nNajpierw przeczytaj 00_INSTRUKCJA_PROJEKTU.md i 01_FORMAT_WKLADU.md z folderu _wklad_ogledziny i stosuj je ściśle.';
 
 async function kopiuj(text) {
   try { await navigator.clipboard.writeText(text); return true; } catch { /* awaryjnie poniżej */ }
@@ -23,7 +23,7 @@ export function showHelp({ dialog, toast }) {
   const body = h('div', { class: 'help' },
     sec('1. Wkład do formularzy (przed oględzinami)',
       ol(
-        ['W nowym czacie projektu analizy akt (z aktami i folderem _wklad_oględziny) wklej dokładnie to:', h('pre', { class: 'cmdbox', text: POLECENIE }), copyBtn('Kopiuj to polecenie', () => POLECENIE, 'Skopiowano polecenie.')],
+        ['W nowym czacie projektu analizy akt (z aktami i folderem _wklad_ogledziny) wklej dokładnie to:', h('pre', { class: 'cmdbox', text: POLECENIE }), copyBtn('Kopiuj to polecenie', () => POLECENIE, 'Skopiowano polecenie.')],
         'Z odpowiedzi skopiuj cały blok kodu „json” (od { do }).',
         'Tutaj: ekran startowy → „Nowa sprawa z wkładu”. Gdy sprawa jest już otwarta: zakładka Sprawa → „Dołącz wkład” (wcześniej usuń zbędne testowe formularze).',
         'Wklej → „Wczytaj”. Jeśli pojawi się raport z pominięciami – popraw wkład w projekcie i wczytaj ponownie.',
