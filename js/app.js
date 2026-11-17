@@ -211,6 +211,13 @@ function saveFile() {
   };
   // Wywołania w tej samej akcji użytkownika (bez await przed share).
   let p = null;
+  // Chrome / Edge (Mac, Windows): okno „Zapisz jako” – wybierasz dowolny folder, np. folder sprawy na iCloud (zapamiętuje ostatni).
+  if (window.showSaveFilePicker && !(navigator.maxTouchPoints > 1)) {
+    window.showSaveFilePicker({ suggestedName: name, id: 'ogledziny-sprawy', types: [{ description: 'Plik sprawy (.json)', accept: { 'application/json': ['.json'] } }] })
+      .then(async hd => { const w = await hd.createWritable(); await w.write(json); await w.close(); done('zapis w wybranym folderze'); },
+        e => { if (e && e.name === 'AbortError') return; download(json, name, done); });
+    return;
+  }
   try { p = tryShare('application/json'); } catch (e) { if (e.name === 'AbortError') return; }
   if (!p) { try { p = tryShare('text/plain'); } catch (e) { if (e.name === 'AbortError') return; } }
   if (p) { p.then(how => how ? done(how) : download(json, name, done), e => { if (e.name !== 'AbortError') download(json, name, done); }); }
