@@ -12,7 +12,7 @@ const txt = await p.textContent('dialog .help');
 ok(/Przygotuj wkład do formularzy oględzin dla tej sprawy/.test(txt) && /Nowa sprawa z wkładu/.test(txt) && /Dołącz wkład/.test(txt) && /Zapisz plik/.test(txt), 'Pomoc: kroki wkładu, zapis');
 ok(!/claude|\bAI\b/i.test(txt), 'Pomoc: bez wzmianek o AI');
 await p.click('dialog button:has-text("Kopiuj to polecenie")');
-ok(await p.evaluate(() => navigator.clipboard.readText()) === 'Przygotuj wkład do formularzy oględzin dla tej sprawy.', 'schowek: polecenie');
+ok(await p.evaluate(() => navigator.clipboard.readText()) === 'Przygotuj wkład do formularzy oględzin dla tej sprawy.\nNajpierw przeczytaj 00_INSTRUKCJA_PROJEKTU.md i 01_FORMAT_WKLADU.md z folderu _wklad_oględziny i stosuj je ściśle.', 'schowek: polecenie');
 await p.click('dialog button:has-text("Kopiuj instrukcję dla projektu analizy")'); await p.waitForTimeout(500);
 const clip = await p.evaluate(() => navigator.clipboard.readText());
 ok(clip.startsWith('PLIK 1: 00_INSTRUKCJA_PROJEKTU.md') && /Daty\./.test(clip) && /SPOZA WYPOSAŻENIA/.test(clip) && clip.length > 12000 && !/claude|\bAI\b/i.test(clip), 'schowek: instrukcja projektu (' + clip.length + ' znaków, offline)');
