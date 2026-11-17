@@ -158,7 +158,7 @@ function renderCase(main) {
       h('div', { class: 'btns' }, h('button', { type: 'button', class: 'primary', text: 'Materiał z akt', onclick: () => go('material') }))),
     h('div', { class: 'card' }, h('h2', { text: 'Wkład i zadania' }),
       h('p', { text: `Zadania: ${counts(C).all} (wykonane ${counts(C).done}, niewykonane ${counts(C).no}, otwarte ${counts(C).open}).` }),
-      h('div', { class: 'btns' }, h('button', { type: 'button', class: 'primary', text: 'Dołącz wkład (wklej lub z pliku)', onclick: () => wkladDialog(false) }), h('button', { type: 'button', text: 'Zadania', onclick: () => go('zadania') }))),
+      h('div', { class: 'btns' }, h('button', { type: 'button', class: 'primary', text: 'Nowa sprawa z wkładu', onclick: () => wkladDialog(true) }), h('button', { type: 'button', text: 'Dołącz wkład do tej sprawy', onclick: () => wkladDialog(false) }), h('button', { type: 'button', text: 'Zadania', onclick: () => go('zadania') }))),
     h('div', { class: 'card' }, h('h2', { text: 'Wydruk i eksport' }),
       h('div', { class: 'btns' },
         h('button', { type: 'button', class: 'primary', text: 'Drukuj / PDF – cała sprawa', onclick: () => doPrint(C.forms) }),
