@@ -5,7 +5,7 @@ import fs from 'fs';
 const port = process.argv[2] || 8765, A = process.argv[3];
 const ok = (v, m) => { console.log((v ? 'PASS ' : 'FAIL ') + m); if (!v) process.exitCode = 1; };
 const b = await chromium.launch({ executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', headless: true, args: ['--disable-gpu', '--no-sandbox'] });
-const ctx = await b.newContext({ viewport: { width: 1180, height: 820 }, acceptDownloads: true });
+const ctx = await b.newContext({ viewport: { width: 1180, height: 820 }, acceptDownloads: true }); await ctx.addInitScript(() => { try { Object.defineProperty(window, 'showSaveFilePicker', { value: undefined }); } catch { /* */ } });
 const p = await ctx.newPage(); const errs = []; p.on('pageerror', e => errs.push('' + e)); p.on('console', m => { if (m.type() === 'error') errs.push(m.text()); });
 await p.goto(`http://localhost:${port}/`); await p.waitForSelector('text=Nowa sprawa'); await p.click('text=Nowa sprawa'); await p.waitForSelector('.titleband');
 await p.click('#tabs button:has-text("Materiał z akt")'); await p.waitForSelector('.material');

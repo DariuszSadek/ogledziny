@@ -17,7 +17,7 @@ const readJson = f => JSON.parse(fs.readFileSync(f, 'utf8'));
 // ---------- T1: tryb samolotowy ----------
 await T('A1', 'Tryb samolotowy: otwarcie aplikacji, wypełnienie, zapis pliku')(async () => {
   const b = await chromium.launch({ executablePath: CH, headless: true, args: ['--disable-gpu', '--no-sandbox'] });
-  const ctx = await b.newContext({ viewport: { width: 1000, height: 1200 }, acceptDownloads: true });
+  const ctx = await b.newContext({ viewport: { width: 1000, height: 1200 }, acceptDownloads: true }); await ctx.addInitScript(() => { try { Object.defineProperty(window, 'showSaveFilePicker', { value: undefined }); } catch { /* */ } });
   const p = await ctx.newPage();
   await p.goto(URL0); await p.waitForSelector('text=Nowa sprawa'); await p.evaluate(() => navigator.serviceWorker.ready); await p.waitForTimeout(800);
   await ctx.setOffline(true);
@@ -53,7 +53,7 @@ await T('A2', 'Zamknięcie przeglądarki i ponowne otwarcie: dane z bufora na mi
 // ---------- T3: plik z „iPada” otwiera się na „MacBooku” bez strat ----------
 await T('A3', 'Plik zapisany na jednym urządzeniu otwiera się na innym bez strat (wszystkie 10 formularzy)')(async () => {
   const b = await chromium.launch({ executablePath: CH, headless: true, args: ['--disable-gpu', '--no-sandbox'] });
-  const mk = async () => { const x = await b.newContext({ viewport: { width: 1000, height: 1200 }, acceptDownloads: true }); const p = await x.newPage(); await p.goto(URL0); await p.waitForSelector('text=Nowa sprawa'); return p; };
+  const mk = async () => { const x = await b.newContext({ viewport: { width: 1000, height: 1200 }, acceptDownloads: true }); await x.addInitScript(() => { try { Object.defineProperty(window, 'showSaveFilePicker', { value: undefined }); } catch { /* */ } }); const p = await x.newPage(); await p.goto(URL0); await p.waitForSelector('text=Nowa sprawa'); return p; };
   const A = await mk(); await A.click('text=Nowa sprawa'); await A.waitForSelector('.titleband');
   await A.click('#tabs button:has-text("Sprawa")'); await A.fill('input[aria-label="Sygnatura / nr zlecenia"]', 'III K 5/26');
   const typed = {};
@@ -79,7 +79,8 @@ await T('A4', 'Plik ze starszej wersji definicji otwiera się po aktualizacji (r
   j.defVersions['01'] = '0.9.0'; j.forms.find(f => f.formId === '01').data['01.Z.99'] = 'pole z dawnej wersji';
   const old = path.join(work, 'stary.json'); fs.writeFileSync(old, JSON.stringify(j));
   const b = await chromium.launch({ executablePath: CH, headless: true, args: ['--disable-gpu', '--no-sandbox'] });
-  const p = await (await b.newContext({ acceptDownloads: true })).newPage(); await p.goto(URL0); await p.waitForSelector('text=Nowa sprawa');
+  const cx = await b.newContext({ acceptDownloads: true }); await cx.addInitScript(() => { try { Object.defineProperty(window, 'showSaveFilePicker', { value: undefined }); } catch (e) { } });
+  const p = await cx.newPage(); await p.goto(URL0); await p.waitForSelector('text=Nowa sprawa');
   await p.setInputFiles('#file-input', old); await p.waitForSelector('dialog[open]');
   const rep = await p.textContent('dialog'); await p.click('dialog button:has-text("OK")');
   await p.evaluate(() => { navigator.canShare = () => false; }); const [dl] = await Promise.all([p.waitForEvent('download'), p.click('#btn-save')]); const f = path.join(work, 'stary_zapis.json'); await dl.saveAs(f); await b.close();
@@ -183,6 +184,11 @@ await T('A13', 'Materiał z akt: JPG/PNG/PDF, przeglądarka, adnotacje, punkty i
 await T('A17', 'Wkład v2: załączniki „do dołączenia”, dołączenie pliku, powiązanie z zadaniem, wkład v1 nadal działa')(async () => {
   const e = execSync(`node tests/e2e_wklad_zalaczniki.mjs ${port} "${assets}"`, { cwd: process.cwd() }).toString();
   return { ok: !/FAIL/.test(e) && (e.match(/PASS/g) || []).length >= 12, note: `${(e.match(/PASS/g) || []).length} kontroli` };
+});
+await T('A18', 'Formularz 10 (hulajnoga / UTO): reguły [auto] R1–R14, rysunek, eksport, wydruk')(async () => {
+  const u = execSync('node tests/rules10.mjs', { cwd: process.cwd() }).toString();
+  const e = execSync(`node tests/e2e_form10.mjs ${port}`, { cwd: process.cwd() }).toString();
+  return { ok: !/FAIL/.test(u + e) && (u.match(/PASS/g) || []).length >= 30 && (e.match(/PASS/g) || []).length >= 8, note: `reguły ${(u.match(/PASS/g) || []).length} + przeglądarka ${(e.match(/PASS/g) || []).length} kontroli` };
 });
 await T('A14', 'Materiał z akt w silniku Safari: HEIC, 10 załączników, zapis i otwarcie pliku')(async () => {
   const e = execSync(`node tests/e2e_material_webkit.mjs ${port} "${assets}" "${work}"`, { cwd: process.cwd() }).toString();

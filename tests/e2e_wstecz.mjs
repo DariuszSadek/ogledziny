@@ -6,7 +6,7 @@ const port = process.argv[2] || 8765, OLD = process.argv[3], A = process.argv[4]
 const ok = (v, m) => { console.log((v ? 'PASS ' : 'FAIL ') + m); if (!v) process.exitCode = 1; };
 const old = JSON.parse(fs.readFileSync(OLD, 'utf8'));
 const b = await chromium.launch({ executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', headless: true, args: ['--disable-gpu', '--no-sandbox'] });
-const ctx = await b.newContext({ viewport: { width: 1180, height: 820 }, acceptDownloads: true }); const p = await ctx.newPage(); const errs = []; p.on('pageerror', e => errs.push('' + e));
+const ctx = await b.newContext({ viewport: { width: 1180, height: 820 }, acceptDownloads: true }); const p = await ctx.newPage(); const errs = []; p.on('pageerror', e => errs.push('' + e)); await ctx.addInitScript(() => { try { Object.defineProperty(window, 'showSaveFilePicker', { value: undefined }); } catch { /* */ } });
 await p.goto(`http://localhost:${port}/`); await p.waitForSelector('text=Otwórz sprawę');
 await p.setInputFiles('#file-input', OLD); await p.waitForSelector('#tabs button:has-text("Materiał z akt (0)")');
 const nForms = old.forms.length, nTasks = (old.tasks || []).length;

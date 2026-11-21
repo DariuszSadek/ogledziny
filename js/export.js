@@ -1,3 +1,4 @@
+import { autoText } from './rules10.js';
 // „Eksport tekstowy”: Markdown z wypełnionymi polami w kolejności formularzy, z identyfikatorami pól.
 const val = v => String(v).replace(/\r/g, '').trim();
 const one = v => { const t = val(v); return t.includes('\n') ? '\n' + t.split('\n').map(l => '    > ' + l).join('\n') : ' ' + t; };
@@ -42,6 +43,8 @@ function formSection(def, inst) {
         for (const sp of b.spots) if (has(sp.id)) { filled++; (sp.type === 'check' ? chk : txt).push(sp.type === 'check' ? `${sp.label || '(strefa bez opisu)'} ${id(sp.id)}` : `${sp.label || 'pole'} ${id(sp.id)}: ${val(d[sp.id]).replace(/\n/g, ' / ')}`); }
         if (chk.length) L.push(`- Zaznaczone na rysunku: ${chk.join('; ')}`);
         for (const t of txt) L.push(`- ${t}`);
+      } else if (b.k === 'auto' && def.rules) {
+        const t = autoText(def, k => d[k], b.rule); if (t) L.push(`- ${b.label} (wyliczone): ${t.replace(/\n/g, ' / ')}`);
       } else if (b.k === 'sketch') {
         const sk = d[b.id];
         if (sk && sk.strokes && sk.strokes.length) { filled++; L.push(`- Szkic sytuacyjny ${id(b.id)}: narysowany (${sk.strokes.length} kresek; rysunek w pliku sprawy, nie w tym eksporcie)`); }

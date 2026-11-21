@@ -45,7 +45,7 @@ export function applyWklad(w, C, DEFS, uid) {
   const usedRefs = new Set(C.forms.map(f => f.ref).filter(Boolean));
   (w.formularze || []).forEach((f, i) => {
     const id = str(f.formularz).padStart(2, '0'), def = DEFS[id];
-    if (!def) { R.rejected.push({ co: `formularz #${i + 1} (${str(f.formularz)})`, dlaczego: 'nieznany numer formularza (dozwolone 00–09)' }); return; }
+    if (!def) { R.rejected.push({ co: `formularz #${i + 1} (${str(f.formularz)})`, dlaczego: 'nieznany numer formularza (dozwolone 00–10)' }); return; }
     let ref = str(f.ref) || `F${C.forms.length + 1}`; while (usedRefs.has(ref)) ref += '*'; usedRefs.add(ref);
     const n = C.forms.filter(x => x.formId === id).length + 1;
     const inst = { iid: uid(), formId: id, ref, label: str(f.etykieta) || `${id} ${n}`, data: {}, extra: {}, orphans: {}, reminders: [] };

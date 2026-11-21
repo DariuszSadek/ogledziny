@@ -57,7 +57,7 @@ Plik JSON (UTF-8). Aplikacja „Oględziny” wczytuje go przez „Nowa sprawa z
 
 **`formularze[]`** (kolejność dowolna)
 - `ref` – unikalna krótka nazwa egzemplarza (A, B, M1…); do niej odwołują się zadania.
-- `formularz` – numer `"00"`…`"09"` jako tekst.
+- `formularz` – numer `"00"`…`"10"` jako tekst.
 - `etykieta` – nazwa pokazywana w aplikacji.
 - `pola` – obiekt `identyfikator → wartość` (identyfikatory ze słowników `slownik_NN.md`). Wartość: tekst lub liczba (zapisywana jak podano). Pole wyboru: `true`. Nie wpisuj: wyników oględzin, szkiców, dat oględzin, tabel „Zadania specjalne” (sekcja Z). **Pola `gps` i `time`:** przyciski „GPS” i „Teraz” w terenie zastępują cały wpis w polu (bez pytania) – pola `gps` zostaw puste albo wpisz tylko współrzędne dziesiętne („50.123456, 20.123456”); adres wpisuj w polach tekstowych lub w `przypomnienia`. Dodatkowe wiersze tabel (`…rN.cM`, N większe niż liczba wierszy we wzorze) są dozwolone.
 - `przypomnienia` – lista krótkich tekstów pokazywanych na górze formularza w terenie.

@@ -1,0 +1,21 @@
+// Formularz 10 (hulajnoga / UTO) w przeglądarce: dodanie, klasyfikacja [auto], reguła R2, rysunek, eksport, wydruk.
+import { chromium } from 'playwright-core';
+const port = process.argv[2] || 8765;
+const ok = (v, m) => { console.log((v ? 'PASS ' : 'FAIL ') + m); if (!v) process.exitCode = 1; };
+const b = await chromium.launch({ executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', headless: true, args: ['--disable-gpu', '--no-sandbox'] });
+const p = await b.newPage({ viewport: { width: 1100, height: 1400 } }); const errs = []; p.on('pageerror', e => errs.push('' + e));
+await p.goto(`http://localhost:${port}/`); await p.waitForSelector('text=Nowa sprawa'); await p.click('text=Nowa sprawa'); await p.waitForSelector('.titleband');
+await p.click('button:has-text("+ Formularz")'); await p.waitForSelector('dialog[open]');
+await p.click('dialog button:has-text("10 · Hulajnoga")'); await p.click('dialog button:has-text("Dodaj wybrany")'); await p.waitForSelector('.form[data-form="10"]');
+ok(await p.locator('.form[data-form="10"] section.sec').count() === 21, 'formularz 10: 21 sekcji');
+ok(await p.locator('.form[data-form="10"] .figwrap').count() === 3, 'trzy rysunki rozkładówki (bok lewy, bok prawy, rzut z góry)');
+const ck = async (g, l) => p.locator(`.form[data-form="10"] .group:has(.glabel:text-is("${g}")) label.chk:has-text("${l}")`).first().click();
+await ck('D.1 Napęd', 'elektryczny'); await ck('D.2 Liczba osi', '2'); await ck('D.3 Kierownica', 'jest'); await ck('D.4 Siedzenie', 'brak'); await ck('D.5 Pedały', 'brak'); await ck('D.7 Pozycja kierującego', 'stojąca');
+ok(/hulajnogi elektrycznej/.test(await p.locator('.autoval[data-rule="R1"]').textContent()), 'D.15 przelicza się na żywo po zaznaczeniu cech');
+await p.locator('.form[data-form="10"] [aria-label="E.1 Długość całkowita [m]"]').fill('1,45'); await p.locator('.form[data-form="10"] [aria-label="niepewność [m]"]').first().fill('0,02');
+ok(/NZ/.test(await p.locator('.autoval[data-rule="R2"]').textContent()), 'R2: długość 1,45 ± 0,02 m > 1,4 m → NZ');
+await p.locator('.fig .spot').nth(11).click(); ok(await p.locator('.fig input:checked').count() === 1, 'rozkładówka: kliknięcie zaznacza element');
+const md = await p.evaluate(() => window.__ogl.md()); ok(/wyliczone/.test(md) && /47b/.test(md) && /\[10\.E\./.test(md), 'eksport tekstowy zawiera pola i wyniki [auto]');
+await p.evaluate(() => window.__ogl.printAll()).catch(() => { }); await p.waitForTimeout(500);
+ok(await p.locator('#print-root .autoval').count() > 0, 'wydruk zawiera wyniki [auto]');
+ok(errs.length === 0, 'brak błędów JS: ' + errs.join(' | ')); await b.close();

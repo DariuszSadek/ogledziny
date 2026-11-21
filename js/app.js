@@ -10,8 +10,8 @@ import { showHelp } from './pomoc.js';
 import { createMaterial } from './material.js';
 
 const $ = id => document.getElementById(id);
-const FORM_IDS = ['00', '01', '02', '03', '04', '05', '06', '07', '08', '09'];
-const FORM_NAMES = { '00': 'Karta czynności', '01': 'Miejsce zdarzenia', '02': 'Motocykl', '03': 'Samochód osobowy', '04': 'Samochód ciężarowy', '05': 'Furgon / autobus', '06': 'Silnik', '07': 'Ogumienie', '08': 'Rzecz', '09': 'Rejestr zdjęć i przedmiotów' };
+const FORM_IDS = ['00', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10'];
+const FORM_NAMES = { '00': 'Karta czynności', '01': 'Miejsce zdarzenia', '02': 'Motocykl', '03': 'Samochód osobowy', '04': 'Samochód ciężarowy', '05': 'Furgon / autobus', '06': 'Silnik', '07': 'Ogumienie', '08': 'Rzecz', '09': 'Rejestr zdjęć i przedmiotów', '10': 'Hulajnoga / UTO' };
 let DEFS = {}, C = null, view = 'home', saveTimer = null, lastBufferOk = null;
 
 const uid = () => (crypto.randomUUID ? crypto.randomUUID() : 'i' + Date.now().toString(36) + Math.random().toString(36).slice(2, 8));

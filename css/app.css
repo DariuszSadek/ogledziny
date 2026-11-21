@@ -183,6 +183,10 @@ img.sketch-print{width:100%;display:block;border:1.5px solid var(--navy)}
   .stbl .trow .cell{font-size:8pt}
   .figwrap{overflow:visible;border:0;margin:1mm 0}
   .fig{min-width:0 !important;break-inside:avoid}
+  /* formularz 10, sekcja K: trzy rysunki rozkładówki na jednej stronie (oba boki razem) */
+  #sec-10-K{break-before:page}
+  #sec-10-K .figwrap{break-inside:avoid;margin:0 0 1mm}
+  #sec-10-K .fig{width:116mm !important;margin:0 auto}
   .spot-in{font-size:7pt !important;padding:0 .6mm !important;min-height:0 !important}
   .chk.spot .pchk{width:3mm;height:3mm;flex:0 0 3mm}
   .chk.spot{padding:0}
@@ -191,6 +195,15 @@ img.sketch-print{width:100%;display:block;border:1.5px solid var(--navy)}
   img.sketch-print{break-inside:avoid;max-height:215mm;object-fit:contain}
   .toolrow,.addrow,.sketchbar,button{display:none !important}
 }
+
+/* opisy pozycji (ekran) */
+.hint{font-size:12.5px;line-height:1.35;color:#3d4a5c;font-style:italic;margin:2px 0 5px;font-weight:400;text-align:left;flex:1 1 100%}
+.tbl>.hint{margin:4px 0 6px;font-size:12.5px}
+.rn .hint,.rlabel .hint{font-weight:400;font-size:11.5px;margin:3px 0 0}
+.chkitem{display:flex;flex-direction:column}
+.chkitem .hint{margin:1px 0 4px 30px}
+.sec>.hint{margin:6px 0 10px}
+@media print{.hint{display:none !important}}
 
 /* zadania */
 .tsum{display:flex;gap:14px;flex-wrap:wrap;font-weight:700;margin:6px 0}.tsum .ok{color:var(--ok)}.tsum .no{color:var(--warn)}
@@ -263,3 +276,6 @@ body.noscroll{overflow:hidden;position:fixed;width:100%}
 dialog textarea:focus,.vpanel textarea:focus,.task textarea:focus,.mcard textarea:focus{min-height:46px}
 
 .cmdbox{white-space:pre-wrap;margin:6px 0;padding:10px 12px;border:2px solid var(--navy);border-radius:8px;background:#eef3fb;font:15px/1.4 inherit;user-select:all}
+
+.autobox{margin:8px 0;padding:8px 10px;border-left:4px solid var(--navy);background:#f1f4fa;border-radius:4px}.autolbl{font-weight:700;font-size:13px;color:var(--navy);margin-bottom:2px}.autoval{white-space:pre-wrap;font-size:15px;line-height:1.4;min-height:1.2em}.autoval:empty::before{content:'– uzupełnij dane –';color:#777;font-style:italic}
+@media print{.autobox{border-left:2px solid #000;background:none}}

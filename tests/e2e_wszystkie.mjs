@@ -4,7 +4,7 @@ import fs from 'fs';
 const port = process.argv[2] || 8765;
 const ok = (c, m) => { console.log((c ? 'PASS ' : 'FAIL ') + m); if (!c) process.exitCode = 1; };
 const b = await chromium.launch({ executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', headless: true, args: ['--disable-gpu', '--no-sandbox'] });
-const ctx = await b.newContext({ viewport: { width: 1000, height: 1200 }, acceptDownloads: true });
+const ctx = await b.newContext({ viewport: { width: 1000, height: 1200 }, acceptDownloads: true }); await ctx.addInitScript(() => { try { Object.defineProperty(window, 'showSaveFilePicker', { value: undefined }); } catch { /* */ } });
 const p = await ctx.newPage(); const errs = []; p.on('pageerror', e => errs.push('' + e));
 await p.goto(`http://localhost:${port}/`); await p.click('text=Nowa sprawa'); await p.waitForSelector('.titleband');
 await p.click('#tabs button:has-text("Sprawa")');

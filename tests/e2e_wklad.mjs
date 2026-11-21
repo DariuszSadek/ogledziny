@@ -5,7 +5,7 @@ const port = process.argv[2] || 8765, root = process.cwd() + '/';
 const ok = (v, m) => { console.log((v ? 'PASS ' : 'FAIL ') + m); if (!v) process.exitCode = 1; };
 const wklad = fs.readFileSync(root + 'docs/wklad/przyklad_wkladu.json', 'utf8');
 const b = await chromium.launch({ executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', headless: true, args: ['--disable-gpu', '--no-sandbox'] });
-const ctx = await b.newContext({ viewport: { width: 1000, height: 1300 }, acceptDownloads: true });
+const ctx = await b.newContext({ viewport: { width: 1000, height: 1300 }, acceptDownloads: true }); await ctx.addInitScript(() => { try { Object.defineProperty(window, 'showSaveFilePicker', { value: undefined }); } catch { /* */ } });
 const p = await ctx.newPage(); const errs = []; p.on('pageerror', e => errs.push('' + e));
 await p.goto(`http://localhost:${port}/`); await p.waitForSelector('text=Nowa sprawa z wkładu');
 await p.click('text=Nowa sprawa z wkładu'); await p.waitForSelector('dialog[open] textarea');

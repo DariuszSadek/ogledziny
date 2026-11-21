@@ -15,8 +15,9 @@ PURPOSE={'00':('Karta czynności biegłego na miejscu zdarzenia','jedna na wezwa
  '06':('Protokół oględzin silnika','jeden na każdy silnik (badania bez demontażu i po demontażu)'),
  '07':('Protokół oceny ogumienia','jeden na każdą oponę (koło)'),
  '08':('Protokół oględzin rzeczy','jeden na każdy przedmiot lub zespół (skrzynia, most, pompa, turbosprężarka, element pojazdu, odzież, kask…)'),
- '09':('Rejestr zdjęć i przedmiotów','jeden na sprawę (rejestr zdjęć/nagrań i zabezpieczonych przedmiotów/próbek)')}
-cat=['# Katalog formularzy aplikacji „Oględziny”','','Identyfikatory formularzy: 00–09. Ten sam formularz może wystąpić w sprawie wiele razy (każdy egzemplarz ma własną `ref` we wkładzie).','']
+ '09':('Rejestr zdjęć i przedmiotów','jeden na sprawę (rejestr zdjęć/nagrań i zabezpieczonych przedmiotów/próbek)'),
+ '10':('Protokół oględzin hulajnogi elektrycznej / UTO','jeden na każdą hulajnogę elektryczną lub urządzenie transportu osobistego (UTO): klasyfikacja wg PoRD, wymiary, hamulce, oświetlenie, napęd i oprogramowanie, hamownia, jazda testowa, okoliczności z akt)')}
+cat=['# Katalog formularzy aplikacji „Oględziny”','','Identyfikatory formularzy: 00–10. Ten sam formularz może wystąpić w sprawie wiele razy (każdy egzemplarz ma własną `ref` we wkładzie).','']
 for f in sorted(glob.glob(os.path.join(root,'forms','[0-9][0-9].json'))):
     d=json.load(open(f));n=d['id']
     name=PURPOSE[n][0]
